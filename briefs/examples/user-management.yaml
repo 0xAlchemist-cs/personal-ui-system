@@ -1,0 +1,74 @@
+schema_version: "1.0"
+page: UserManagement
+purpose: 为管理员提供成员检索、状态查看和基本信息编辑；本示例使用演示数据。
+
+stack:
+  framework: Next.js（仅为示例；实际项目沿用已有框架）
+  language: TypeScript
+  ui: Ant Design
+
+design:
+  preset: minimal-saas
+  density: comfortable
+  theme: light
+  accent: blue
+  radius: medium
+
+layout:
+  type: sidebar-dashboard
+  sidebar: fixed-to-drawer
+  header: sticky
+  content: responsive
+
+components:
+  - PageHeader
+  - SearchFilters
+  - UserTable
+  - Pagination
+  - EditDialog
+
+data:
+  source: mock
+  description: 30 条明确标为演示数据的成员记录，状态为 active 或 disabled。
+  fields:
+    - id
+    - name
+    - email
+    - status
+    - createdAt
+  pagination: client
+  notes: 姓名与邮箱为字符串，createdAt 为 ISO 日期；编辑仅更新当前页面内存，刷新后恢复，不调用真实服务。
+
+interaction:
+  - id: keyword-search
+    behavior: 按姓名或邮箱进行不区分大小写的本地包含匹配；与状态筛选同时生效；输入变化后回到第一页。
+  - id: status-filter
+    behavior: 选项为全部、active、disabled；变化后回到第一页，保留关键词。
+  - id: sort
+    behavior: 仅对筛选后的记录按 createdAt 升降序排序，默认降序，变化后回到第一页。
+  - id: pagination
+    behavior: 每页 10 条，先筛选再排序后分页；编辑影响匹配结果时将页码限制在有效范围。
+  - id: edit-dialog
+    behavior: 仅修改姓名和邮箱；邮箱格式有效且姓名非空才允许保存；取消不修改记录；打开后管理焦点，关闭后返回触发位置或仍存在的表格位置。
+
+states: [loading, empty, error, success, disabled]
+state_details:
+  loading: 本地静态数据无网络加载；仅在工作台模拟加载分支，产品页面不添加人工等待。
+  empty: 首次无数据说明暂无成员；筛选无结果提供清除筛选，保留当前输入。
+  error: 表单错误与字段关联并保留输入；本示例无网络错误，不虚构请求重试。
+  success: 保存到页面内存后提示演示修改成功，并说明刷新后恢复。
+  disabled: 表单无效时保存按钮禁用且给出就地原因，查看成员状态不等于禁用整行操作。
+
+constraints:
+  - reuse-existing-components
+  - use-design-tokens
+  - no-unnecessary-dependencies
+  - keyboard-accessible
+  - 不实现真实账号管理、权限变更或持久化接口。
+
+acceptance:
+  - 在 375、768、1440px 验证导航、筛选和表格，页面无意外横向溢出，表格可局部滚动。
+  - 验证组合筛选、排序、分页、编辑保存、取消和邮箱校验；过滤与排序的处理顺序正确。
+  - 键盘可完成搜索、筛选、翻页和编辑，对话框可退出且焦点返回合理位置。
+  - 执行目标项目适用的 TypeScript、Lint、Build 和现有测试，报告实际执行项。
+  - 对主要状态进行真实页面视觉评审，并明确演示数据和内存保存边界。

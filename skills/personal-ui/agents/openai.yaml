@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal UI"
+  short_description: "按个人设计预设、语义变量与结构化需求约定完成前端选型、开发和评审"
+  default_prompt: "使用 $personal-ui，先读取当前项目约束，再依据 Personal UI System 的预设与 UI Brief 完成前端任务。"

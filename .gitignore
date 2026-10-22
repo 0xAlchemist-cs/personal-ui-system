@@ -1,0 +1,18 @@
+# Dependencies and generated outputs from future implementation stages
+node_modules/
+dist/
+build/
+storybook-static/
+playwright-report/
+test-results/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+
+# Keep reviewed screenshot baselines versioned when introduced.

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Personal UI Brief 1.0",
+  "description": "Personal UI System local convention; validate JSON parsed from YAML.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "page", "purpose", "stack", "design", "layout", "components", "data", "interaction", "states", "state_details", "constraints", "acceptance"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "page": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9-]*$" },
+    "purpose": { "type": "string", "minLength": 1 },
+    "stack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["framework", "language", "ui"],
+      "properties": {
+        "framework": { "type": "string", "minLength": 1 },
+        "language": { "type": "string", "minLength": 1 },
+        "ui": { "type": "string", "minLength": 1 }
+      }
+    },
+    "design": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["preset", "theme", "density", "accent", "radius"],
+      "properties": {
+        "preset": { "enum": ["minimal-saas", "developer-editorial", "enterprise-data"] },
+        "theme": { "enum": ["light", "dark"] },
+        "density": { "enum": ["comfortable", "compact"] },
+        "accent": { "enum": ["blue", "mint"] },
+        "radius": { "enum": ["small", "medium"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "preset": { "const": "minimal-saas" } }, "required": ["preset"] },
+          "then": { "properties": { "theme": { "const": "light" }, "density": { "const": "comfortable" }, "accent": { "const": "blue" }, "radius": { "const": "medium" } } }
+        },
+        {
+          "if": { "properties": { "preset": { "const": "developer-editorial" } }, "required": ["preset"] },
+          "then": { "properties": { "theme": { "const": "dark" }, "density": { "const": "comfortable" }, "accent": { "const": "mint" }, "radius": { "const": "medium" } } }
+        },
+        {
+          "if": { "properties": { "preset": { "const": "enterprise-data" } }, "required": ["preset"] },
+          "then": { "properties": { "theme": { "const": "light" }, "density": { "const": "compact" }, "accent": { "const": "blue" }, "radius": { "const": "small" } } }
+        }
+      ]
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "sidebar", "header", "content"],
+      "properties": {
+        "type": { "enum": ["sidebar-dashboard", "editorial-single-column", "app-shell", "marketing-sections"] },
+        "sidebar": { "enum": ["fixed-to-drawer", "none"] },
+        "header": { "enum": ["sticky", "static", "none"] },
+        "content": { "enum": ["responsive", "reading"] }
+      }
+    },
+    "components": { "$ref": "#/$defs/stringList" },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "description", "fields", "pagination", "notes"],
+      "properties": {
+        "source": { "enum": ["mock", "static", "remote"] },
+        "description": { "type": "string", "minLength": 1 },
+        "fields": { "$ref": "#/$defs/stringList" },
+        "pagination": { "enum": ["none", "client", "server"] },
+        "notes": { "type": "string", "minLength": 1 }
+      }
+    },
+    "interaction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "behavior"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+          "behavior": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "states": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "uniqueItems": true,
+      "items": { "enum": ["loading", "empty", "error", "success", "disabled"] }
+    },
+    "state_details": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["loading", "empty", "error", "success", "disabled"],
+      "properties": {
+        "loading": { "type": "string", "minLength": 1 },
+        "empty": { "type": "string", "minLength": 1 },
+        "error": { "type": "string", "minLength": 1 },
+        "success": { "type": "string", "minLength": 1 },
+        "disabled": { "type": "string", "minLength": 1 }
+      }
+    },
+    "constraints": { "$ref": "#/$defs/stringList" },
+    "acceptance": { "$ref": "#/$defs/stringList" }
+  },
+  "$defs": {
+    "stringList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

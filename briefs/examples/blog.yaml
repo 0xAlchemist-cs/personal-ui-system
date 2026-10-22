@@ -1,0 +1,67 @@
+schema_version: "1.0"
+page: DeveloperBlog
+purpose: 为读者提供清晰的技术文章索引与长文阅读体验，不创建后台编辑器。
+
+stack:
+  framework: 沿用目标项目的静态或服务端渲染框架
+  language: 沿用目标项目
+  ui: 优先现有组件；没有组件库时使用语义化 HTML
+
+design:
+  preset: developer-editorial
+  density: comfortable
+  theme: dark
+  accent: mint
+  radius: medium
+
+layout:
+  type: editorial-single-column
+  sidebar: none
+  header: static
+  content: reading
+
+components:
+  - SiteHeader
+  - ArticleIndex
+  - ArticleHeader
+  - ArticleBody
+  - ArticleNavigation
+
+data:
+  source: static
+  description: 使用项目内真实文章；若无内容则展示空状态，不虚构作者经历或文章。
+  fields:
+    - slug
+    - title
+    - publishedAt
+    - summary
+    - body
+  pagination: none
+  notes: publishedAt 为 ISO 日期；文章数较少时不引入搜索、分页或客户端数据请求；文章数量变化后再评估。
+
+interaction:
+  - id: open-article
+    behavior: 从文章索引进入对应文章，标题与地址语义清晰；文章页可返回索引。
+  - id: heading-anchor
+    behavior: 长文标题提供可键盘操作的锚点，跳转后目标标题不被固定区域遮挡。
+
+states: [loading, empty, error, success, disabled]
+state_details:
+  loading: 静态生成的正文不需要客户端加载状态，不为展示骨架引入额外请求。
+  empty: 无文章时展示尚未发布文章，不生成虚假文章和无效链接。
+  error: 不存在的文章地址显示明确的未找到页面和返回文章索引入口。
+  success: 正常渲染文章标题、发布日期、正文及代码，站内导航可达。
+  disabled: 本页没有提交或异步操作，禁用状态不适用；今后新增交互时补充对应规则。
+
+constraints:
+  - reuse-existing-components
+  - use-design-tokens
+  - no-unnecessary-dependencies
+  - keyboard-accessible
+  - 文章优先静态或服务端输出，不以动画或请求模拟真实内容。
+
+acceptance:
+  - 在 375、768、1440px 检查正文行长、标题换行、代码块局部滚动和站点导航。
+  - 验证键盘访问文章与锚点、200% 缩放阅读、文章不存在与索引为空两种状态。
+  - 正文链接有可辨认的视觉标记，文字对比符合设计原则。
+  - 执行目标项目已有且适用的代码检查，记录实际页面截图与人工评审结果。

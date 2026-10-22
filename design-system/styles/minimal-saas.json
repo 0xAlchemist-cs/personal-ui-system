@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "id": "minimal-saas",
+  "name": "Minimal SaaS",
+  "version": "0.1.0",
+  "status": "draft",
+  "theme": "light",
+  "density": "comfortable",
+  "accent": "blue",
+  "radius": "medium",
+  "tokens": {
+    "color.canvas": "{color.slate.50}",
+    "color.surface": "{color.white}",
+    "color.accent": "{color.blue.600}",
+    "space.panel": "{space.6}",
+    "radius.control": "{radius.8}",
+    "radius.panel": "{radius.12}",
+    "size.control": "{size.40}",
+    "layout.pageMax": "{size.1200}"
+  }
+}

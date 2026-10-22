@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "id": "enterprise-data",
+  "name": "Enterprise Data",
+  "version": "0.1.0",
+  "status": "draft",
+  "theme": "light",
+  "density": "compact",
+  "accent": "blue",
+  "radius": "small",
+  "tokens": {
+    "line.body": "{lineHeight.normal}",
+    "space.page": "{space.6}",
+    "space.panel": "{space.4}",
+    "space.section": "{space.6}",
+    "radius.control": "{radius.4}",
+    "radius.panel": "{radius.6}",
+    "size.control": "{size.32}",
+    "layout.header": "{size.56}",
+    "layout.pageMax": "{size.1440}",
+    "text.title": "{font.size.24}"
+  }
+}
