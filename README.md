@@ -4,6 +4,8 @@
 
 当前版本：**0.1.0 · 第一阶段：设计知识库**。先把设计决策变得可复用，再逐步建设组件工作台、项目集成和自动化验收。
 
+已补充五套组件体系的开发知识接入；按目标项目选用，见 [组件选型](components/README.md) 和 [工具接入记录](docs/ui-tooling.md)。
+
 公开仓库：[0xAlchemist-cs/personal-ui-system](https://github.com/0xAlchemist-cs/personal-ui-system) · 开源许可：[MIT](LICENSE)。
 
 ## 从这里开始
@@ -30,10 +32,10 @@
 | 资产 | 入口 | 当前能力 |
 | --- | --- | --- |
 | 设计语言 | [原则](design-system/principles.md)、[参考](design-system/references.md)、[Tokens](design-system/tokens/README.md) | 颜色、排版、间距、布局与决策规则 |
-| 组件知识 | [Ant Design](components/ant-design/README.md)、[自定义组件](components/custom/README.md) | 选型与收录边界，没有组件实现 |
+| 组件知识 | [体系选型](components/README.md)、[Ant Design](components/ant-design/README.md)、[自定义组件](components/custom/README.md) | 五套体系的知识接入与收录边界，没有公共组件实现 |
 | 交互模式 | [导航](patterns/navigation/README.md)、[表单](patterns/forms/README.md)、[数据展示](patterns/data-display/README.md) | 候选规则，供首个项目验证 |
 | 页面规格 | [Dashboard](templates/dashboard/README.md)、[Blog](templates/blog/README.md)、[SaaS](templates/saas/README.md)、[Landing Page](templates/landing-page/README.md) | 信息结构与状态要求，没有页面源码 |
-| AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md) | 仓库内可读，没有全局安装或 MCP Server |
+| AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md)、[官方工具](docs/ui-tooling.md) | 官方 Skill 全局安装及项目快照；个人 Skill 仍为仓库内入口，MCP 按需接入 |
 | Quality Control | [人工验收记录](tests/visual-review-template.md)、[工作台规划](showcase/README.md) | 验收约定，没有截图基线或自动化套件 |
 
 ## 以后如何描述需求
@@ -46,7 +48,7 @@
 
 按 [复用策略](docs/project-reuse.md) 将所需规范和 Token 保存为目标项目内的快照，并记录版本、来源与本地修改。快照内的引用必须闭合，项目应能独立检出、构建和部署。
 
-不要把 `D:\personal-ui-systerm` 或其他本机路径写进项目依赖、构建脚本或导入语句。本库暂未安装官方 Ant Design Skill，也未配置 Storybook、Playwright 或 Registry；相关官方入口与阶段划分见 [路线图](docs/roadmap.md)。
+不要把 `D:\personal-ui-systerm` 或其他本机路径写进项目依赖、构建脚本或导入语句。官方 Skill 副本及来源随仓库保存；Storybook、Playwright、组件包与 Registry 分发仍按 [路线图](docs/roadmap.md) 演进。
 
 ## 维护
 

@@ -13,7 +13,7 @@
 | 编辑与提交 | Form、Input、Modal、Drawer、Button |
 | 加载与结果 | Spin、Skeleton、Empty、Alert、Result |
 
-以上是选型方向，具体 API、受控状态和导入方式需查目标安装版本的官方文档与 [官方 Skills](https://github.com/ant-design/antd-skill)。本库尚未安装官方 Skill，不将此文档称为官方 Skill 的替代品。
+以上是选型方向，具体 API、受控状态和导入方式需查目标安装版本的官方文档与 [官方 Skills](https://github.com/ant-design/antd-skill)。本库已通过 CLI 接入 [项目级 Skill](../../.agents/skills/antd/SKILL.md)，全局另有 `ant-design` 与 `antd`；本文件是本库选型约定。
 
 ## 主题映射方向
 

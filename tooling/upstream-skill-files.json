@@ -1,0 +1,435 @@
+{
+  "checkedAt": "2026-10-23",
+  "sourceType": "official-github-repositories",
+  "sources": [
+    {
+      "repo": "shadcn-ui/ui",
+      "ref": "main",
+      "names": [
+        "shadcn"
+      ],
+      "rootTree": "25af02b1b467fcd53b63e0c6d6d324c57c16ef18",
+      "skillTree": "955e1b7ae7986afc3cd11712432868dcd9646b89",
+      "licensePath": "LICENSE.md",
+      "licenseBlob": "fad4d887a681dd49233e5ed01ee2c7a1513089a0",
+      "files": [
+        {
+          "path": "shadcn/SKILL.md",
+          "sha": "54da13fb6fdca971ec9ee4651cf5ff2cdab2236d",
+          "mode": "100644",
+          "size": 21606
+        },
+        {
+          "path": "shadcn/agents/openai.yml",
+          "sha": "ab636da86b5ee5b8721b0575af67faa88e4bf838",
+          "mode": "100644",
+          "size": 238
+        },
+        {
+          "path": "shadcn/assets/shadcn-small.png",
+          "sha": "547154b97f2298335159c23eec1dac0d147a1246",
+          "mode": "100644",
+          "size": 1049
+        },
+        {
+          "path": "shadcn/assets/shadcn.png",
+          "sha": "b7b6814acc25073e5f48099b1fd3f70c47bfb1c3",
+          "mode": "100644",
+          "size": 3852
+        },
+        {
+          "path": "shadcn/assets/showcase/color-pair.tsx",
+          "sha": "f80177d1e50bf8df22b79914c331e61280d459a4",
+          "mode": "100644",
+          "size": 3448
+        },
+        {
+          "path": "shadcn/assets/showcase/preview-states.css",
+          "sha": "d90febdbf9fe096ca3f9ef3395c2dbf28f2971f6",
+          "mode": "100644",
+          "size": 425
+        },
+        {
+          "path": "shadcn/assets/showcase/state-matrix.tsx",
+          "sha": "69afba4f7e4f14a979793695a82c86a794ed3a6d",
+          "mode": "100644",
+          "size": 1682
+        },
+        {
+          "path": "shadcn/cli.md",
+          "sha": "8a1d1958710902e2d38a3dd03d00aa09ab165dfe",
+          "mode": "100644",
+          "size": 17304
+        },
+        {
+          "path": "shadcn/customization.md",
+          "sha": "d43506d40520e8271da0b8ac9f994e190dbb9998",
+          "mode": "100644",
+          "size": 6279
+        },
+        {
+          "path": "shadcn/design-system-page.md",
+          "sha": "cfa2f4186fe36c295a5878354f1ca2dd2cf66bf7",
+          "mode": "100644",
+          "size": 15790
+        },
+        {
+          "path": "shadcn/design-system.md",
+          "sha": "018f87bd78fad10ff309f9bc9bd88e0b10172b60",
+          "mode": "100644",
+          "size": 21621
+        },
+        {
+          "path": "shadcn/evals/evals.json",
+          "sha": "f70c8c109bab36619dfcbe73ddc4983ce0028b7f",
+          "mode": "100644",
+          "size": 10626
+        },
+        {
+          "path": "shadcn/mcp.md",
+          "sha": "6539ddaa2d0bc9e9d1fdf07658e1b0955136b721",
+          "mode": "100644",
+          "size": 3510
+        },
+        {
+          "path": "shadcn/registry.md",
+          "sha": "5369468bbe43126379161a403a53717ee86e2d9b",
+          "mode": "100644",
+          "size": 8817
+        },
+        {
+          "path": "shadcn/rules/base-vs-radix.md",
+          "sha": "c1ed7d111a0195cab801d2b3d38dee3aee0b8e10",
+          "mode": "100644",
+          "size": 6954
+        },
+        {
+          "path": "shadcn/rules/chat.md",
+          "sha": "b493fbd348190123a5fe0f4c66b115836ae9a0bc",
+          "mode": "100644",
+          "size": 17626
+        },
+        {
+          "path": "shadcn/rules/composition.md",
+          "sha": "a8aa4274c1aaabf673fe7bdb69d90983ad56059d",
+          "mode": "100644",
+          "size": 4892
+        },
+        {
+          "path": "shadcn/rules/forms.md",
+          "sha": "f451e2f7bc17d9c5738691931964744a568ea5d6",
+          "mode": "100644",
+          "size": 4857
+        },
+        {
+          "path": "shadcn/rules/icons.md",
+          "sha": "bba8102f01ef9fd9bd7ce2adc73e562869d5d09e",
+          "mode": "100644",
+          "size": 1958
+        },
+        {
+          "path": "shadcn/rules/styling.md",
+          "sha": "4e6e063e1c7bc386e49f55da800546571b9e070b",
+          "mode": "100644",
+          "size": 4675
+        },
+        {
+          "path": "shadcn/scripts/showcase-coverage.mjs",
+          "sha": "d8a4eab93cb2da6dbe24290483cf570c7d04bf6e",
+          "mode": "100644",
+          "size": 1453
+        }
+      ]
+    },
+    {
+      "repo": "mui/material-ui",
+      "ref": "master",
+      "names": [
+        "material-ui-styling",
+        "material-ui-theming",
+        "material-ui-nextjs",
+        "material-ui-tailwind"
+      ],
+      "rootTree": "27476eeacf4a024b3efccd815383ec8a788e9bda",
+      "skillTree": "ecf4cb9bdffe32fbf740b057296881435be2c16c",
+      "licensePath": "LICENSE",
+      "licenseBlob": "eba5d9e7bf7686fc77dadc6d4d347bf49afd934e",
+      "files": [
+        {
+          "path": "material-ui-nextjs/AGENTS.md",
+          "sha": "36c44e9d7fad083a7ffaf7d49b36a165713d30a1",
+          "mode": "100644",
+          "size": 9513
+        },
+        {
+          "path": "material-ui-nextjs/README.md",
+          "sha": "6bced80ed2a00b9dcc0e5b271e36c22f07a46b03",
+          "mode": "100644",
+          "size": 572
+        },
+        {
+          "path": "material-ui-nextjs/SKILL.md",
+          "sha": "311a54b08569273fb68e564765f1332dcd41e6b0",
+          "mode": "100644",
+          "size": 2046
+        },
+        {
+          "path": "material-ui-nextjs/metadata.json",
+          "sha": "39004579c9dbdb06e6fe4458cb2f8439ef158bd9",
+          "mode": "100644",
+          "size": 652
+        },
+        {
+          "path": "material-ui-nextjs/reference.md",
+          "sha": "fd08b07f61a733e0ecfa8a1e33529805eae8ff47",
+          "mode": "100644",
+          "size": 1118
+        },
+        {
+          "path": "material-ui-styling/AGENTS.md",
+          "sha": "72d2bac6cd8f9b1ab2973a60854e309a59464aa1",
+          "mode": "100644",
+          "size": 8090
+        },
+        {
+          "path": "material-ui-styling/README.md",
+          "sha": "2a1477a1db6f4581dfe6c644f0c8ff1525d6a60b",
+          "mode": "100644",
+          "size": 678
+        },
+        {
+          "path": "material-ui-styling/SKILL.md",
+          "sha": "f5337199f30dd931b4663a53ab1d9b12a8e428ff",
+          "mode": "100644",
+          "size": 1589
+        },
+        {
+          "path": "material-ui-styling/metadata.json",
+          "sha": "397ff407cc9d070ef89ae99373ebf7b6321a9dd5",
+          "mode": "100644",
+          "size": 572
+        },
+        {
+          "path": "material-ui-styling/reference.md",
+          "sha": "90796cc422f1f7394101214dacf4b57cdbb912ee",
+          "mode": "100644",
+          "size": 1321
+        },
+        {
+          "path": "material-ui-tailwind/AGENTS.md",
+          "sha": "4b9b702b1b8b29f87768351a6e149982d95014cb",
+          "mode": "100644",
+          "size": 8082
+        },
+        {
+          "path": "material-ui-tailwind/README.md",
+          "sha": "552e8677cb6dc2420639951efc5682c5db15a9ec",
+          "mode": "100644",
+          "size": 657
+        },
+        {
+          "path": "material-ui-tailwind/SKILL.md",
+          "sha": "3aca7d7d4844f464661662704bf82240b2243b10",
+          "mode": "100644",
+          "size": 1577
+        },
+        {
+          "path": "material-ui-tailwind/metadata.json",
+          "sha": "36782bca905316893a0fd5ac230bdc4d5c2de800",
+          "mode": "100644",
+          "size": 699
+        },
+        {
+          "path": "material-ui-tailwind/reference.md",
+          "sha": "586d0b1fc72848a878bcf9895ef8bb809d9543c2",
+          "mode": "100644",
+          "size": 1120
+        },
+        {
+          "path": "material-ui-theming/AGENTS.md",
+          "sha": "f02814cc5e806c64f3287640fa2a6885934f3d26",
+          "mode": "100644",
+          "size": 11992
+        },
+        {
+          "path": "material-ui-theming/README.md",
+          "sha": "b56b427017586814841194a276b4a13dd8b78a79",
+          "mode": "100644",
+          "size": 565
+        },
+        {
+          "path": "material-ui-theming/SKILL.md",
+          "sha": "7a3604f824661dfa17b0d220b04037fefcbc4db7",
+          "mode": "100644",
+          "size": 1722
+        },
+        {
+          "path": "material-ui-theming/metadata.json",
+          "sha": "10ffc8878f1ebe4c2e2693e0fcc9f61c4ad0d8aa",
+          "mode": "100644",
+          "size": 626
+        },
+        {
+          "path": "material-ui-theming/reference.md",
+          "sha": "e45ad9e2d45acebb4d4be9ca4efc951bd14980eb",
+          "mode": "100644",
+          "size": 1154
+        }
+      ]
+    },
+    {
+      "repo": "chakra-ui/chakra-ui",
+      "ref": "main",
+      "names": [
+        "chakra-ui-builder",
+        "chakra-ui-migrate",
+        "chakra-ui-refactor"
+      ],
+      "rootTree": "fa9696f328ea5a0df8685c6d8460edbd779b63b9",
+      "skillTree": "56fe2fe9420cc738d0568fda346c17183d3f3013",
+      "licensePath": "LICENSE",
+      "licenseBlob": "79c996c1a09caaf2ea65e94e9ab47ecd19b68b03",
+      "files": [
+        {
+          "path": "chakra-ui-builder/SKILL.md",
+          "sha": "47175299504cca20917c5d7bef352aca1e464d1e",
+          "mode": "100644",
+          "size": 12399
+        },
+        {
+          "path": "chakra-ui-builder/references/charts.md",
+          "sha": "f5eb162790d5f4823b3b1576c33c3c23317fb9f8",
+          "mode": "100644",
+          "size": 11176
+        },
+        {
+          "path": "chakra-ui-builder/references/component-decision-tree.md",
+          "sha": "bca7b68d26cc7aff84982792346ef302e4a7d49a",
+          "mode": "100644",
+          "size": 12766
+        },
+        {
+          "path": "chakra-ui-builder/references/theming.md",
+          "sha": "2befd91d05b3fe86e4e27a282eea065742426650",
+          "mode": "100644",
+          "size": 9585
+        },
+        {
+          "path": "chakra-ui-migrate/SKILL.md",
+          "sha": "fd8b746cc2469e311a7d82aa95e33b03711a228b",
+          "mode": "100644",
+          "size": 13663
+        },
+        {
+          "path": "chakra-ui-refactor/SKILL.md",
+          "sha": "914738a6d03250d78e45e7e868c903cb166a0035",
+          "mode": "100644",
+          "size": 11087
+        }
+      ]
+    },
+    {
+      "repo": "nuxt/ui",
+      "ref": "v4",
+      "names": [
+        "nuxt-ui"
+      ],
+      "rootTree": "ef6b6934b2201fc354cfc70e9e59888de9668cf0",
+      "skillTree": "650ac630a216719eb274f1aff2a84e53aa89cb85",
+      "licensePath": "LICENSE.md",
+      "licenseBlob": "acf1a2cfc2df1551e5d5c0ea22abfa98c1aa4469",
+      "files": [
+        {
+          "path": "nuxt-ui/SKILL.md",
+          "sha": "2ce6e71f4382aa4e09109d06e6ee636f20acbdff",
+          "mode": "100644",
+          "size": 6405
+        },
+        {
+          "path": "nuxt-ui/references/components.md",
+          "sha": "30ebb016eced688a814706a25c1a55f789efaebe",
+          "mode": "100644",
+          "size": 9548
+        },
+        {
+          "path": "nuxt-ui/references/guidelines/component-selection.md",
+          "sha": "b34c1ab9faa4062780051cb9f0e96ea093006196",
+          "mode": "100644",
+          "size": 7153
+        },
+        {
+          "path": "nuxt-ui/references/guidelines/conventions.md",
+          "sha": "b79f9cc249c7439d66e012ca2bad2a17b51b2c15",
+          "mode": "100644",
+          "size": 9338
+        },
+        {
+          "path": "nuxt-ui/references/guidelines/design-system.md",
+          "sha": "747eda950ef03bfe6902c3741705321b6afef44f",
+          "mode": "100644",
+          "size": 10192
+        },
+        {
+          "path": "nuxt-ui/references/guidelines/forms.md",
+          "sha": "5fd91f192b47eba5bc7458427e0b3054f96a2032",
+          "mode": "100644",
+          "size": 6116
+        },
+        {
+          "path": "nuxt-ui/references/layouts/chat.md",
+          "sha": "8fc2b9fcbd1944c2f98749a7a7d9fdd8e199fdf5",
+          "mode": "100644",
+          "size": 7854
+        },
+        {
+          "path": "nuxt-ui/references/layouts/dashboard.md",
+          "sha": "a2fa9bd3fbb8d5068493a534f91a34d2de939aee",
+          "mode": "100644",
+          "size": 6143
+        },
+        {
+          "path": "nuxt-ui/references/layouts/docs.md",
+          "sha": "e539897e838422cec7d44795187d35b36b465136",
+          "mode": "100644",
+          "size": 3808
+        },
+        {
+          "path": "nuxt-ui/references/layouts/editor.md",
+          "sha": "eb224a6646adc903f935f6247ef1e2c57800527b",
+          "mode": "100644",
+          "size": 4043
+        },
+        {
+          "path": "nuxt-ui/references/layouts/landing.md",
+          "sha": "a0d231ad8e071c1cd577bfc98ab578192a239683",
+          "mode": "100644",
+          "size": 5621
+        },
+        {
+          "path": "nuxt-ui/references/recipes/auth.md",
+          "sha": "57d2bdc07c7b37bcbf92ceb96dc5dcccfb5248fb",
+          "mode": "100644",
+          "size": 5204
+        },
+        {
+          "path": "nuxt-ui/references/recipes/data-tables.md",
+          "sha": "20dddbfdffb2d21ad8c7d744484cc35f90e1269b",
+          "mode": "100644",
+          "size": 6686
+        },
+        {
+          "path": "nuxt-ui/references/recipes/navigation.md",
+          "sha": "ef71a988547dc447f8b46c1b6b89a963c80c01de",
+          "mode": "100644",
+          "size": 2084
+        },
+        {
+          "path": "nuxt-ui/references/recipes/overlays.md",
+          "sha": "45fd78f26b87aa22ea3eeecad830db89e05d4462",
+          "mode": "100644",
+          "size": 4377
+        }
+      ]
+    }
+  ]
+}

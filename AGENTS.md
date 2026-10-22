@@ -9,6 +9,7 @@
 3. [风格目录](design-system/styles/README.md)：选择一套风格，再读取对应说明和 JSON。
 4. [Token 约定](design-system/tokens/README.md)：解释原始值、语义别名和覆盖顺序。
 5. 按需读取 `patterns/`、`templates/`、`prompts/` 中与当前任务相关的文件，不一次性加载整个仓库。
+6. 涉及组件体系时读取 [选型入口](components/README.md) 与 [工具接入记录](docs/ui-tooling.md)，再按实际技术栈读取对应 Skill。
 
 ## 当前范围
 
@@ -25,9 +26,20 @@
 - UI Brief 是本库的自定义约定，入口为 [格式说明](briefs/README.md)；它不是框架或第三方工具的标准。
 - 不将项目绑定到本机绝对路径，不通过跨仓库源码引用或目录链接共享资产。复用采用可复制、可记录来源版本的快照；稳定组件的包分发留到后续阶段。
 - 新风格、组件与模式先作为候选资产，按 [资产生命周期](docs/asset-lifecycle.md) 经验证和审核后晋级。
+- 已接入 Ant Design、shadcn/ui、Material UI、Chakra UI、Nuxt UI 的相关知识。只有项目已采用相应库，或用户明确选用它时才加载其 Skill；通用需求不能因全局 Skill 的宽泛触发描述而被强制使用某个库。
+- 已安装 Skill 不等于已安装组件或已启用 MCP。只报告实际验证的能力；不为了满足 Skill 示例擅自初始化框架、迁移组件库或启用付费服务。
 
 ## 检查与汇报
 
 本阶段检查 Markdown 链接、JSON/YAML 语法、Token 引用和 Brief 一致性。没有应用时，不宣称 TypeScript、Lint、Build、浏览器或视觉回归检查已经通过。
 
 进入实现阶段后执行目标项目已有且适用的检查，并启动页面验证实际渲染、典型交互、响应式和主要状态。最终说明复用、新增、验证证据和剩余风险。
+
+<!-- antd-cli setup start -->
+## Ant Design CLI Skill
+
+Use the shared Ant Design skill at `.agents/skills/antd/SKILL.md` before working on Ant Design code in this repository.
+
+The skill teaches agents when and how to call `@ant-design/cli` commands such as `antd info`, `antd doc`, `antd demo`, `antd token`, `antd semantic`, and `antd changelog`.
+
+<!-- antd-cli setup end -->

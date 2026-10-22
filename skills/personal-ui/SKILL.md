@@ -13,6 +13,7 @@ description: 使用 Personal UI System 的视觉预设、Token 和 UI Brief 进�
 
 - 需求和风格不明确：使用 [Brief 约定](../../briefs/README.md) 与 [风格目录](../../design-system/styles/README.md)，把任务、密度、布局和状态写清楚。只有影响结果且无法推断的信息才询问用户。
 - 设计与实现：读取所选预设的说明与 JSON、[Token 约定](../../design-system/tokens/README.md) 和相关模式。三套预设当前均为 `draft`；模板和组件目录当前只提供规格，不声称存在实现。
+- 组件体系：按 [选型入口](../../components/README.md) 读取目标项目已经使用或用户选定的官方 Skill，不因本机安装多个体系而混用它们。工具是否已安装、MCP 是否可用以 [接入记录](../../docs/ui-tooling.md) 和实际环境为准。
 - Ant Design 项目：参考 [组件选型约定](../../components/ant-design/README.md)，优先已有官方组件与官方 Skill。若官方 Skill 不可用，查对应版本官方文档并说明，不伪称已经调用。
 - 评审或验收：使用 [设计评审](../../prompts/design-review.md) 或 [视觉验收](../../prompts/visual-qa.md)，只报告实际观察与已执行检查。
 

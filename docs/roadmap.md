@@ -6,13 +6,13 @@
 | --- | --- | --- | --- |
 | 01 设计知识库 | 把设计偏好与决策规则变成可读资产 | 2～3 套候选风格、参考来源、Token、布局、Brief 和提示词；说明成熟度并检查引用一致性 | 本次范围 |
 | 02 组件工作台 | 让组件和状态可以实际预览 | 选定兼容的技术栈；用 Storybook 展示导航、卡片、表格、表单和常见布局，覆盖主要状态与视口；完成首轮视觉验收 | 未实施 |
-| 03 Codex 与项目集成 | 在独立项目中稳定使用设计能力 | 试点项目可读取本地快照与 Skill；按其框架选择组件；记录来源版本，独立构建，不依赖本机源码目录 | 未实施 |
+| 03 Codex 与项目集成 | 在独立项目中稳定使用设计能力 | 试点项目可读取本地快照与 Skill；按其框架选择组件；记录来源版本，独立构建，不依赖本机源码目录 | 已接入本库的官方 Skill；独立应用试点未实施 |
 | 04 自动验证与分发 | 多项目复用可被持续验证 | 组件测试、固定环境的视觉回归、变更与兼容性评估；按实际需求引入独立包、私有 npm 或 Registry | 未实施 |
 
 ## 工具接入决策
 
 - **Storybook / 阶段 02**：提供组件隔离预览与 Stories；选定框架后按对应官方安装说明配置，不先锁死 React 或 Next.js。[官方文档](https://storybook.js.org/docs)
-- **Ant Design / 按目标项目需要**：优先现有官方组件，主题通过 `ConfigProvider` 的 Theme Token 配置；本库尚未安装其 Skill 或组件依赖。[主题文档](https://ant.design/docs/react/customize-theme/)、[官方 Skill 仓库](https://github.com/ant-design/antd-skill)
+- **UI 体系 / 按目标项目需要**：已接入 Ant Design 及另外四套方案的官方 Skill；按 [组件选型](../components/README.md) 使用。运行时依赖仍在具体应用中安装；[接入记录](ui-tooling.md) 区分 Skill、CLI 与未启用的 MCP。
 - **Playwright / 阶段 04**：使用截图比较建立回归；基线在固定 OS、浏览器、字体与视口环境下产生，截图变化需要人工判断，不自动认定为合理变化。[视觉比较文档](https://playwright.dev/docs/test-snapshots)
 - **shadcn Registry / 阶段 04 按需**：作为资源分发选项评估，只有存在稳定资产和重复安装需求时再建设。[Registry 文档](https://ui.shadcn.com/docs/registry)
 

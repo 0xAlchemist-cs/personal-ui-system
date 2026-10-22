@@ -17,7 +17,7 @@
 | 来源 | 用途 | 当前状态 |
 | --- | --- | --- |
 | [Ant Design 主题](https://ant.design/docs/react/customize-theme/) | 后续映射全局与组件 Theme Token | 仅查阅，没有适配器 |
-| [Ant Design 官方 Skills](https://github.com/ant-design/antd-skill) | 按目标项目版本辅助组件选型和 API 查阅 | 未安装 |
+| [Ant Design 官方 Skills](https://github.com/ant-design/antd-skill) | 按目标项目版本辅助组件选型和 API 查阅 | 已全局安装，CLI 已生成项目级入口 |
 | [Storybook](https://storybook.js.org/docs) | 阶段 02 的组件预览与状态展示 | 未接入 |
 | [Playwright 视觉比较](https://playwright.dev/docs/test-snapshots) | 阶段 04 的截图回归与环境约束 | 未接入 |
 | [shadcn Registry](https://ui.shadcn.com/docs/registry) | 阶段 04 按需求评估分发 | 未接入 |
