@@ -1,0 +1,25 @@
+.members-page-header { margin-block-end: var(--pui-space-section); }
+.members-page-header h1 { margin: 0; font-family: var(--pui-font-heading); font-size: var(--pui-text-title); line-height: 1.25; scroll-margin-block-start: calc(var(--pui-layout-header) + var(--pui-space-group)); }
+.members-page-header p { margin-block: var(--pui-space-inline) 0; color: var(--pui-color-muted); }
+.members-demo-note { font-size: var(--pui-text-small); }
+.members-filters { display: flex; align-items: end; flex-wrap: wrap; gap: var(--pui-space-group); margin-block-end: var(--pui-space-panel); }
+.members-filter { display: grid; gap: var(--pui-space-inline); min-width: 0; }
+.members-filter--keyword { flex: 1 1 240px; }
+.members-filter--status { flex: 0 1 160px; }
+.members-filter .ant-select { width: 100%; }
+.members-filters .ant-input-affix-wrapper, .members-filters .ant-select, .members-filters > .ant-btn { min-height: var(--pui-size-control-touch); }
+.members-scroll-help { margin: 0 0 var(--pui-space-inline); color: var(--pui-color-muted); font-size: var(--pui-text-caption); }
+.members-table-scroll { overflow-x: auto; border-radius: var(--pui-radius-control); }
+.members-table { min-width: 770px; }
+.members-table .ant-table-cell { overflow-wrap: anywhere; }
+.members-table .ant-btn { min-height: var(--pui-size-control-touch); }
+.members-table time { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.members-status.ant-tag { margin-inline-end: 0; border-color: transparent; }
+.members-status--active.ant-tag { color: var(--pui-color-success); background: var(--pui-color-success-background); }
+.members-status--disabled.ant-tag { color: var(--pui-color-muted); background: var(--pui-color-canvas); border-color: var(--pui-color-border); }
+.members-pagination { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--pui-space-group); margin-block-start: var(--pui-space-panel); }
+.members-pagination p { margin: 0; color: var(--pui-color-muted); }
+.members-pagination .ant-pagination-item, .members-pagination .ant-pagination-prev, .members-pagination .ant-pagination-next { min-width: var(--pui-size-control-touch); height: var(--pui-size-control-touch); line-height: var(--pui-size-control-touch); }
+.members-edit-help { color: var(--pui-color-muted); margin: 0 0 var(--pui-space-group); }
+.members-edit-dialog .ant-btn, .members-edit-dialog .ant-input { min-height: var(--pui-size-control-touch); }
+.members-edit-actions { justify-content: end; }

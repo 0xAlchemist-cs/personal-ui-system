@@ -2,7 +2,7 @@
 
 你的个人 AI 前端设计系统。一套设计能力，服务博客、管理后台和 Web App 等独立项目。
 
-当前版本：**0.1.0 · 设计知识库与阶段 02 工作台起步**。已完成首版规格和最小主题通路；成员管理功能与完整页面验收尚未完成。
+当前版本：**0.1.0 · 设计知识库与阶段 02 工作台**。已完成首版规格、主题通路和成员管理核心交互；完整状态 Stories 与正式页面验收尚未完成。
 
 已补充五套组件体系的开发知识接入；按目标项目选用，见 [组件选型](components/README.md) 和 [工具接入记录](docs/guides/ui-tooling.md)。
 
@@ -15,9 +15,9 @@
 3. 复制 [UI Brief 示例](briefs/examples/user-management.yaml)，按 [Brief 约定](briefs/README.md) 描述真实需求。
 4. 开发时结合目标项目现有组件，完成后使用 [设计评审](prompts/design-review.md) 和 [视觉验收](prompts/visual-qa.md) 提示词。
 
-知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供基础主题预览与一个 Story，启动和检查命令见应用说明。页面模板仍是设计规格，尚无公共组件包。
+知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页、基础主题预览与一个 Story，启动和检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
-**下一张任务卡：P02-T3。** 按 [首个工作台实施计划](docs/superpowers/plans/2026-10-23-showcase-v1.md) 实现 `minimal-saas` 成员管理交互；T2 的实际检查见 [主题通路验证记录](tests/manual/showcase-v1/t2-theme-check.md)。完整状态与页面验收随后推进。
+**下一张任务卡：P02-T4。** 按 [首个工作台实施计划](docs/superpowers/plans/2026-10-23-showcase-v1.md) 补齐实际部件的 Stories 与适用状态；核心交互的实现、检查与截图见 [T3 验证记录](tests/manual/showcase-v1/t3-interaction-check.md)。Gate 02 尚未通过。
 
 完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 
@@ -40,7 +40,7 @@
 | 交互模式 | [导航](patterns/navigation/README.md)、[表单](patterns/forms/README.md)、[数据展示](patterns/data-display/README.md) | 候选规则，供首个项目验证 |
 | 页面规格 | [Dashboard](templates/dashboard/README.md)、[Blog](templates/blog/README.md)、[SaaS](templates/saas/README.md)、[Landing Page](templates/landing-page/README.md) | 信息结构与状态要求，没有页面源码 |
 | AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md)、[官方工具](docs/guides/ui-tooling.md) | 官方 Skill 全局安装及项目快照；个人 Skill 仍为仓库内入口，MCP 按需接入 |
-| Quality Control | [人工验收模板](tests/visual-review-template.md)、[工作台](showcase/README.md)、[T2 实测](tests/manual/showcase-v1/t2-theme-check.md) | Token/适配单元测试与基础预览证据；尚无视觉回归基线 |
+| Quality Control | [人工验收模板](tests/visual-review-template.md)、[工作台](showcase/README.md)、[T3 实测](tests/manual/showcase-v1/t3-interaction-check.md) | Token/适配/成员查询单元测试与任务交互证据；尚无视觉回归基线 |
 
 ## 以后如何描述需求
 

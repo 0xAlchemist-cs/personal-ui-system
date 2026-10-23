@@ -15,7 +15,7 @@
 ## 当前范围
 
 - 设计知识库基础已建立，继续维护规范、参考来源、三套候选风格、Token、页面规格、UI Brief 和提示词。
-- 阶段 02 已完成 T0～T2；`showcase/app/` 有独立的 React/Vite/Ant Design 基础主题预览与 Storybook。运行依赖仅在该应用内，成员管理交互与完整页面尚未实现；`components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现。
+- 阶段 02 已完成 T0～T3；`showcase/app/` 有独立的 React/Vite/Ant Design 成员管理示范页、基础主题预览与 Storybook。运行依赖仅在该应用内；完整状态 Stories 与正式页面验收尚未完成，顶层 `components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现。
 - 三套风格均为 `draft`；通过首个真实页面的视觉验收后，才能标为 `validated`。
 - 后续阶段见 [实施路线](docs/roadmap.md)。用户明确要求进入后续阶段时再落实相应能力。
 

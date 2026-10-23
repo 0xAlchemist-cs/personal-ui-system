@@ -1,5 +1,5 @@
-import { ThemePreview } from './ThemePreview';
+import { MembersPage } from './features/members/MembersPage';
 
 export default function App() {
-  return <ThemePreview />;
+  return <MembersPage />;
 }
