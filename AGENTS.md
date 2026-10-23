@@ -17,7 +17,7 @@
 - 设计知识库基础已建立，继续维护规范、参考来源、三套候选风格、Token、页面规格、UI Brief 和提示词。
 - 阶段 02 已完成 T0～T5，[正式验收](tests/manual/showcase-v1/review.md) 记录 Gate 02 证据；`showcase/app/` 有独立的 React/Vite/Ant Design 成员管理示范页和 17 个 Story。运行依赖仅在该应用内；顶层 `components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现，尚无自动视觉回归基线。
 - `minimal-saas` 仅在其说明列出的固定组合与页面验收范围为 `validated`；其余两套风格为 `draft`，未自动 `approved`。不将单页验收推广为跨框架、跨浏览器或公共组件保证。
-- 阶段 03 已完成 [T1 选型](docs/records/2026-10-23-p03-t1-consumer-selection.md) 和 [T2 快照打包](docs/records/2026-10-24-p03-t2-snapshot.md)：独立消费者拥有固定来源的 16 项资产、manifest、本地 Skill 入口与静态校验器。消费者尚无 UI、应用依赖或锁文件；T3 独立安装、构建与浏览器验证未执行，Gate 03 未通过。
+- 阶段 03 已完成 T1～T3：[独立验证报告](docs/records/2026-10-24-p03-t3-independent-validation.md) 记录消费者最小主题页、自己的锁文件、干净检出安装与构建、63 项测试、三视口、真实 200% 缩放及路径独立性。16 项复制资产未变，本库没有新增公共组件；下一张任务卡为 T4 收口与 Gate 03 核对，Phase 04 未执行。
 - 后续阶段见 [实施路线](docs/roadmap.md)。用户明确要求进入后续阶段时再落实相应能力。
 
 ## 任务决策

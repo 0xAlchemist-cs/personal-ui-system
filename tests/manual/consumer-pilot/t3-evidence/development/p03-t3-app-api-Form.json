@@ -1,0 +1,687 @@
+{
+  "name": "Form",
+  "nameZh": "表单",
+  "description": "High-performance form component with data domain management. Includes data entry, validation, and corresponding styles.",
+  "props": [
+    {
+      "name": "classNames",
+      "type": "Record<[SemanticDOM](#semantic-dom), string> | (info: { props })=> Record<[SemanticDOM](#semantic-dom), string>",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "colon",
+      "type": "boolean",
+      "default": "true",
+      "since": ""
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "default": "false",
+      "since": "4.21.0"
+    },
+    {
+      "name": "component",
+      "type": "ComponentType | false",
+      "default": "form",
+      "since": ""
+    },
+    {
+      "name": "fields",
+      "type": "[FieldData](#fielddata)[]",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "form",
+      "type": "[FormInstance](#forminstance)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "feedbackIcons",
+      "type": "[FeedbackIcons](#feedbackicons)",
+      "default": "-",
+      "since": "5.9.0"
+    },
+    {
+      "name": "initialValues",
+      "type": "object",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "labelAlign",
+      "type": "`left` | `right`",
+      "default": "`right`",
+      "since": ""
+    },
+    {
+      "name": "labelWrap",
+      "type": "boolean",
+      "default": "false",
+      "since": "4.18.0"
+    },
+    {
+      "name": "labelCol",
+      "type": "[object](/components/grid/#col)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "layout",
+      "type": "`horizontal` | `vertical` | `inline`",
+      "default": "`horizontal`",
+      "since": ""
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "preserve",
+      "type": "boolean",
+      "default": "true",
+      "since": "4.4.0"
+    },
+    {
+      "name": "requiredMark",
+      "type": "boolean | `optional` | ((label: ReactNode, info: { required: boolean }) => ReactNode)",
+      "default": "true",
+      "since": "`renderProps`: 5.9.0"
+    },
+    {
+      "name": "scrollToFirstError",
+      "type": "boolean | [Options](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) | { focus: boolean }",
+      "default": "false",
+      "since": "focus: 5.24.0"
+    },
+    {
+      "name": "size",
+      "type": "`small` | `medium` | `large`",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "styles",
+      "type": "Record<[SemanticDOM](#semantic-dom), CSSProperties> | (info: { props })=> Record<[SemanticDOM](#semantic-dom), CSSProperties>",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "tooltip",
+      "type": "[TooltipProps](/components/tooltip#api) & { icon?: ReactNode }",
+      "default": "-",
+      "since": "6.3.0"
+    },
+    {
+      "name": "validateMessages",
+      "type": "[ValidateMessages](https://github.com/ant-design/ant-design/blob/6234509d18bac1ac60fbb3f92a5b2c6a6361295a/components/locale/en_US.ts#L88-L134)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "validateTrigger",
+      "type": "string | string[]",
+      "default": "`onChange`",
+      "since": "4.3.0"
+    },
+    {
+      "name": "variant",
+      "type": "`outlined` | `borderless` | `filled` | `underlined`",
+      "default": "`outlined`",
+      "since": "5.13.0 | `underlined`: 5.24.0"
+    },
+    {
+      "name": "wrapperCol",
+      "type": "[object](/components/grid/#col)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "onFieldsChange",
+      "type": "function(changedFields, allFields)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "onFinish",
+      "type": "function(values)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "onFinishFailed",
+      "type": "function({ values, errorFields, outOfDate })",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "onValuesChange",
+      "type": "function(changedValues, allValues)",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "clearOnDestroy",
+      "type": "boolean",
+      "default": "false",
+      "since": "5.18.0"
+    }
+  ],
+  "subComponentProps": {
+    "Form.Item": [
+      {
+        "name": "colon",
+        "type": "boolean",
+        "default": "true",
+        "since": ""
+      },
+      {
+        "name": "dependencies",
+        "type": "[NamePath](#namepath)[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "extra",
+        "type": "ReactNode",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "getValueFromEvent",
+        "type": "(..args: any[]) => any",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "getValueProps",
+        "type": "(value: any) => Record<string, any>",
+        "default": "-",
+        "since": "4.2.0"
+      },
+      {
+        "name": "hasFeedback",
+        "type": "boolean | { icons: [FeedbackIcons](#feedbackicons) }",
+        "default": "false",
+        "since": "icons: 5.9.0"
+      },
+      {
+        "name": "help",
+        "type": "ReactNode",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "hidden",
+        "type": "boolean",
+        "default": "false",
+        "since": "4.4.0"
+      },
+      {
+        "name": "htmlFor",
+        "type": "string",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "initialValue",
+        "type": "string",
+        "default": "-",
+        "since": "4.2.0"
+      },
+      {
+        "name": "label",
+        "type": "ReactNode",
+        "default": "-",
+        "since": "null: 5.22.0"
+      },
+      {
+        "name": "labelAlign",
+        "type": "`left` | `right`",
+        "default": "`right`",
+        "since": ""
+      },
+      {
+        "name": "labelCol",
+        "type": "[object](/components/grid/#col)",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "messageVariables",
+        "type": "Record<string, string>",
+        "default": "-",
+        "since": "4.7.0"
+      },
+      {
+        "name": "name",
+        "type": "[NamePath](#namepath)",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "normalize",
+        "type": "(value, prevValue, prevValues) => any",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "noStyle",
+        "type": "boolean",
+        "default": "false",
+        "since": ""
+      },
+      {
+        "name": "preserve",
+        "type": "boolean",
+        "default": "true",
+        "since": "4.4.0"
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "rules",
+        "type": "[Rule](#rule)[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "shouldUpdate",
+        "type": "boolean | (prevValue, curValue) => boolean",
+        "default": "false",
+        "since": ""
+      },
+      {
+        "name": "tooltip",
+        "type": "ReactNode | ([TooltipProps](/components/tooltip#api) & { icon?: ReactNode })",
+        "default": "-",
+        "since": "4.7.0"
+      },
+      {
+        "name": "trigger",
+        "type": "string",
+        "default": "`onChange`",
+        "since": ""
+      },
+      {
+        "name": "validateDebounce",
+        "type": "number",
+        "default": "-",
+        "since": "5.9.0"
+      },
+      {
+        "name": "validateFirst",
+        "type": "boolean | `parallel`",
+        "default": "false",
+        "since": "`parallel`: 4.5.0"
+      },
+      {
+        "name": "validateStatus",
+        "type": "string",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "validateTrigger",
+        "type": "string | string[]",
+        "default": "`onChange`",
+        "since": ""
+      },
+      {
+        "name": "valuePropName",
+        "type": "string",
+        "default": "`value`",
+        "since": ""
+      },
+      {
+        "name": "wrapperCol",
+        "type": "[object](/components/grid/#col)",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "layout",
+        "type": "`horizontal` | `vertical`",
+        "default": "-",
+        "since": "5.18.0"
+      }
+    ],
+    "Form.List": [
+      {
+        "name": "children",
+        "type": "(fields: Field[], operation: { add, remove, move }, meta: { errors }) => React.ReactNode",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "initialValue",
+        "type": "any[]",
+        "default": "-",
+        "since": "4.9.0"
+      },
+      {
+        "name": "name",
+        "type": "[NamePath](#namepath)",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "rules",
+        "type": "{ validator, message }[]",
+        "default": "-",
+        "since": "4.7.0"
+      }
+    ],
+    "Form.operation": [
+      {
+        "name": "add",
+        "type": "(defaultValue?: any, insertIndex?: number) => void",
+        "default": "insertIndex",
+        "since": "4.6.0"
+      },
+      {
+        "name": "move",
+        "type": "(from: number, to: number) => void",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "remove",
+        "type": "(index: number | number[]) => void",
+        "default": "number[]",
+        "since": "4.5.0"
+      }
+    ],
+    "Form.ErrorList": [
+      {
+        "name": "errors",
+        "type": "ReactNode[]",
+        "default": "-",
+        "since": ""
+      }
+    ],
+    "Form.Provider": [
+      {
+        "name": "onFormChange",
+        "type": "function(formName: string, info: { changedFields, forms })",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "onFormFinish",
+        "type": "function(formName: string, info: { values, forms })",
+        "default": "-",
+        "since": ""
+      }
+    ],
+    "Form.FormInstance": [
+      {
+        "name": "getFieldError",
+        "type": "(name: [NamePath](#namepath)) => string[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "getFieldInstance",
+        "type": "(name: [NamePath](#namepath)) => any",
+        "default": "-",
+        "since": "4.4.0"
+      },
+      {
+        "name": "getFieldsError",
+        "type": "(nameList?: [NamePath](#namepath)[]) => FieldError[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "getFieldsValue",
+        "type": "[GetFieldsValue](#getfieldsvalue)",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "getFieldValue",
+        "type": "(name: [NamePath](#namepath)) => any",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "isFieldsTouched",
+        "type": "(nameList?: [NamePath](#namepath)[], allTouched?: boolean) => boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "isFieldTouched",
+        "type": "(name: [NamePath](#namepath)) => boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "isFieldValidating",
+        "type": "(name: [NamePath](#namepath)) => boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "resetFields",
+        "type": "(fields?: [NamePath](#namepath)[]) => void",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "scrollToField",
+        "type": "(name: [NamePath](#namepath), options: [ScrollOptions](https://github.com/stipsan/scroll-into-view-if-needed/tree/ece40bd9143f48caf4b99503425ecb16b0ad8249#options) | { focus: boolean }) => void",
+        "default": "-",
+        "since": "focus: 5.24.0"
+      },
+      {
+        "name": "setFields",
+        "type": "(fields: [FieldData](#fielddata)[]) => void",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "setFieldValue",
+        "type": "(name: [NamePath](#namepath), value: any) => void",
+        "default": "-",
+        "since": "4.22.0"
+      },
+      {
+        "name": "setFieldsValue",
+        "type": "(values) => void",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "submit",
+        "type": "() => void",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "validateFields",
+        "type": "(nameList?: [NamePath](#namepath)[], config?: [ValidateConfig](#validatefields)) => Promise",
+        "default": "-",
+        "since": ""
+      }
+    ],
+    "Form.FieldData": [
+      {
+        "name": "errors",
+        "type": "string[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "warnings",
+        "type": "string[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "name",
+        "type": "[NamePath](#namepath)[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "touched",
+        "type": "boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "validating",
+        "type": "boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "value",
+        "type": "any",
+        "default": "-",
+        "since": ""
+      }
+    ],
+    "Form.Rule": [
+      {
+        "name": "defaultField",
+        "type": "[rule](#rule)",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "enum",
+        "type": "any[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "fields",
+        "type": "Record<string, [rule](#rule)>",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "len",
+        "type": "number",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "max",
+        "type": "number",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "message",
+        "type": "string | ReactElement",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "min",
+        "type": "number",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "pattern",
+        "type": "RegExp",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "required",
+        "type": "boolean",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "transform",
+        "type": "(value) => any",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "validateTrigger",
+        "type": "string | string[]",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "validator",
+        "type": "([rule](#rule), value) => Promise",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "warningOnly",
+        "type": "boolean",
+        "default": "-",
+        "since": "4.17.0"
+      },
+      {
+        "name": "whitespace",
+        "type": "boolean",
+        "default": "-",
+        "since": ""
+      }
+    ],
+    "Form.WatchOptions": [
+      {
+        "name": "form",
+        "type": "FormInstance",
+        "default": "Current form in context",
+        "since": "5.4.0"
+      },
+      {
+        "name": "preserve",
+        "type": "boolean",
+        "default": "false",
+        "since": "5.4.0"
+      }
+    ]
+  },
+  "commonProps": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "-",
+      "description": "Additional CSS class",
+      "descriptionZh": "额外的 CSS 类名"
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "default": "-",
+      "description": "Additional style",
+      "descriptionZh": "额外的样式"
+    },
+    {
+      "name": "rootClassName",
+      "type": "string",
+      "default": "-",
+      "description": "ClassName on the root element",
+      "descriptionZh": "根元素的类名"
+    }
+  ],
+  "htmlElement": "div"
+}

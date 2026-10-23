@@ -1,0 +1,151 @@
+{
+  "name": "ConfigProvider",
+  "nameZh": "全局化配置",
+  "description": "Provide a uniform configuration support for components.",
+  "props": [
+    {
+      "name": "componentDisabled",
+      "type": "boolean",
+      "default": "-",
+      "since": "4.21.0"
+    },
+    {
+      "name": "componentSize",
+      "type": "`small` | `medium` | `large`",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "csp",
+      "type": "{ nonce: string }",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "direction",
+      "type": "`ltr` | `rtl`",
+      "default": "`ltr`",
+      "since": ""
+    },
+    {
+      "name": "getPopupContainer",
+      "type": "`(trigger?: HTMLElement) => HTMLElement | ShadowRoot`",
+      "default": "() => document.body",
+      "since": ""
+    },
+    {
+      "name": "getTargetContainer",
+      "type": "`() => HTMLElement | Window | ShadowRoot`",
+      "default": "() => window",
+      "since": "4.2.0"
+    },
+    {
+      "name": "iconPrefixCls",
+      "type": "string",
+      "default": "`anticon`",
+      "since": "4.11.0"
+    },
+    {
+      "name": "locale",
+      "type": "object",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "popupMatchSelectWidth",
+      "type": "boolean | number",
+      "default": "-",
+      "since": "5.5.0"
+    },
+    {
+      "name": "popupOverflow",
+      "type": "'viewport' | 'scroll' <InlinePopover previewURL=\"https://user-images.githubusercontent.com/5378891/230344474-5b9f7e09-0a5d-49e8-bae8-7d2abed6c837.png\"></InlinePopover>",
+      "default": "'viewport'",
+      "since": "5.5.0"
+    },
+    {
+      "name": "prefixCls",
+      "type": "string",
+      "default": "`ant`",
+      "since": ""
+    },
+    {
+      "name": "renderEmpty",
+      "type": "function(componentName: string): ReactNode",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "theme",
+      "type": "[Theme](/docs/react/customize-theme#theme)",
+      "default": "-",
+      "since": "5.0.0"
+    },
+    {
+      "name": "variant",
+      "type": "`outlined` | `filled` | `borderless`",
+      "default": "-",
+      "since": "5.19.0"
+    },
+    {
+      "name": "virtual",
+      "type": "boolean",
+      "default": "-",
+      "since": "4.3.0"
+    },
+    {
+      "name": "warning",
+      "type": "{ strict: boolean }",
+      "default": "-",
+      "since": "5.10.0"
+    },
+    {
+      "name": "autoInsertSpaceInButton",
+      "type": "boolean",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "dropdownMatchSelectWidth",
+      "type": "boolean",
+      "default": "-",
+      "since": ""
+    }
+  ],
+  "subComponentProps": {
+    "ConfigProvider.useConfig()": [
+      {
+        "name": "componentDisabled",
+        "type": "boolean",
+        "default": "-",
+        "since": "5.3.0"
+      },
+      {
+        "name": "componentSize",
+        "type": "`small` | `medium` | `large`",
+        "default": "-",
+        "since": "5.3.0"
+      }
+    ],
+    "ConfigProvider.WaveConfig": [
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "false",
+        "since": ""
+      },
+      {
+        "name": "showEffect",
+        "type": "(node: HTMLElement, info: { className, token, component }) => void",
+        "default": "-",
+        "since": ""
+      },
+      {
+        "name": "triggerType",
+        "type": "`click` | `pointerdown` | `pointerup` | `mousedown` | `mouseup`",
+        "default": "`click`",
+        "since": "6.4.0"
+      }
+    ]
+  }
+}

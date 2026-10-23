@@ -1,0 +1,9 @@
+{
+  "consumerCommit": "a349428854e7cf203ee29d0211ef8a7572bdff10",
+  "pid": 29312,
+  "url": "http://127.0.0.1:5186/",
+  "command": "node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 5186 --strictPort",
+  "NODE_PATH": null,
+  "cwd": "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p03-t3-clean-final",
+  "stoppedAfterAcceptance": true
+}

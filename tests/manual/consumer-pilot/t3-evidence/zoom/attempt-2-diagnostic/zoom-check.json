@@ -1,0 +1,170 @@
+{
+  "status": "failed",
+  "sourceSha": "37a225f7fe75e04f60cfd81ffa82d576cbf75c7d",
+  "projectStatusBefore": "",
+  "url": "http://127.0.0.1:5186/",
+  "project": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+  "environment": {
+    "platform": "win32",
+    "osRelease": "10.0.26100",
+    "node": "v24.22.1",
+    "browser": "155.0.8059.81"
+  },
+  "method": "Native Chrome Settings > Appearance > Page zoom in an isolated disposable headed Chrome profile; settingsPrivate.getDefaultZoom confirms 1 -> 2 -> 1. No viewport emulation, CSS zoom, deviceScaleFactor, or pageScaleFactor.",
+  "screenshotMethod": "CDP Page.captureScreenshot without clip, captureBeyondViewport false, fromSurface true. Viewport images retain native page zoom; Playwright fullPage is not used.",
+  "scope": "One consumer theme probe in Windows Chrome at actual 200% browser zoom. This does not prove screen-reader, other-browser, or real-device conformance.",
+  "configuredLabels": {
+    "heading": "主题与交互检查",
+    "field": "检查名称",
+    "submit": "验证输入",
+    "reset": "重置",
+    "disabled": "远程同步",
+    "error": "请输入检查名称。",
+    "success": "验证成功：Cloud reader"
+  },
+  "checks": [
+    "Heading and associated input label are present; input is initially empty; the disabled remote action has a visible associated reason.",
+    "Actual native 200% page zoom: settingsPrivate 2, DPR doubled, CSS viewport halved, outer window unchanged, CSS zoom 1 and visualViewport scale 1; no horizontal document overflow.",
+    "Keyboard reaches the primary action with a visible focus indicator; Enter on an empty field shows the local validation error and aria-invalid.",
+    "Valid input, submit, success feedback and reset work by keyboard at 200%; input remains on success, reset clears field/error/success and returns focus; remote action remains disabled."
+  ],
+  "screenshots": [
+    {
+      "filename": "zoom-100.png",
+      "width": 1783,
+      "height": 1258
+    },
+    {
+      "filename": "zoom-200.png",
+      "width": 1783,
+      "height": 1258
+    },
+    {
+      "filename": "zoom-200-disabled.png",
+      "width": 1783,
+      "height": 1258
+    },
+    {
+      "filename": "zoom-200-focus.png",
+      "width": 1783,
+      "height": 1258
+    },
+    {
+      "filename": "zoom-200-error.png",
+      "width": 1783,
+      "height": 1258
+    },
+    {
+      "filename": "zoom-200-success.png",
+      "width": 1783,
+      "height": 1258
+    }
+  ],
+  "keyboardTrace": [
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "name": "验证输入",
+      "outlineStyle": "solid",
+      "outlineWidth": "2.8px",
+      "outlineColor": "rgb(255, 255, 255)",
+      "boxShadow": "rgba(5, 122, 255, 0.06) 0px 2px 0px 0px",
+      "focusVisible": true
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "name": "验证输入",
+      "outlineStyle": "solid",
+      "outlineWidth": "2.8px",
+      "outlineColor": "rgb(255, 255, 255)",
+      "boxShadow": "rgba(5, 122, 255, 0.06) 0px 2px 0px 0px",
+      "focusVisible": true
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "name": "重 置",
+      "outlineStyle": "solid",
+      "outlineWidth": "2.8px",
+      "outlineColor": "rgb(37, 99, 235)",
+      "boxShadow": "rgba(0, 0, 0, 0.02) 0px 2px 0px 0px",
+      "focusVisible": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    {
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:5186/favicon.ico",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "responseFailures": [],
+  "disabledReason": [
+    {
+      "id": "remote-disabled-reason",
+      "text": "未连接服务器，远程同步暂不可用。",
+      "visible": true
+    }
+  ],
+  "chromeZoomBefore": 1,
+  "before": {
+    "dpr": 1.25,
+    "innerWidth": 1426,
+    "innerHeight": 1006,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 1426,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "reducedMotion": true
+  },
+  "chromeZoomDuring": 2,
+  "zoomed": {
+    "dpr": 2.5,
+    "innerWidth": 713,
+    "innerHeight": 503,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 705,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "reducedMotion": true
+  },
+  "primaryFocus": {
+    "tag": "BUTTON",
+    "id": "",
+    "name": "验证输入",
+    "outlineStyle": "solid",
+    "outlineWidth": "2.8px",
+    "outlineColor": "rgb(255, 255, 255)",
+    "boxShadow": "rgba(5, 122, 255, 0.06) 0px 2px 0px 0px",
+    "focusVisible": true
+  },
+  "zoomedAfterChecks": {
+    "dpr": 2.5,
+    "innerWidth": 713,
+    "innerHeight": 503,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 705,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "reducedMotion": true
+  },
+  "error": "AssertionError [ERR_ASSERTION]: No console errors.\n\n1 !== 0\n\n    at C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t3-tools\\zoom-check.cjs:209:12",
+  "cleanupZoom": 1,
+  "cleanup": {
+    "ownBrowserClosed": true,
+    "ownDisposableProfileRemoved": true
+  }
+}

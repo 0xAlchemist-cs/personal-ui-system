@@ -1,0 +1,13 @@
+
+> personal-ui-consumer-pilot@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p03-t3-clean-final
+
+
+ Test Files  2 passed (2)
+      Tests  63 passed (63)
+   Start at  06:59:58
+   Duration  634ms (transform 45%, import 44%, tests 6%, worker 5%)
+

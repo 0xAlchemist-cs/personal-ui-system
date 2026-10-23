@@ -1,0 +1,586 @@
+{
+  "schemaVersion": "1.0",
+  "scope": "P03-T3 consumer checkout and runtime dependency independence",
+  "project": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+  "invocation": {
+    "executable": "D:\\Node.js\\node.exe",
+    "args": [
+      "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t3-tools\\independence-check.mjs",
+      "--project",
+      "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p03-t3-clean",
+      "--out",
+      "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/tests/manual/consumer-pilot/t3-evidence/independence-check.json"
+    ],
+    "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5"
+  },
+  "environment": {
+    "platform": "win32",
+    "node": "v22.15.0",
+    "nodeExecutable": "D:\\Node.js\\node.exe",
+    "NODE_PATH": null,
+    "NODE_OPTIONS": null,
+    "GIT_ALTERNATE_OBJECT_DIRECTORIES": null,
+    "GIT_OBJECT_DIRECTORY": null
+  },
+  "commands": [
+    {
+      "executable": "git",
+      "args": [
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "37a225f7fe75e04f60cfd81ffa82d576cbf75c7d\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "executable": "git",
+      "args": [
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "executable": "git",
+      "args": [
+        "rev-parse",
+        "--show-toplevel"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p03-t3-clean\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "executable": "git",
+      "args": [
+        "rev-parse",
+        "--git-common-dir"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": ".git\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "executable": "git",
+      "args": [
+        "rev-parse",
+        "--git-path",
+        "objects/info/alternates"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": ".git/objects/info/alternates\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "executable": "git",
+      "args": [
+        "ls-files",
+        "--stage",
+        "-z"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "100644 52adccf7c9e50775a26f37601c3d556484e0976d 0\t.gitattributes\u0000100644 636762c43bbcf1c42300cad439cc14276a228c3d 0\t.gitignore\u0000100644 878759e6a2fe63ee12473e72e0357d80a33acf04 0\t.personal-ui/LICENSE\u0000100644 045481bb3157cc41c1fec557a53fd96b2aedeb67 0\t.personal-ui/README.md\u0000100644 68119c6782be25ec8f0d8d6ba99fcd0e558808e2 0\t.personal-ui/design-system/principles.md\u0000100644 9de52cfc8a76cf407e6bd2e65c2ae5704b27d94f 0\t.personal-ui/design-system/styles/minimal-saas.json\u0000100644 4aa9e4a01a3db6a9bbb7ec09d8141b2c7aec070b 0\t.personal-ui/design-system/styles/minimal-saas.md\u0000100644 2b21dd5cbdcfca4bb95fe14d9fe01f8e2c769f75 0\t.personal-ui/design-system/tokens/README.md\u0000100644 c1cb76999c579bb76cf75b3445d6c98db51f7f0a 0\t.personal-ui/design-system/tokens/primitives.json\u0000100644 84d20061e50060b53b0cdd86a32fb275e512ef04 0\t.personal-ui/design-system/tokens/semantic.json\u0000100644 39bae5bbcec7722378a6d1595438b18df97131bc 0\t.personal-ui/manifest.json\u0000100644 17c10dab7ba06459334abf9ded3f032a4eb561e2 0\t.personal-ui/prompts/design-review.md\u0000100644 096755d9774881549dd9d8d1d2860eec62c2ff98 0\t.personal-ui/prompts/frontend-development.md\u0000100644 5bc40e6c1c50f664d32d2cd4d9eb4a7389785204 0\t.personal-ui/prompts/visual-qa.md\u0000100644 6c8621dd4e95a0164210129e280cfa31b2788683 0\t.personal-ui/skills/personal-ui/SKILL.md\u0000100644 e510a4fa92428ee86f6f75272e6ba9446c99e702 0\t.personal-ui/tests/visual-review-template.md\u0000100644 9f6e50171bb7010c9a8ae142e8574fa6f59e0117 0\t.personal-ui/theme/antd-theme.test.ts\u0000100644 3416957ff24dfa03b996d98143a59ce7f231cc41 0\t.personal-ui/theme/antd-theme.ts\u0000100644 5e2e6c09371b9f662e6c2418dc3b438d4e69889d 0\t.personal-ui/theme/resolve-tokens.test.ts\u0000100644 d7702503c919d7b60b915729c51d500c615e7dc0 0\t.personal-ui/theme/resolve-tokens.ts\u0000100644 afa8df69d65aa7e1a2d9e397399d27527fd58091 0\tAGENTS.md\u0000100644 86e841f24858b2740c9ba75d761b6845cb56c66f 0\tREADME.md\u0000100644 536629af0439fc861b9b96b562961fbf24be15b1 0\tindex.html\u0000100644 194a76206078d53726612eee96bb2b4bacce3c50 0\tpackage-lock.json\u0000100644 a04bd129135f2d29e7780b14f6eee0b3b960aba9 0\tpackage.json\u0000100644 9f52ce9d5cb7d452df22bb46c874f4d175e6bcd1 0\tscripts/check-personal-ui.mjs\u0000100644 0a9e58a538afcba537857772c87a1357e9eb422a 0\tsrc/main.tsx\u0000100644 f320d2507bf03fdd78ad0bef09523b7a0d5ac070 0\tsrc/styles.css\u0000100644 7a5b30c66f3b4f3c9d52b7d1e28247ed3eafcfc6 0\tsrc/theme-probe.tsx\u0000100644 8a91ab3e6c7961df887e8a96938c31e1886574f4 0\tsrc/theme.ts\u0000100644 313dcd32d9e1c67735c43dffb5205cff413ff375 0\ttsconfig.json\u0000100644 fabde1a8f5e1200e237ef628fb34c2395d1b0628 0\tvite.config.ts\u0000100644 db486d40ab4881e4e4c2f13f82feebd9aa0d0e0f 0\tvitest.config.ts\u0000",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "executable": "D:\\Node.js\\node.exe",
+      "args": [
+        "scripts/check-personal-ui.mjs"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean",
+      "exitCode": 0,
+      "signal": null,
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"sourceCommit\": \"16184844550f970570408a79e649a37dd7fe5c0d\",\n  \"filesVerified\": 21,\n  \"snapshotFiles\": 18,\n  \"includedFiles\": 16,\n  \"generatedFiles\": 1,\n  \"integrationFiles\": 4,\n  \"modifiedFiles\": 5,\n  \"markdownLinks\": 53,\n  \"relativeMarkdownLinks\": 46,\n  \"relativeImports\": 9,\n  \"externalDependencies\": [\n    {\n      \"specifier\": \"antd\",\n      \"scope\": \"type-only\",\n      \"sourceVersion\": \"6.6.7\",\n      \"importCount\": 1\n    },\n    {\n      \"specifier\": \"vitest\",\n      \"scope\": \"test-only\",\n      \"sourceVersion\": \"5.0.5\",\n      \"importCount\": 2\n    }\n  ],\n  \"tokenGraph\": {\n    \"primitives\": 68,\n    \"semantic\": 47,\n    \"presetOverrides\": 8,\n    \"adapterSemanticKeys\": 24,\n    \"allAliasesResolved\": true\n  },\n  \"notExecuted\": [\n    \"Network/source retrieval\",\n    \"Dependency installation\",\n    \"TypeScript/Vitest/build\",\n    \"Browser/UI/visual validation\",\n    \"P03-T3 independent checkout\"\n  ]\n}\n",
+      "stderr": "",
+      "error": null
+    }
+  ],
+  "findings": [],
+  "limitations": [
+    "Static literal import/URL scanning is lexical, not a full JavaScript or CSS parser. Computed paths, runtime code generation and network behavior require code review/browser evidence.",
+    "Markdown environment paths are recorded separately and are not treated as runtime dependencies. Runtime source/configuration files are scanned even when a matching string is in a comment.",
+    "Package realpaths cover declared direct dependencies and npm-installed node_modules link entries; this is not a malicious-package/security audit.",
+    "The adjacent immutable T2 manifest is used only by this external QA tool to compare the 16 copied assets. The consumer runtime does not read this knowledge repository.",
+    "Snapshot validation does not itself install dependencies, typecheck, build or verify the browser. Those commands and UI evidence are recorded separately."
+  ],
+  "git": {
+    "head": "37a225f7fe75e04f60cfd81ffa82d576cbf75c7d",
+    "clean": true,
+    "status": "",
+    "topLevel": "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p03-t3-clean",
+    "dotGitIsDirectory": true,
+    "commonDirectory": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\.git",
+    "commonRealpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\.git",
+    "objectsRealpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\.git\\objects",
+    "alternatesPath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\.git\\objects\\info\\alternates",
+    "alternatesContents": "",
+    "independent": true
+  },
+  "tracked": {
+    "count": 33,
+    "symlinks": [],
+    "nonzeroStages": []
+  },
+  "lock": {
+    "version": 3,
+    "sha256": "0d3330ee855b125d51233c2158cb8318ef8039c5ff116c2de4ac13ea8f04fa3f",
+    "packages": 157,
+    "localDependencies": []
+  },
+  "runtimeScan": {
+    "files": [
+      ".personal-ui/design-system/styles/minimal-saas.json",
+      ".personal-ui/design-system/tokens/primitives.json",
+      ".personal-ui/design-system/tokens/semantic.json",
+      ".personal-ui/manifest.json",
+      ".personal-ui/theme/antd-theme.test.ts",
+      ".personal-ui/theme/antd-theme.ts",
+      ".personal-ui/theme/resolve-tokens.test.ts",
+      ".personal-ui/theme/resolve-tokens.ts",
+      "index.html",
+      "package-lock.json",
+      "package.json",
+      "scripts/check-personal-ui.mjs",
+      "src/main.tsx",
+      "src/styles.css",
+      "src/theme-probe.tsx",
+      "src/theme.ts",
+      "tsconfig.json",
+      "vite.config.ts",
+      "vitest.config.ts"
+    ],
+    "imports": [
+      {
+        "file": ".personal-ui/theme/antd-theme.test.ts",
+        "specifier": "vitest",
+        "packageName": "vitest"
+      },
+      {
+        "file": ".personal-ui/theme/antd-theme.test.ts",
+        "specifier": "../design-system/tokens/primitives.json",
+        "resolved": ".personal-ui/design-system/tokens/primitives.json"
+      },
+      {
+        "file": ".personal-ui/theme/antd-theme.test.ts",
+        "specifier": "../design-system/tokens/semantic.json",
+        "resolved": ".personal-ui/design-system/tokens/semantic.json"
+      },
+      {
+        "file": ".personal-ui/theme/antd-theme.test.ts",
+        "specifier": "../design-system/styles/minimal-saas.json",
+        "resolved": ".personal-ui/design-system/styles/minimal-saas.json"
+      },
+      {
+        "file": ".personal-ui/theme/antd-theme.test.ts",
+        "specifier": "./antd-theme",
+        "resolved": ".personal-ui/theme/antd-theme.ts"
+      },
+      {
+        "file": ".personal-ui/theme/antd-theme.test.ts",
+        "specifier": "./resolve-tokens",
+        "resolved": ".personal-ui/theme/resolve-tokens.ts"
+      },
+      {
+        "file": ".personal-ui/theme/antd-theme.ts",
+        "specifier": "antd",
+        "packageName": "antd"
+      },
+      {
+        "file": ".personal-ui/theme/resolve-tokens.test.ts",
+        "specifier": "vitest",
+        "packageName": "vitest"
+      },
+      {
+        "file": ".personal-ui/theme/resolve-tokens.test.ts",
+        "specifier": "../design-system/tokens/primitives.json",
+        "resolved": ".personal-ui/design-system/tokens/primitives.json"
+      },
+      {
+        "file": ".personal-ui/theme/resolve-tokens.test.ts",
+        "specifier": "../design-system/tokens/semantic.json",
+        "resolved": ".personal-ui/design-system/tokens/semantic.json"
+      },
+      {
+        "file": ".personal-ui/theme/resolve-tokens.test.ts",
+        "specifier": "../design-system/styles/minimal-saas.json",
+        "resolved": ".personal-ui/design-system/styles/minimal-saas.json"
+      },
+      {
+        "file": ".personal-ui/theme/resolve-tokens.test.ts",
+        "specifier": "./resolve-tokens",
+        "resolved": ".personal-ui/theme/resolve-tokens.ts"
+      },
+      {
+        "file": "scripts/check-personal-ui.mjs",
+        "specifier": "node:fs",
+        "kind": "node-builtin"
+      },
+      {
+        "file": "scripts/check-personal-ui.mjs",
+        "specifier": "node:path",
+        "kind": "node-builtin"
+      },
+      {
+        "file": "scripts/check-personal-ui.mjs",
+        "specifier": "node:crypto",
+        "kind": "node-builtin"
+      },
+      {
+        "file": "scripts/check-personal-ui.mjs",
+        "specifier": "node:url",
+        "kind": "node-builtin"
+      },
+      {
+        "file": "scripts/check-personal-ui.mjs",
+        "specifier": "../",
+        "resolved": "."
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "react",
+        "packageName": "react"
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "react-dom/client",
+        "packageName": "react-dom"
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "antd",
+        "packageName": "antd"
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "antd/locale/zh_CN",
+        "packageName": "antd"
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "./theme-probe",
+        "resolved": "src/theme-probe.tsx"
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "./theme",
+        "resolved": "src/theme.ts"
+      },
+      {
+        "file": "src/main.tsx",
+        "specifier": "./styles.css",
+        "resolved": "src/styles.css"
+      },
+      {
+        "file": "src/theme-probe.tsx",
+        "specifier": "react",
+        "packageName": "react"
+      },
+      {
+        "file": "src/theme-probe.tsx",
+        "specifier": "antd",
+        "packageName": "antd"
+      },
+      {
+        "file": "src/theme-probe.tsx",
+        "specifier": "antd",
+        "packageName": "antd"
+      },
+      {
+        "file": "src/theme-probe.tsx",
+        "specifier": "../.personal-ui/manifest.json",
+        "resolved": ".personal-ui/manifest.json"
+      },
+      {
+        "file": "src/theme-probe.tsx",
+        "specifier": "./theme",
+        "resolved": "src/theme.ts"
+      },
+      {
+        "file": "src/theme.ts",
+        "specifier": "react",
+        "packageName": "react"
+      },
+      {
+        "file": "src/theme.ts",
+        "specifier": "../.personal-ui/design-system/tokens/primitives.json",
+        "resolved": ".personal-ui/design-system/tokens/primitives.json"
+      },
+      {
+        "file": "src/theme.ts",
+        "specifier": "../.personal-ui/design-system/tokens/semantic.json",
+        "resolved": ".personal-ui/design-system/tokens/semantic.json"
+      },
+      {
+        "file": "src/theme.ts",
+        "specifier": "../.personal-ui/design-system/styles/minimal-saas.json",
+        "resolved": ".personal-ui/design-system/styles/minimal-saas.json"
+      },
+      {
+        "file": "src/theme.ts",
+        "specifier": "../.personal-ui/theme/antd-theme",
+        "resolved": ".personal-ui/theme/antd-theme.ts"
+      },
+      {
+        "file": "src/theme.ts",
+        "specifier": "../.personal-ui/theme/resolve-tokens",
+        "resolved": ".personal-ui/theme/resolve-tokens.ts"
+      },
+      {
+        "file": "vite.config.ts",
+        "specifier": "@vitejs/plugin-react",
+        "packageName": "@vitejs/plugin-react"
+      },
+      {
+        "file": "vite.config.ts",
+        "specifier": "vite",
+        "packageName": "vite"
+      },
+      {
+        "file": "vitest.config.ts",
+        "specifier": "vitest/config",
+        "packageName": "vitest"
+      }
+    ],
+    "aliasConfigurations": [],
+    "projectRootUrls": [
+      {
+        "file": "index.html",
+        "url": "/src/main.tsx",
+        "resolved": "src/main.tsx"
+      }
+    ],
+    "documentEnvironmentPaths": []
+  },
+  "installed": {
+    "nodeModulesRealpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules",
+    "links": [],
+    "directResolutions": [
+      {
+        "packageName": "@types/node",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@types\\node\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@types\\node\\package.json"
+      },
+      {
+        "packageName": "@types/react",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@types\\react\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@types\\react\\package.json"
+      },
+      {
+        "packageName": "@types/react-dom",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@types\\react-dom\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@types\\react-dom\\package.json"
+      },
+      {
+        "packageName": "@vitejs/plugin-react",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@vitejs\\plugin-react\\dist\\index.js",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\@vitejs\\plugin-react\\dist\\index.js"
+      },
+      {
+        "packageName": "antd",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\antd\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\antd\\package.json"
+      },
+      {
+        "packageName": "oxlint",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\oxlint\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\oxlint\\package.json"
+      },
+      {
+        "packageName": "react",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\react\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\react\\package.json"
+      },
+      {
+        "packageName": "react-dom",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\react-dom\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\react-dom\\package.json"
+      },
+      {
+        "packageName": "typescript",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\typescript\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\typescript\\package.json"
+      },
+      {
+        "packageName": "vite",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\vite\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\vite\\package.json"
+      },
+      {
+        "packageName": "vitest",
+        "resolved": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\vitest\\package.json",
+        "realpath": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p03-t3-clean\\node_modules\\vitest\\package.json"
+      }
+    ]
+  },
+  "snapshot": {
+    "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+    "t2BaselineManifest": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t2-manifest.json",
+    "t2BaselineSha256": "2eac9c997b7c9d1f414d13e1f6765e0fce17ae5b1cc1f8b365afc27fbf482c03",
+    "copiedAssets": [
+      {
+        "path": "LICENSE",
+        "sourcePath": "LICENSE",
+        "actualSha256": "eea7f3d20985480a48e47d99047de7932f4d661b5ff2174b5bd3536e95dd41d3",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "prompts/frontend-development.md",
+        "sourcePath": "prompts/frontend-development.md",
+        "actualSha256": "e6c5f947d0678be7c5baf15d95436e3fa3379d0da456d7735ee47ecbf8b589dd",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "design-system/principles.md",
+        "sourcePath": "design-system/principles.md",
+        "actualSha256": "5035adff18558de7f3e05bfbb20446af54baba6d5da5f9ae4cad04fc9d1ebe51",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "design-system/styles/minimal-saas.md",
+        "sourcePath": "design-system/styles/minimal-saas.md",
+        "actualSha256": "cb9c04928a5cb1f834f310c7f4c15484d6c1ed62ebdf9eaab4fab1c730f58370",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "design-system/styles/minimal-saas.json",
+        "sourcePath": "design-system/styles/minimal-saas.json",
+        "actualSha256": "035a89d0ead23070635f02a6aa29dd6c5ca8de8dfa98fed1c2f2af444a5d2ea3",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "design-system/tokens/README.md",
+        "sourcePath": "design-system/tokens/README.md",
+        "actualSha256": "c5bfd0b5a51652caa16ea6a285b4d8604434dafd345c826ba8908fcd0d726f1e",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "design-system/tokens/primitives.json",
+        "sourcePath": "design-system/tokens/primitives.json",
+        "actualSha256": "eca7941fe34421765ed522034f9a525d10858922f04708481f08e7e61fc5b174",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "design-system/tokens/semantic.json",
+        "sourcePath": "design-system/tokens/semantic.json",
+        "actualSha256": "1632f5bbf10a41d52a744bcb769d0dc3316b75ffe0a60f481f6acdf686e89a24",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "prompts/design-review.md",
+        "sourcePath": "prompts/design-review.md",
+        "actualSha256": "8a90f32fdc518ba41f6cbb34c26aeff6908b9914b793dff2776384a547100211",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "prompts/visual-qa.md",
+        "sourcePath": "prompts/visual-qa.md",
+        "actualSha256": "fec84a97a1c98efb565be2eaa4284d54817c3d5288f7518e6a1f8fac153d0ee9",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "tests/visual-review-template.md",
+        "sourcePath": "tests/visual-review-template.md",
+        "actualSha256": "d7cebd4d1cc5da3eb7fa3a1772da7576d1f68cbd2281eb4dcb034468152403bd",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "skills/personal-ui/SKILL.md",
+        "sourcePath": "skills/personal-ui/SKILL.md",
+        "actualSha256": "9ace4214e7ae084aba8f892d5992f48bd2cad1e4cf6888464b55053b4b121b30",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "theme/resolve-tokens.ts",
+        "sourcePath": "showcase/app/src/theme/resolve-tokens.ts",
+        "actualSha256": "2dbd388f679d362af01fddd95db799257190f44e2faae49820d6eb59885ece86",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "theme/resolve-tokens.test.ts",
+        "sourcePath": "showcase/app/src/theme/resolve-tokens.test.ts",
+        "actualSha256": "94ec8968f72c200ea3af72b9c9f2c68b06b1e7c6f0fc22406ef1678862e028b0",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "theme/antd-theme.ts",
+        "sourcePath": "showcase/app/src/theme/antd-theme.ts",
+        "actualSha256": "02123c657547496649393c3ba975f6913e650e61f9a946ffa9e84773f1c8e604",
+        "unchangedFromT2": true
+      },
+      {
+        "path": "theme/antd-theme.test.ts",
+        "sourcePath": "showcase/app/src/theme/antd-theme.test.ts",
+        "actualSha256": "704a4cd567430a5e41e0bbba74c3f94807b4549431f374649f0866ee33e4a4a8",
+        "unchangedFromT2": true
+      }
+    ],
+    "validatorUnchangedSinceT2": true,
+    "validator": {
+      "ok": true,
+      "status": "passed",
+      "scope": "P03-T2 static snapshot contract",
+      "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+      "filesVerified": 21,
+      "snapshotFiles": 18,
+      "includedFiles": 16,
+      "generatedFiles": 1,
+      "integrationFiles": 4,
+      "modifiedFiles": 5,
+      "markdownLinks": 53,
+      "relativeMarkdownLinks": 46,
+      "relativeImports": 9,
+      "externalDependencies": [
+        {
+          "specifier": "antd",
+          "scope": "type-only",
+          "sourceVersion": "6.6.7",
+          "importCount": 1
+        },
+        {
+          "specifier": "vitest",
+          "scope": "test-only",
+          "sourceVersion": "5.0.5",
+          "importCount": 2
+        }
+      ],
+      "tokenGraph": {
+        "primitives": 68,
+        "semantic": 47,
+        "presetOverrides": 8,
+        "adapterSemanticKeys": 24,
+        "allAliasesResolved": true
+      },
+      "notExecuted": [
+        "Network/source retrieval",
+        "Dependency installation",
+        "TypeScript/Vitest/build",
+        "Browser/UI/visual validation",
+        "P03-T3 independent checkout"
+      ]
+    }
+  },
+  "ok": true,
+  "status": "passed"
+}

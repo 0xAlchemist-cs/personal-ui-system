@@ -1,0 +1,403 @@
+{
+  "task": "P03-T3",
+  "date": "2026-10-24",
+  "sourceSha": "a349428854e7cf203ee29d0211ef8a7572bdff10",
+  "url": "http://127.0.0.1:5186/",
+  "viewports": [
+    {
+      "width": 375,
+      "checks": [
+        "Snapshot tokens match actual body/panel/input/button colors, typography, dimensions, radii and spacing.",
+        "Keyboard required/whitespace error, labelled error association, valid success, reset, visible focus and native disabled reason."
+      ],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requests": [
+        "http://127.0.0.1:5186/",
+        "http://127.0.0.1:5186/assets/index-C4RNWUaA.js",
+        "http://127.0.0.1:5186/assets/index-DtSfoKlw.css"
+      ],
+      "label": "检查名称",
+      "styles": {
+        "root": {
+          "backgroundColor": "rgb(248, 250, 252)",
+          "fontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+          "fontSize": "14px",
+          "color": "rgb(15, 23, 42)"
+        },
+        "main": {
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "maxWidth": "1200px"
+        },
+        "panel": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderTopColor": "rgb(226, 232, 240)",
+          "borderRadius": "12px"
+        },
+        "section": {
+          "paddingTop": "24px"
+        },
+        "actions": {
+          "gap": "8px"
+        },
+        "input": {
+          "height": "44px",
+          "borderRadius": "8px",
+          "borderTopColor": "rgb(100, 116, 139)",
+          "fontSize": "14px"
+        },
+        "primary": {
+          "backgroundColor": "rgb(37, 99, 235)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "8px",
+          "height": "44px"
+        }
+      },
+      "expected": {
+        "canvas": "#f8fafc",
+        "surface": "#ffffff",
+        "border": "#e2e8f0",
+        "accent": "#2563eb",
+        "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "radius": "8px",
+        "panelRadius": "12px",
+        "controlHeight": "44px",
+        "pagePadding": "16px",
+        "panelPadding": "24px"
+      },
+      "layout": {
+        "width": 375,
+        "documentWidth": 375,
+        "cssZoom": "1"
+      },
+      "focus": {
+        "outlineColor": "rgb(37, 99, 235)",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "outlineOffset": "1px"
+      },
+      "error": "请输入检查名称。",
+      "errorStyle": {
+        "color": "rgb(185, 28, 28)"
+      },
+      "success": "验证成功：主题验证\n\n输入已通过本地校验，没有发送网络请求。",
+      "successStyle": {
+        "backgroundColor": "rgb(240, 253, 244)",
+        "color": "rgb(21, 128, 61)"
+      },
+      "disabled": {
+        "name": "远程同步",
+        "description": "remote-disabled-reason"
+      },
+      "reducedMotion": {
+        "reduced": true,
+        "transition": "1e-05s"
+      },
+      "contrast": {
+        "primary": 5.168555560022562,
+        "body": 17.062933971317335,
+        "errorOnSurface": 6.4700447145121895,
+        "focusOnSurface": 5.168555560022562,
+        "success": 4.7914469872179986
+      },
+      "accessibilityNodes": [
+        {
+          "role": "heading",
+          "name": "主题与交互检查",
+          "properties": [
+            {
+              "name": "level",
+              "value": {
+                "type": "integer",
+                "value": 1
+              }
+            }
+          ]
+        },
+        {
+          "role": "heading",
+          "name": "试一下表单",
+          "properties": [
+            {
+              "name": "level",
+              "value": {
+                "type": "integer",
+                "value": 2
+              }
+            }
+          ]
+        },
+        {
+          "role": "status",
+          "name": "",
+          "properties": [
+            {
+              "name": "live",
+              "value": {
+                "type": "token",
+                "value": "polite"
+              }
+            },
+            {
+              "name": "atomic",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "relevant",
+              "value": {
+                "type": "tokenList",
+                "value": "additions text"
+              }
+            }
+          ]
+        },
+        {
+          "role": "button",
+          "name": "远程同步",
+          "description": "未连接服务器，远程同步暂不可用。",
+          "properties": [
+            {
+              "name": "disabled",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "invalid",
+              "value": {
+                "type": "token",
+                "value": "false"
+              }
+            },
+            {
+              "name": "describedby",
+              "value": {
+                "type": "idrefList",
+                "value": "remote-disabled-reason",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 80,
+                    "idref": "remote-disabled-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "role": "heading",
+          "name": "当前预设",
+          "properties": [
+            {
+              "name": "level",
+              "value": {
+                "type": "integer",
+                "value": 2
+              }
+            }
+          ]
+        },
+        {
+          "role": "button",
+          "name": "验证输入",
+          "properties": [
+            {
+              "name": "invalid",
+              "value": {
+                "type": "token",
+                "value": "false"
+              }
+            },
+            {
+              "name": "focusable",
+              "value": {
+                "type": "booleanOrUndefined",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "role": "button",
+          "name": "重 置",
+          "properties": [
+            {
+              "name": "invalid",
+              "value": {
+                "type": "token",
+                "value": "false"
+              }
+            },
+            {
+              "name": "focusable",
+              "value": {
+                "type": "booleanOrUndefined",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "role": "textbox",
+          "name": "* 检查名称",
+          "description": "最多 40 个字符，仅用于本地检查。",
+          "properties": [
+            {
+              "name": "invalid",
+              "value": {
+                "type": "token",
+                "value": "false"
+              }
+            },
+            {
+              "name": "focusable",
+              "value": {
+                "type": "booleanOrUndefined",
+                "value": true
+              }
+            },
+            {
+              "name": "focused",
+              "value": {
+                "type": "booleanOrUndefined",
+                "value": true
+              }
+            },
+            {
+              "name": "editable",
+              "value": {
+                "type": "token",
+                "value": "plaintext"
+              }
+            },
+            {
+              "name": "settable",
+              "value": {
+                "type": "booleanOrUndefined",
+                "value": true
+              }
+            },
+            {
+              "name": "multiline",
+              "value": {
+                "type": "boolean",
+                "value": false
+              }
+            },
+            {
+              "name": "readonly",
+              "value": {
+                "type": "boolean",
+                "value": false
+              }
+            },
+            {
+              "name": "required",
+              "value": {
+                "type": "boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "describedby",
+              "value": {
+                "type": "idrefList",
+                "value": "theme_probe_name_extra",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 73,
+                    "idref": "theme_probe_name_extra"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "labelledby",
+              "value": {
+                "type": "nodeList",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 66,
+                    "text": "* 检查名称"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "width": 768,
+      "checks": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "requests": [
+        "http://127.0.0.1:5186/",
+        "http://127.0.0.1:5186/assets/index-C4RNWUaA.js",
+        "http://127.0.0.1:5186/assets/index-DtSfoKlw.css"
+      ],
+      "label": "检查名称",
+      "styles": {
+        "root": {
+          "backgroundColor": "rgb(248, 250, 252)",
+          "fontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+          "fontSize": "14px",
+          "color": "rgb(15, 23, 42)"
+        },
+        "main": {
+          "paddingLeft": "32px",
+          "paddingRight": "32px",
+          "maxWidth": "1200px"
+        },
+        "panel": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderTopColor": "rgb(226, 232, 240)",
+          "borderRadius": "12px"
+        },
+        "section": {
+          "paddingTop": "24px"
+        },
+        "actions": {
+          "gap": "8px"
+        },
+        "input": {
+          "height": "39.9844px",
+          "borderRadius": "8px",
+          "borderTopColor": "rgb(100, 116, 139)",
+          "fontSize": "14px"
+        },
+        "primary": {
+          "backgroundColor": "rgb(37, 99, 235)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "8px",
+          "height": "40px"
+        }
+      },
+      "expected": {
+        "canvas": "#f8fafc",
+        "surface": "#ffffff",
+        "border": "#e2e8f0",
+        "accent": "#2563eb",
+        "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "radius": "8px",
+        "panelRadius": "12px",
+        "controlHeight": "40px",
+        "pagePadding": "32px",
+        "panelPadding": "24px"
+      }
+    }
+  ],
+  "errors": [
+    "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '39.9844px'\n- '40px'\n\n    at C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t3-tools\\browser-check.cjs:70:14"
+  ],
+  "browserVersion": "155.0.8059.81",
+  "playwrightVersion": "1.62.1",
+  "status": "failed"
+}

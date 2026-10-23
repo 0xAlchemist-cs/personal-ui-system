@@ -1,0 +1,47 @@
+
+> personal-ui-consumer-pilot@0.1.0 snapshot
+> node scripts/check-personal-ui.mjs
+
+{
+  "ok": true,
+  "status": "passed",
+  "scope": "P03-T2 static snapshot contract",
+  "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+  "filesVerified": 21,
+  "snapshotFiles": 18,
+  "includedFiles": 16,
+  "generatedFiles": 1,
+  "integrationFiles": 4,
+  "modifiedFiles": 5,
+  "markdownLinks": 53,
+  "relativeMarkdownLinks": 46,
+  "relativeImports": 9,
+  "externalDependencies": [
+    {
+      "specifier": "antd",
+      "scope": "type-only",
+      "sourceVersion": "6.6.7",
+      "importCount": 1
+    },
+    {
+      "specifier": "vitest",
+      "scope": "test-only",
+      "sourceVersion": "5.0.5",
+      "importCount": 2
+    }
+  ],
+  "tokenGraph": {
+    "primitives": 68,
+    "semantic": 47,
+    "presetOverrides": 8,
+    "adapterSemanticKeys": 24,
+    "allAliasesResolved": true
+  },
+  "notExecuted": [
+    "Network/source retrieval",
+    "Dependency installation",
+    "TypeScript/Vitest/build",
+    "Browser/UI/visual validation",
+    "P03-T3 independent checkout"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-24",
+  "task": "P03-T3",
+  "knowledgeBaseline": "f77b391d096f19a950c1c4f82d074f044a4d9e71",
+  "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+  "consumerCommit": "a349428854e7cf203ee29d0211ef8a7572bdff10",
+  "consumerTrackedFiles": 33,
+  "cloneCommand": "git clone --branch main <t3-consumer-validated.bundle> <new-directory>",
+  "cloneSource": "self-contained Git bundle, complete history; no reference clone, worktree or borrowed node_modules",
+  "consumerCleanAtSourceCheck": true,
+  "allTrackedTextLFNoBom": true,
+  "sourceChecks": [
+    {
+      "path": "LICENSE",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "prompts/frontend-development.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "design-system/principles.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.json",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "design-system/tokens/primitives.json",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "design-system/tokens/semantic.json",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "prompts/design-review.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "prompts/visual-qa.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "tests/visual-review-template.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "theme/resolve-tokens.ts",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "theme/antd-theme.ts",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "originalSourceHashVerified": true,
+      "targetHashVerified": true,
+      "unchangedFromT2": true
+    }
+  ],
+  "integrationHashChanges": [
+    {
+      "path": "AGENTS.md",
+      "before": "8d7972cb2d14b72019e31390455d3dd72d362196fca1e0cf9e7d32b3b8db0698",
+      "after": "bf241b49848734d28bd70c787a96af0a3f3f09d7a304339327fad59a3bd595dd"
+    },
+    {
+      "path": "README.md",
+      "before": "107f8217addb172e457f9834024fed15482d6430823a524f9411339140399a6e",
+      "after": "8d7c8224ddb374d0bbedfdc596cbd8ed425c36561a7389a925b8c9b311e87054"
+    },
+    {
+      "path": ".gitattributes",
+      "before": "99b6e95284420d5a01659de50c1cd1e26959bbc32540e4c4e5ae0b853a822ba7",
+      "after": "834cf68e4002ddf15b5b10a9e2b3dae9d732b2a7de8e8642802db56fda6e6c87"
+    }
+  ],
+  "bundle": {
+    "path": "tests/manual/consumer-pilot/t3-consumer-validated.bundle",
+    "bytes": 61679,
+    "sha256": "03914fa6d59f4972e3cc9fd77c761a4ae2fc95a6f2b6e26c34647030618c00f8",
+    "verifyCommand": "git bundle verify <t3-consumer-validated.bundle>",
+    "verifyExitCode": 0,
+    "verifyStdout": "The bundle contains these 5 refs:\nd16a8e8be90161dca1361b43703fafabba2ecd26 refs/heads/codex/p03-t2\na349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/codex/p03-t3\na349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/main\na349428854e7cf203ee29d0211ef8a7572bdff10 HEAD\na349428854e7cf203ee29d0211ef8a7572bdff10 worktrees/p03-t3-consumer/HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n",
+    "verifyStderr": "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/tests/manual/consumer-pilot/t3-consumer-validated.bundle is okay\n",
+    "refs": [
+      "d16a8e8be90161dca1361b43703fafabba2ecd26 refs/heads/codex/p03-t2",
+      "a349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/codex/p03-t3",
+      "a349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/main",
+      "a349428854e7cf203ee29d0211ef8a7572bdff10 HEAD",
+      "a349428854e7cf203ee29d0211ef8a7572bdff10 worktrees/p03-t3-consumer/HEAD"
+    ]
+  },
+  "lockSha256": "0d3330ee855b125d51233c2158cb8318ef8039c5ff116c2de4ac13ea8f04fa3f",
+  "manifestSha256": "fa92d802019d3e3eb22b07d89daa4792fc014d14e11e2cf922ecb0cddad2f308",
+  "initialConsumerCommit": "37a225f7fe75e04f60cfd81ffa82d576cbf75c7d"
+}

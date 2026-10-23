@@ -1,0 +1,49 @@
+{
+  "name": "App",
+  "nameZh": "包裹组件",
+  "description": "Application wrapper for some global usages.",
+  "props": [
+    {
+      "name": "component",
+      "type": "ComponentType | false",
+      "default": "div",
+      "since": "5.11.0"
+    },
+    {
+      "name": "message",
+      "type": "[MessageConfig](/components/message/#messageconfig)",
+      "default": "-",
+      "since": "5.3.0"
+    },
+    {
+      "name": "notification",
+      "type": "[NotificationConfig](/components/notification/#notificationconfig)",
+      "default": "-",
+      "since": "5.3.0"
+    }
+  ],
+  "commonProps": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "-",
+      "description": "Additional CSS class",
+      "descriptionZh": "额外的 CSS 类名"
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "default": "-",
+      "description": "Additional style",
+      "descriptionZh": "额外的样式"
+    },
+    {
+      "name": "rootClassName",
+      "type": "string",
+      "default": "-",
+      "description": "ClassName on the root element",
+      "descriptionZh": "根元素的类名"
+    }
+  ],
+  "htmlElement": "div"
+}

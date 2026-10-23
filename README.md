@@ -17,7 +17,7 @@
 
 知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页和 17 个 Story，启动、目录及检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
-**下一张任务卡：P03-T3｜独立验证。** [T2 快照报告](docs/records/2026-10-24-p03-t2-snapshot.md) 已记录隔离消费者的固定版本资产、manifest、本地 Skill、闭合检查与可恢复归档。消费者尚无 UI、应用依赖或锁文件，Gate 03 未通过；按 [既有复用计划](docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md) 单独执行 T3。选型依据见 [T1](docs/records/2026-10-23-p03-t1-consumer-selection.md)，工作台验收仍见 [T5](tests/manual/showcase-v1/review.md)。
+**下一张任务卡：P03-T4｜收口。** [T3 独立验证](docs/records/2026-10-24-p03-t3-independent-validation.md) 已完成：消费者拥有最小主题检查页与独立锁文件，从 Git 归档全新检出后，在空 NODE_PATH 的任务进程中安装、类型/Lint、63 项测试和构建通过；三视口、真实 200% 缩放与路径独立性已有证据。按 [既有复用计划](docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md) 单独执行 T4，核对 Gate 03 并收口；Phase 04 未启动。来源与快照历史见 [T1](docs/records/2026-10-23-p03-t1-consumer-selection.md)、[T2](docs/records/2026-10-24-p03-t2-snapshot.md)。
 
 完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 

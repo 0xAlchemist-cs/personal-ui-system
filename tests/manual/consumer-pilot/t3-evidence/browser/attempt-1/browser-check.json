@@ -1,0 +1,102 @@
+{
+  "task": "P03-T3",
+  "date": "2026-10-24",
+  "sourceSha": "37a225f7fe75e04f60cfd81ffa82d576cbf75c7d",
+  "url": "http://127.0.0.1:5186/",
+  "viewports": [
+    {
+      "width": 375,
+      "checks": [
+        "Snapshot tokens match actual body/panel/input/button colors, typography, dimensions, radii and spacing."
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "pageErrors": [],
+      "requests": [
+        "http://127.0.0.1:5186/",
+        "http://127.0.0.1:5186/assets/index-C4RNWUaA.js",
+        "http://127.0.0.1:5186/assets/index-DtSfoKlw.css"
+      ],
+      "label": "检查名称",
+      "styles": {
+        "root": {
+          "backgroundColor": "rgb(248, 250, 252)",
+          "fontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+          "fontSize": "14px",
+          "color": "rgb(15, 23, 42)"
+        },
+        "main": {
+          "paddingLeft": "16px",
+          "paddingRight": "16px",
+          "maxWidth": "1200px"
+        },
+        "panel": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "borderTopColor": "rgb(226, 232, 240)",
+          "borderRadius": "12px"
+        },
+        "section": {
+          "paddingTop": "24px"
+        },
+        "actions": {
+          "gap": "8px"
+        },
+        "input": {
+          "height": "44px",
+          "borderRadius": "8px",
+          "borderTopColor": "rgb(100, 116, 139)",
+          "fontSize": "14px"
+        },
+        "primary": {
+          "backgroundColor": "rgb(37, 99, 235)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "8px",
+          "height": "44px"
+        }
+      },
+      "expected": {
+        "canvas": "#f8fafc",
+        "surface": "#ffffff",
+        "border": "#e2e8f0",
+        "accent": "#2563eb",
+        "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+        "radius": "8px",
+        "panelRadius": "12px",
+        "controlHeight": "44px",
+        "pagePadding": "16px",
+        "panelPadding": "24px"
+      },
+      "layout": {
+        "width": 375,
+        "documentWidth": 375,
+        "cssZoom": "1"
+      },
+      "focus": {
+        "outlineColor": "rgb(37, 99, 235)",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "outlineOffset": "1px"
+      },
+      "error": "请输入检查名称。",
+      "errorStyle": {
+        "color": "rgb(185, 28, 28)"
+      },
+      "success": "验证成功：主题验证\n\n输入已通过本地校验，没有发送网络请求。",
+      "successStyle": {
+        "backgroundColor": "rgb(240, 253, 244)",
+        "color": "rgb(21, 128, 61)"
+      },
+      "disabled": {
+        "name": "远程同步",
+        "description": "remote-disabled-reason"
+      }
+    }
+  ],
+  "errors": [
+    "locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /重置/ })\u001b[22m\n\n    at C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t3-tools\\browser-check.cjs:117:26"
+  ],
+  "browserVersion": "155.0.8059.81",
+  "playwrightVersion": "1.62.1",
+  "status": "failed"
+}

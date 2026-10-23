@@ -1,0 +1,6 @@
+
+> personal-ui-consumer-pilot@0.1.0 lint
+> oxlint --deny-warnings src .personal-ui/theme vite.config.ts vitest.config.ts scripts/check-personal-ui.mjs
+
+scripts/check-personal-ui.mjs:73:7: warning eslint(no-unused-vars): Variable 'match' is assigned a value but never used. Unused variables should start with a '_'. help: Did you mean to use this variable?
+scripts/check-personal-ui.mjs:21:15: warning eslint(no-control-regex): Unexpected control characters help: Avoid matching control characters in regular expressions. If intentional, disable this rule for the expression.
