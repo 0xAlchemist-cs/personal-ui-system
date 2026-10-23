@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-24",
+  "task": "P03-T2",
+  "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+  "consumerBaselineCommit": "cdf8c260c51ab67407bd01090a696fd1452f969f",
+  "consumerCommit": "d16a8e8be90161dca1361b43703fafabba2ecd26",
+  "consumerBranch": "main",
+  "consumerClean": true,
+  "consumerTrackedFiles": 23,
+  "nodeVersion": "v22.15.0",
+  "snapshotCheckCommand": "node scripts/check-personal-ui.mjs",
+  "snapshotCheckExitCode": 0,
+  "snapshotCheck": {
+    "ok": true,
+    "status": "passed",
+    "scope": "P03-T2 static snapshot contract",
+    "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+    "filesVerified": 21,
+    "snapshotFiles": 18,
+    "includedFiles": 16,
+    "generatedFiles": 1,
+    "integrationFiles": 4,
+    "modifiedFiles": 5,
+    "markdownLinks": 51,
+    "relativeMarkdownLinks": 44,
+    "relativeImports": 9,
+    "externalDependencies": [
+      {
+        "specifier": "antd",
+        "scope": "type-only",
+        "sourceVersion": "6.6.7",
+        "importCount": 1
+      },
+      {
+        "specifier": "vitest",
+        "scope": "test-only",
+        "sourceVersion": "5.0.5",
+        "importCount": 2
+      }
+    ],
+    "tokenGraph": {
+      "primitives": 68,
+      "semantic": 47,
+      "presetOverrides": 8,
+      "adapterSemanticKeys": 24,
+      "allAliasesResolved": true
+    },
+    "notExecuted": [
+      "Network/source retrieval",
+      "Dependency installation",
+      "TypeScript/Vitest/build",
+      "Browser/UI/visual validation",
+      "P03-T3 independent checkout"
+    ]
+  },
+  "sourceChecks": [
+    {
+      "path": "LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "prompts/frontend-development.md",
+      "sourcePath": "prompts/frontend-development.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "design-system/principles.md",
+      "sourcePath": "design-system/principles.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "sourcePath": "design-system/styles/minimal-saas.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.json",
+      "sourcePath": "design-system/styles/minimal-saas.json",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "sourcePath": "design-system/tokens/README.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": true
+    },
+    {
+      "path": "design-system/tokens/primitives.json",
+      "sourcePath": "design-system/tokens/primitives.json",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "design-system/tokens/semantic.json",
+      "sourcePath": "design-system/tokens/semantic.json",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "prompts/design-review.md",
+      "sourcePath": "prompts/design-review.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "prompts/visual-qa.md",
+      "sourcePath": "prompts/visual-qa.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "tests/visual-review-template.md",
+      "sourcePath": "tests/visual-review-template.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "sourcePath": "skills/personal-ui/SKILL.md",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": true
+    },
+    {
+      "path": "theme/resolve-tokens.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.ts",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.test.ts",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": true
+    },
+    {
+      "path": "theme/antd-theme.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.ts",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": false
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.test.ts",
+      "sourceBlobVerified": true,
+      "sourceAndTargetHashVerified": true,
+      "modified": true
+    }
+  ],
+  "manifestSha256": "2eac9c997b7c9d1f414d13e1f6765e0fce17ae5b1cc1f8b365afc27fbf482c03",
+  "allTrackedTextLFNoBomNoSymlink": true,
+  "eolAttributesVerified": true,
+  "confirmedAbsent": [
+    "package.json",
+    "package-lock.json",
+    "node_modules",
+    "src",
+    "dist",
+    "storybook-static",
+    ".gitmodules"
+  ],
+  "archive": {
+    "path": "tests/manual/consumer-pilot/t2-consumer-snapshot.bundle",
+    "bytes": 35195,
+    "sha256": "f447616ef98d1a66d330bf2efcba91155feaaefe26ab7238df65ac7fb75f3e9d",
+    "verifyExitCode": 0,
+    "completeHistory": true,
+    "refs": [
+      "d16a8e8be90161dca1361b43703fafabba2ecd26 refs/heads/codex/p03-t2",
+      "d16a8e8be90161dca1361b43703fafabba2ecd26 refs/heads/main",
+      "d16a8e8be90161dca1361b43703fafabba2ecd26 HEAD"
+    ]
+  },
+  "sourceProvenanceVerification": "Compared every selected source blob and SHA-256 against the fixed knowledge-repository commit; consumer validator itself does not fetch source.",
+  "notExecuted": [
+    "Consumer dependency installation",
+    "TypeScript/Vitest/application lint/build",
+    "Clean independent checkout",
+    "Browser/UI/visual validation"
+  ],
+  "gate03Passed": false
+}

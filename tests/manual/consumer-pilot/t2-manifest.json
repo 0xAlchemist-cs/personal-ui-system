@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "1.0",
+  "sourceRepository": "https://github.com/0xAlchemist-cs/personal-ui-system",
+  "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+  "systemVersion": "0.1.0",
+  "preset": "minimal-saas",
+  "presetConfiguration": {
+    "theme": "light",
+    "density": "comfortable",
+    "accent": "blue",
+    "radius": "medium"
+  },
+  "copiedAt": "2026-10-24",
+  "consumerBaselineCommit": "cdf8c260c51ab67407bd01090a696fd1452f969f",
+  "includedFiles": [
+    {
+      "path": "LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceGitBlob": "878759e6a2fe63ee12473e72e0357d80a33acf04",
+      "sourceSha256": "eea7f3d20985480a48e47d99047de7932f4d661b5ff2174b5bd3536e95dd41d3",
+      "sha256": "eea7f3d20985480a48e47d99047de7932f4d661b5ff2174b5bd3536e95dd41d3",
+      "modified": false
+    },
+    {
+      "path": "prompts/frontend-development.md",
+      "sourcePath": "prompts/frontend-development.md",
+      "sourceGitBlob": "096755d9774881549dd9d8d1d2860eec62c2ff98",
+      "sourceSha256": "e6c5f947d0678be7c5baf15d95436e3fa3379d0da456d7735ee47ecbf8b589dd",
+      "sha256": "e6c5f947d0678be7c5baf15d95436e3fa3379d0da456d7735ee47ecbf8b589dd",
+      "modified": false
+    },
+    {
+      "path": "design-system/principles.md",
+      "sourcePath": "design-system/principles.md",
+      "sourceGitBlob": "68119c6782be25ec8f0d8d6ba99fcd0e558808e2",
+      "sourceSha256": "5035adff18558de7f3e05bfbb20446af54baba6d5da5f9ae4cad04fc9d1ebe51",
+      "sha256": "5035adff18558de7f3e05bfbb20446af54baba6d5da5f9ae4cad04fc9d1ebe51",
+      "modified": false
+    },
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "sourcePath": "design-system/styles/minimal-saas.md",
+      "sourceGitBlob": "e0923d8b53fc3b25c7acb42e177ad823fd3ca72d",
+      "sourceSha256": "89500a382a650260f5cfa46f137250de8a7a8f3558b839765d725359e1805982",
+      "sha256": "cb9c04928a5cb1f834f310c7f4c15484d6c1ed62ebdf9eaab4fab1c730f58370",
+      "modified": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.json",
+      "sourcePath": "design-system/styles/minimal-saas.json",
+      "sourceGitBlob": "9de52cfc8a76cf407e6bd2e65c2ae5704b27d94f",
+      "sourceSha256": "035a89d0ead23070635f02a6aa29dd6c5ca8de8dfa98fed1c2f2af444a5d2ea3",
+      "sha256": "035a89d0ead23070635f02a6aa29dd6c5ca8de8dfa98fed1c2f2af444a5d2ea3",
+      "modified": false
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "sourcePath": "design-system/tokens/README.md",
+      "sourceGitBlob": "118fdf563b7000920a9985fc16a28cf233714fb7",
+      "sourceSha256": "9c982ed9da31c0f11512eae937b5629742bf80627438941618a22f15cb99614a",
+      "sha256": "c5bfd0b5a51652caa16ea6a285b4d8604434dafd345c826ba8908fcd0d726f1e",
+      "modified": true
+    },
+    {
+      "path": "design-system/tokens/primitives.json",
+      "sourcePath": "design-system/tokens/primitives.json",
+      "sourceGitBlob": "c1cb76999c579bb76cf75b3445d6c98db51f7f0a",
+      "sourceSha256": "eca7941fe34421765ed522034f9a525d10858922f04708481f08e7e61fc5b174",
+      "sha256": "eca7941fe34421765ed522034f9a525d10858922f04708481f08e7e61fc5b174",
+      "modified": false
+    },
+    {
+      "path": "design-system/tokens/semantic.json",
+      "sourcePath": "design-system/tokens/semantic.json",
+      "sourceGitBlob": "84d20061e50060b53b0cdd86a32fb275e512ef04",
+      "sourceSha256": "1632f5bbf10a41d52a744bcb769d0dc3316b75ffe0a60f481f6acdf686e89a24",
+      "sha256": "1632f5bbf10a41d52a744bcb769d0dc3316b75ffe0a60f481f6acdf686e89a24",
+      "modified": false
+    },
+    {
+      "path": "prompts/design-review.md",
+      "sourcePath": "prompts/design-review.md",
+      "sourceGitBlob": "17c10dab7ba06459334abf9ded3f032a4eb561e2",
+      "sourceSha256": "8a90f32fdc518ba41f6cbb34c26aeff6908b9914b793dff2776384a547100211",
+      "sha256": "8a90f32fdc518ba41f6cbb34c26aeff6908b9914b793dff2776384a547100211",
+      "modified": false
+    },
+    {
+      "path": "prompts/visual-qa.md",
+      "sourcePath": "prompts/visual-qa.md",
+      "sourceGitBlob": "5bc40e6c1c50f664d32d2cd4d9eb4a7389785204",
+      "sourceSha256": "fec84a97a1c98efb565be2eaa4284d54817c3d5288f7518e6a1f8fac153d0ee9",
+      "sha256": "fec84a97a1c98efb565be2eaa4284d54817c3d5288f7518e6a1f8fac153d0ee9",
+      "modified": false
+    },
+    {
+      "path": "tests/visual-review-template.md",
+      "sourcePath": "tests/visual-review-template.md",
+      "sourceGitBlob": "e510a4fa92428ee86f6f75272e6ba9446c99e702",
+      "sourceSha256": "d7cebd4d1cc5da3eb7fa3a1772da7576d1f68cbd2281eb4dcb034468152403bd",
+      "sha256": "d7cebd4d1cc5da3eb7fa3a1772da7576d1f68cbd2281eb4dcb034468152403bd",
+      "modified": false
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "sourcePath": "skills/personal-ui/SKILL.md",
+      "sourceGitBlob": "43b1fd92306b6dee4302754278fe33e4e1981bf3",
+      "sourceSha256": "f40d48dfda03d9d3551ab892454958150eabff08ea76475a1365b5d3c7acb0a9",
+      "sha256": "9ace4214e7ae084aba8f892d5992f48bd2cad1e4cf6888464b55053b4b121b30",
+      "modified": true
+    },
+    {
+      "path": "theme/resolve-tokens.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.ts",
+      "sourceGitBlob": "d7702503c919d7b60b915729c51d500c615e7dc0",
+      "sourceSha256": "2dbd388f679d362af01fddd95db799257190f44e2faae49820d6eb59885ece86",
+      "sha256": "2dbd388f679d362af01fddd95db799257190f44e2faae49820d6eb59885ece86",
+      "modified": false
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.test.ts",
+      "sourceGitBlob": "f190fd32ccaf2ad84dbccc3079e0337be088b8a3",
+      "sourceSha256": "42dc2faa0a73479988c28b4e46e79bff1ae8644d5d526450641f1ac393948ffa",
+      "sha256": "94ec8968f72c200ea3af72b9c9f2c68b06b1e7c6f0fc22406ef1678862e028b0",
+      "modified": true
+    },
+    {
+      "path": "theme/antd-theme.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.ts",
+      "sourceGitBlob": "3416957ff24dfa03b996d98143a59ce7f231cc41",
+      "sourceSha256": "02123c657547496649393c3ba975f6913e650e61f9a946ffa9e84773f1c8e604",
+      "sha256": "02123c657547496649393c3ba975f6913e650e61f9a946ffa9e84773f1c8e604",
+      "modified": false
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.test.ts",
+      "sourceGitBlob": "719c2579bed29e1aeaa32248124734f47432a64d",
+      "sourceSha256": "4955216b049402db103b6e4346fd3ee2689290f08d6b34a941924feb866b667e",
+      "sha256": "704a4cd567430a5e41e0bbba74c3f94807b4549431f374649f0866ee33e4a4a8",
+      "modified": true
+    }
+  ],
+  "localOverrides": [
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Keep validation scope; replace source-only references and Showcase evidence with immutable source-commit links."
+      ]
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Point the local style entry to the selected preset; keep historical implementation reference at immutable source commit."
+      ]
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Narrow discovery to this selected consumer and preset.",
+        "Replace repository-wide entries with consumer-local rules, assets and root AGENTS/README.",
+        "Preserve authorization and validation boundaries; do not claim global Skill, CLI or MCP installation."
+      ]
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Relocate existing theme tests and rewrite the three JSON imports to snapshot-local relative paths; keep test logic."
+      ]
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Relocate existing theme tests and rewrite the three JSON imports to snapshot-local relative paths; keep test logic."
+      ]
+    }
+  ],
+  "generatedFiles": [
+    {
+      "path": "README.md",
+      "sha256": "e4485cbac121b6464ea8444d0bb93dc085d5893e7a1bcf830d193b4909e54214"
+    }
+  ],
+  "integrationFiles": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "8d7972cb2d14b72019e31390455d3dd72d362196fca1e0cf9e7d32b3b8db0698"
+    },
+    {
+      "path": "README.md",
+      "sha256": "107f8217addb172e457f9834024fed15482d6430823a524f9411339140399a6e"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "99b6e95284420d5a01659de50c1cd1e26959bbc32540e4c4e5ae0b853a822ba7"
+    },
+    {
+      "path": "scripts/check-personal-ui.mjs",
+      "sha256": "0b4d7ebb7619bf0818973f23e17624c8845fa01f4fbcfc84b380c31049c92301"
+    }
+  ],
+  "externalDependencies": [
+    {
+      "specifier": "antd",
+      "scope": "type-only",
+      "sourceVersion": "6.6.7"
+    },
+    {
+      "specifier": "vitest",
+      "scope": "test-only",
+      "sourceVersion": "5.0.5"
+    }
+  ]
+}

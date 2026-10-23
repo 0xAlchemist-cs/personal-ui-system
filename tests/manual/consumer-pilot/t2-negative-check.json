@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-24",
+  "task": "P03-T2",
+  "method": "Run the same validator on an assembled local snapshot and seven isolated negative copies; no UI, clone, install or build.",
+  "cases": [
+    {
+      "case": "complete selected snapshot",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "output": {
+        "ok": true,
+        "status": "passed",
+        "scope": "P03-T2 static snapshot contract",
+        "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+        "filesVerified": 21,
+        "snapshotFiles": 18,
+        "includedFiles": 16,
+        "generatedFiles": 1,
+        "integrationFiles": 4,
+        "modifiedFiles": 5,
+        "markdownLinks": 51,
+        "relativeMarkdownLinks": 44,
+        "relativeImports": 9,
+        "externalDependencies": [
+          {
+            "specifier": "antd",
+            "scope": "type-only",
+            "sourceVersion": "6.6.7",
+            "importCount": 1
+          },
+          {
+            "specifier": "vitest",
+            "scope": "test-only",
+            "sourceVersion": "5.0.5",
+            "importCount": 2
+          }
+        ],
+        "tokenGraph": {
+          "primitives": 68,
+          "semantic": 47,
+          "presetOverrides": 8,
+          "adapterSemanticKeys": 24,
+          "allAliasesResolved": true
+        },
+        "notExecuted": [
+          "Network/source retrieval",
+          "Dependency installation",
+          "TypeScript/Vitest/build",
+          "Browser/UI/visual validation",
+          "P03-T3 independent checkout"
+        ]
+      }
+    },
+    {
+      "case": "missing-file",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"ENOENT: no such file or directory, lstat 'C:\\\\Users\\\\Lenovo\\\\.codex\\\\visualizations\\\\2026\\\\10\\\\22\\\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\\\p03-t2-negative-missing-file\\\\.personal-ui\\\\LICENSE'\"\n}"
+    },
+    {
+      "case": "manifest-path-escape",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"includedFiles.path: noncanonical path\"\n}"
+    },
+    {
+      "case": "broken-markdown-link",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"ENOENT: no such file or directory, lstat 'C:\\\\Users\\\\Lenovo\\\\.codex\\\\visualizations\\\\2026\\\\10\\\\22\\\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\\\p03-t2-negative-broken-markdown-link\\\\.personal-ui\\\\prompts\\\\missing.md'\"\n}"
+    },
+    {
+      "case": "relative-import-escape",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"theme/resolve-tokens.test.ts: ../../../outside.json: path escapes its allowed root\"\n}"
+    },
+    {
+      "case": "unknown-token-reference",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"Unknown token reference: color.accent -> missing.token\"\n}"
+    },
+    {
+      "case": "undeclared-snapshot-file",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"Snapshot file list differs from manifest; actual=[\\\"LICENSE\\\",\\\"README.md\\\",\\\"design-system/principles.md\\\",\\\"design-system/styles/minimal-saas.json\\\",\\\"design-system/styles/minimal-saas.md\\\",\\\"design-system/tokens/README.md\\\",\\\"design-system/tokens/primitives.json\\\",\\\"design-system/tokens/semantic.json\\\",\\\"manifest.json\\\",\\\"prompts/design-review.md\\\",\\\"prompts/frontend-development.md\\\",\\\"prompts/visual-qa.md\\\",\\\"skills/personal-ui/SKILL.md\\\",\\\"tests/visual-review-template.md\\\",\\\"theme/antd-theme.test.ts\\\",\\\"theme/antd-theme.ts\\\",\\\"theme/resolve-tokens.test.ts\\\",\\\"theme/resolve-tokens.ts\\\",\\\"unlisted.md\\\"], expected=[\\\"LICENSE\\\",\\\"README.md\\\",\\\"design-system/principles.md\\\",\\\"design-system/styles/minimal-saas.json\\\",\\\"design-system/styles/minimal-saas.md\\\",\\\"design-system/tokens/README.md\\\",\\\"design-system/tokens/primitives.json\\\",\\\"design-system/tokens/semantic.json\\\",\\\"manifest.json\\\",\\\"prompts/design-review.md\\\",\\\"prompts/frontend-development.md\\\",\\\"prompts/visual-qa.md\\\",\\\"skills/personal-ui/SKILL.md\\\",\\\"tests/visual-review-template.md\\\",\\\"theme/antd-theme.test.ts\\\",\\\"theme/antd-theme.ts\\\",\\\"theme/resolve-tokens.test.ts\\\",\\\"theme/resolve-tokens.ts\\\"]\"\n}"
+    },
+    {
+      "case": "hash-mismatch",
+      "expectedNonzero": true,
+      "actualExit": 1,
+      "output": "{\n  \"ok\": false,\n  \"status\": \"failed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"error\": \"includedFiles: SHA-256 mismatch for LICENSE\"\n}"
+    }
+  ],
+  "passed": 8,
+  "failed": 0
+}
