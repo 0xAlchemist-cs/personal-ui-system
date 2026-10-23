@@ -1,8 +1,8 @@
 # 可视化组件工作台
 
-阶段 02 交付，当前没有可启动页面或 Storybook 配置。
+阶段 02 进行中。T0～T2 已完成；[独立应用](app/README.md) 可启动基础主题预览与 Storybook，二者复用同一 Provider，实际结果见 [T2 验证记录](../tests/manual/showcase-v1/t2-theme-check.md)。
 
-下一步按 [首版实施计划](../docs/superpowers/plans/2026-10-23-showcase-v1.md) 推进：围绕一张 `minimal-saas` 成员管理页建立最小工作台，完成页面、组件状态和实际视觉验收后再扩充。
+下一步按 [首版实施计划](../docs/superpowers/plans/2026-10-23-showcase-v1.md) 的 P02-T3 实现成员管理交互。当前的一个基础 Story 用于验证主题通路，尚不是完整组件目录或状态矩阵；页面与正式视觉验收仍待后续任务。
 
 首批内容为导航、卡片、表格、表单和常见布局。先按实际项目需要选择兼容技术栈与组件体系，再按 [Storybook 官方文档](https://storybook.js.org/docs) 配置对应框架，不为了展示站强制所有消费者使用同一技术栈。
 

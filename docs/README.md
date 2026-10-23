@@ -6,7 +6,7 @@
 
 1. 看 [路线与实际进度](roadmap.md)，确认哪些能力尚未实施。
 2. 看 [计划总纲](superpowers/MASTER-PLAN.md)，了解阶段之间的前置条件和验收门槛。
-3. 开发下一步时定位 [Phase 02：首个工作台](superpowers/plans/2026-10-23-showcase-v1.md) 的任务 1；本次仅整理文件，尚未开始执行。
+3. 开发下一步时定位 [Phase 02：首个工作台](superpowers/plans/2026-10-23-showcase-v1.md) 的任务 3；T0～T2 的证据查看 [验收初稿](../tests/manual/showcase-v1/review.md) 和 [T2 主题验证](../tests/manual/showcase-v1/t2-theme-check.md)。
 
 ## 分类目录
 
@@ -14,7 +14,7 @@
 | --- | --- | --- |
 | 当前进度 | [roadmap.md](roadmap.md) | 阶段状态的唯一维护位置 |
 | 执行总纲 | [MASTER-PLAN.md](superpowers/MASTER-PLAN.md) | 事实源、推进门槛、执行约定 |
-| 阶段计划 | [Phase 02 工作台](superpowers/plans/2026-10-23-showcase-v1.md) | 首版页面、主题、Stories 与人工验收；草案、未实施 |
+| 阶段计划 | [Phase 02 工作台](superpowers/plans/2026-10-23-showcase-v1.md) | 首版页面、主题、Stories 与人工验收；执行状态以路线图和任务证据为准 |
 | 阶段计划 | [Phase 03 消费者试点](superpowers/plans/2026-10-23-phase03-consumer-pilot.md) | 独立项目复用；需满足前置条件，未启动 |
 | 阶段计划 | [Phase 04 质量与分发](superpowers/plans/2026-10-23-phase04-quality-and-distribution.md) | 持续校验与按需分发；需满足前置条件，未启动 |
 | 长期指南 | [资产生命周期](guides/asset-lifecycle.md) | 成熟度、收录、兼容性 |

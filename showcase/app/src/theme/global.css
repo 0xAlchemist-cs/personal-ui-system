@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+
+.pui-root {
+  min-height: 100svh;
+  color: var(--pui-color-text);
+  background: var(--pui-color-canvas);
+  font-family: var(--pui-font-body);
+  font-size: var(--pui-text-body);
+  line-height: var(--pui-line-body);
+}
+
+.pui-preview {
+  width: 100%;
+  max-width: var(--pui-layout-page-max);
+  margin-inline: auto;
+  padding: var(--pui-space-page-mobile);
+}
+
+.pui-preview-header { margin-block-end: var(--pui-space-section); }
+.pui-brand { margin: 0 0 var(--pui-space-inline); color: var(--pui-color-muted); }
+.pui-preview h1 { margin: 0; font-size: var(--pui-text-title); line-height: 1.25; }
+.pui-preview h2 { margin: 0 0 var(--pui-space-group); font-size: var(--pui-text-small); }
+.pui-preview p { margin-block: var(--pui-space-inline) 0; }
+.pui-intro { color: var(--pui-color-muted); }
+.pui-preview-grid { display: grid; gap: var(--pui-space-group); }
+
+.pui-panel {
+  min-width: 0;
+  padding: var(--pui-space-panel);
+  border: 1px solid var(--pui-color-border);
+  border-radius: var(--pui-radius-panel);
+  background: var(--pui-color-surface);
+  box-shadow: var(--pui-shadow-panel);
+}
+
+.pui-field { display: grid; gap: var(--pui-space-inline); margin-block-end: var(--pui-space-group); }
+.pui-actions { display: flex; flex-wrap: wrap; gap: var(--pui-space-inline); }
+.pui-help { color: var(--pui-color-muted); }
+.pui-swatch-list { display: grid; gap: var(--pui-space-group); margin: 0; }
+.pui-swatch-list > div { display: grid; grid-template-columns: 12px minmax(0, 1fr); column-gap: var(--pui-space-inline); }
+.pui-swatch-list dt { grid-column: 2; }
+.pui-swatch-list dd { grid-column: 2; margin: 0; color: var(--pui-color-muted); }
+.pui-swatch { width: 12px; height: 12px; margin-block-start: 5px; border-radius: 50%; background: var(--pui-color-accent); }
+.pui-swatch--success { background: var(--pui-color-success); }
+.pui-swatch--error { background: var(--pui-color-error); }
+.pui-root :focus-visible { outline: 2px solid var(--pui-color-focus); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pui-root *, .ant-message * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

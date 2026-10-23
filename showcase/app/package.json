@@ -1,0 +1,37 @@
+{
+  "name": "personal-ui-showcase",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0 || >=26.0.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "storybook": "storybook dev -p 6006 --host 127.0.0.1 --no-open",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "oxlint --deny-warnings src .storybook vite.config.ts vitest.config.ts",
+    "build": "npm run typecheck && vite build",
+    "build-storybook": "storybook build",
+    "test": "vitest run",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "antd": "6.6.7",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@storybook/react-vite": "10.6.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "oxlint": "1.88.0",
+    "storybook": "10.6.3",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  }
+}

@@ -1,6 +1,6 @@
 # Token 数据约定
 
-当前采用本库自定义 JSON 约定，`schemaVersion: "1.0"`；不是 DTCG、Ant Design 或 shadcn 的原生格式，也没有运行时解析器、CSS 生成器或框架适配器。
+当前采用本库自定义 JSON 约定，`schemaVersion: "1.0"`；不是 DTCG、Ant Design 或 shadcn 的原生格式。[首版工作台](../../showcase/app/README.md) 已提供应用内 Resolver、CSS 变量和 Ant Design 适配；没有独立发布的通用解析器、生成器或适配包。
 
 ## 分层
 
@@ -19,7 +19,7 @@
 - 引用应保持单向：语义指向原始或语义；未来组件层指向语义。不允许原始层反向依赖语义层。
 - 消费者读取解析后的语义值。颜色采用 HEX，尺寸字符串携带 CSS 单位，字体为 CSS 字体栈，行高为无单位数字字符串。
 
-例如：`minimal-saas` 中的 `color.accent` → `{color.blue.600}` → `#2563eb`。在 CSS 中可以命名为 `--pui-color-accent`，但当前仓库不自动生成 CSS 文件。
+例如：`minimal-saas` 中的 `color.accent` → `{color.blue.600}` → `#2563eb`。首版工作台在共同 Provider 内将解析结果映射为 `--pui-color-accent` 等容器级 CSS 变量，不生成独立 CSS 文件。
 
 ## 使用边界
 

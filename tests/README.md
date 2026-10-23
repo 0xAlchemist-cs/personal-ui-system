@@ -1,6 +1,6 @@
 # 质量与验收
 
-当前阶段没有组件源码、应用、测试框架或视觉基线。本目录提供 [人工验收记录模板](visual-review-template.md)，用于后续真实页面和组件收录。
+本目录提供 [人工验收记录模板](visual-review-template.md)、[首版规格与验收初稿](manual/showcase-v1/review.md) 及 [T2 主题通路证据](manual/showcase-v1/t2-theme-check.md)。当前工作台有 Token/适配单元测试和基础预览，但尚无成员管理页面验收或视觉回归基线。
 
 第一阶段检查文档链接、JSON/YAML 结构、Token 引用和预设与 Brief 的一致性；这不等于应用测试或视觉验收。
 

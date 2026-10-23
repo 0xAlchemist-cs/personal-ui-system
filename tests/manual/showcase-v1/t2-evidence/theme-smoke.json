@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-23",
+  "scope": "P02-T2 theme smoke only; no member-management acceptance or visual regression baseline",
+  "os": "Windows_NT 10.0.26100",
+  "browser": "155.0.8059.81",
+  "automation": "Playwright 1.62.1 with a new headless Chrome context",
+  "runnerNode": "v24.22.1",
+  "viewport": "1440x900 and 375x900",
+  "deviceScaleFactor": 1,
+  "locale": "zh-CN",
+  "timezone": "UTC",
+  "reducedMotion": "reduce",
+  "app": {
+    "accent": "#2563eb",
+    "canvas": "rgb(248, 250, 252)",
+    "primary": "rgb(37, 99, 235)",
+    "height": "40px",
+    "radius": "8px",
+    "fontSize": "14px",
+    "lineHeight": "22.4px",
+    "pagePadding": "32px",
+    "overflow": false,
+    "keyboardFeedback": "passed",
+    "disabledReasonVisible": true
+  },
+  "mobile": {
+    "padding": "16px",
+    "columns": 1,
+    "overflow": false
+  },
+  "storybook": {
+    "accent": "#2563eb",
+    "canvas": "rgb(248, 250, 252)",
+    "primary": "rgb(37, 99, 235)",
+    "height": "40px",
+    "radius": "8px",
+    "fontSize": "14px",
+    "lineHeight": "22.4px",
+    "pagePadding": "32px",
+    "overflow": false,
+    "keyboardFeedback": "passed",
+    "disabledReasonVisible": true
+  },
+  "browserErrors": []
+}
