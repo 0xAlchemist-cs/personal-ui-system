@@ -21,6 +21,7 @@ describe('createAntdTheme', () => {
       colorLinkActive: '#1d4ed8',
       colorText: '#0f172a',
       colorTextSecondary: '#475569',
+      colorTextQuaternary: '#475569',
       colorTextPlaceholder: '#475569',
       colorTextDescription: '#475569',
       colorBgLayout: '#f8fafc',

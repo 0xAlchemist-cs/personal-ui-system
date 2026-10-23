@@ -49,6 +49,7 @@ export function createAntdTheme(tokens: Readonly<Record<string, string>>): Theme
       colorLinkActive: token('color.accentHover'),
       colorText: token('color.text'),
       colorTextSecondary: token('color.muted'),
+      colorTextQuaternary: token('color.muted'),
       colorTextPlaceholder: token('color.muted'),
       colorTextDescription: token('color.muted'),
       colorBgLayout: token('color.canvas'),

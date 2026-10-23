@@ -48,5 +48,5 @@ button, input { font: inherit; }
 .pui-root :focus-visible { outline: 2px solid var(--pui-color-focus); outline-offset: 3px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .pui-root *, .ant-message * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .pui-root *, .ant-message * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
