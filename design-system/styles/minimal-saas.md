@@ -1,6 +1,10 @@
 # Minimal SaaS
 
-状态：`draft` · [Token 数据](minimal-saas.json) · [参考来源](../references.md)
+状态：`validated`（仅下述范围） · [Token 数据](minimal-saas.json) · [参考来源](../references.md)
+
+2026-10-23 通过 [Showcase V1 验收](../../tests/manual/showcase-v1/review.md)：React/Vite/Ant Design 6.6.7 成员管理示范页与 17 个 Story，固定 light / comfortable / blue / medium 组合，Windows Chrome 155、375/768/1440px 与页面真实 200% 缩放。覆盖默认、Story 加载/首次空数据、筛选无结果、字段错误、成功、禁用与焦点；源码与环境详见报告。
+
+此结论不覆盖其他配色、密度、框架、浏览器或真实设备，也不代表公共 `approved`、跨项目兼容或已确认用户最终审美。Token 值未更改；Ant Design 适配修正了链接、辅助文字、图标和焦点颜色，减少动态效果限制动画循环。组件仍留在工作台内，跨项目收录另行审核。
 
 适合设置、轻量工作台、成员管理与小型 SaaS。气质清晰、克制、任务优先。“偏 Linear”在本库表达为紧凑的信息组织和安静的视觉层级，不表示逐像素复制品牌网站。
 

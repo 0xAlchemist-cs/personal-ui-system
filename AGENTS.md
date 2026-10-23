@@ -15,8 +15,8 @@
 ## 当前范围
 
 - 设计知识库基础已建立，继续维护规范、参考来源、三套候选风格、Token、页面规格、UI Brief 和提示词。
-- 阶段 02 已完成 T0～T4；`showcase/app/` 有独立的 React/Vite/Ant Design 成员管理示范页和 17 个 Story，覆盖首版部件与适用状态。运行依赖仅在该应用内；T5 正式页面验收尚未完成，顶层 `components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现。
-- 三套风格均为 `draft`；通过首个真实页面的视觉验收后，才能标为 `validated`。
+- 阶段 02 已完成 T0～T5，[正式验收](tests/manual/showcase-v1/review.md) 记录 Gate 02 证据；`showcase/app/` 有独立的 React/Vite/Ant Design 成员管理示范页和 17 个 Story。运行依赖仅在该应用内；顶层 `components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现，尚无自动视觉回归基线。
+- `minimal-saas` 仅在其说明列出的固定组合与页面验收范围为 `validated`；其余两套风格为 `draft`，未自动 `approved`。不将单页验收推广为跨框架、跨浏览器或公共组件保证。
 - 后续阶段见 [实施路线](docs/roadmap.md)。用户明确要求进入后续阶段时再落实相应能力。
 
 ## 任务决策

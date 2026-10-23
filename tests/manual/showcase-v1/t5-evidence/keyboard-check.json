@@ -1,0 +1,59 @@
+{
+  "sourceSha": "b71e54727aab2e15f6bf91fbef42892ca7c3171f",
+  "browser": "155.0.8059.81",
+  "date": "2026-10-23",
+  "viewports": [
+    {
+      "width": 375,
+      "height": 900
+    },
+    {
+      "width": 768,
+      "height": 900
+    },
+    {
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "method": "All UI navigation uses Tab/Shift+Tab, keyboard selection, Enter/Escape; no locator.focus/click or DOM mutation",
+  "results": [
+    {
+      "name": "375 keyboard skip/search/status/pagination",
+      "status": "passed"
+    },
+    {
+      "name": "375 keyboard edit/cancel/error/correct/save/return",
+      "status": "passed"
+    },
+    {
+      "name": "375 refresh restores fixed records",
+      "status": "passed"
+    },
+    {
+      "name": "768 keyboard skip/search/status/pagination",
+      "status": "passed"
+    },
+    {
+      "name": "768 keyboard edit/cancel/error/correct/save/return",
+      "status": "passed"
+    },
+    {
+      "name": "768 refresh restores fixed records",
+      "status": "passed"
+    },
+    {
+      "name": "1440 keyboard skip/search/status/pagination",
+      "status": "passed"
+    },
+    {
+      "name": "1440 keyboard edit/cancel/error/correct/save/return",
+      "status": "passed"
+    },
+    {
+      "name": "1440 refresh restores fixed records",
+      "status": "passed"
+    }
+  ],
+  "errors": []
+}

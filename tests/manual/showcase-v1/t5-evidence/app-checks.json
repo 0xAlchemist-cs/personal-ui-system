@@ -1,0 +1,112 @@
+{
+  "environment": {
+    "sourceSha": "b71e54727aab2e15f6bf91fbef42892ca7c3171f",
+    "date": "2026-10-23",
+    "os": "Windows_NT 10.0.26100",
+    "browser": "Chrome 155.0.8059.81",
+    "runnerNode": "v24.22.1",
+    "locale": "zh-CN",
+    "timezone": "UTC",
+    "deviceScaleFactor": 1,
+    "zoom": "100%",
+    "reducedMotion": "reduce",
+    "fontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+    "renderedHeadingFonts": [
+      {
+        "familyName": "Microsoft YaHei",
+        "postScriptName": "MicrosoftYaHei-Bold",
+        "isCustomFont": false,
+        "glyphCount": 4
+      }
+    ],
+    "layouts": [
+      {
+        "viewport": 375,
+        "scroll": 375,
+        "height": 812
+      },
+      {
+        "viewport": 768,
+        "scroll": 768,
+        "height": 1024
+      },
+      {
+        "viewport": 1440,
+        "scroll": 1440,
+        "height": 900
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "30 fixed records, descending default, ten per page",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard keyword and status combine case-insensitively and reset page",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard date sorting applies to the complete filtered set",
+      "status": "passed"
+    },
+    {
+      "name": "no results retains filters and clear restores data",
+      "status": "passed"
+    },
+    {
+      "name": "status and sort changes reset page one",
+      "status": "passed"
+    },
+    {
+      "name": "disabled member editable, autofocus, validation and associated inline errors",
+      "status": "passed"
+    },
+    {
+      "name": "Modal keyboard focus trap, Escape/cancel do not save and restore trigger",
+      "status": "passed"
+    },
+    {
+      "name": "valid save updates memory and restores still-present row trigger",
+      "status": "passed"
+    },
+    {
+      "name": "refresh resets edits",
+      "status": "passed"
+    },
+    {
+      "name": "editing last-page matches clamps page and focuses surviving heading",
+      "status": "passed"
+    },
+    {
+      "name": "editing sole match produces filter-empty branch with safe focus",
+      "status": "passed"
+    },
+    {
+      "name": "layout 375px: no page overflow, navigation and actions reachable",
+      "status": "passed"
+    },
+    {
+      "name": "layout 768px: no page overflow, navigation and actions reachable",
+      "status": "passed"
+    },
+    {
+      "name": "layout 1440px: no page overflow, navigation and actions reachable",
+      "status": "passed"
+    },
+    {
+      "name": "mobile table scroll region accepts keyboard horizontal scroll",
+      "status": "passed"
+    },
+    {
+      "name": "Drawer focus trap, Escape and close return navigation trigger",
+      "status": "passed"
+    },
+    {
+      "name": "mobile modal stays within viewport and restores edited trigger",
+      "status": "passed"
+    }
+  ],
+  "consoleIssues": [],
+  "scope": "P02-T5 actual application interaction checks; no visual regression baseline"
+}

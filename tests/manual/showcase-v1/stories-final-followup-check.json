@@ -1,0 +1,417 @@
+{
+  "date": "2026-10-23",
+  "sourceSha": "b71e54727aab2e15f6bf91fbef42892ca7c3171f",
+  "baseUrl": "http://127.0.0.1:6015",
+  "environment": {
+    "os": "Windows_NT 10.0.26100",
+    "browser": "Chrome 155.0.8059.81",
+    "node": "v24.22.1",
+    "playwright": "1.62.1",
+    "locale": "zh-CN",
+    "timezone": "UTC",
+    "reducedMotion": "reduce",
+    "deviceScaleFactor": 1,
+    "zoom": "100%",
+    "height": 900,
+    "dateRule": "Fixed ISO UTC string date portion, YYYY-MM-DD",
+    "fonts": [
+      "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    ],
+    "note": "Fresh headless browser context per case; actual iframe document viewport. Final run after empty-state and semantic color mapping fixes. Manual acceptance evidence, no visual regression baseline."
+  },
+  "cases": [
+    {
+      "id": "members-table--loading",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--loading",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "loading": {
+        "visiblyDescribed": true,
+        "tableInert": true,
+        "ariaBusy": true,
+        "storyOnly": true
+      },
+      "screenshot": "screenshots/story-loading-1440.png"
+    },
+    {
+      "id": "members-page--empty",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "emptyText": {
+        "text": "暂无成员",
+        "left": 159.5,
+        "right": 215.5,
+        "top": 616.734375,
+        "width": 56,
+        "inHorizontalViewport": true
+      },
+      "screenshot": "screenshots/story-empty-375.png"
+    },
+    {
+      "id": "members-edit-dialog--invalid-fields",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--invalid-fields",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "errorLabels": [
+        {
+          "text": "姓名",
+          "x": 148,
+          "right": 198.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_name"
+        },
+        {
+          "text": "邮箱",
+          "x": 148,
+          "right": 198.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_email"
+        }
+      ],
+      "errorState": {
+        "valuesPreserved": true,
+        "saveDisabled": true,
+        "errorsAssociated": true
+      },
+      "screenshot": "screenshots/story-error-768.png"
+    },
+    {
+      "id": "members-edit-dialog--invalid-fields",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--invalid-fields",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "errorLabels": [
+        {
+          "text": "姓名",
+          "x": 32,
+          "right": 82.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_name"
+        },
+        {
+          "text": "邮箱",
+          "x": 32,
+          "right": 82.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_email"
+        }
+      ],
+      "errorState": {
+        "valuesPreserved": true,
+        "saveDisabled": true,
+        "errorsAssociated": true
+      }
+    },
+    {
+      "id": "members-table--keyboard-focus",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 704,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true,
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-page--no-results",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--no-results",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "emptyText": {
+        "text": "没有符合条件的成员",
+        "left": 124.5,
+        "right": 250.5,
+        "top": 616.734375,
+        "width": 126,
+        "inHorizontalViewport": true,
+        "clearFilterAvailable": true
+      }
+    },
+    {
+      "id": "layout-app-shell--compact-navigation",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--compact-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "drawer": {
+        "actualOpen": true,
+        "tabTrap": true,
+        "escapeCloses": true,
+        "returnsTrigger": true
+      }
+    },
+    {
+      "id": "members-filters--default",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--saved",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--saved",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 9,
+    "failed": 0,
+    "consoleWarnings": 0
+  },
+  "visualReview": {
+    "screenshotsViewed": [
+      "screenshots/story-loading-1440.png",
+      "screenshots/story-empty-375.png",
+      "screenshots/story-error-768.png"
+    ],
+    "result": "Empty state readable inside 375px panel; 768px error labels and inline help visible; loading described with inert content and clear separate status. These are manual acceptance artifacts, not regression baselines.",
+    "supplementalComputedTextColors": {
+      "SpinLoadingDescription": {
+        "color": "rgb(37, 99, 235)",
+        "fontSize": "14px",
+        "opacity": "1"
+      },
+      "FormEmailError": {
+        "color": "rgb(185, 28, 28)",
+        "fontSize": "14px",
+        "opacity": "1"
+      }
+    }
+  }
+}

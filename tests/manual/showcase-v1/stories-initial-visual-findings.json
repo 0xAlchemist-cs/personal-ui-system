@@ -1,0 +1,33 @@
+{
+  "sourceSha": "60ebfa34255d888b23ac08db7778db913f52ac9d",
+  "viewport": 375,
+  "findings": [
+    {
+      "id": "members-table--empty",
+      "text": "暂无成员",
+      "left": 373,
+      "right": 429,
+      "width": 375,
+      "tableMinWidth": "770px",
+      "pass": false
+    },
+    {
+      "id": "members-page--empty",
+      "text": "暂无成员",
+      "left": 398,
+      "right": 454,
+      "width": 375,
+      "tableMinWidth": "770px",
+      "pass": false
+    },
+    {
+      "id": "members-page--no-results",
+      "text": "没有符合条件的成员",
+      "left": 363,
+      "right": 489,
+      "width": 375,
+      "tableMinWidth": "770px",
+      "pass": false
+    }
+  ]
+}

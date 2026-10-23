@@ -2,7 +2,7 @@
 
 你的个人 AI 前端设计系统。一套设计能力，服务博客、管理后台和 Web App 等独立项目。
 
-当前版本：**0.1.0 · 设计知识库与阶段 02 工作台**。已完成首版规格、主题通路、成员管理核心交互及适用状态 Stories；正式页面验收尚未完成。
+当前版本：**0.1.0 · 设计知识库与阶段 02 工作台**。首版规格、单一主题通路、成员管理示范页、17 个 Story 及正式页面验收已完成，Gate 02 通过；覆盖范围和限制见 [验收报告](tests/manual/showcase-v1/review.md)。
 
 已补充五套组件体系的开发知识接入；按目标项目选用，见 [组件选型](components/README.md) 和 [工具接入记录](docs/guides/ui-tooling.md)。
 
@@ -17,7 +17,7 @@
 
 知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页和 17 个 Story，启动、目录及检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
-**下一张任务卡：P02-T5。** 按 [首个工作台实施计划](docs/superpowers/plans/2026-10-23-showcase-v1.md) 执行正式页面验收与收口；Stories 目录、状态覆盖矩阵和实际证据见 [T4 验证记录](tests/manual/showcase-v1/t4-stories-check.md)。Gate 02 尚未通过。
+**下一张候选任务卡：P03-T1｜消费者选型。** 按 [独立项目复用计划](docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md) 先确定消费者、技术栈和最小复用范围；Phase 03 尚未启动。当前工作台目录见 [T4 记录](tests/manual/showcase-v1/t4-stories-check.md)，最终证据见 [T5 报告](tests/manual/showcase-v1/review.md)。
 
 完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 
@@ -29,7 +29,7 @@
 | `developer-editorial` | 技术博客、个人主页、长文 | 深色、薄荷色强调、阅读优先 | [设计规则](design-system/styles/developer-editorial.md) |
 | `enterprise-data` | 数据后台、复杂表单、运营管理 | 浅色、蓝色强调、紧凑密度 | [设计规则](design-system/styles/enterprise-data.md) |
 
-它们都是待真实页面验证的起始偏好，不代表已经确认你的最终审美。不同风格复用同一套语义命名，组件代码不必因此分成三套。
+`minimal-saas` 仅在成员管理页固定组合与已测环境中为 `validated`，另外两套仍为 `draft`；均未自动 `approved`，不代表已经确认你的最终审美。不同风格复用同一套语义命名，组件代码不必因此分成三套。
 
 ## 资产导航
 
@@ -40,7 +40,7 @@
 | 交互模式 | [导航](patterns/navigation/README.md)、[表单](patterns/forms/README.md)、[数据展示](patterns/data-display/README.md) | 候选规则，供首个项目验证 |
 | 页面规格 | [Dashboard](templates/dashboard/README.md)、[Blog](templates/blog/README.md)、[SaaS](templates/saas/README.md)、[Landing Page](templates/landing-page/README.md) | 信息结构与状态要求，没有页面源码 |
 | AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md)、[官方工具](docs/guides/ui-tooling.md) | 官方 Skill 全局安装及项目快照；个人 Skill 仍为仓库内入口，MCP 按需接入 |
-| Quality Control | [人工验收模板](tests/visual-review-template.md)、[工作台](showcase/README.md)、[T4 实测](tests/manual/showcase-v1/t4-stories-check.md) | Token/适配/成员查询单元测试、状态 Stories 与任务交互证据；尚无视觉回归基线 |
+| Quality Control | [人工验收模板](tests/visual-review-template.md)、[工作台](showcase/README.md)、[T5 验收](tests/manual/showcase-v1/review.md) | 78 项单元测试、三视口 Stories、完整键盘、真实 200% 缩放与主要状态证据；尚无视觉回归基线 |
 
 ## 以后如何描述需求
 

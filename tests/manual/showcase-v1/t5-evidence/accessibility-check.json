@@ -1,0 +1,3577 @@
+{
+  "date": "2026-10-23",
+  "browser": "155.0.8059.81",
+  "platform": "win32",
+  "release": "10.0.26100",
+  "node": "v24.22.1",
+  "playwright": "1.62.1",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 1,
+  "locale": "zh-CN",
+  "timezone": "UTC",
+  "reducedMotion": "reduce",
+  "baseUrl": "http://127.0.0.1:5185",
+  "sourceGitHead": "b71e54727aab2e15f6bf91fbef42892ca7c3171f",
+  "method": "Rendered getComputedStyle foreground + ancestor background alpha compositing over white canvas; WCAG relative sRGB luminance. Native disabled controls exempt and recorded separately. CDP AX tree is inspection, not a screen-reader test.",
+  "textContrast": [
+    {
+      "name": "Story 加载 Spin 说明",
+      "mode": "text",
+      "pseudo": null,
+      "text": "正在加载成员",
+      "selector": "div.ant-spin-description",
+      "color": "rgb(37, 99, 235)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "adjacentBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "compositedForeground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "ratio": 4.94,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "主标题",
+      "mode": "text",
+      "pseudo": null,
+      "text": "成员管理",
+      "selector": "#members",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "adjacentBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.063,
+      "threshold": 3,
+      "fontSize": "32px",
+      "fontWeight": "700",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "页头辅助说明",
+      "mode": "text",
+      "pseudo": null,
+      "text": "检索成员、查看状态，编辑基本信息。",
+      "selector": "p.",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "adjacentBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.243,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "演示数据说明",
+      "mode": "text",
+      "pseudo": null,
+      "text": "演示数据 · 30 条固定合成记录。修改仅保存在当前页面，刷新后恢复。",
+      "selector": "p.members-demo-note",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "adjacentBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.243,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "本地演示标记",
+      "mode": "text",
+      "pseudo": null,
+      "text": "本地演示",
+      "selector": "span.pui-shell-local-label",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "侧栏辅助文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "组件工作台",
+      "selector": "p.pui-shell-sidebar-caption",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "当前导航文本",
+      "mode": "text",
+      "pseudo": null,
+      "text": "成员管理",
+      "selector": "a.",
+      "color": "rgb(37, 99, 235)",
+      "computedBackground": "rgb(239, 246, 255)",
+      "compositedBackground": [
+        239,
+        246,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        239,
+        246,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "ratio": 4.749,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "列表标题",
+      "mode": "text",
+      "pseudo": null,
+      "text": "成员列表",
+      "selector": "#members-list-title",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "列表说明",
+      "mode": "text",
+      "pseudo": null,
+      "text": "按姓名或邮箱搜索，并按成员状态筛选。",
+      "selector": "p.",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "可见筛选标签",
+      "mode": "text",
+      "pseudo": null,
+      "text": "姓名或邮箱",
+      "selector": "label.",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "表格滚动辅助文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "表格可横向滚动；可聚焦后使用左右方向键查看。",
+      "selector": "#_r_4_",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "表格标题",
+      "mode": "text",
+      "pseudo": null,
+      "text": "姓名",
+      "selector": "th.ant-table-cell",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgb(250, 250, 250)",
+      "compositedBackground": [
+        250,
+        250,
+        250,
+        1
+      ],
+      "adjacentBackground": [
+        250,
+        250,
+        250,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.104,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "启用状态文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "启用",
+      "selector": "span.ant-tag.ant-tag-filled.members-status.members-status--active.css-dev-only-do-not-override-eofgey.css-var-_r_0_",
+      "color": "rgb(21, 128, 61)",
+      "computedBackground": "rgb(240, 253, 244)",
+      "compositedBackground": [
+        240,
+        253,
+        244,
+        1
+      ],
+      "adjacentBackground": [
+        240,
+        253,
+        244,
+        1
+      ],
+      "compositedForeground": [
+        21,
+        128,
+        61,
+        1
+      ],
+      "ratio": 4.791,
+      "threshold": 4.5,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "停用状态文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "已停用",
+      "selector": "span.ant-tag.ant-tag-filled.members-status.members-status--disabled.css-dev-only-do-not-override-eofgey.css-var-_r_0_",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgb(248, 250, 252)",
+      "compositedBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "adjacentBackground": [
+        248,
+        250,
+        252,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.243,
+      "threshold": 4.5,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "行编辑操作",
+      "mode": "text",
+      "pseudo": null,
+      "text": "编辑",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-link.ant-btn-color-link.ant-btn-variant-link",
+      "color": "rgb(37, 99, 235)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "ratio": 5.169,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "分页状态文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "共 30 位成员 · 第 1–10 位",
+      "selector": "p.",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "清除筛选按钮文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "清除筛选",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-default.ant-btn-color-default.ant-btn-variant-outlined",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "当前页数字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "1",
+      "selector": "a.",
+      "color": "rgb(37, 99, 235)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "ratio": 5.169,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "行编辑操作悬浮文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "编辑",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-link.ant-btn-color-link.ant-btn-variant-link",
+      "color": "rgb(29, 78, 216)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        250,
+        250,
+        250,
+        1
+      ],
+      "adjacentBackground": [
+        250,
+        250,
+        250,
+        1
+      ],
+      "compositedForeground": [
+        29,
+        78,
+        216,
+        1
+      ],
+      "ratio": 6.421,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "搜索输入占位文字",
+      "mode": "text",
+      "pseudo": "::placeholder",
+      "text": "搜索成员",
+      "selector": "#_r_1_-keyword",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "0s",
+      "transitionDuration": "0s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "筛选无结果说明",
+      "mode": "text",
+      "pseudo": null,
+      "text": "没有符合条件的成员",
+      "selector": "div.ant-empty-description",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "对话框标题",
+      "mode": "text",
+      "pseudo": null,
+      "text": "编辑成员",
+      "selector": "#_r_6_",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "对话框辅助说明",
+      "mode": "text",
+      "pseudo": null,
+      "text": "仅修改姓名和邮箱。演示修改保存在当前页面，刷新后恢复。",
+      "selector": "#_r_8_",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "姓名输入值",
+      "mode": "text",
+      "pseudo": null,
+      "text": "",
+      "selector": "#edit-member_name",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "solid",
+      "outlineWidth": "2px",
+      "outlineOffset": "3px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "邮箱输入值",
+      "mode": "text",
+      "pseudo": null,
+      "text": "",
+      "selector": "#edit-member_email",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "保存主按钮文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "保 存",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-primary.ant-btn-color-primary.ant-btn-variant-solid",
+      "color": "rgb(255, 255, 255)",
+      "computedBackground": "rgb(37, 99, 235)",
+      "compositedBackground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "adjacentBackground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "compositedForeground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 5.169,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "保存主按钮悬浮文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "保 存",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-primary.ant-btn-color-primary.ant-btn-variant-solid",
+      "color": "rgb(255, 255, 255)",
+      "computedBackground": "rgb(29, 78, 216)",
+      "compositedBackground": [
+        29,
+        78,
+        216,
+        1
+      ],
+      "adjacentBackground": [
+        29,
+        78,
+        216,
+        1
+      ],
+      "compositedForeground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "ratio": 6.702,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "字段错误文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "请输入非空姓名。",
+      "selector": "div.ant-form-show-help-item-appear.ant-form-show-help-item-appear-active.ant-form-show-help-item.ant-form-item-explain-error",
+      "color": "rgb(185, 28, 28)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        185.05,
+        28.16,
+        28.16,
+        1
+      ],
+      "ratio": 6.464,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "0.1s, 0.1s, 0.1s",
+      "opacityLayers": [
+        {
+          "tag": "DIV",
+          "class": "ant-form-show-help-item-appear ant-form-show-help-item-appear-active ant-form-show-help-item ant-form-item-explain-error",
+          "background": "rgba(0, 0, 0, 0)",
+          "image": "none",
+          "opacity": "0.999285"
+        }
+      ],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "无效保存就地原因",
+      "mode": "text",
+      "pseudo": null,
+      "text": "请填写非空姓名和有效邮箱后保存。",
+      "selector": "#_r_9_",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "保存成功反馈文字",
+      "mode": "text",
+      "pseudo": null,
+      "text": "演示修改已保存，刷新后恢复初始数据。",
+      "selector": "div.ant-message-notice-title",
+      "color": "rgb(15, 23, 42)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        15,
+        23,
+        42,
+        1
+      ],
+      "ratio": 17.853,
+      "threshold": 4.5,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    }
+  ],
+  "nonTextContrast": [
+    {
+      "name": "搜索框默认边界",
+      "mode": "border",
+      "pseudo": null,
+      "text": "",
+      "selector": "span.ant-input-affix-wrapper.css-dev-only-do-not-override-eofgey.ant-input-outlined.css-var-_r_0_.ant-input-css-var",
+      "color": "rgb(100, 116, 139)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        100,
+        116,
+        139,
+        1
+      ],
+      "ratio": 4.759,
+      "threshold": 3,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "状态选择默认边界",
+      "mode": "border",
+      "pseudo": null,
+      "text": "全部状态",
+      "selector": "div.ant-select.ant-select-outlined.css-var-_r_0_.ant-select-css-var.css-dev-only-do-not-override-eofgey.ant-select-single.ant-select-show-arrow",
+      "color": "rgb(100, 116, 139)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        100,
+        116,
+        139,
+        1
+      ],
+      "ratio": 4.759,
+      "threshold": 3,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "0px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "状态选择箭头图标",
+      "mode": "icon",
+      "pseudo": null,
+      "text": "",
+      "selector": "div.ant-select-suffix",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 3,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "键盘聚焦状态筛选实际边框",
+      "mode": "border",
+      "pseudo": null,
+      "text": "全部状态",
+      "selector": "div.ant-select.ant-select-outlined.css-var-_r_0_.ant-select-css-var.css-dev-only-do-not-override-eofgey.ant-select-focused.ant-select-single.ant-select-show-arrow",
+      "color": "rgb(37, 99, 235)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "ratio": 5.169,
+      "threshold": 3,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "0px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "键盘聚焦清除筛选按钮轮廓",
+      "mode": "outline",
+      "pseudo": null,
+      "text": "清除筛选",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-default.ant-btn-color-default.ant-btn-variant-outlined",
+      "color": "rgb(37, 99, 235)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        37,
+        99,
+        235,
+        1
+      ],
+      "ratio": 5.169,
+      "threshold": 3,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineOffset": "1px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "搜索输入清除图标",
+      "mode": "icon",
+      "pseudo": null,
+      "text": "",
+      "selector": "button.ant-input-clear-icon",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 7.578,
+      "threshold": 3,
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "对话框关闭图标",
+      "mode": "icon",
+      "pseudo": null,
+      "text": "",
+      "selector": "button.ant-modal-close",
+      "color": "rgba(0, 0, 0, 0.45)",
+      "computedBackground": "rgba(0, 0, 0, 0)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        140,
+        140,
+        140,
+        1
+      ],
+      "ratio": 3.363,
+      "threshold": 3,
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "outlineStyle": "none",
+      "outlineWidth": "0px",
+      "outlineOffset": "0px",
+      "borderStyle": "none",
+      "borderWidth": "0px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    },
+    {
+      "name": "无效邮箱边界",
+      "mode": "border",
+      "pseudo": null,
+      "text": "",
+      "selector": "#edit-member_email",
+      "color": "rgb(185, 28, 28)",
+      "computedBackground": "rgb(255, 255, 255)",
+      "compositedBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "adjacentBackground": [
+        255,
+        255,
+        255,
+        1
+      ],
+      "compositedForeground": [
+        185,
+        28,
+        28,
+        1
+      ],
+      "ratio": 6.47,
+      "threshold": 3,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": true
+    }
+  ],
+  "disabledExempt": [
+    {
+      "name": "无效保存原生禁用状态",
+      "mode": "text",
+      "pseudo": null,
+      "text": "保 存",
+      "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-primary.ant-btn-color-primary.ant-btn-variant-solid",
+      "color": "rgb(71, 85, 105)",
+      "computedBackground": "rgba(0, 0, 0, 0.04)",
+      "compositedBackground": [
+        245,
+        245,
+        245,
+        1
+      ],
+      "adjacentBackground": [
+        245,
+        245,
+        245,
+        1
+      ],
+      "compositedForeground": [
+        71,
+        85,
+        105,
+        1
+      ],
+      "ratio": 6.951,
+      "threshold": null,
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineOffset": "0px",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "animationDuration": "1e-05s",
+      "transitionDuration": "1e-05s",
+      "opacityLayers": [],
+      "backgroundImageLayers": [],
+      "pass": null,
+      "assessment": "Native disabled control contrast exemption; measured ratio is informational and is not counted as a passing contrast sample. Mapping colorTextQuaternary also makes derived colorTextDisabled darker."
+    }
+  ],
+  "semantics": {
+    "loadingStory": {
+      "html": "<div class=\"ant-spin ant-spin-spinning css-dev-only-do-not-override-eofgey css-var-_r_0_\" aria-live=\"polite\" aria-busy=\"true\"><div class=\"ant-spin-section\"><span class=\"ant-spin-dot-holder\"><span class=\"ant-spin-dot ant-spin-dot-spin\"><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i></span></span><div class=\"ant-spin-description\">正在加载成员</div></div><div class=\"ant-spin-container\"><div inert=\"\" aria-busy=\"true\"><p class=\"members-scroll-help\" id=\"_r_1_\">表格可横向滚动；可聚焦后使用左右方向键查看。</p><div class=\"members-table-scroll\" role=\"region\" aria-label=\"成员列表，可横向滚动\" aria-describedby=\"_r_1_\" tabindex=\"0\"><div class=\"css-var-_r_0_ ant-table-css-var ant-table-wrapper members-table css-dev-only-do-not-override-eofgey\"><div class=\"ant-spin css-dev-only-do-not-override-eofgey css-var-_r_0_\" aria-live=\"polite\" aria-busy=\"false\"><div",
+      "inertContent": true,
+      "note": "正在加载成员（仅 Story 模拟，无真实请求）。可通过 Controls 关闭加载。",
+      "noteRole": "status",
+      "animations": [
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "1"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        }
+      ]
+    },
+    "defaultAX": [
+      {
+        "role": "main",
+        "name": "",
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "navigation",
+        "name": "工作台导航",
+        "properties": []
+      },
+      {
+        "role": "region",
+        "name": "成员列表",
+        "properties": [
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 87,
+                  "idref": "members-list-title",
+                  "text": "成员列表"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "heading",
+        "name": "成员管理",
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "level",
+            "value": {
+              "type": "integer",
+              "value": 1
+            }
+          }
+        ]
+      },
+      {
+        "role": "search",
+        "name": "筛选成员",
+        "properties": []
+      },
+      {
+        "role": "region",
+        "name": "成员列表，可横向滚动",
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "describedby",
+            "value": {
+              "type": "idrefList",
+              "value": "_r_4_",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 111,
+                  "idref": "_r_4_"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "status",
+        "name": "",
+        "properties": [
+          {
+            "name": "live",
+            "value": {
+              "type": "token",
+              "value": "polite"
+            }
+          },
+          {
+            "name": "atomic",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "relevant",
+            "value": {
+              "type": "tokenList",
+              "value": "additions text"
+            }
+          }
+        ]
+      },
+      {
+        "role": "navigation",
+        "name": "成员列表分页",
+        "properties": []
+      },
+      {
+        "role": "heading",
+        "name": "成员列表",
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "level",
+            "value": {
+              "type": "integer",
+              "value": 2
+            }
+          }
+        ]
+      },
+      {
+        "role": "textbox",
+        "name": "姓名或邮箱",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          },
+          {
+            "name": "settable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "multiline",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 91,
+                  "text": "姓名或邮箱"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "combobox",
+        "name": "成员状态",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          },
+          {
+            "name": "autocomplete",
+            "value": {
+              "type": "token",
+              "value": "list"
+            }
+          },
+          {
+            "name": "hasPopup",
+            "value": {
+              "type": "token",
+              "value": "listbox"
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "expanded",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": false
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 101,
+                  "text": "成员状态"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "columnheader",
+        "name": "姓名",
+        "properties": [
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          }
+        ]
+      },
+      {
+        "role": "columnheader",
+        "name": "邮箱",
+        "properties": [
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          }
+        ]
+      },
+      {
+        "role": "columnheader",
+        "name": "状态",
+        "properties": [
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          }
+        ]
+      },
+      {
+        "role": "columnheader",
+        "name": "创建时间",
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          }
+        ]
+      },
+      {
+        "role": "columnheader",
+        "name": "操作",
+        "properties": [
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          }
+        ]
+      }
+    ],
+    "headings": [
+      {
+        "level": "H1",
+        "text": "成员管理"
+      },
+      {
+        "level": "H2",
+        "text": "成员列表"
+      }
+    ],
+    "keyword": {
+      "id": "_r_1_-keyword",
+      "name": "",
+      "type": "text",
+      "value": "",
+      "labels": [
+        "姓名或邮箱"
+      ],
+      "ariaLabel": null,
+      "labelledby": null,
+      "invalid": null,
+      "required": null,
+      "describedby": null,
+      "description": []
+    },
+    "status": {
+      "id": "_r_1_-status",
+      "name": "",
+      "type": "text",
+      "value": "",
+      "labels": [
+        "成员状态"
+      ],
+      "ariaLabel": null,
+      "labelledby": null,
+      "invalid": null,
+      "required": null,
+      "describedby": null,
+      "description": []
+    },
+    "navigation": [
+      {
+        "text": "成员管理",
+        "href": "#members",
+        "current": "page"
+      }
+    ],
+    "defaultFocus": [
+      {
+        "tag": "INPUT",
+        "id": "_r_1_-status",
+        "role": "combobox"
+      }
+    ],
+    "reducedMotion": {
+      "mediaMatches": true,
+      "elements": [
+        {
+          "tag": "A",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "A",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "INPUT",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "INPUT",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        },
+        {
+          "tag": "BUTTON",
+          "animation": "1e-05s",
+          "transition": "1e-05s"
+        }
+      ]
+    },
+    "noResultsInput": "NO-SUCH-MEMBER",
+    "invalidName": {
+      "id": "edit-member_name",
+      "name": "",
+      "type": "text",
+      "value": " ",
+      "labels": [
+        "姓名"
+      ],
+      "ariaLabel": null,
+      "labelledby": null,
+      "invalid": "true",
+      "required": "true",
+      "describedby": "edit-member_name_help",
+      "description": [
+        {
+          "id": "edit-member_name_help",
+          "text": "请输入非空姓名。"
+        }
+      ]
+    },
+    "invalidEmail": {
+      "id": "edit-member_email",
+      "name": "",
+      "type": "email",
+      "value": "invalid-email",
+      "labels": [
+        "邮箱"
+      ],
+      "ariaLabel": null,
+      "labelledby": null,
+      "invalid": "true",
+      "required": "true",
+      "describedby": "edit-member_email_help",
+      "description": [
+        {
+          "id": "edit-member_email_help",
+          "text": "请输入有效的邮箱地址。"
+        }
+      ]
+    },
+    "disabledVisual": {
+      "nativeDisabled": true,
+      "color": "rgb(71, 85, 105)",
+      "background": "rgba(0, 0, 0, 0.04)",
+      "border": "1px solid rgb(217, 217, 217)",
+      "cursor": "not-allowed",
+      "pointerEvents": "auto",
+      "describedby": "_r_9_",
+      "reason": "请填写非空姓名和有效邮箱后保存。",
+      "note": "colorTextQuaternary cascades to Ant Design colorTextDisabled. Invalid save now has darker muted text, but retains native disabled, pale border/gray fill, visible field errors and associated inline reason. It is not counted as a passing contrast sample."
+    },
+    "invalidAX": [
+      {
+        "role": "status",
+        "name": "",
+        "properties": [
+          {
+            "name": "live",
+            "value": {
+              "type": "token",
+              "value": "polite"
+            }
+          },
+          {
+            "name": "atomic",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "relevant",
+            "value": {
+              "type": "tokenList",
+              "value": "additions text"
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "清除筛选",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "dialog",
+        "name": "编辑成员",
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "modal",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 628,
+                  "idref": "_r_6_",
+                  "text": "编辑成员"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "textbox",
+        "name": "姓名或邮箱",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          },
+          {
+            "name": "settable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "multiline",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 91,
+                  "text": "姓名或邮箱"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "left",
+        "properties": [
+          {
+            "name": "disabled",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "right",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "关闭",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "status",
+        "name": "",
+        "properties": [
+          {
+            "name": "live",
+            "value": {
+              "type": "token",
+              "value": "polite"
+            }
+          },
+          {
+            "name": "atomic",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "relevant",
+            "value": {
+              "type": "tokenList",
+              "value": "additions text"
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "取 消",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "focused",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "保 存",
+        "description": "请填写非空姓名和有效邮箱后保存。",
+        "properties": [
+          {
+            "name": "disabled",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "describedby",
+            "value": {
+              "type": "idrefList",
+              "value": "_r_9_",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 686,
+                  "idref": "_r_9_"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员30",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员29",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员28",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员27",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员26",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员25",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员24",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员23",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员22",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "button",
+        "name": "编辑演示成员21",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          }
+        ]
+      },
+      {
+        "role": "textbox",
+        "name": "* 姓名",
+        "description": "请输入非空姓名。",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "true"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          },
+          {
+            "name": "settable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "multiline",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "describedby",
+            "value": {
+              "type": "idrefList",
+              "value": "edit-member_name_help",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 689,
+                  "idref": "edit-member_name_help"
+                }
+              ]
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 629,
+                  "text": "* 姓名"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "role": "textbox",
+        "name": "* 邮箱",
+        "description": "请输入有效的邮箱地址。",
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "true"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          },
+          {
+            "name": "settable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "multiline",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "describedby",
+            "value": {
+              "type": "idrefList",
+              "value": "edit-member_email_help",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 696,
+                  "idref": "edit-member_email_help"
+                }
+              ]
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 637,
+                  "text": "* 邮箱"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "message": {
+      "text": "演示修改已保存，刷新后恢复初始数据。",
+      "ancestors": [
+        {
+          "tag": "DIV",
+          "class": "ant-message-notice-title",
+          "role": null,
+          "live": null
+        },
+        {
+          "tag": "DIV",
+          "class": "ant-message-notice-wrapper ant-message-success",
+          "role": null,
+          "live": null
+        },
+        {
+          "tag": "DIV",
+          "class": "ant-message-notice ant-message-notice-success",
+          "role": "alert",
+          "live": null
+        },
+        {
+          "tag": "DIV",
+          "class": "ant-message-list-content ant-message-list-content-increase",
+          "role": null,
+          "live": null
+        },
+        {
+          "tag": "DIV",
+          "class": "ant-message ant-message-list ant-message-top css-dev-only-do-not-override-eofgey css-var-_r_0_ ant-message-css-var",
+          "role": null,
+          "live": null
+        },
+        {
+          "tag": "BODY",
+          "class": "",
+          "role": null,
+          "live": null
+        },
+        {
+          "tag": "HTML",
+          "class": "",
+          "role": null,
+          "live": null
+        }
+      ],
+      "transition": "1e-05s",
+      "animation": "1e-05s"
+    }
+  },
+  "checks": [
+    {
+      "name": "Story loading content inert and status readable",
+      "pass": true,
+      "details": {
+        "html": "<div class=\"ant-spin ant-spin-spinning css-dev-only-do-not-override-eofgey css-var-_r_0_\" aria-live=\"polite\" aria-busy=\"true\"><div class=\"ant-spin-section\"><span class=\"ant-spin-dot-holder\"><span class=\"ant-spin-dot ant-spin-dot-spin\"><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i></span></span><div class=\"ant-spin-description\">正在加载成员</div></div><div class=\"ant-spin-container\"><div inert=\"\" aria-busy=\"true\"><p class=\"members-scroll-help\" id=\"_r_1_\">表格可横向滚动；可聚焦后使用左右方向键查看。</p><div class=\"members-table-scroll\" role=\"region\" aria-label=\"成员列表，可横向滚动\" aria-describedby=\"_r_1_\" tabindex=\"0\"><div class=\"css-var-_r_0_ ant-table-css-var ant-table-wrapper members-table css-dev-only-do-not-override-eofgey\"><div class=\"ant-spin css-dev-only-do-not-override-eofgey css-var-_r_0_\" aria-live=\"polite\" aria-busy=\"false\"><div",
+        "inertContent": true,
+        "note": "正在加载成员（仅 Story 模拟，无真实请求）。可通过 Controls 关闭加载。",
+        "noteRole": "status",
+        "animations": [
+          {
+            "animationDuration": "1e-05s",
+            "iterationCount": "1",
+            "opacity": "1"
+          },
+          {
+            "animationDuration": "1e-05s",
+            "iterationCount": "1",
+            "opacity": "0.3"
+          },
+          {
+            "animationDuration": "1e-05s",
+            "iterationCount": "1",
+            "opacity": "0.3"
+          },
+          {
+            "animationDuration": "1e-05s",
+            "iterationCount": "1",
+            "opacity": "0.3"
+          },
+          {
+            "animationDuration": "1e-05s",
+            "iterationCount": "1",
+            "opacity": "0.3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "reduced motion spinner no longer loops infinitely",
+      "pass": true,
+      "details": [
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "1"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        },
+        {
+          "animationDuration": "1e-05s",
+          "iterationCount": "1",
+          "opacity": "0.3"
+        }
+      ]
+    },
+    {
+      "name": "one h1 and h2 content grouping",
+      "pass": true,
+      "details": [
+        {
+          "level": "H1",
+          "text": "成员管理"
+        },
+        {
+          "level": "H2",
+          "text": "成员列表"
+        }
+      ]
+    },
+    {
+      "name": "visible labels linked to both filters",
+      "pass": true,
+      "details": {
+        "keyword": {
+          "id": "_r_1_-keyword",
+          "name": "",
+          "type": "text",
+          "value": "",
+          "labels": [
+            "姓名或邮箱"
+          ],
+          "ariaLabel": null,
+          "labelledby": null,
+          "invalid": null,
+          "required": null,
+          "describedby": null,
+          "description": []
+        },
+        "status": {
+          "id": "_r_1_-status",
+          "name": "",
+          "type": "text",
+          "value": "",
+          "labels": [
+            "成员状态"
+          ],
+          "ariaLabel": null,
+          "labelledby": null,
+          "invalid": null,
+          "required": null,
+          "describedby": null,
+          "description": []
+        }
+      }
+    },
+    {
+      "name": "current navigation has aria-current page",
+      "pass": true,
+      "details": [
+        {
+          "text": "成员管理",
+          "href": "#members",
+          "current": "page"
+        }
+      ]
+    },
+    {
+      "name": "composite select keyboard focus has visible contrast border",
+      "pass": true,
+      "details": {
+        "name": "键盘聚焦状态筛选实际边框",
+        "mode": "border",
+        "pseudo": null,
+        "text": "全部状态",
+        "selector": "div.ant-select.ant-select-outlined.css-var-_r_0_.ant-select-css-var.css-dev-only-do-not-override-eofgey.ant-select-focused.ant-select-single.ant-select-show-arrow",
+        "color": "rgb(37, 99, 235)",
+        "computedBackground": "rgb(255, 255, 255)",
+        "compositedBackground": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "adjacentBackground": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "compositedForeground": [
+          37,
+          99,
+          235,
+          1
+        ],
+        "ratio": 5.169,
+        "threshold": 3,
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "outlineStyle": "none",
+        "outlineWidth": "0px",
+        "outlineOffset": "0px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "animationDuration": "1e-05s",
+        "transitionDuration": "1e-05s",
+        "opacityLayers": [],
+        "backgroundImageLayers": [],
+        "pass": true
+      }
+    },
+    {
+      "name": "button keyboard focus has 2px visible outline",
+      "pass": true,
+      "details": {
+        "name": "键盘聚焦清除筛选按钮轮廓",
+        "mode": "outline",
+        "pseudo": null,
+        "text": "清除筛选",
+        "selector": "button.ant-btn.css-dev-only-do-not-override-eofgey.css-var-_r_0_.ant-btn-default.ant-btn-color-default.ant-btn-variant-outlined",
+        "color": "rgb(37, 99, 235)",
+        "computedBackground": "rgb(255, 255, 255)",
+        "compositedBackground": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "adjacentBackground": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "compositedForeground": [
+          37,
+          99,
+          235,
+          1
+        ],
+        "ratio": 5.169,
+        "threshold": 3,
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px",
+        "outlineOffset": "1px",
+        "borderStyle": "solid",
+        "borderWidth": "1px",
+        "animationDuration": "1e-05s",
+        "transitionDuration": "1e-05s",
+        "opacityLayers": [],
+        "backgroundImageLayers": [],
+        "pass": true
+      }
+    },
+    {
+      "name": "reduced motion overrides actual rendered transitions",
+      "pass": true,
+      "details": {
+        "mediaMatches": true,
+        "elements": [
+          {
+            "tag": "A",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "A",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "INPUT",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "INPUT",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          },
+          {
+            "tag": "BUTTON",
+            "animation": "1e-05s",
+            "transition": "1e-05s"
+          }
+        ]
+      }
+    },
+    {
+      "name": "no-results retains filter and provides clear action",
+      "pass": true,
+      "details": "NO-SUCH-MEMBER"
+    },
+    {
+      "name": "field error text associated through aria-describedby and aria-invalid",
+      "pass": true,
+      "details": {
+        "name": {
+          "id": "edit-member_name",
+          "name": "",
+          "type": "text",
+          "value": " ",
+          "labels": [
+            "姓名"
+          ],
+          "ariaLabel": null,
+          "labelledby": null,
+          "invalid": "true",
+          "required": "true",
+          "describedby": "edit-member_name_help",
+          "description": [
+            {
+              "id": "edit-member_name_help",
+              "text": "请输入非空姓名。"
+            }
+          ]
+        },
+        "email": {
+          "id": "edit-member_email",
+          "name": "",
+          "type": "email",
+          "value": "invalid-email",
+          "labels": [
+            "邮箱"
+          ],
+          "ariaLabel": null,
+          "labelledby": null,
+          "invalid": "true",
+          "required": "true",
+          "describedby": "edit-member_email_help",
+          "description": [
+            {
+              "id": "edit-member_email_help",
+              "text": "请输入有效的邮箱地址。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "invalid input preserved",
+      "pass": true,
+      "details": {
+        "name": " ",
+        "email": "invalid-email"
+      }
+    },
+    {
+      "name": "disabled save has native disabled and visible associated reason",
+      "pass": true,
+      "details": "_r_9_"
+    },
+    {
+      "name": "success feedback has accessible live/status semantics",
+      "pass": true,
+      "details": {
+        "text": "演示修改已保存，刷新后恢复初始数据。",
+        "ancestors": [
+          {
+            "tag": "DIV",
+            "class": "ant-message-notice-title",
+            "role": null,
+            "live": null
+          },
+          {
+            "tag": "DIV",
+            "class": "ant-message-notice-wrapper ant-message-success",
+            "role": null,
+            "live": null
+          },
+          {
+            "tag": "DIV",
+            "class": "ant-message-notice ant-message-notice-success",
+            "role": "alert",
+            "live": null
+          },
+          {
+            "tag": "DIV",
+            "class": "ant-message-list-content ant-message-list-content-increase",
+            "role": null,
+            "live": null
+          },
+          {
+            "tag": "DIV",
+            "class": "ant-message ant-message-list ant-message-top css-dev-only-do-not-override-eofgey css-var-_r_0_ ant-message-css-var",
+            "role": null,
+            "live": null
+          },
+          {
+            "tag": "BODY",
+            "class": "",
+            "role": null,
+            "live": null
+          },
+          {
+            "tag": "HTML",
+            "class": "",
+            "role": null,
+            "live": null
+          }
+        ],
+        "transition": "1e-05s",
+        "animation": "1e-05s"
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "externalRequests": [],
+  "redundantLoadingGraphics": {
+    "reason": "The spinner dots are redundant to the visible loading description and status note; sample actual fill alpha rather than treating the parent currentColor as a painted solid icon. These decorative dots are not included in essential control/icon pass counts.",
+    "samples": [
+      {
+        "name": "Story 加载指示点 1 的实际 alpha 填色",
+        "mode": "fill",
+        "pseudo": null,
+        "text": "",
+        "selector": "i.ant-spin-dot-item",
+        "color": "rgb(37, 99, 235)",
+        "computedBackground": "rgb(37, 99, 235)",
+        "compositedBackground": [
+          37,
+          99,
+          235,
+          1
+        ],
+        "adjacentBackground": [
+          248,
+          250,
+          252,
+          1
+        ],
+        "compositedForeground": [
+          184.7,
+          204.7,
+          246.9,
+          1
+        ],
+        "ratio": 1.532,
+        "threshold": 3,
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "outlineStyle": "none",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "animationDuration": "1e-05s",
+        "transitionDuration": "1e-05s",
+        "opacityLayers": [
+          {
+            "tag": "I",
+            "class": "ant-spin-dot-item",
+            "background": "rgb(37, 99, 235)",
+            "image": "none",
+            "opacity": "0.3"
+          }
+        ],
+        "backgroundImageLayers": [],
+        "pass": false
+      },
+      {
+        "name": "Story 加载指示点 2 的实际 alpha 填色",
+        "mode": "fill",
+        "pseudo": null,
+        "text": "",
+        "selector": "i.ant-spin-dot-item",
+        "color": "rgb(37, 99, 235)",
+        "computedBackground": "rgb(37, 99, 235)",
+        "compositedBackground": [
+          37,
+          99,
+          235,
+          1
+        ],
+        "adjacentBackground": [
+          248,
+          250,
+          252,
+          1
+        ],
+        "compositedForeground": [
+          184.7,
+          204.7,
+          246.9,
+          1
+        ],
+        "ratio": 1.532,
+        "threshold": 3,
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "outlineStyle": "none",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "animationDuration": "1e-05s",
+        "transitionDuration": "1e-05s",
+        "opacityLayers": [
+          {
+            "tag": "I",
+            "class": "ant-spin-dot-item",
+            "background": "rgb(37, 99, 235)",
+            "image": "none",
+            "opacity": "0.3"
+          }
+        ],
+        "backgroundImageLayers": [],
+        "pass": false
+      },
+      {
+        "name": "Story 加载指示点 3 的实际 alpha 填色",
+        "mode": "fill",
+        "pseudo": null,
+        "text": "",
+        "selector": "i.ant-spin-dot-item",
+        "color": "rgb(37, 99, 235)",
+        "computedBackground": "rgb(37, 99, 235)",
+        "compositedBackground": [
+          37,
+          99,
+          235,
+          1
+        ],
+        "adjacentBackground": [
+          248,
+          250,
+          252,
+          1
+        ],
+        "compositedForeground": [
+          184.7,
+          204.7,
+          246.9,
+          1
+        ],
+        "ratio": 1.532,
+        "threshold": 3,
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "outlineStyle": "none",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "animationDuration": "1e-05s",
+        "transitionDuration": "1e-05s",
+        "opacityLayers": [
+          {
+            "tag": "I",
+            "class": "ant-spin-dot-item",
+            "background": "rgb(37, 99, 235)",
+            "image": "none",
+            "opacity": "0.3"
+          }
+        ],
+        "backgroundImageLayers": [],
+        "pass": false
+      },
+      {
+        "name": "Story 加载指示点 4 的实际 alpha 填色",
+        "mode": "fill",
+        "pseudo": null,
+        "text": "",
+        "selector": "i.ant-spin-dot-item",
+        "color": "rgb(37, 99, 235)",
+        "computedBackground": "rgb(37, 99, 235)",
+        "compositedBackground": [
+          37,
+          99,
+          235,
+          1
+        ],
+        "adjacentBackground": [
+          248,
+          250,
+          252,
+          1
+        ],
+        "compositedForeground": [
+          184.7,
+          204.7,
+          246.9,
+          1
+        ],
+        "ratio": 1.532,
+        "threshold": 3,
+        "fontSize": "25px",
+        "fontWeight": "400",
+        "outlineStyle": "none",
+        "outlineWidth": "3px",
+        "outlineOffset": "0px",
+        "borderStyle": "none",
+        "borderWidth": "0px",
+        "animationDuration": "1e-05s",
+        "transitionDuration": "1e-05s",
+        "opacityLayers": [
+          {
+            "tag": "I",
+            "class": "ant-spin-dot-item",
+            "background": "rgb(37, 99, 235)",
+            "image": "none",
+            "opacity": "0.3"
+          }
+        ],
+        "backgroundImageLayers": [],
+        "pass": false
+      }
+    ]
+  },
+  "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+  "invalidScreenshot": "accessibility-invalid-1440.png",
+  "successScreenshot": "accessibility-success-1440.png",
+  "complete": true,
+  "contrastFailures": [],
+  "pass": true
+}

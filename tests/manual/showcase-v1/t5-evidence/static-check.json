@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "scope": "Owned tracked/unignored Markdown, JSON and YAML; preserved upstream skills and import originals excluded",
+  "markdownFiles": 48,
+  "localLinks": 338,
+  "jsonFiles": 28,
+  "yamlFiles": 4,
+  "linkErrors": [],
+  "presetStatus": {
+    "minimal-saas": "validated",
+    "developer-editorial": "draft",
+    "enterprise-data": "draft"
+  },
+  "briefLockTokensPlansOtherPresetsUnchangedFrom": "60ebfa34255d888b23ac08db7778db913f52ac9d",
+  "evidenceCountsAndFiveSuccessfulCommandExitsChecked": true,
+  "pass": true
+}

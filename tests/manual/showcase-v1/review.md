@@ -1,106 +1,109 @@
-# Showcase V1 成员管理页面验收初稿
+# Showcase V1 正式页面验收 — P02-T5
 
-本文件复用 [人工验收模板](../../visual-review-template.md)，对应 [本次 Brief](../../../showcase/user-management.brief.yaml) 与 [Phase 02 计划](../../../docs/superpowers/plans/2026-10-23-showcase-v1.md)。本轮仅执行 P02-T0 和 P02-T1；规格核对完成不等于页面、Stories 或视觉验收通过。
+2026-10-23，Codex 按 [任务 5](../../../docs/superpowers/plans/2026-10-23-showcase-v1.md) 和 [Gate 02](../../../docs/superpowers/MASTER-PLAN.md) 完成实际页面、Stories、交互与视觉验收。**Gate 02 通过，结论仅覆盖本报告的页面、固定预设和环境。** Phase 03/04 未启动。需求以冻结的 [Brief](../../../showcase/user-management.brief.yaml) 为准。
 
-## 页面与环境
+原 [T0/T1 规格初稿](t1-spec-check.md) 已保留并加历史提示；[T2](t2-theme-check.md)、[T3](t3-interaction-check.md)、[T4](t4-stories-check.md) 保留当时状态，不倒写历史“待验收”为已执行。
 
-- 项目 / 页面 / 路由：Personal UI System Showcase V1 / UserManagement；应用与路由未实现，不预写运行地址。
-- 版本或提交号 / 设计快照版本 / 预设及成熟度：核对基线 `520f49bdb01aa7949d69929c5195e1d34af91db5` / 0.1.0 / `minimal-saas`，仍为 `draft`。
-- 检查日期 / 执行人：2026-10-23 / Codex；本次检查范围为版本、依赖现状与规格文件。
-- OS / 浏览器及版本 / 字体环境：本次规格整理在 Windows PowerShell 环境进行；浏览器及版本、实际字体环境未验证，运行验收时填写。
-- 视口 / 缩放 / 语言 / 时区 / 动态效果设置：目标宽度为 375、768、1440px；目标检查包含默认缩放与 200%、中文文案和减少动态效果；实际浏览器参数、时区及日期展示规则未验证，运行验收时记录。
-- 数据来源与准备方式 / 启动命令：固定 30 条合成成员数据，尚未生成实现；无已安装应用和可运行脚本，不执行计划中的未来启动命令。
-- 截图与报告位置：本文件为验收规格与核对记录；真实截图尚未产生，后续按计划保存在本目录的 `screenshots/` 并逐项引用。当前没有视觉回归基线。
+## 版本与前置条件
 
-## P02-T0：版本、工作区与前置条件
+- 开始时 main 与 origin/main 均为 `60ebfa34255d888b23ac08db7778db913f52ac9d`，主工作区干净；在隔离分支 `codex/p02-t5` 执行。计划、Brief、锁文件、单一主题、17 个 Story 与前序证据齐全。没有覆盖用户改动、新增依赖或修改其他阶段计划。
+- 首次修复 `ff9b607ef96ce1819895c0226f05a5824ee6ff97`：实际颜色映射、窄屏空态；最终修复 `b71e54727aab2e15f6bf91fbef42892ca7c3171f`：图标颜色、减少动态时动画循环。
+- 页面、纯键盘、无障碍最终证据基于 b71e547。Stories 51 项从 ff9b607 开始，期间有颜色别名修改，JSON 保留来源说明；相关 9 项及截图在 b71e547 复测。真实 200% 基于 ff9b607，后续只有颜色与减少动态变化，没有改变缩放布局；不误报为最终 SHA 全量复测。
+- 最终构建包含 b71e547、StoryFrame 验收说明和预设状态元数据；业务逻辑与 Token 值未再改变。交付提交另含报告与证据，不倒写测试来源 SHA。
 
-以下为本轮修改前的实际核对。之后的提交号和工作区状态以交付时的 Git 结果为准。
+## 实际环境与复现
 
-| 检查 | 实际观察 | 结论 |
-| --- | --- | --- |
-| `git log -1 --format="%H%n%s%n%cI"` | HEAD 为 `520f49bdb01aa7949d69929c5195e1d34af91db5`，提交为 `docs: integrate plan kit and organize documentation` | 通过，退出码 0 |
-| `git status --short --branch` | `main...origin/main`，没有文件变更条目 | 通过，工作区干净，退出码 0 |
-| GitHub 连接器读取 `git/ref/heads/main` | 远端 SHA 与本地 HEAD 相同 | 通过，连接器读取成功 |
-| 计划与输入文件存在性 | 项目入口、路线图、总纲、Phase 02 计划、原示例、Schema、预设 MD/JSON、基础 Token、三类模式及验收模板均存在 | 通过 |
-| 依赖清单及锁文件扫描 | 自有项目目录中没有 `package.json`、npm/pnpm/yarn/bun 锁文件，没有根 `node_modules/` 或 `showcase/app/` | 符合知识库现状；尚无应用依赖可核对 |
-| `node --version` | `v22.15.0` | 可读取运行时版本；与未来依赖的兼容性留到 T2 核对 |
-| `npm --version` | 退出码 1，`MODULE_NOT_FOUND`，缺少用户级 npm 包内的 `bin/npm-cli.js` | T2 安装前需排查；本次不修复全局工具，不影响 T1 文档任务 |
-| 官方 `antd` Skill | 项目级 `.agents/skills/antd/SKILL.md` 存在 | 属于知识入口，不能视作已安装 `antd` 应用依赖 |
-| 现有实现 | 没有可复用的页面源码、运行中的 Stories 或本次数据实现 | 符合计划起点，不执行脚手架或包安装 |
-
-**前置条件结论：** P02-T1 所需的需求、预设、模式和模板均可读取，工作区无待保留的未提交改动；可以执行规格冻结。npm 异常与应用依赖兼容性属于 T2 前待处理项，不构成本轮文档交付的阻断。
-
-**版本差异与范围解释：** 计划包写作基线为 `31e2945`，最新 HEAD 为后续完成文档整合的 `520f49b`；本次按最新的活跃总纲与 Phase 02 计划执行，不读取来源档案作为操作清单。计划中的“当前仅交付计划”和“尚未实施”描述其写作时状态；本轮以用户明确指定的 P02-T0/T1 为范围，不改写既有计划或其他阶段，也不将 Phase 02 整体标为完成。
-
-## P02-T1：冻结的需求、技术选型与边界
-
-业务、数据、交互与验收要求以 [本次 Brief](../../../showcase/user-management.brief.yaml) 为唯一需求记录。本节说明选型和验证定位，不另维护第二套页面行为定义。
-
-| 项目 | 本轮确定的规格 |
+| 项目 | 实测值 |
 | --- | --- |
-| 应用选型 | React + Vite、TypeScript、Ant Design；未安装，具体版本和锁文件由 T2 核对 |
-| 展示与测试选型 | Storybook React/Vite 集成、Vitest，均属于计划中的后续依赖 |
-| 设计复用 | `minimal-saas = light / comfortable / blue / medium`，复用既有 Token、导航、表单、数据展示规则，不改变预设数据或成熟度 |
-| 组件复用方式 | 优先官方组件；Brief 中的 PageHeader、SearchFilters、UserTable、Pagination、EditDialog 是职责名称，不是已有组件声明，后续映射到计划中的实际组件 |
-| 数据与操作边界 | 固定合成数据、客户端查询与分页、仅内存编辑；细节与处理顺序见 Brief 的 `data`、`interaction`、`state_details` |
-| 首版功能边界 | 只提供成员管理工作入口；不增加真实账号、登录、权限、接口、持久化、无行为的菜单、新增/导出、KPI 或分发能力 |
-| 本轮文件范围 | 仅新增本次 Brief 与本验收初稿；不新增应用、依赖、运行脚本、测试代码或截图，不改动原示例、已有计划与其他阶段 |
+| 系统 / 浏览器 | Windows_NT 10.0.26100 / Google Chrome 155.0.8059.81 |
+| 项目运行时 | Node 22.15.0 / npm 11.16.0；历史 T2～T4 npm 为 10.9.2，本轮未升级全局工具 |
+| 固定依赖 | React/DOM 19.3.1、Ant Design 6.6.7、Vite 8.3.5、React 插件 6.1.2、TS 6.0.3、Storybook 10.6.3、Vitest 5.0.5、Oxlint 1.88.0，见应用锁文件 |
+| 浏览器工具 | 宿主 Playwright 1.62.1 / Node 24.22.1 调用系统 Chrome，未写入项目依赖，没有 CI 或长期截图回归脚本 |
+| 启动 | `npm --prefix showcase/app run dev -- --port 5185 --strictPort` → `http://127.0.0.1:5185/`；`npm --prefix showcase/app run storybook -- --ci --port 6015` → `http://127.0.0.1:6015/`，实际可访问 |
+| 普通视口 | 页面 375×812、768×1024、1440×900；键盘与 Stories 高 900；100%、DPR 1，使用真实 iframe 宽度 |
+| 真实缩放 | 独立临时 headed Chrome，窗口 1440×1100；OS DPR 1.25；页面 100%→200%→100%，DPR 1.25→2.5→1.25，CSS 可用宽度 1426→713→1426 |
+| 语言 / 日期 | zh-CN / UTC；固定 ISO UTC 字符串直接显示 YYYY-MM-DD，不依赖运行时或本地时区 |
+| 字体 | Segoe UI、PingFang SC、Microsoft YaHei、sans-serif；CDP 中文标题实测 Microsoft YaHei Bold，无外部字体请求 |
+| 动态 / 数据 | prefers-reduced-motion: reduce；固定 30 条合成数据，刷新恢复；加载仅 Story，无真实接口或持久化 |
 
-## 页面检查记录
+安装与标准命令见 [应用说明](../../../showcase/app/README.md)。Windows 使用可用的 npm.cmd，未改 PATH。浏览器使用隔离上下文或临时配置，缩放已恢复，临时浏览器已关闭。
 
-每项使用“通过 / 失败 / 未执行 / 不适用”之一；附操作、观察和证据。不适用必须写明原因。当前所有页面检查均为“未执行”，下表记录未来可实际验收的步骤，不表示已经运行。
+真实缩放由 Chrome Appearance 的 Page zoom 原生选项设置，独立读取 chrome.settingsPrivate.getDefaultZoom 为 1→2→1；窗口不变、CSS zoom 和 visualViewport.scale 均为 1。没有用 CSS、deviceScaleFactor 或 CDP pageScaleFactor 冒充缩放。截图为不裁剪的 CDP 可见视口，详见 [原始读数](t5-evidence/zoom-check.json)。
 
-| 检查项 | 结果 | 操作、观察与证据要求 |
+## 检查结果
+
+| 检查 | 结果 | 证据 |
 | --- | --- | --- |
-| 标题、正文、辅助信息与主要行动层级 | 未执行 | 仅出现有工作行为的成员入口；标题与列表任务清晰，无无依据 KPI、装饰或空链接。页面实现后截图评审。 |
-| 颜色、字体、间距、圆角与预设一致 | 未执行 | 对照 minimal-saas 和解析后的语义 Token 检查页面与 Stories，记录偏差；使用系统字体规则，不预设已完成主题适配。 |
-| 桌面 1440px / 平板 768px / 手机 375px | 未执行 | 三种宽度分别截图，检查固定侧栏到抽屉、筛选换行、sticky 页头和对话框；注明实际视口、缩放与设备像素比。 |
-| 换行、截断、局部滚动、关键操作可达 | 未执行 | 页面无意外横向溢出；表格局部滚动有名称、可键盘到达，关键字段和编辑入口可达，页头不遮挡正文标题。 |
-| 加载 / 首次空数据 / 筛选无结果 | 未执行 | 仅在 Story 模拟加载与首次空数据；页面通过组合筛选触发无结果，保留输入并可清除筛选；不制造网络等待。 |
-| 错误 / 恢复 / 成功 / 禁用原因 | 未执行 | 输入空姓名或无效邮箱，核对字段关联、输入保留、就地原因和无效保存禁用；修正后保存，提示内存修改及刷新恢复；disabled 成员仍可编辑。 |
-| Brief 中的主要交互与数据处理顺序 | 未执行 | 依次核对大小写不敏感姓名/邮箱匹配、状态组合、日期双向排序、条件变化回第一页、10 条分页、编辑后页码收敛、保存与取消。 |
-| 键盘、焦点、对话框进出、输入标签 | 未执行 | 键盘完成搜索→筛选→翻页→编辑；检查抽屉及对话框 Escape、焦点圈定、关闭返回；补测编辑后行消失的焦点退路及可见字段标签。 |
-| 对比度 / 200% 缩放 / 减少动态效果 | 未执行 | 在实际渲染中检查文字和控件对比度、焦点可见性、200% 阅读与操作，以及减少动态效果设置。 |
-| 适用的 TypeScript / Lint / Build / 现有测试 | 未执行 | 应用未建立，没有可运行脚本；后续记录 typecheck、lint、Vitest、应用 build 与 build-storybook 的真实命令、版本、退出码和日志。 |
-| 已有视觉回归与基线变化（如适用） | 未执行 | 尚无视觉回归基线，本阶段只做真实页面人工截图验收；自动视觉回归不属于本轮任务。 |
+| npm run typecheck | 通过，退出 0，应用/测试/Stories/配置在范围内 | [完整最终日志](t5-evidence/build-check.log) |
+| npm run lint | 通过，退出 0，0 警告，deny-warnings | 同上 |
+| npm run test | 通过，退出 0，3 文件 / 78 项 | 同上，Token、适配与查询行为 |
+| npm run build | 通过，退出 0 | 同上；主 JS 964.59kB / gzip 308.69kB，保留大包体提示 |
+| npm run build-storybook | 通过，退出 0 | 同上；主 iframe JS 1163.33kB / gzip 333.59kB，保留大包体提示 |
+| 页面交互与布局 | 17/17 通过 | [页面记录](t5-evidence/app-checks.json)，consoleIssues 为空 |
+| 完整纯键盘 | 三视口各 3 组，9/9 通过 | [键盘记录](t5-evidence/keyboard-check.json)，Tab/Shift+Tab、方向键、Enter、Escape 完成，无 click/focus 注入，0 错误 |
+| 17 Story × 3 视口 | 51/51 通过，最终相关复测 9/9 | [全矩阵](stories-final-check.json)、[最终复测](stories-final-followup-check.json)，preview console/page/play 错误与警告均 0 |
+| 颜色与基础无障碍 | 30 文本 + 8 必要非文本、13 项语义/行为全通过 | [最终记录](t5-evidence/accessibility-check.json)，console/pageerror/外部请求均 0 |
+| 真实 200% | 阅读、筛选、表格局部滚动、编辑、取消与焦点返回通过 | [缩放记录](t5-evidence/zoom-check.json)，无意外页面横向溢出 |
+| Ant Design CLI lint | 两个修改文件均退出0、issues为空、partial=false、skipped为空 | [MemberTable](t5-evidence/antd-table-lint.json)、[主题适配](t5-evidence/antd-theme-lint.json) |
+| 文档/配置/范围检查 | 自有 Markdown 链接、JSON/YAML 语法、预设状态与受保护文件未改检查通过 | [静态记录](t5-evidence/static-check.json)；这是语法和一致性核对，不宣称全量 JSON Schema 认证 |
 
-## 典型旅程与状态证据清单
+浏览器由一次性宿主脚本操作真实 UI；JSON 和下述操作路径是本轮证据，脚本未成为项目长期测试能力。Stories 同时核对 play 结束且键盘未锁定，未仅凭成功事件判断无异常。
 
-以下均未执行，后续填写实际观察与截图，不能以本清单代替证据。
+## 页面、状态与视觉
 
-| 编号 | 需要实际验证的场景 | 结果 / 证据 |
+| 检查项 | 结果 | 实际观察 |
 | --- | --- | --- |
-| J01 | 固定 30 条演示记录，首次呈现日期降序、每页 10 条，共 3 页；刷新前后的初始数据一致 | 未执行；数据和页面尚未实现 |
-| J02 | 姓名或邮箱关键词与 active/disabled 同时筛选，切换日期排序；各条件变化回第一页，筛选后结果再排序分页 | 未执行 |
-| J03 | 组合筛选得到零结果，输入仍保留；清除筛选恢复列表；与首次无数据 Story 的提示不同 | 未执行 |
-| J04 | 编辑空姓名/无效邮箱，错误可读、字段关联且输入保留；修正后允许保存，只更改姓名/邮箱，取消和 Escape 不保存 | 未执行 |
-| J05 | 保存提示演示修改成功及刷新恢复；刷新后初始数据恢复，不存在服务端或持久化写入 | 未执行 |
-| J06 | 编辑姓名/邮箱使记录退出当前筛选；末页越界时收敛页码，焦点返回仍存在的表格标题或筛选入口 | 未执行 |
-| J07 | 键盘访问当前导航、打开/关闭移动抽屉及编辑对话框，检查焦点圈定、Escape、返回位置与可见焦点 | 未执行 |
-| J08 | 375/768/1440px 默认态、无结果、错误、保存反馈及 Story 加载态；核对 200% 缩放与减少动态效果 | 未执行；尚无真实截图 |
+| 层级、留白、密度 | 通过 | 单一 h1 和列表 h2，筛选靠近列表，演示边界可见；桌面侧栏对齐、手机抽屉，无假菜单或 KPI |
+| 颜色、字体、间距、圆角 | 通过 | 共同 Provider 与语义变量，页面/Stories 一致；补全别名，没有改变 Token 值或其他风格 |
+| 375/768/1440px | 通过 | scrollWidth 等于视口；筛选换行，表格局部滚动，分页/清除可见，编辑/抽屉可操作 |
+| 默认、加载、首次空数据、无结果 | 通过 | 默认 30 条；Story 加载 inert/busy 且有说明；首次空数据和无结果不同，输入保留且可清除；空态不再被宽表遮挡 |
+| 错误、恢复、成功、禁用 | 通过 | 字段错误关联、输入保留，保存禁用附原因；修正后保存并提示刷新恢复；停用成员仍可编辑 |
+| 查询、排序、分页 | 通过 | 姓名/邮箱不区分大小写、与状态 AND；先筛选后排序分页；条件变化回首页，编辑后页码收敛 |
+| 键盘、标签、焦点 | 通过 | 跳转 main 后 Tab 搜索/状态/分页/编辑；正反圈定、Escape/取消不保存、返回触发按钮，行消失回 h2 |
+| 对比度、200%、减少动态 | 通过 | 真实背景/透明度合成测量，真实浏览器缩放；焦点可见；减少动态下动画极短且仅一次 |
+| 自动截图基线 | 不适用 | 当前人工截图，无视觉回归基线，属于后续阶段 |
+| 网络错误、权限、登录、持久化 | 不适用 | Brief 为内存演示，错误只测实际表单校验 |
+| 真机、多浏览器、真实读屏器 | 未执行 | CDP AX/DOM 名称、角色、关联不等于 NVDA/JAWS/VoiceOver 朗读或 WCAG 全项认证；没有 Firefox/Safari/真机保证 |
 
-## 结论
+## 旅程与截图
 
-- 必须修复的问题与影响：npm 版本命令当前失败，进入 T2 安装前需排查；不阻断本次规格文档。未实施页面，尚无实际页面缺陷结论。
-- 可选优化：本轮不增加新主题、工具或组件抽象；后续优化依据实际渲染证据决定。
-- 复用的已有资产 / 新增候选资产：复用原成员管理示例、minimal-saas、导航/表单/数据展示模式及人工验收模板；仅新增本次 Brief 和验收初稿。
-- 尚未覆盖的范围与风险：依赖版本兼容性、应用实现、实际数据、Stories、构建、交互、响应式、无障碍和视觉均未验证；本机 npm 异常需单独处理。
-- 是否满足当前页面验收条件及证据：不满足。当前仅可完成 P02-T0 核对与 P02-T1 规格冻结，Gate 02 尚未通过。
-- 是否建议晋级资产；如需公共收录，记录后续审核结果：不建议晋级，既有风格和模式保持 `draft`，不新增 `validated` 或 `approved` 声明。
+默认截图为 fullPage，固定宽度，文件高度随内容增长；错误/成功及真实缩放用可见视口，避免遮罩拼接误读。没有像素差分基线。
 
-## 任务交付与下一张卡
+| 编号 | 复现与结果 | 截图 / 记录 |
+| --- | --- | --- |
+| J01 | 刷新，30 条、降序、10 条/页、3 页；通过 | [1440×900](t5-evidence/default-1440.png)、[768×1024](t5-evidence/default-768.png)、[375×812](t5-evidence/default-375.png) |
+| J02 | 纯键盘 MEMBER、启用、20 条，第 2 页首行为成员14；排序/回页通过 | [键盘步骤](t5-evidence/keyboard-check.json)、[排序检查](t5-evidence/app-checks.json) |
+| J03 | 无匹配词或编辑唯一匹配退出；条件保留、清除恢复；通过 | [1440 无结果](t5-evidence/filter-empty-1440.png)、[375 首次空数据 Story](screenshots/story-empty-375.png) |
+| J04 | 空姓名、无效邮箱，Tab 触发错误/禁用；修正/取消/Escape/保存通过 | [1440 错误](t5-evidence/accessibility-invalid-1440.png)、[375 键盘错误](t5-evidence/keyboard-375-error.png)、[768 错误 Story](screenshots/story-error-768.png) |
+| J05 | 保存更新列表并提示刷新恢复，刷新验证通过 | [1440 成功](t5-evidence/accessibility-success-1440.png) |
+| J06 | 筛选“1”到末页，编辑剩余匹配退出；收敛页码并聚焦列表标题；唯一匹配退出也通过 | [相应两项检查](t5-evidence/app-checks.json) |
+| J07 | 手机抽屉正反 Tab 圈定、Escape/关闭返回；表格方向键到编辑，弹窗圈定/返回通过 | [抽屉](t5-evidence/drawer-375.png)、[表格操作](t5-evidence/table-actions-375.png)、[手机编辑](t5-evidence/edit-375.png) |
+| J08 | 加载 Story、三视口状态、真实 200%、减少动态通过 | [1440 加载](screenshots/story-loading-1440.png)、[200% 页面](t5-evidence/zoom-200.png)、[200% 编辑](t5-evidence/zoom-200-edit.png) |
 
-| 本轮检查 | 实际结果 |
-| --- | --- |
-| Python/PyYAML 一次性静态检查，`python -X utf8 -` | 退出码 0；新 Brief 可解析，顶层与嵌套字段、枚举、字符串、列表唯一性、交互 ID 和预设固定组合检查通过 |
-| 对照原示例 | 数据字段、组件职责、布局、5 个交互 ID、5 类状态及基础约束保留；行为经独立只读审阅，无必须修正的问题 |
-| 验收标记与本地引用 | 11 类页面检查全部为“未执行”；新验收初稿的 4 处本地 Markdown 引用均存在且位于仓库内 |
-| 变更范围检查 | 仅本次 Brief 和验收初稿为新增文件；既有跟踪文件无修改，未创建 `showcase/app/` 或根 `package.json` |
-| `git diff --cached --check` | 退出码 0；暂存内容仅为两份授权文件，空白字符检查通过 |
-| 完整 JSON Schema Draft 2020-12 验证 | 未执行；当前 Python 环境未安装 `jsonschema`，本次不安装验证依赖，不将字段与合同一致性检查表述为全量 Schema 验证 |
+截图已打开评审：标题、辅助信息与列表职责清楚，桌面阅读边界稳定，手机保留 16px 页边距、筛选换行。表格局部滚动保留字段与编辑可达；空态独立排版后文案/行动完整可见。错误用文字与边框，禁用有原因，成功说明演示边界。没有仅依赖坐标输出判定视觉完成。最后只更新 StoryFrame 的验收说明后，另在375px实际展开检查，通过文案可见、换行、无页面溢出和pageerror；没有因纯说明更新重复全矩阵。
 
-一次性检查脚本初次将 Markdown 表格分隔线计入页面检查数量，导致计数断言失败；修正检查脚本的行筛选后，在同一份规格文件上复查退出码为 0，没有弱化页面验收条件。
+## 缺陷与修复
 
-**P02-T0：完成；P02-T1：规格文档完成。** 页面、Stories、构建及截图验收继续保持“未执行”，Gate 02 未通过。
+| 发现 | 原始证据 | 修复与复查 |
+| --- | --- | --- |
+| 手机空态超出视口 | [坐标](stories-initial-visual-findings.json)，例如 x398–454、视口375；[修复前](screenshots/story-empty-375-before.png) | Empty 移出最小宽度770px的 Table，非空列/事件/滚动不变；最终空态/无结果坐标与截图通过 |
+| 派生颜色对比度不足 | [修复前JSON](t5-evidence/accessibility-before-fix.json)保存链接4.104、placeholder1.839、Empty3.363、焦点1.700；下拉/清除图标1.839为执行时实测，未单独保留初始JSON | 唯一 ThemeConfig 映射既有 accent/muted/focus；最终链接5.169、悬浮6.421、placeholder/Empty/必要图标7.578、焦点5.169，38样本通过 |
+| 减少动态的 Spin 仍无限循环 | 执行时实测，未单独保留初始JSON；最终样式值见无障碍记录 | 减少动态规则追加 iteration-count:1，最终 duration0.01ms、iteration1，语义/行为通过 |
 
-下一张候选任务卡是 **P02-T2｜主题通路**。先核实 npm 可用性及兼容版本，再按原计划建立最小应用；本轮不执行 T2～T5 或其他阶段任务。
+普通文字目标4.5:1、大字3:1、必要控件/图标/焦点3:1，按真实背景和透明度合成。Select焦点在外层，未误判内部input的outline:none；最终按钮实际outline为3px。
+
+影响：colorTextQuaternary 同时派生更深的 colorTextDisabled。保存仍原生disabled、灰底、浅边框、not-allowed光标、错误及关联原因；该按钮对比度豁免，不计入38样本。加载文字4.940:1；Spin四点透明后仅1.532:1，因完整文字/状态已表达加载，作为冗余装饰单列，未冒充必要图形通过。
+
+检查脚本修正不混作产品缺陷：初次 Stories 的768px编辑坐标检查发生在原生滚动动画稳定前，改为等待实际可见位置后通过；另行测量发现的空态越界才是已修复缺陷。纯键盘初稿遗漏清除按钮Tab停靠，并误用会退出MEMBER筛选的保存数据；改按实际顺序、保留匹配，行消失退路另有检查。构建日志初次路径错误已修正，完整五项命令重跑留存退出码。未弱化产品要求。
+
+## 收口、资产与限制
+
+页面/Stories运行、单一主题、业务组合、三视口、完整键盘、真实200%、主要状态、颜色/语义、类型/Lint/测试/双构建均有证据，关键发现已修复复查，没有未解决的阻断问题。
+
+复用冻结Brief、原始/语义Token、minimal-saas、导航/表单/展示原则、官方Ant Design部件与现有组件/Provider/Stories。新增验收记录、JSON和截图，只修必要别名、空态与减少动态，没有公共封装、新依赖或第二条主题。CLI `antd token Button --version 6.6.7 --format json` 与已安装官方类型/样式源码用于核对API；CLI与组件版本分别确认。
+
+按 [生命周期](../../../docs/guides/asset-lifecycle.md)，minimal-saas 晋级 **validated** 仅限固定 light/comfortable/blue/medium 成员页面与已测Stories、状态、环境。不是approved，未收录公共组件，不承诺跨项目、跨框架或其他主题；另两套风格和通用模式仍为候选。
+
+非阻断限制：应用/Storybook主块超过500kB，未调阈值隐藏；Storybook管理器历史有自身runtime未来ariaLabel提示，本轮隔离预览无警告；空态region仍复用“可横向滚动”名称和Tab停靠，轻微语义冗余；暂无自动回归基线、CI、真实读屏器/跨浏览器/真机检查。数据仅内存演示，不能当作生产服务。
+
+下一张任务卡：原 [P03-T1｜消费者选型](../../../docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md)。先核验Gate02，确定消费者、固定版本、技术栈与最小复用清单；未指定消费者时形成隔离试点候选。**本轮到T5为止，没有启动Phase03或重写既有计划。**

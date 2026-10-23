@@ -9,7 +9,7 @@
 | `approved` | 有跨项目复用价值，已经用户或指定维护者审核同意进入公共资产目录 | 按版本发布，记录接口、来源和兼容性 |
 | `deprecated` | 有替代方案，处于兼容迁移期 | 保留迁移说明，不静默删除 |
 
-“validated”只适用于记录覆盖的范围；一个页面通过不等于所有组件、设备或主题都已通过。当前初始规则和三套风格都是 `draft`。
+“validated”只适用于记录覆盖的范围；一个页面通过不等于所有组件、设备或主题都已通过。当前仅 [minimal-saas](../../design-system/styles/minimal-saas.md) 固定组合在 [Showcase V1 已测场景](../../tests/manual/showcase-v1/review.md) 为 `validated`；其余风格、通用模式和规则未整体晋级，公共目录没有 `approved` 组件。工作台业务部件继续留在应用内。
 
 ## 收录依据
 

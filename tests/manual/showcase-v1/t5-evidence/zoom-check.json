@@ -1,0 +1,93 @@
+{
+  "method": "Chrome Settings > Appearance > Page zoom native select in isolated disposable headed Chrome profile. Verified via chrome.settingsPrivate.getDefaultZoom. No emulated viewport, CSS zoom, deviceScaleFactor, or pageScaleFactor.",
+  "screenshotMethod": "CDP Page.captureScreenshot without clip; captureBeyondViewport false, fromSurface true. Visible viewport screenshots preserve actual zoom; Playwright fullPage was not used for final artifacts.",
+  "sources": [
+    "https://support.google.com/chrome/answer/96810?hl=en",
+    "https://www.chromium.org/user-experience/low-vision-support/"
+  ],
+  "checks": [
+    "Actual Chrome page zoom 200% independently read as 2, DPR ratio 2, halved CSS viewport, unchanged native window, CSS zoom 1, visualViewport scale 1.",
+    "Labels visible, status selection and clear filters work by keyboard at 200%; edit is reachable through the local table scroll region; dialog fields editable and cancel keyboard-reachable, no horizontal overflow."
+  ],
+  "sourceSha": "ff9b607ef96ce1819895c0226f05a5824ee6ff97",
+  "os": {
+    "platform": "win32",
+    "release": "10.0.26100",
+    "baseDisplayScale": "Native Windows display DPR 1.25 measured at Chrome page zoom 100%; this is OS scaling, distinct from browser page zoom 200%."
+  },
+  "browserVersion": "155.0.8059.81",
+  "pageErrors": [],
+  "consoleErrors": [],
+  "chromeZoomBefore": 1,
+  "before": {
+    "dpr": 1.25,
+    "innerWidth": 1426,
+    "innerHeight": 1006,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 1411,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "mobileNavigation": false
+  },
+  "chromeZoomDuring": 2,
+  "zoomed": {
+    "dpr": 2.5,
+    "innerWidth": 713,
+    "innerHeight": 503,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 705,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "mobileNavigation": true
+  },
+  "localTableScrollLeft": 18,
+  "dialogBounds": {
+    "x": 92.80000305175781,
+    "y": 108,
+    "width": 519.9999847412109,
+    "height": 352.3999938964844
+  },
+  "focusReturnedToEditTrigger": true,
+  "screenshots": [
+    {
+      "filename": "zoom-200.png",
+      "width": 1783,
+      "height": 1258
+    },
+    {
+      "filename": "zoom-200-edit.png",
+      "width": 1783,
+      "height": 1258
+    }
+  ],
+  "zoomedAfterChecks": {
+    "dpr": 2.5,
+    "innerWidth": 713,
+    "innerHeight": 503,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 705,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "mobileNavigation": true
+  },
+  "chromeZoomRestored": 1,
+  "restored": {
+    "dpr": 1.25,
+    "innerWidth": 1426,
+    "innerHeight": 1006,
+    "outerWidth": 1440,
+    "outerHeight": 1100,
+    "documentWidth": 1411,
+    "visualViewportScale": 1,
+    "cssZoom": "1",
+    "bodyZoom": "1",
+    "mobileNavigation": false
+  },
+  "status": "passed"
+}

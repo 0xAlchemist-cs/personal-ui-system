@@ -1,0 +1,1794 @@
+{
+  "date": "2026-10-23",
+  "sourceSha": "60ebfa34255d888b23ac08db7778db913f52ac9d",
+  "baseUrl": "http://127.0.0.1:6015",
+  "environment": {
+    "os": "Windows_NT 10.0.26100",
+    "browser": "Chrome 155.0.8059.81",
+    "node": "v24.22.1",
+    "playwright": "1.62.1",
+    "locale": "zh-CN",
+    "timezone": "UTC",
+    "reducedMotion": "reduce",
+    "deviceScaleFactor": 1,
+    "zoom": "100%",
+    "height": 900,
+    "dateRule": "Fixed ISO UTC string date portion, YYYY-MM-DD",
+    "fonts": [
+      "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    ],
+    "note": "Fresh headless browser context per case; actual iframe document viewport. Manual acceptance evidence, no visual regression baseline."
+  },
+  "cases": [
+    {
+      "id": "基础-主题通路--default",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "基础-主题通路--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "layout-app-shell--wide-navigation",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--wide-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "layout-app-shell--compact-navigation",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--compact-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "drawer": {
+        "actualOpen": true,
+        "tabTrap": true,
+        "escapeCloses": true,
+        "returnsTrigger": true
+      }
+    },
+    {
+      "id": "layout-content-panel--information-grouping",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-content-panel--information-grouping",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-filters--default",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-filters--combined-query",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--combined-query",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--default",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 343,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true,
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-table--loading",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--loading",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--empty",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--keyboard-focus",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 343,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true,
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-edit-dialog--default",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-edit-dialog--invalid-fields",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--invalid-fields",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "errorLabels": [
+        {
+          "text": "姓名",
+          "x": 32,
+          "right": 82.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_name"
+        },
+        {
+          "text": "邮箱",
+          "x": 32,
+          "right": 82.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_email"
+        }
+      ],
+      "errorState": {
+        "valuesPreserved": true,
+        "saveDisabled": true,
+        "errorsAssociated": true
+      }
+    },
+    {
+      "id": "members-edit-dialog--keyboard-focus",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--default",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 293,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true,
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-page--empty",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "screenshot": "screenshots/story-empty-375.png"
+    },
+    {
+      "id": "members-page--no-results",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--no-results",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--saved",
+      "width": 375,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--saved",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 375,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 375,
+        "scrollWidth": 375,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "基础-主题通路--default",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "基础-主题通路--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "layout-app-shell--wide-navigation",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--wide-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "layout-app-shell--compact-navigation",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--compact-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "drawer": {
+        "actualOpen": true,
+        "tabTrap": true,
+        "escapeCloses": true,
+        "returnsTrigger": true
+      }
+    },
+    {
+      "id": "layout-content-panel--information-grouping",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-content-panel--information-grouping",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-filters--default",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-filters--combined-query",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--combined-query",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--default",
+      "width": 768,
+      "height": 900,
+      "pass": false,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 704,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true
+      },
+      "error": "Edit button not keyboard reachable inside local scroll",
+      "failurePhase": "finished",
+      "failureText": "表格可横向滚动；可聚焦后使用左右方向键查看。\n\n姓名\t邮箱\t状态\t\n创建时间\n\t操作\n演示成员30\tmember30@example.test\t已停用\t2026-01-30\t\n编辑\n\n演示成员29\tmember29@example.test\t启用\t2026-01-29\t\n编辑\n\n演示成员28\tmember28@example.test\t启用\t2026-01-28\t\n编辑\n\n演示成员27\tmember27@example.test\t已停用\t2026-01-27\t\n编辑\n\n演示成员26\tmember26@example.test\t启用\t2026-01-26\t\n编辑\n\n演示成员25\tmember25@example.test\t启用\t2026-01-25\t\n编辑\n\n演示成员24\tmember24@example.test\t已停用\t2026-01-24\t\n编辑\n\n演示成员23\tmember23@example.test\t启用\t2026-01-23\t\n编辑\n\n演示成员22\tmember22@example.test\t启用\t2026-01-22\t\n编辑\n\n演示成员21\tmember21@example.test\t已停用\t2026-01-21\t\n编辑\n\n共 30 位成员 · 第 1–10 位\n\n1\n2\n3\n成员表格 · 用途与接口"
+    },
+    {
+      "id": "members-table--loading",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--loading",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--empty",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--keyboard-focus",
+      "width": 768,
+      "height": 900,
+      "pass": false,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 704,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true
+      },
+      "error": "Edit button not keyboard reachable inside local scroll",
+      "failurePhase": "finished",
+      "failureText": "表格可横向滚动；可聚焦后使用左右方向键查看。\n\n姓名\t邮箱\t状态\t\n创建时间\n\t操作\n演示成员30\tmember30@example.test\t已停用\t2026-01-30\t\n编辑\n\n演示成员29\tmember29@example.test\t启用\t2026-01-29\t\n编辑\n\n演示成员28\tmember28@example.test\t启用\t2026-01-28\t\n编辑\n\n演示成员27\tmember27@example.test\t已停用\t2026-01-27\t\n编辑\n\n演示成员26\tmember26@example.test\t启用\t2026-01-26\t\n编辑\n\n演示成员25\tmember25@example.test\t启用\t2026-01-25\t\n编辑\n\n演示成员24\tmember24@example.test\t已停用\t2026-01-24\t\n编辑\n\n演示成员23\tmember23@example.test\t启用\t2026-01-23\t\n编辑\n\n演示成员22\tmember22@example.test\t启用\t2026-01-22\t\n编辑\n\n演示成员21\tmember21@example.test\t已停用\t2026-01-21\t\n编辑\n\n共 30 位成员 · 第 1–10 位\n\n1\n2\n3\n成员表格 · 用途与接口"
+    },
+    {
+      "id": "members-edit-dialog--default",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-edit-dialog--invalid-fields",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--invalid-fields",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "errorLabels": [
+        {
+          "text": "姓名",
+          "x": 148,
+          "right": 198.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_name"
+        },
+        {
+          "text": "邮箱",
+          "x": 148,
+          "right": 198.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_email"
+        }
+      ],
+      "errorState": {
+        "valuesPreserved": true,
+        "saveDisabled": true,
+        "errorsAssociated": true
+      },
+      "screenshot": "screenshots/story-error-768.png"
+    },
+    {
+      "id": "members-edit-dialog--keyboard-focus",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--default",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 770,
+        "clientWidth": 654,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": true,
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-page--empty",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--no-results",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--no-results",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--saved",
+      "width": 768,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--saved",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 768,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 768,
+        "scrollWidth": 768,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "基础-主题通路--default",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "基础-主题通路--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "layout-app-shell--wide-navigation",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--wide-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "layout-app-shell--compact-navigation",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-app-shell--compact-navigation",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "drawer": {
+        "applicable": false,
+        "reason": "Actual 1440px viewport uses fixed desktop navigation"
+      }
+    },
+    {
+      "id": "layout-content-panel--information-grouping",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "layout-content-panel--information-grouping",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-filters--default",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-filters--combined-query",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-filters--combined-query",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--default",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 1136,
+        "clientWidth": 1136,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": "No local overflow at this width",
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-table--loading",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--loading",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "screenshot": "screenshots/story-loading-1440.png"
+    },
+    {
+      "id": "members-table--empty",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-table--keyboard-focus",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-table--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 1136,
+        "clientWidth": 1136,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": "No local overflow at this width",
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-edit-dialog--default",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-edit-dialog--invalid-fields",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--invalid-fields",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "errorLabels": [
+        {
+          "text": "姓名",
+          "x": 484,
+          "right": 534.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_name"
+        },
+        {
+          "text": "邮箱",
+          "x": 484,
+          "right": 534.5,
+          "width": 50.5,
+          "clipped": false,
+          "htmlFor": "edit-member_email"
+        }
+      ],
+      "errorState": {
+        "valuesPreserved": true,
+        "saveDisabled": true,
+        "errorsAssociated": true
+      }
+    },
+    {
+      "id": "members-edit-dialog--keyboard-focus",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-edit-dialog--keyboard-focus",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--default",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--default",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "table": {
+        "scrollLeft": 0,
+        "scrollWidth": 1086,
+        "clientWidth": 1086,
+        "named": "成员列表，可横向滚动",
+        "focusable": 0,
+        "focused": true,
+        "keyboardScroll": "No local overflow at this width",
+        "editReachable": true
+      }
+    },
+    {
+      "id": "members-page--empty",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--empty",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--no-results",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--no-results",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "id": "members-page--saved",
+      "width": 1440,
+      "height": 900,
+      "pass": true,
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "pageErrors": [],
+      "storyEvents": [
+        {
+          "storyId": "members-page--saved",
+          "status": "success",
+          "reporters": []
+        }
+      ],
+      "playErrors": [],
+      "finalPhase": "finished",
+      "keyboardLocked": false,
+      "actualViewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "rootWidth": 1440,
+        "scrollWidth": 1440,
+        "scale": 1,
+        "reducedMotion": true,
+        "locale": "zh-CN",
+        "timezone": "UTC"
+      },
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    }
+  ],
+  "summary": {
+    "total": 51,
+    "passed": 49,
+    "failed": 2,
+    "consoleWarnings": 0
+  },
+  "interpretation": "Initial functional automation report only. Two 768px focus-coordinate failures were caused by assertions before native arrow scrolling settled; separately observed real 375px empty-state clipping is documented in stories-initial-visual-findings.json and story-empty-375-before.png. This report does not establish visual acceptance."
+}
