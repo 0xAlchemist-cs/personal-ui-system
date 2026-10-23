@@ -17,7 +17,7 @@
 
 知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页和 17 个 Story，启动、目录及检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
-**下一张候选任务卡：P03-T1｜消费者选型。** 按 [独立项目复用计划](docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md) 先确定消费者、技术栈和最小复用范围；Phase 03 尚未启动。当前工作台目录见 [T4 记录](tests/manual/showcase-v1/t4-stories-check.md)，最终证据见 [T5 报告](tests/manual/showcase-v1/review.md)。
+**下一张任务卡：P03-T2｜快照打包。** [P03-T1 记录](docs/records/2026-10-23-p03-t1-consumer-selection.md) 已固定隔离消费者的文档基线、目标技术栈和 16 项资产清单。消费者尚无 UI、依赖锁文件或设计快照，Gate 03 未通过；按 [既有复用计划](docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md) 单独推进 T2。工作台证据仍见 [T5 报告](tests/manual/showcase-v1/review.md)。
 
 完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 

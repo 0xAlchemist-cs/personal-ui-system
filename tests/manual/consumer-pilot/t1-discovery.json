@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-23",
+  "task": "P03-T1",
+  "scope": "Consumer selection and documentation-only Git baseline; no snapshot or UI implementation",
+  "sourceRepository": "https://github.com/0xAlchemist-cs/personal-ui-system",
+  "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+  "systemVersion": "0.1.0",
+  "userChoice": "isolated test scenario",
+  "consumer": {
+    "path": "D:\\personal-ui-consumer-pilot",
+    "commit": "cdf8c260c51ab67407bd01090a696fd1452f969f",
+    "branch": "main",
+    "clean": true,
+    "standaloneGitDirectory": true,
+    "remoteConfigured": false,
+    "files": [
+      {
+        "path": ".gitignore",
+        "gitBlob": "636762c43bbcf1c42300cad439cc14276a228c3d",
+        "sha256": "10567fb1d195491adb94b53b6314ce017fb701fadfb1233bb3928b4609ea75e4",
+        "symlink": false
+      },
+      {
+        "path": "AGENTS.md",
+        "gitBlob": "abccc6d76708722fceac5f62d0f23cf58d35d198",
+        "sha256": "890dd637f3f0d3f16246616156a314c8d524d3ca46b36b199bbf30a956929621",
+        "symlink": false
+      },
+      {
+        "path": "README.md",
+        "gitBlob": "da433b1207006069b98127a43d268b28a7d0302a",
+        "sha256": "c7ad58c592a489189ecc52eb392939a0baea5b5009b0f425be35e286f3de17f2",
+        "symlink": false
+      }
+    ],
+    "confirmedAbsent": [
+      "package.json",
+      "package-lock.json",
+      "pnpm-lock.yaml",
+      "yarn.lock",
+      "bun.lock",
+      "bun.lockb",
+      "node_modules",
+      "src",
+      "dist",
+      ".personal-ui"
+    ],
+    "existingUiImplementation": false,
+    "existingThemeConflict": false
+  },
+  "targetStack": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "6.0.3",
+    "vite": "8.3.5",
+    "antd": "6.6.7"
+  },
+  "stackEvidence": "Target versions only, checked against source showcase package-lock; not installed in consumer",
+  "preset": {
+    "id": "minimal-saas",
+    "theme": "light",
+    "density": "comfortable",
+    "accent": "blue",
+    "radius": "medium",
+    "sourceStatus": "validated in documented Showcase scope only",
+    "consumerValidated": false
+  },
+  "selectedSourceAssets": [
+    {
+      "sourcePath": "LICENSE",
+      "sourceGitBlob": "878759e6a2fe63ee12473e72e0357d80a33acf04",
+      "copied": false
+    },
+    {
+      "sourcePath": "prompts/frontend-development.md",
+      "sourceGitBlob": "096755d9774881549dd9d8d1d2860eec62c2ff98",
+      "copied": false
+    },
+    {
+      "sourcePath": "design-system/principles.md",
+      "sourceGitBlob": "68119c6782be25ec8f0d8d6ba99fcd0e558808e2",
+      "copied": false
+    },
+    {
+      "sourcePath": "design-system/styles/minimal-saas.md",
+      "sourceGitBlob": "e0923d8b53fc3b25c7acb42e177ad823fd3ca72d",
+      "copied": false
+    },
+    {
+      "sourcePath": "design-system/styles/minimal-saas.json",
+      "sourceGitBlob": "9de52cfc8a76cf407e6bd2e65c2ae5704b27d94f",
+      "copied": false
+    },
+    {
+      "sourcePath": "design-system/tokens/README.md",
+      "sourceGitBlob": "118fdf563b7000920a9985fc16a28cf233714fb7",
+      "copied": false
+    },
+    {
+      "sourcePath": "design-system/tokens/primitives.json",
+      "sourceGitBlob": "c1cb76999c579bb76cf75b3445d6c98db51f7f0a",
+      "copied": false
+    },
+    {
+      "sourcePath": "design-system/tokens/semantic.json",
+      "sourceGitBlob": "84d20061e50060b53b0cdd86a32fb275e512ef04",
+      "copied": false
+    },
+    {
+      "sourcePath": "prompts/design-review.md",
+      "sourceGitBlob": "17c10dab7ba06459334abf9ded3f032a4eb561e2",
+      "copied": false
+    },
+    {
+      "sourcePath": "prompts/visual-qa.md",
+      "sourceGitBlob": "5bc40e6c1c50f664d32d2cd4d9eb4a7389785204",
+      "copied": false
+    },
+    {
+      "sourcePath": "tests/visual-review-template.md",
+      "sourceGitBlob": "e510a4fa92428ee86f6f75272e6ba9446c99e702",
+      "copied": false
+    },
+    {
+      "sourcePath": "skills/personal-ui/SKILL.md",
+      "sourceGitBlob": "43b1fd92306b6dee4302754278fe33e4e1981bf3",
+      "copied": false
+    },
+    {
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.ts",
+      "sourceGitBlob": "d7702503c919d7b60b915729c51d500c615e7dc0",
+      "copied": false
+    },
+    {
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.test.ts",
+      "sourceGitBlob": "f190fd32ccaf2ad84dbccc3079e0337be088b8a3",
+      "copied": false
+    },
+    {
+      "sourcePath": "showcase/app/src/theme/antd-theme.ts",
+      "sourceGitBlob": "3416957ff24dfa03b996d98143a59ce7f231cc41",
+      "copied": false
+    },
+    {
+      "sourcePath": "showcase/app/src/theme/antd-theme.test.ts",
+      "sourceGitBlob": "719c2579bed29e1aeaa32248124734f47432a64d",
+      "copied": false
+    }
+  ],
+  "tokenCounts": {
+    "primitives": 68,
+    "semantic": 47,
+    "preset": 8
+  },
+  "localOverridesRequiredInT2": [
+    "Trim Skill links to consumer-local entry and selected assets",
+    "Replace source-only historical links with immutable source-commit URLs",
+    "Rewrite test JSON imports to consumer-local snapshot paths",
+    "Preserve token values, status scope and MIT attribution"
+  ],
+  "gate02EvidenceAudit": {
+    "method": "Read tracked historical evidence, not a fresh browser/build run",
+    "appChecks": 17,
+    "keyboardGroups": 9,
+    "storyCases": 51,
+    "storyFinalFollowup": 9,
+    "necessaryContrastSamples": 38,
+    "semanticChecks": 13,
+    "unitTests": 78,
+    "successfulStandardCommandExits": 5,
+    "actualZoom200": true
+  },
+  "consumerBaselineArchive": {
+    "path": "tests/manual/consumer-pilot/t1-consumer-baseline.bundle",
+    "bytes": 2329,
+    "sha256": "4b8d196f6c05f7296e77aa1e49d7f2b72b21e85553153f2e00ee38b9bb3fb67f",
+    "verifyExitCode": 0,
+    "completeHistory": true,
+    "containsDesignSnapshot": false,
+    "independentCloneBuildPerformed": false
+  },
+  "verification": {
+    "gitAndFileInventory": "passed",
+    "sourceAssetAndTargetVersionChecks": "passed",
+    "bundleVerification": "passed",
+    "consumerTypecheckLintBuildTestsBrowser": "not run; no application",
+    "snapshotCreated": false,
+    "gate03Passed": false
+  }
+}
