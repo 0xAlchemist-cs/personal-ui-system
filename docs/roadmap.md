@@ -2,6 +2,8 @@
 
 按阶段交付；下一阶段只在有具体需求时启动，避免为未来能力预先引入依赖。
 
+阶段之间的推进门槛与执行约定见 [计划总纲](superpowers/MASTER-PLAN.md)；资料分类见 [文档索引](README.md)。本文件维护实际阶段状态，新增计划不等于开始实施。
+
 | 阶段 | 目标 | 交付与完成条件 | 当前状态 |
 | --- | --- | --- | --- |
 | 01 设计知识库 | 把设计偏好与决策规则变成可读资产 | 2～3 套候选风格、参考来源、Token、布局、Brief 和提示词；说明成熟度并检查引用一致性 | 基础已建立；风格尚待真实页面验证 |
@@ -12,7 +14,7 @@
 ## 工具接入决策
 
 - **Storybook / 阶段 02**：提供组件隔离预览与 Stories；选定框架后按对应官方安装说明配置，不先锁死 React 或 Next.js。[官方文档](https://storybook.js.org/docs)
-- **UI 体系 / 按目标项目需要**：已接入 Ant Design 及另外四套方案的官方 Skill；按 [组件选型](../components/README.md) 使用。运行时依赖仍在具体应用中安装；[接入记录](ui-tooling.md) 区分 Skill、CLI 与未启用的 MCP。
+- **UI 体系 / 按目标项目需要**：已接入 Ant Design 及另外四套方案的官方 Skill；按 [组件选型](../components/README.md) 使用。运行时依赖仍在具体应用中安装；[接入记录](guides/ui-tooling.md) 区分 Skill、CLI 与未启用的 MCP。
 - **Playwright / 阶段 04**：使用截图比较建立回归；基线在固定 OS、浏览器、字体与视口环境下产生，截图变化需要人工判断，不自动认定为合理变化。[视觉比较文档](https://playwright.dev/docs/test-snapshots)
 - **shadcn Registry / 阶段 04 按需**：作为资源分发选项评估，只有存在稳定资产和重复安装需求时再建设。[Registry 文档](https://ui.shadcn.com/docs/registry)
 
@@ -23,3 +25,5 @@
 选取一个真实页面，用对应 Brief 和候选预设完成实现与人工验收。根据真实截图修正 Token 和规则，再开始收录已验证组件。工作台中的示例数量不作为资产成熟度的替代指标。
 
 具体建议见 [首个可视化工作台实施计划](superpowers/plans/2026-10-23-showcase-v1.md)：用 `minimal-saas` 成员管理页验证整套规则，同步补齐必要的 Storybook 预览。React + TypeScript + Vite + Ant Design 是这个工作台的建议选型，实施尚未开始。
+
+后续条件计划已整理：[阶段 03 独立项目复用试点](superpowers/plans/2026-10-23-phase03-consumer-pilot.md)、[阶段 04 持续验证与按需分发](superpowers/plans/2026-10-23-phase04-quality-and-distribution.md)。按总纲门槛和实际需求推进，目前均未启动。

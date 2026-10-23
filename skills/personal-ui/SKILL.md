@@ -13,10 +13,10 @@ description: 使用 Personal UI System 的视觉预设、Token 和 UI Brief 进�
 
 - 需求和风格不明确：使用 [Brief 约定](../../briefs/README.md) 与 [风格目录](../../design-system/styles/README.md)，把任务、密度、布局和状态写清楚。只有影响结果且无法推断的信息才询问用户。
 - 设计与实现：读取所选预设的说明与 JSON、[Token 约定](../../design-system/tokens/README.md) 和相关模式。三套预设当前均为 `draft`；模板和组件目录当前只提供规格，不声称存在实现。
-- 组件体系：按 [选型入口](../../components/README.md) 读取目标项目已经使用或用户选定的官方 Skill，不因本机安装多个体系而混用它们。工具是否已安装、MCP 是否可用以 [接入记录](../../docs/ui-tooling.md) 和实际环境为准。
+- 组件体系：按 [选型入口](../../components/README.md) 读取目标项目已经使用或用户选定的官方 Skill，不因本机安装多个体系而混用它们。工具是否已安装、MCP 是否可用以 [接入记录](../../docs/guides/ui-tooling.md) 和实际环境为准。
 - Ant Design 项目：参考 [组件选型约定](../../components/ant-design/README.md)，优先已有官方组件与官方 Skill。若官方 Skill 不可用，查对应版本官方文档并说明，不伪称已经调用。
 - 评审或验收：使用 [设计评审](../../prompts/design-review.md) 或 [视觉验收](../../prompts/visual-qa.md)，只报告实际观察与已执行检查。
 
-其他技术栈复用变量、结构和规则，不为了本库改换框架。新增资产按 [生命周期](../../docs/asset-lifecycle.md) 验证与审核；独立项目按 [复用策略](../../docs/project-reuse.md) 保存闭合快照，不依赖本机目录。
+其他技术栈复用变量、结构和规则，不为了本库改换框架。新增资产按 [生命周期](../../docs/guides/asset-lifecycle.md) 验证与审核；独立项目按 [复用策略](../../docs/guides/project-reuse.md) 保存闭合快照，不依赖本机目录。
 
 最终说明所用预设与成熟度、复用与新增资产、适用检查结果和未验证项。用户已授权的工作连续完成；不要额外发明审批步骤。

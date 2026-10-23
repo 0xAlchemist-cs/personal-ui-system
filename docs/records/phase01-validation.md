@@ -13,7 +13,7 @@
 | 预设一致性 | 三套预设 ID、版本、成熟度和 Schema 中的固定组合一致 |
 | Brief 一致性 | 两份示例的顶层字段、预设组合、主要状态、交互 ID 唯一性和部分字段枚举符合约定 |
 | Skill 校验 | 使用 `skill-creator` 的 `quick_validate.py`，结果为 `Skill is valid!`；另检查元数据说明长度和提示词引用 |
-| Git | 第一阶段初次静态检查时初始化本地 main 分支；后续按用户要求配置公开 GitHub 仓库，地址见 [README](../README.md) |
+| Git | 第一阶段初次静态检查时初始化本地 main 分支；后续按用户要求配置公开 GitHub 仓库，地址见 [README](../../README.md) |
 
 Token 检查直接解析 JSON，以预设覆盖语义层后递归解析完整值别名。Brief 检查读取 Schema 的字段与固定组合进行一致性比较；**未安装完整 Draft 2020-12 验证器，因此不宣称完成全量 JSON Schema 验证**。
 

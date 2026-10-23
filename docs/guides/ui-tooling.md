@@ -4,7 +4,7 @@
 
 ## 安装范围
 
-为 Codex 安装以下 9 个全局 Skill，并在 `.agents/skills/` 保存独立副本。副本保留官方内容，不通过本机路径导入全局目录；文件清单与 Git Blob SHA-1 见 [来源清单](../tooling/upstream-skill-files.json)。
+为 Codex 安装以下 9 个全局 Skill，并在 `.agents/skills/` 保存独立副本。副本保留官方内容，不通过本机路径导入全局目录；文件清单与 Git Blob SHA-1 见 [来源清单](../../tooling/upstream-skill-files.json)。
 
 | 官方来源 | 本次安装的 Skill | 快照文件数 |
 | --- | --- | --- |
@@ -59,4 +59,4 @@ Nuxt UI Skill 将具体组件 API 查询交给 MCP，真实任务使用这部分
 
 9 个全局 Skill 与项目副本共 62 份源文件，逐文件核对官方 Git Blob SHA-1；Windows 检出产生的 CRLF 允许还原 LF 后比较。该检查不代表组件代码、所有示例或页面视觉质量已经验证。
 
-第三方许可见 [许可证目录说明](../third-party-licenses/README.md)，实际安装与命令检查见 [接入验证记录](ui-tooling-validation.md)。
+第三方许可见 [许可证目录说明](../../third-party-licenses/README.md)，实际安装与命令检查见 [接入验证记录](../records/ui-tooling-validation.md)。

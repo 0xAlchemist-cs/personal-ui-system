@@ -22,4 +22,4 @@
 
 本目录仍没有公共组件实现。Skill 是开发知识资产；官方组件与本库 `draft` 风格的页面组合仍需真实验收。
 
-安装、来源、CLI 与可选 MCP 见 [UI 工具接入](../docs/ui-tooling.md)。
+安装、来源、CLI 与可选 MCP 见 [UI 工具接入](../docs/guides/ui-tooling.md)。

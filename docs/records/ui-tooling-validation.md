@@ -6,7 +6,7 @@
 
 - 9 个全局 Skill 的入口存在，名称与安装清单一致。
 - 9 个项目副本与全局副本的目录清单一致，共 62 份源文件。
-- 每份文件与 [官方来源清单](../tooling/upstream-skill-files.json) 的 Git Blob SHA-1 一致；Windows 文本换行按 CRLF → LF 规范化后比较。
+- 每份文件与 [官方来源清单](../../tooling/upstream-skill-files.json) 的 Git Blob SHA-1 一致；Windows 文本换行按 CRLF → LF 规范化后比较。
 - 四套上游许可证已保存到 `third-party-licenses/`。
 - 解析 12 份 JSON、4 份 YAML，并检查 192 处本地 Markdown 引用，未发现缺失目标。
 - 根目录没有新增 `package.json`、`components.json` 或 `node_modules`，没有选择应用框架。

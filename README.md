@@ -4,7 +4,7 @@
 
 当前版本：**0.1.0 · 第一阶段：设计知识库**。先把设计决策变得可复用，再逐步建设组件工作台、项目集成和自动化验收。
 
-已补充五套组件体系的开发知识接入；按目标项目选用，见 [组件选型](components/README.md) 和 [工具接入记录](docs/ui-tooling.md)。
+已补充五套组件体系的开发知识接入；按目标项目选用，见 [组件选型](components/README.md) 和 [工具接入记录](docs/guides/ui-tooling.md)。
 
 公开仓库：[0xAlchemist-cs/personal-ui-system](https://github.com/0xAlchemist-cs/personal-ui-system) · 开源许可：[MIT](LICENSE)。
 
@@ -18,6 +18,8 @@
 本阶段无需安装依赖，没有启动命令。页面模板是设计规格，组件目录是选型与收录约定；尚未提供可运行应用、Storybook 或公共组件包。
 
 **下一步建议：** 按 [首个工作台实施计划](docs/superpowers/plans/2026-10-23-showcase-v1.md)，先完成一张 `minimal-saas` 成员管理示范页、必要的 Storybook 预览和真实页面验收。计划已整理，应用尚未初始化。
+
+完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 
 ## 三套候选风格
 
@@ -37,7 +39,7 @@
 | 组件知识 | [体系选型](components/README.md)、[Ant Design](components/ant-design/README.md)、[自定义组件](components/custom/README.md) | 五套体系的知识接入与收录边界，没有公共组件实现 |
 | 交互模式 | [导航](patterns/navigation/README.md)、[表单](patterns/forms/README.md)、[数据展示](patterns/data-display/README.md) | 候选规则，供首个项目验证 |
 | 页面规格 | [Dashboard](templates/dashboard/README.md)、[Blog](templates/blog/README.md)、[SaaS](templates/saas/README.md)、[Landing Page](templates/landing-page/README.md) | 信息结构与状态要求，没有页面源码 |
-| AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md)、[官方工具](docs/ui-tooling.md) | 官方 Skill 全局安装及项目快照；个人 Skill 仍为仓库内入口，MCP 按需接入 |
+| AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md)、[官方工具](docs/guides/ui-tooling.md) | 官方 Skill 全局安装及项目快照；个人 Skill 仍为仓库内入口，MCP 按需接入 |
 | Quality Control | [人工验收记录](tests/visual-review-template.md)、[工作台规划](showcase/README.md) | 验收约定，没有截图基线或自动化套件 |
 
 ## 以后如何描述需求
@@ -48,16 +50,17 @@
 
 ## 独立项目复用
 
-按 [复用策略](docs/project-reuse.md) 将所需规范和 Token 保存为目标项目内的快照，并记录版本、来源与本地修改。快照内的引用必须闭合，项目应能独立检出、构建和部署。
+按 [复用策略](docs/guides/project-reuse.md) 将所需规范和 Token 保存为目标项目内的快照，并记录版本、来源与本地修改。快照内的引用必须闭合，项目应能独立检出、构建和部署。
 
 不要把 `D:\personal-ui-systerm` 或其他本机路径写进项目依赖、构建脚本或导入语句。官方 Skill 副本及来源随仓库保存；Storybook、Playwright、组件包与 Registry 分发仍按 [路线图](docs/roadmap.md) 演进。
 
 ## 维护
 
-- [资产生命周期](docs/asset-lifecycle.md)：候选、验证、审核与兼容性。
+- [资产生命周期](docs/guides/asset-lifecycle.md)：候选、验证、审核与兼容性。
 - [变更记录](CHANGELOG.md)：按版本记录知识资产变化。
-- [本阶段实施记录](docs/implementation-plan.md)：交付范围和检查方式。
-- [本次验证记录](docs/validation-report.md)：静态检查证据与未验证范围。
+- [第一阶段实施记录](docs/records/phase01-implementation.md)：知识库基础交付范围和检查方式。
+- [第一阶段验证记录](docs/records/phase01-validation.md)：2026-10-22 静态检查证据与未验证范围。
+- [文档索引](docs/README.md)：计划、指南、历史记录与来源档案。
 
 ## 保存更新到 GitHub
 

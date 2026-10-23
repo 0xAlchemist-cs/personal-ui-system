@@ -14,4 +14,4 @@
 
 第一阶段没有应用或依赖树，因此不引入 TypeScript、Lint、Build、Storybook、Playwright 或组件测试框架。文件与数据一致性检查在当前环境执行，不据此声称完成页面视觉验收。Git 本地版本记录与第四阶段的组件版本、分发和自动回归是不同层次。
 
-实际检查结果见 [本次验证记录](validation-report.md)。本地 Git 仓库已初始化，并配置公开 GitHub 仓库为 `origin`；云端地址与保存更新方法见 [README](../README.md)。
+实际检查结果见 [本次验证记录](phase01-validation.md)。本地 Git 仓库已初始化，并配置公开 GitHub 仓库为 `origin`；云端地址与保存更新方法见 [README](../../README.md)。

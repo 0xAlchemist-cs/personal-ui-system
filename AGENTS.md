@@ -9,7 +9,8 @@
 3. [风格目录](design-system/styles/README.md)：选择一套风格，再读取对应说明和 JSON。
 4. [Token 约定](design-system/tokens/README.md)：解释原始值、语义别名和覆盖顺序。
 5. 按需读取 `patterns/`、`templates/`、`prompts/` 中与当前任务相关的文件，不一次性加载整个仓库。
-6. 涉及组件体系时读取 [选型入口](components/README.md) 与 [工具接入记录](docs/ui-tooling.md)，再按实际技术栈读取对应 Skill。
+6. 涉及组件体系时读取 [选型入口](components/README.md) 与 [工具接入记录](docs/guides/ui-tooling.md)，再按实际技术栈读取对应 Skill。
+7. 查找计划、指南与历史记录时使用 [文档索引](docs/README.md)；用户要求执行阶段计划时，先读取 [计划总纲](docs/superpowers/MASTER-PLAN.md)，再按指定任务范围推进。
 
 ## 当前范围
 
@@ -25,7 +26,7 @@
 - API 和依赖版本以目标项目锁文件及对应官方文档为准。本库的资料核验日期不等于版本兼容保证。
 - UI Brief 是本库的自定义约定，入口为 [格式说明](briefs/README.md)；它不是框架或第三方工具的标准。
 - 不将项目绑定到本机绝对路径，不通过跨仓库源码引用或目录链接共享资产。复用采用可复制、可记录来源版本的快照；稳定组件的包分发留到后续阶段。
-- 新风格、组件与模式先作为候选资产，按 [资产生命周期](docs/asset-lifecycle.md) 经验证和审核后晋级。
+- 新风格、组件与模式先作为候选资产，按 [资产生命周期](docs/guides/asset-lifecycle.md) 经验证和审核后晋级。
 - 已接入 Ant Design、shadcn/ui、Material UI、Chakra UI、Nuxt UI 的相关知识。只有项目已采用相应库，或用户明确选用它时才加载其 Skill；通用需求不能因全局 Skill 的宽泛触发描述而被强制使用某个库。
 - 已安装 Skill 不等于已安装组件或已启用 MCP。只报告实际验证的能力；不为了满足 Skill 示例擅自初始化框架、迁移组件库或启用付费服务。
 
