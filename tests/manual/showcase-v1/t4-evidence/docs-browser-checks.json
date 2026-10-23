@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-23",
+  "browser": "155.0.8059.81",
+  "os": "10.0.26100",
+  "locale": "zh-CN",
+  "timezone": "UTC",
+  "reducedMotion": "reduce",
+  "deviceScaleFactor": 1,
+  "scope": "P02-T4 focused Story documentation overlap recheck, not T5 page acceptance",
+  "checks": [
+    {
+      "storyId": "members-page--default",
+      "width": 1440,
+      "summaryHit": {
+        "rect": {
+          "x": 297,
+          "y": 820.53125,
+          "width": 1086,
+          "height": 22.390625,
+          "top": 820.53125,
+          "right": 1383,
+          "bottom": 842.921875,
+          "left": 297
+        },
+        "hitTag": "SUMMARY",
+        "hitClass": "",
+        "clear": true
+      },
+      "expanded": true,
+      "metadata": [
+        {
+          "label": "输入",
+          "clear": true,
+          "value": "initialMembers：固定合成成员集合，默认 30 条；无初始数据 Story 传入空集合。筛选无结果与保存反馈通过实际页面操作触发。"
+        },
+        {
+          "label": "事件",
+          "clear": true,
+          "value": "搜索、状态筛选、排序及分页更新页面查询；编辑打开原有对话框，保存更新内存并提示刷新恢复，取消保留记录。保存反馈正常在约 3 秒后消失，可再次编辑成员重现。"
+        },
+        {
+          "label": "依赖",
+          "clear": true,
+          "value": "MembersPage、AppShell、ContentPanel、MemberFilters、MemberTable、EditMemberDialog、固定 mockMembers 与共同 ShowcaseThemeProvider；没有网络请求或持久化服务。"
+        },
+        {
+          "label": "预设与密度",
+          "clear": true,
+          "value": "minimal-saas · light · comfortable · blue · medium"
+        },
+        {
+          "label": "验证范围",
+          "clear": true,
+          "value": "T3 核心交互已检查；T4 验证隔离状态预览，T5 正式页面验收待执行。资产仍为 draft。"
+        }
+      ],
+      "bounds": {
+        "left": 240,
+        "right": 1440,
+        "viewport": 1440,
+        "documentWidth": 1440
+      },
+      "status": "passed"
+    },
+    {
+      "storyId": "layout-app-shell--wide-navigation",
+      "width": 1440,
+      "summaryHit": {
+        "rect": {
+          "x": 297,
+          "y": 821,
+          "width": 1086,
+          "height": 22.390625,
+          "top": 821,
+          "right": 1383,
+          "bottom": 843.390625,
+          "left": 297
+        },
+        "hitTag": "SUMMARY",
+        "hitClass": "",
+        "clear": true
+      },
+      "expanded": true,
+      "metadata": [
+        {
+          "label": "输入",
+          "clear": true,
+          "value": "children：当前页面内容。断点来自共享 Token，iframe 宽度决定布局。"
+        },
+        {
+          "label": "事件",
+          "clear": true,
+          "value": "当前导航跳转到成员管理标题；小屏支持打开、关闭、Escape 与焦点返回。"
+        },
+        {
+          "label": "依赖",
+          "clear": true,
+          "value": "React、Ant Design Drawer/Button、共享主题 Provider、布局 Token 和应用内焦点处理。"
+        },
+        {
+          "label": "预设与密度",
+          "clear": true,
+          "value": "minimal-saas · light · comfortable · blue · medium"
+        },
+        {
+          "label": "验证范围",
+          "clear": true,
+          "value": "T3 核心交互已检查；T4 验证隔离状态预览，T5 正式页面验收待执行。资产仍为 draft。"
+        }
+      ],
+      "bounds": {
+        "left": 240,
+        "right": 1440,
+        "viewport": 1440,
+        "documentWidth": 1440
+      },
+      "status": "passed"
+    },
+    {
+      "storyId": "members-page--default",
+      "width": 375,
+      "summaryHit": {
+        "rect": {
+          "x": 41,
+          "y": 836.703125,
+          "width": 293,
+          "height": 22.390625,
+          "top": 836.703125,
+          "right": 334,
+          "bottom": 859.09375,
+          "left": 41
+        },
+        "hitTag": "SUMMARY",
+        "hitClass": "",
+        "clear": true
+      },
+      "expanded": true,
+      "metadata": [
+        {
+          "label": "输入",
+          "clear": true,
+          "value": "initialMembers：固定合成成员集合，默认 30 条；无初始数据 Story 传入空集合。筛选无结果与保存反馈通过实际页面操作触发。"
+        },
+        {
+          "label": "事件",
+          "clear": true,
+          "value": "搜索、状态筛选、排序及分页更新页面查询；编辑打开原有对话框，保存更新内存并提示刷新恢复，取消保留记录。保存反馈正常在约 3 秒后消失，可再次编辑成员重现。"
+        },
+        {
+          "label": "依赖",
+          "clear": true,
+          "value": "MembersPage、AppShell、ContentPanel、MemberFilters、MemberTable、EditMemberDialog、固定 mockMembers 与共同 ShowcaseThemeProvider；没有网络请求或持久化服务。"
+        },
+        {
+          "label": "预设与密度",
+          "clear": true,
+          "value": "minimal-saas · light · comfortable · blue · medium"
+        },
+        {
+          "label": "验证范围",
+          "clear": true,
+          "value": "T3 核心交互已检查；T4 验证隔离状态预览，T5 正式页面验收待执行。资产仍为 draft。"
+        }
+      ],
+      "bounds": {
+        "left": 0,
+        "right": 375,
+        "viewport": 375,
+        "documentWidth": 375
+      },
+      "status": "passed"
+    },
+    {
+      "storyId": "layout-app-shell--wide-navigation",
+      "width": 375,
+      "summaryHit": {
+        "rect": {
+          "x": 41,
+          "y": 837,
+          "width": 293,
+          "height": 22.390625,
+          "top": 837,
+          "right": 334,
+          "bottom": 859.390625,
+          "left": 41
+        },
+        "hitTag": "SUMMARY",
+        "hitClass": "",
+        "clear": true
+      },
+      "expanded": true,
+      "metadata": [
+        {
+          "label": "输入",
+          "clear": true,
+          "value": "children：当前页面内容。断点来自共享 Token，iframe 宽度决定布局。"
+        },
+        {
+          "label": "事件",
+          "clear": true,
+          "value": "当前导航跳转到成员管理标题；小屏支持打开、关闭、Escape 与焦点返回。"
+        },
+        {
+          "label": "依赖",
+          "clear": true,
+          "value": "React、Ant Design Drawer/Button、共享主题 Provider、布局 Token 和应用内焦点处理。"
+        },
+        {
+          "label": "预设与密度",
+          "clear": true,
+          "value": "minimal-saas · light · comfortable · blue · medium"
+        },
+        {
+          "label": "验证范围",
+          "clear": true,
+          "value": "T3 核心交互已检查；T4 验证隔离状态预览，T5 正式页面验收待执行。资产仍为 draft。"
+        }
+      ],
+      "bounds": {
+        "left": 0,
+        "right": 375,
+        "viewport": 375,
+        "documentWidth": 375
+      },
+      "status": "passed"
+    }
+  ],
+  "consoleIssues": []
+}

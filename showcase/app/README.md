@@ -1,6 +1,6 @@
 # Showcase：成员管理示范页
 
-当前交付到 [Phase 02 任务 3](../../docs/superpowers/plans/2026-10-23-showcase-v1.md)。应用首页为成员管理示范页，支持本地组合筛选、创建时间排序、分页与姓名/邮箱编辑；React 应用与一个基础主题 Story 共用 `ShowcaseThemeProvider`。完整 Stories 状态矩阵和正式页面验收尚未完成。
+当前交付到 [Phase 02 任务 4](../../docs/superpowers/plans/2026-10-23-showcase-v1.md)。应用首页为成员管理示范页，支持本地组合筛选、创建时间排序、分页与姓名/邮箱编辑；React 应用与 17 个 Story 共用 `ShowcaseThemeProvider`。正式页面验收尚未完成。
 
 ## 环境与版本
 
@@ -33,9 +33,29 @@ Vite 默认访问 `http://127.0.0.1:5173/`，若端口被占用，以命令输�
 npm --prefix showcase/app run storybook
 ```
 
-默认访问 `http://127.0.0.1:6006/`，查看“基础 / 主题通路”。本地服务器只绑定回环地址。
+默认访问 `http://127.0.0.1:6006/`，目录分为“基础”“布局”“成员”；可用左侧搜索查找组件。每项预览底部的“用途与接口”说明可展开。本地服务器只绑定回环地址，本轮实测使用 `-- --ci --port 6014`。
 
 如果 Windows PowerShell 的 `npm.ps1` 因用户级 npm 路径不可读而报 `MODULE_NOT_FOUND`，可以将上述命令中的 `npm` 换成 `npm.cmd`。本次实测此方式可用，没有修改全局 npm、PATH 或 MCP 配置。
+
+## Story 目录与操作
+
+| 分组 | 部件 | Story 数量与内容 |
+| --- | --- | --- |
+| 基础 | 主题通路 | 1：原有 Token/控件/反馈预览，补齐说明 |
+| 布局 | AppShell | 2：宽屏导航、小屏抽屉；实际 iframe 宽度决定断点 |
+| 布局 | ContentPanel | 1：标题与内容分组，Controls 可改标题和说明 |
+| 成员 | MemberFilters | 2：输入事件、组合筛选与清除 |
+| 成员 | MemberTable | 4：默认、加载、无初始数据、可滚动表格焦点 |
+| 成员 | EditMemberDialog | 3：有效表单、字段错误/禁用原因、键盘圈定与取消返回 |
+| 成员 | MembersPage | 4：30 条默认记录、无初始数据、筛选无结果、保存成功 |
+
+MemberTable 的 Controls 仅开放加载、页码与排序，真实表格事件也会同步这些参数；编辑事件记录到 Actions，完整编辑流程使用 MembersPage。加载由 Story 中的官方 Spin 包装实际表格，底下的控件使用 inert，关闭加载参数即可恢复操作；产品应用未添加加载延时。
+
+MemberFilters 的 query Control 是初始值，修改它会重置隔离预览；实际输入由 Story 的局部受控状态同步处理，输入过程不会改写这个初始快照。其他业务状态通过预览中的实际按钮和字段操作；表单规则、数据计算和保存反馈都复用现有实现。
+
+带 play 的 Story 选择后自动准备对应状态，之后仍可操作。保存提示遵循产品原有约 3 秒关闭行为，可再次编辑重现。重新选择或重载 Story 恢复固定初始数据。AppShell 的“小屏抽屉”在实际窄视口打开，在宽视口展示正常桌面布局；可使用 Storybook 视口工具或调整浏览器宽度，预览读取真实 iframe 宽度。
+
+当前使用 Storybook 自带 Controls/Actions/Interactions，没有额外安装文档插件；用途与接口说明直接在 Canvas 中可见。完整覆盖矩阵、稳定 Story ID、真实截图和未覆盖项见 [T4 记录](../../tests/manual/showcase-v1/t4-stories-check.md)。
 
 ## 检查与构建
 
@@ -66,6 +86,6 @@ npm --prefix showcase/app run build-storybook
 
 `src/components/` 的 `AppShell` 与 `ContentPanel` 仅用于本工作台。抽屉和弹窗复用官方组件；实际浏览器发现的 Tab 首尾越界由局部键盘处理补齐，关闭后返回触发按钮，编辑行消失时回到列表标题。
 
-实际检查、浏览器环境、截图及已知限制见 [T3 验证记录](../../tests/manual/showcase-v1/t3-interaction-check.md)，主题通路历史见 [T2 记录](../../tests/manual/showcase-v1/t2-theme-check.md)。完整状态 Stories、200% 缩放与正式页面验收留到后续任务；没有视觉回归基线或公共组件包，冻结 Brief、Token JSON 与预设成熟度未改变。
+实际检查、浏览器环境、截图及已知限制见 [T4 验证记录](../../tests/manual/showcase-v1/t4-stories-check.md)，核心交互与主题历史分别见 [T3](../../tests/manual/showcase-v1/t3-interaction-check.md)、[T2](../../tests/manual/showcase-v1/t2-theme-check.md)。200% 缩放与正式页面验收留到 T5；没有视觉回归基线或公共组件包，冻结 Brief、Token JSON 与预设成熟度未改变。
 
 官方核验入口：[Vite](https://vite.dev/guide/)、[Storybook](https://storybook.js.org/docs/get-started/install)、[Ant Design 主题](https://ant.design/docs/react/customize-theme/)、[Vitest](https://vitest.dev/guide/)。真正升级时重新检查 Node 要求、peerDependencies、锁文件与测试结果。

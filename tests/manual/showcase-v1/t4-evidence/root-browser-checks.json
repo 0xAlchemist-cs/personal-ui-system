@@ -1,0 +1,173 @@
+{
+  "environment": {
+    "date": "2026-10-23",
+    "os": "Windows_NT 10.0.26100",
+    "browser": "155.0.8059.81",
+    "runnerNode": "v24.22.1",
+    "locale": "zh-CN",
+    "timezone": "UTC",
+    "reducedMotion": "reduce",
+    "deviceScaleFactor": 1,
+    "zoom": "100%"
+  },
+  "storyCount": 17,
+  "checks": [
+    {
+      "id": "基础-主题通路--default",
+      "title": "基础/主题通路",
+      "name": "Default",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "layout-app-shell--wide-navigation",
+      "title": "布局/AppShell",
+      "name": "宽屏导航",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "layout-app-shell--compact-navigation",
+      "title": "布局/AppShell",
+      "name": "小屏抽屉",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "id": "layout-content-panel--information-grouping",
+      "title": "布局/ContentPanel",
+      "name": "标题与内容分组",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-table--default",
+      "title": "成员/MemberTable",
+      "name": "默认 · 排序与分页",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-table--loading",
+      "title": "成员/MemberTable",
+      "name": "加载 · 仅 Story 模拟",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-table--empty",
+      "title": "成员/MemberTable",
+      "name": "无初始数据",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-table--keyboard-focus",
+      "title": "成员/MemberTable",
+      "name": "焦点 · 可滚动表格",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-page--default",
+      "title": "成员/MembersPage",
+      "name": "默认 · 30 条固定成员",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-page--empty",
+      "title": "成员/MembersPage",
+      "name": "无初始数据",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-page--no-results",
+      "title": "成员/MembersPage",
+      "name": "筛选无结果 · 保留输入",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    },
+    {
+      "id": "members-page--saved",
+      "title": "成员/MembersPage",
+      "name": "保存成功 · 页面内存",
+      "status": "passed",
+      "phase": "finished",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      }
+    }
+  ],
+  "managerChecks": [
+    {
+      "name": "Controls loading/page/sort update actual preview and table events sync args",
+      "status": "passed"
+    },
+    {
+      "name": "onEdit callback appears in built-in Actions panel",
+      "status": "passed"
+    },
+    {
+      "name": "Find components returns matching MemberTable entry",
+      "status": "passed"
+    }
+  ],
+  "consoleIssues": [
+    {
+      "kind": "warning",
+      "message": "The 'ariaLabel' prop on 'PopoverProvider' will become mandatory in Storybook 11. Provide a concise, accessible label describing the popover's purpose."
+    }
+  ],
+  "scope": "P02-T4 story preview and interaction checks; not T5 acceptance",
+  "managerViewport": {
+    "width": 1440,
+    "height": 900
+  }
+}

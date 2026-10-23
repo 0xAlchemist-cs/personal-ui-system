@@ -7,7 +7,7 @@
 | 阶段 | 目标 | 交付与完成条件 | 当前状态 |
 | --- | --- | --- | --- |
 | 01 设计知识库 | 把设计偏好与决策规则变成可读资产 | 2～3 套候选风格、参考来源、Token、布局、Brief 和提示词；说明成熟度并检查引用一致性 | 基础已建立；风格尚待真实页面验证 |
-| 02 组件工作台 | 让组件和状态可以实际预览 | 选定兼容的技术栈；用 Storybook 展示导航、卡片、表格、表单和常见布局，覆盖主要状态与视口；完成首轮视觉验收 | 进行中：T0～T3 完成；T4 状态 Stories 与 T5 正式页面验收待实施 |
+| 02 组件工作台 | 让组件和状态可以实际预览 | 选定兼容的技术栈；用 Storybook 展示导航、卡片、表格、表单和常见布局，覆盖主要状态与视口；完成首轮视觉验收 | 进行中：T0～T4 完成，17 个 Story 可运行；T5 正式页面验收待实施 |
 | 03 Codex 与项目集成 | 在独立项目中稳定使用设计能力 | 试点项目可读取本地快照与 Skill；按其框架选择组件；记录来源版本，独立构建，不依赖本机源码目录 | 已接入本库的官方 Skill；独立应用试点未实施 |
 | 04 自动验证与分发 | 多项目复用可被持续验证 | 组件测试、固定环境的视觉回归、变更与兼容性评估；按实际需求引入独立包、私有 npm 或 Registry | 未实施 |
 
@@ -24,6 +24,6 @@
 
 选取一个真实页面，用对应 Brief 和候选预设完成实现与人工验收。根据真实截图修正 Token 和规则，再开始收录已验证组件。工作台中的示例数量不作为资产成熟度的替代指标。
 
-具体任务见 [首个可视化工作台实施计划](superpowers/plans/2026-10-23-showcase-v1.md)：用 `minimal-saas` 成员管理页验证整套规则，同步补齐必要的 Storybook 预览。当前已采用 React + TypeScript + Vite + Ant Design 完成主题通路和成员核心交互，[T3 验证记录](../tests/manual/showcase-v1/t3-interaction-check.md) 留存实际检查；下一张任务卡为 P02-T4，Gate 02 尚未通过。
+具体任务见 [首个可视化工作台实施计划](superpowers/plans/2026-10-23-showcase-v1.md)：用 `minimal-saas` 成员管理页验证整套规则，同步补齐必要的 Storybook 预览。当前已采用 React + TypeScript + Vite + Ant Design 完成主题、成员核心交互与适用状态 Stories，[T4 验证记录](../tests/manual/showcase-v1/t4-stories-check.md) 留存实际检查；下一张任务卡为 P02-T5，Gate 02 尚未通过。
 
 后续条件计划已整理：[阶段 03 独立项目复用试点](superpowers/plans/2026-10-23-phase03-consumer-pilot.md)、[阶段 04 持续验证与按需分发](superpowers/plans/2026-10-23-phase04-quality-and-distribution.md)。按总纲门槛和实际需求推进，目前均未启动。

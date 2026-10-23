@@ -1,0 +1,135 @@
+{
+  "browser": "155.0.8059.81",
+  "platform": "win32",
+  "node": "v24.22.1",
+  "locale": "zh-CN",
+  "timezone": "UTC",
+  "reducedMotion": "reduce",
+  "deviceScaleFactor": 1,
+  "date": "2026-10-23",
+  "baseUrl": "http://127.0.0.1:6014",
+  "cases": [
+    {
+      "id": "members-filters--default",
+      "width": 1440,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-filters--default",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "height": 900
+    },
+    {
+      "id": "members-filters--combined-query",
+      "width": 1440,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-filters--combined-query",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "height": 900
+    },
+    {
+      "id": "members-edit-dialog--default",
+      "width": 1440,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-edit-dialog--default",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "height": 900
+    },
+    {
+      "id": "members-edit-dialog--invalid-fields",
+      "width": 1440,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-edit-dialog--invalid-fields",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "screenshot": "dialog-invalid-1440.png",
+      "height": 900
+    },
+    {
+      "id": "members-edit-dialog--keyboard-focus",
+      "width": 1440,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-edit-dialog--keyboard-focus",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "height": 900
+    },
+    {
+      "id": "members-filters--combined-query",
+      "width": 768,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-filters--combined-query",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "height": 900
+    },
+    {
+      "id": "members-edit-dialog--keyboard-focus",
+      "width": 375,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "finished": {
+        "storyId": "members-edit-dialog--keyboard-focus",
+        "status": "success",
+        "reporters": []
+      },
+      "pass": true,
+      "playErrors": [],
+      "phase": "finished",
+      "font": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
+      "horizontalOverflow": false,
+      "screenshot": "dialog-focus-375.png",
+      "screenshotState": "After successful keyboard play, reopen real dialog and Tab from name to email.",
+      "height": 900
+    }
+  ]
+}

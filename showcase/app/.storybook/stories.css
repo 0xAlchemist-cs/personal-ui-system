@@ -1,0 +1,16 @@
+.pui-story-documentation { margin-block-start: var(--pui-space-section); }
+.pui-story-fullscreen:has(.pui-shell--desktop) > .pui-story-documentation {
+  width: calc(100% - var(--pui-layout-sidebar));
+  max-width: none;
+  margin-inline-start: var(--pui-layout-sidebar);
+}
+.pui-story-fullscreen:has(.pui-shell--desktop) > .pui-story-documentation > details {
+  max-width: calc(var(--pui-layout-page-max) - 2 * var(--pui-space-page));
+  margin-inline: auto;
+}
+.pui-story-documentation summary { cursor: pointer; font-weight: 600; }
+.pui-story-documentation p { color: var(--pui-color-muted); }
+.pui-story-documentation dl { display: grid; grid-template-columns: minmax(5em, auto) minmax(0, 1fr); gap: var(--pui-space-inline) var(--pui-space-group); }
+.pui-story-documentation dt { font-weight: 600; }
+.pui-story-documentation dd { margin: 0; overflow-wrap: anywhere; }
+.pui-story-loading-note { margin: 0 0 var(--pui-space-group); color: var(--pui-color-muted); }

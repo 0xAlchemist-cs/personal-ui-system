@@ -6,7 +6,7 @@
 
 1. 看 [路线与实际进度](roadmap.md)，确认哪些能力尚未实施。
 2. 看 [计划总纲](superpowers/MASTER-PLAN.md)，了解阶段之间的前置条件和验收门槛。
-3. 开发下一步时定位 [Phase 02：首个工作台](superpowers/plans/2026-10-23-showcase-v1.md) 的任务 4；T0～T3 的证据查看 [验收初稿](../tests/manual/showcase-v1/review.md)、[T2 主题验证](../tests/manual/showcase-v1/t2-theme-check.md) 和 [T3 交互验证](../tests/manual/showcase-v1/t3-interaction-check.md)。
+3. 开发下一步时定位 [Phase 02：首个工作台](superpowers/plans/2026-10-23-showcase-v1.md) 的任务 5；本轮目录和状态覆盖查看 [T4 Stories 验证](../tests/manual/showcase-v1/t4-stories-check.md)，前置证据查看 [验收初稿](../tests/manual/showcase-v1/review.md)、[T2](../tests/manual/showcase-v1/t2-theme-check.md) 与 [T3](../tests/manual/showcase-v1/t3-interaction-check.md)。
 
 ## 分类目录
 

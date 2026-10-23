@@ -1,8 +1,8 @@
 # 可视化组件工作台
 
-阶段 02 进行中。T0～T3 已完成；[独立应用](app/README.md) 可启动成员管理示范页与 Storybook，二者复用同一 Provider。查询、编辑、焦点和三个视口的任务检查见 [T3 验证记录](../tests/manual/showcase-v1/t3-interaction-check.md)。
+阶段 02 进行中。T0～T4 已完成；[独立应用](app/README.md) 可启动成员管理示范页与 17 个 Story，二者复用同一 Provider。部件与状态目录、Controls 和交互检查见 [T4 验证记录](../tests/manual/showcase-v1/t4-stories-check.md)。
 
-下一步按 [首版实施计划](../docs/superpowers/plans/2026-10-23-showcase-v1.md) 的 P02-T4 补齐 Stories 与适用状态。当前的一个基础 Story 用于验证主题通路，尚不是完整组件目录或状态矩阵；正式页面验收留到 T5。
+下一步按 [首版实施计划](../docs/superpowers/plans/2026-10-23-showcase-v1.md) 的 P02-T5 执行正式页面验收。当前目录包括基础主题、AppShell、ContentPanel、筛选、表格、编辑弹窗和完整页面；加载仅在 Story 模拟，错误和成功通过真实交互触发。每项预览末尾可展开用途、接口、依赖及验证范围说明。
 
 首批内容为导航、卡片、表格、表单和常见布局。先按实际项目需要选择兼容技术栈与组件体系，再按 [Storybook 官方文档](https://storybook.js.org/docs) 配置对应框架，不为了展示站强制所有消费者使用同一技术栈。
 

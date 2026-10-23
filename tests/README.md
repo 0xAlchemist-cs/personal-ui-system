@@ -1,6 +1,6 @@
 # 质量与验收
 
-本目录提供 [人工验收记录模板](visual-review-template.md)、[首版规格与验收初稿](manual/showcase-v1/review.md)、[T2 主题通路证据](manual/showcase-v1/t2-theme-check.md) 及 [T3 交互证据](manual/showcase-v1/t3-interaction-check.md)。当前工作台有 Token/适配/成员查询单元测试和浏览器任务检查；T5 正式页面验收及视觉回归基线尚未完成。
+本目录提供 [人工验收记录模板](visual-review-template.md)、[首版规格与验收初稿](manual/showcase-v1/review.md)、[T2 主题通路证据](manual/showcase-v1/t2-theme-check.md)、[T3 交互证据](manual/showcase-v1/t3-interaction-check.md) 及 [T4 Stories/状态证据](manual/showcase-v1/t4-stories-check.md)。当前工作台有 Token/适配/成员查询单元测试和真实预览检查；T5 正式页面验收及视觉回归基线尚未完成。
 
 第一阶段检查文档链接、JSON/YAML 结构、Token 引用和预设与 Brief 的一致性；这不等于应用测试或视觉验收。
 
