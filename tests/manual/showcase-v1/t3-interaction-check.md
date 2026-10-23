@@ -83,3 +83,9 @@
 - **已知限制：** 应用与 Storybook 构建均提示大包体；当前仍为本地示范，未做分包性能优化。浏览器检查仅覆盖所列 Windows/Chrome 环境，不代表跨浏览器验收。
 - **资产评估：** 本次部件只在一个工作台中使用；尚不足以作为跨项目公共资产，继续留在应用内，三套预设均为 `draft`。
 - **下一张可执行任务：P02-T4｜Stories 与状态。** 直接使用现有计划的任务 4，复用 T2/T3 实际部件与 Provider，输出状态覆盖矩阵及未覆盖项；不在本轮提前执行。
+
+## Git 交付状态
+
+实现提交为 `c2d6efe644e33ad16b80a5c7430a169ff211c78d`，已推送至 [codex/p02-t3](https://github.com/0xAlchemist-cs/personal-ui-system/tree/codex/p02-t3)，[与主分支的差异](https://github.com/0xAlchemist-cs/personal-ui-system/compare/main...codex/p02-t3) 可直接审阅。
+
+本轮自动审批拒绝 `git merge --ff-only codex/p02-t3`，理由是该操作会修改默认分支的持久历史，当前证据未明确授权本轮合入 `main`；此前 T2 的单独合并授权不被认定为覆盖 T3。未绕过拒绝，主分支仍为 `19f65ed68ed54c0317ffbe338c303ca81844f411`。T3 实现与验证已完成，主分支集成待用户明确授权；本分支先保存本次结果，T4 尚未开始。
