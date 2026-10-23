@@ -1,0 +1,95 @@
+# Phase 02 Showcase V1 / P02-T1：首版需求规格，尚未实现页面。
+# 来源：briefs/examples/user-management.yaml；冻结基线：520f49bdb01aa7949d69929c5195e1d34af91db5。
+# 实际依赖版本与锁文件在 P02-T2 核对，本文件不表示已经安装组件。
+schema_version: "1.0"
+page: UserManagement
+purpose: 为管理员提供成员检索、状态查看和基本信息编辑；首版工作台使用明确标注的演示数据。
+
+stack:
+  framework: React + Vite
+  language: TypeScript
+  ui: Ant Design
+
+design:
+  preset: minimal-saas
+  density: comfortable
+  theme: light
+  accent: blue
+  radius: medium
+
+layout:
+  type: sidebar-dashboard
+  sidebar: fixed-to-drawer
+  header: sticky
+  content: responsive
+
+# 以下是页面职责名，沿用原示例；不代表已有同名组件或公共组件包。
+components:
+  - PageHeader
+  - SearchFilters
+  - UserTable
+  - Pagination
+  - EditDialog
+
+data:
+  source: mock
+  description: 30 条固定的合成成员记录，明确标为演示数据，状态为 active 或 disabled。
+  fields:
+    - id
+    - name
+    - email
+    - status
+    - createdAt
+  pagination: client
+  notes: >-
+    id、name、email 为字符串，id 唯一且稳定，createdAt 为固定 ISO 日期；记录内容和顺序可重复复现，
+    不使用随机数、运行时生成日期或真实个人信息。每页 10 条，先筛选、再按 createdAt 排序、最后分页。
+    仅编辑姓名和邮箱，更新只存在当前页面内存，刷新后恢复固定初始数据，不调用真实服务或写入持久化存储。
+
+interaction:
+  - id: keyword-search
+    behavior: 按姓名或邮箱进行不区分大小写的本地包含匹配；与状态筛选同时生效；输入变化后回到第一页。
+  - id: status-filter
+    behavior: 选项为全部、active、disabled；变化后回到第一页，保留关键词。
+  - id: sort
+    behavior: 仅对筛选后的记录按 createdAt 升降序排序，默认降序，变化后回到第一页。
+  - id: pagination
+    behavior: 每页 10 条，先筛选再排序后分页；编辑影响匹配结果时将页码限制在有效范围，空结果页码为 1。
+  - id: edit-dialog
+    behavior: >-
+      仅修改姓名和邮箱；邮箱格式有效且姓名非空才允许保存；取消不修改记录。
+      打开后将焦点移入对话框并限制在其内部，支持 Escape 退出；关闭后焦点返回触发按钮。
+      若保存后该行已离开筛选结果，返回仍存在的表格标题或筛选入口。
+
+states: [loading, empty, error, success, disabled]
+state_details:
+  loading: 本地静态数据无网络加载；仅在 Storybook 模拟表格加载分支，示范页面不添加人工等待。
+  empty: 首次无数据说明暂无成员；筛选无结果保留当前输入并提供清除筛选，不将两者合并成同一种提示。
+  error: 表单错误与字段关联并保留输入；不在用户刚输入首个字符时过早显示完整错误；本示范无网络错误，不虚构请求重试。
+  success: 保存到页面内存后提示演示修改成功，并明确说明刷新后恢复。
+  disabled: 表单无效时保存按钮禁用且给出就地可读原因，不仅依赖悬浮提示；disabled 成员仍可编辑基本信息，不禁用整行操作。
+
+constraints:
+  - reuse-existing-components
+  - use-design-tokens
+  - no-unnecessary-dependencies
+  - keyboard-accessible
+  - 只提供可工作的成员管理导航入口，不增加无行为的菜单、统计数字、图表、新增或导出按钮。
+  - 桌面固定侧栏，小屏使用有标题、关闭入口及焦点管理的抽屉，页头不遮挡正文标题。
+  - 沿用现有语义 Token 和 minimal-saas 固定组合，不改成其他主题或引入第二套 UI 组件库。
+  - React + Vite 为本工作台选型；Storybook 使用 React/Vite 集成，单元测试使用 Vitest，具体兼容版本在 P02-T2 核对并锁定。
+  - 不实现真实账号管理、权限变更、登录、服务端接口、持久化、公共组件包或资产分发。
+
+acceptance:
+  - 在 375、768、1440px 验证导航、筛选和表格；页面无意外横向溢出，筛选可换行，关键字段与编辑操作可达。
+  - 表格可局部横向滚动，滚动区域有可访问名称且可通过键盘到达；当前导航项有明确视觉与语义标记。
+  - 验证 30 条固定合成记录、唯一稳定 ID、固定 ISO 日期、两种成员状态，以及演示数据标记，不出现真实个人信息。
+  - 验证姓名或邮箱的大小写不敏感匹配与状态组合筛选；关键词、状态、排序变化均回到第一页。
+  - 验证先筛选再排序后分页，默认 createdAt 降序、每页 10 条；编辑使匹配或页数变化时页码收敛到有效范围。
+  - 验证仅编辑姓名和邮箱、非空姓名和邮箱格式校验、保存更新内存、取消不改变记录；刷新恢复初始数据。
+  - 验证加载仅在 Storybook 模拟，首次空数据、筛选无结果、表单错误、成功反馈与禁用原因有符合本规格的表现。
+  - 键盘可完成搜索、筛选、翻页和编辑；抽屉及对话框支持 Escape、焦点圈定和关闭返回，覆盖编辑后行离开结果的退路。
+  - 检查 200% 缩放、字段可见标签、错误关联、标题层级、对比度、可见焦点与减少动态效果设置。
+  - 执行目标应用实际适用的 TypeScript、Lint、单元测试、应用构建和 Storybook 构建，记录实际版本、命令与结果。
+  - 对主要状态进行真实页面视觉评审，记录 OS、浏览器、字体、视口、缩放、语言、时区、固定日期显示规则及真实截图，不将截图称为已建立的回归基线。
+  - 验收记录区分通过、失败、未执行和不适用；P02-T1 只冻结规格，不据此宣称页面已实现或资产已 validated。
