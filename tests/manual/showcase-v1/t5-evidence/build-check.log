@@ -1,0 +1,164 @@
+P02-T5 final verification: source b71e547 plus StoryFrame documentation and preset status metadata; 2026-10-23
+v22.15.0
+11.16.0
+Command: npm run typecheck
+
+> personal-ui-showcase@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.json
+
+Exit: 0
+Command: npm run lint
+
+> personal-ui-showcase@0.1.0 lint
+> oxlint --deny-warnings src .storybook vite.config.ts vitest.config.ts
+
+Exit: 0
+Command: npm run test
+
+> personal-ui-showcase@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/showcase/app
+
+
+ Test Files  3 passed (3)
+      Tests  78 passed (78)
+   Start at  21:16:56
+   Duration  420ms (import 42%, transform 36%, tests 11%, worker 10%)
+
+Exit: 0
+Command: npm run build
+
+> personal-ui-showcase@0.1.0 build
+> npm run typecheck && vite build
+
+
+> personal-ui-showcase@0.1.0 typecheck
+> tsc --noEmit -p tsconfig.json
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 1507 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:   0.33 kB
+dist/assets/index-D4ydqoFF.css    7.04 kB │ gzip:   1.59 kB
+dist/assets/index-BIZdcE-7.js   964.59 kB │ gzip: 308.69 kB
+
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 732ms
+Exit: 0
+Command: npm run build-storybook
+
+> personal-ui-showcase@0.1.0 build-storybook
+> storybook build
+
+
+T  Building storybook v10.6.3
+|
+o  Cleaning outputDir: storybook-static
+|
+o  Loading presets
+|
+o  Building manager..
+|
+•  Building open services..
+|
+•  Building preview..
+|  Vite vite v8.3.5 building client environment for production...
+transforming...
+✓ 1541 modules transformed.
+rendering chunks...
+computing gzip size...
+|  Vite storybook-static/iframe.html
+|  19.28 kB │ gzip:   5.41 kB
+|  storybook-static/assets/iframe-BEwzDcjB.css                       7.91
+|  kB │ gzip:   1.75 kB
+|  storybook-static/assets/iframe-CdmbbTtc.js                        0.04
+|  kB │ gzip:   0.06 kB
+|  storybook-static/assets/button-Cj45t9Sz.js                        0.18
+|  kB │ gzip:   0.16 kB
+|  storybook-static/assets/dialog-focus-BUtdd-ap.js                  0.60
+|  kB │ gzip:   0.42 kB
+|  storybook-static/assets/react-18-B5kvrStd.js                      0.86
+|  kB │ gzip:   0.50 kB
+|  storybook-static/assets/ContentPanel-AHMBWksG.js                  0.94
+|  kB │ gzip:   0.45 kB
+|  storybook-static/assets/PurePanel-CRmYrT1U.js                     1.14
+|  kB │ gzip:   0.69 kB
+|  storybook-static/assets/rolldown-runtime-sJBDdmOt.js              1.20
+|  kB │ gzip:   0.67 kB
+|  storybook-static/assets/useClosable-DIgU-BRL.js                   1.30
+|  kB │ gzip:   0.69 kB
+|  storybook-static/assets/preload-helper-2GovK0wV.js                1.64
+|  kB │ gzip:   0.87 kB
+|  storybook-static/assets/StoryFrame-FnhqGcLF.js                    1.98
+|  kB │ gzip:   0.98 kB
+|  storybook-static/assets/ContentPanel.stories-DNCpPFNv.js          2.02
+|  kB │ gzip:   1.24 kB
+|  storybook-static/assets/MemberFilters-BtaCkoGv.js                 2.02
+|  kB │ gzip:   0.88 kB
+|  storybook-static/assets/AppShell.stories-BYDDfiEt.js              2.15
+|  kB │ gzip:   1.38 kB
+|  storybook-static/assets/motion-B2Gtmdz1.js                        2.16
+|  kB │ gzip:   1.07 kB
+|  storybook-static/assets/MemberTable.stories-6TSRCr74.js           2.83
+|  kB │ gzip:   1.65 kB
+|  storybook-static/assets/MemberFilters.stories-CMuTbqkt.js         2.91
+|  kB │ gzip:   1.43 kB
+|  storybook-static/assets/zoom-K2P64yTM.js                          2.97
+|  kB │ gzip:   0.80 kB
+|  storybook-static/assets/ThemePreview.stories-DEOj7EAM.js          3.10
+|  kB │ gzip:   1.44 kB
+|  storybook-static/assets/EditMemberDialog.stories-DzzRImnJ.js      3.92
+|  kB │ gzip:   1.75 kB
+|  storybook-static/assets/MembersPage.stories-BX9dTHg_.js           9.36
+|  kB │ gzip:   3.13 kB
+|  storybook-static/assets/context-D8uHnx_q.js                      11.32
+|  kB │ gzip:   4.04 kB
+|  storybook-static/assets/input-Bi2RU4Hi.js                        17.04
+|  kB │ gzip:   7.19 kB
+|  storybook-static/assets/AppShell-D_4SzC3h.js                     18.71
+|  kB │ gzip:   7.23 kB
+|  storybook-static/assets/mock-members-Dzjz0G9v.js                 27.14
+|  kB │ gzip:   9.41 kB
+|  storybook-static/vite-inject-mocker-entry.js                     27.75
+|  kB │ gzip:   9.66 kB
+|  storybook-static/assets/EditMemberDialog-gEj9HKIm.js             31.47
+|  kB │ gzip:  12.36 kB
+|  storybook-static/assets/useModal-CH0rDQRC.js                     32.54
+|  kB │ gzip:  11.20 kB
+|  storybook-static/assets/space-DWvNQj5h.js                        39.03
+|  kB │ gzip:  12.11 kB
+|  storybook-static/assets/member-query-CnD3-y1D.js                 88.30
+|  kB │ gzip:  30.19 kB
+|  storybook-static/assets/ContextIsolator-C8BJcWT7.js             217.35
+|  kB │ gzip:  77.40 kB
+|  storybook-static/assets/client-DNntq5Ov.js                      218.38
+|  kB │ gzip:  68.12 kB
+|  storybook-static/assets/MemberTable-Bvgj1__X.js                 278.08
+|  kB │ gzip:  86.93 kB
+|  storybook-static/assets/iframe-B4NviWbn.js                    1,163.33
+|  kB │ gzip: 333.59 kB
+
+|
+!  Vite [plugin builtin:vite-reporter]
+|  (!) Some chunks are larger than 500 kB after minification. Consider:
+|  - Using dynamic import() to code-split the application
+|  - Use build.rolldownOptions.output.codeSplitting to improve chunking:
+|  ]8;;https://rolldown.rs/reference/OutputOptions.codeSplittinghttps://rolldown.rs/reference/OutputOptions.codeSplitting]8;;
+|  - Adjust chunk size limit for this warning via
+|  build.chunkSizeWarningLimit.
+|  Vite ✓ built in 2.91s
+|
+o  Output directory:
+|  C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/showcase/app/storybook-static
+|
+—  Storybook build completed successfully
+
+Exit: 0
