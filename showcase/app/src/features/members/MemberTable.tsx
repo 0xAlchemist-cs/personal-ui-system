@@ -58,15 +58,15 @@ export function MemberTable({
 
   return (
     <>
-      <p className="members-scroll-help" id={scrollHelpId}>表格可横向滚动；可聚焦后使用左右方向键查看。</p>
+      {rows.length > 0 && <p className="members-scroll-help" id={scrollHelpId}>表格可横向滚动；可聚焦后使用左右方向键查看。</p>}
       <div
           className="members-table-scroll"
           role="region"
           aria-label="成员列表，可横向滚动"
-          aria-describedby={scrollHelpId}
+          aria-describedby={rows.length > 0 ? scrollHelpId : undefined}
           tabIndex={0}
       >
-        <Table<Member>
+        {rows.length > 0 ? <Table<Member>
             className="members-table"
             columns={columns}
             dataSource={rows}
@@ -75,14 +75,13 @@ export function MemberTable({
             tableLayout="fixed"
             onChange={onChange}
             showSorterTooltip={false}
-            locale={{ emptyText: (
-              <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={hasMembers ? '没有符合条件的成员' : '暂无成员'}>
-                {hasMembers ? (
-                  <Button onClick={onClearFilters}>清除筛选</Button>
-                ) : <p>成员记录将在这里显示。</p>}
-              </Empty>
-            ) }}
-        />
+        /> : (
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={hasMembers ? '没有符合条件的成员' : '暂无成员'}>
+            {hasMembers ? (
+              <Button onClick={onClearFilters}>清除筛选</Button>
+            ) : <p>成员记录将在这里显示。</p>}
+          </Empty>
+        )}
       </div>
       <div className="members-pagination">
         <p role="status" aria-live="polite">
