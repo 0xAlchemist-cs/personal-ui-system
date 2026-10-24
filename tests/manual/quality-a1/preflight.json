@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-24",
+  "task": "P04-A1",
+  "knowledgeBaseline": "e8dbe3e8036b8806cdfcfbdf76d766b0bb252221",
+  "mainAndOriginInitiallyEqual": true,
+  "initialWorkspacesClean": true,
+  "gate03Audit": "tests/manual/consumer-pilot/t4-gate-audit.json",
+  "ciPreviouslyAbsent": true,
+  "existingChecks": "Showcase typecheck/lint/78 Vitest tests/application and Storybook builds; reusable pure TS Resolver",
+  "newDependencies": {
+    "ajv": "8.17.1",
+    "yaml": "2.8.1",
+    "mdast-util-from-markdown": "2.0.2"
+  },
+  "verifiedNode": "22.15.0",
+  "verifiedNpm": "11.16.0",
+  "actionRefsVerifiedViaOfficialGitHubAPI": {
+    "actions/checkout@v7": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "actions/setup-node@v7": "949feb2413d6458794dcd2491c4babbbce0c15c1"
+  },
+  "scope": "A1 only; no browser test/visual baseline/package distribution"
+}

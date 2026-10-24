@@ -1,0 +1,25 @@
+P04-A1 Markdown links initial local test evidence (2026-10-24)
+
+Command: node --test tools/quality/test/links.test.mjs
+Working directory: visualizations task checkout p02-t5
+Environment: Windows, default Codex filesystem sandbox
+Exit code: 1
+Result: 7 tests; 0 passed; 5 failed; 2 skipped.
+
+All five ordinary tests failed before inspecting a Markdown target because
+node:fs/promises realpath(repo fixture root) returned EPERM. The fixtures were
+successfully created under os.tmpdir(), but resolving their real paths was
+blocked by the sandbox. An isolated mkdtemp/mkdir/realpath probe reproduced
+the same EPERM. The symlink test skipped because creating its junction was
+also denied with EPERM; the case-sensitivity test explicitly skipped on Windows.
+
+A second attempt scoped TEMP and TMP to the task working directory for that
+single PowerShell process. It reproduced the same five realpath EPERM failures
+and two skips. Tests cleaned their mkdtemp fixtures; no global TEMP/TMP value
+was changed. Moving the fixtures did not resolve this sandbox restriction.
+
+The implementation and test assertions were not weakened. The normal test
+command was then run in an approved elevated tool process: exit 0, 6 passed,
+0 failed, 1 explicitly skipped Windows case-sensitivity test. Junction creation
+and both internal/external symlink assertions passed in that real process.
+Linux CI is still required to verify case-sensitive path lookup.

@@ -1,0 +1,83 @@
+{
+  "task": "P04-A1",
+  "date": "2026-10-24",
+  "sourceSha": "e41fa82a7416d57e7b4a1cac515d1d982e10ca59",
+  "cloneCommand": "git clone --no-local --branch codex/p04-a1 <repository> <new-directory>",
+  "initialClean": true,
+  "qualityNodeModulesInitiallyAbsent": true,
+  "showcaseNodeModulesInitiallyAbsent": true,
+  "node": "v22.15.0",
+  "npm": "11.16.0",
+  "os": "Microsoft Windows NT 10.0.26100.0",
+  "inheritedNODE_PATH": "C:\\Users\\Lenovo\\AppData\\Roaming\\npm\\node_modules",
+  "commands": [
+    {
+      "name": "quality-install",
+      "workingDirectory": "tools/quality",
+      "command": "npm.cmd ci --no-audit --no-fund",
+      "exitCode": 0,
+      "log": "quality-install.txt"
+    },
+    {
+      "name": "knowledge",
+      "workingDirectory": "tools/quality",
+      "command": "npm.cmd run check",
+      "exitCode": 0,
+      "log": "knowledge.txt"
+    },
+    {
+      "name": "quality-tests",
+      "workingDirectory": "tools/quality",
+      "command": "npm.cmd test",
+      "exitCode": 0,
+      "log": "quality-tests.txt"
+    },
+    {
+      "name": "showcase-install",
+      "workingDirectory": "showcase/app",
+      "command": "npm.cmd ci --no-audit --no-fund",
+      "exitCode": 0,
+      "log": "showcase-install.txt"
+    },
+    {
+      "name": "typecheck",
+      "workingDirectory": "showcase/app",
+      "command": "npm.cmd run typecheck",
+      "exitCode": 0,
+      "log": "typecheck.txt"
+    },
+    {
+      "name": "lint",
+      "workingDirectory": "showcase/app",
+      "command": "npm.cmd run lint",
+      "exitCode": 0,
+      "log": "lint.txt"
+    },
+    {
+      "name": "unit-tests",
+      "workingDirectory": "showcase/app",
+      "command": "npm.cmd test",
+      "exitCode": 0,
+      "log": "unit-tests.txt"
+    },
+    {
+      "name": "build",
+      "workingDirectory": "showcase/app",
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "log": "build.txt"
+    },
+    {
+      "name": "storybook-build",
+      "workingDirectory": "showcase/app",
+      "command": "npm.cmd run build-storybook",
+      "exitCode": 0,
+      "log": "storybook-build.txt"
+    }
+  ],
+  "effectiveNODE_PATH": null,
+  "qualityLockUnchanged": true,
+  "showcaseLockUnchanged": true,
+  "finalStatus": [],
+  "status": "passed"
+}

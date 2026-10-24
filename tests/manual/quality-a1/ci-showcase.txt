@@ -1,0 +1,442 @@
+﻿2026-10-24T04:59:49.7933032Z Current runner version: '2.338.0'
+2026-10-24T04:59:49.7960002Z ##[group]Runner Image Provisioner
+2026-10-24T04:59:49.7960918Z Hosted Compute Agent
+2026-10-24T04:59:49.7961511Z Version: 20261021.618
+2026-10-24T04:59:49.7962225Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-24T04:59:49.7963001Z Build Date: 2026-10-21T00:45:21Z
+2026-10-24T04:59:49.7963691Z Worker ID: {ee4e49b1-d1f5-4b9d-906b-c0f90aaaffb8}
+2026-10-24T04:59:49.7965119Z Region: eastus
+2026-10-24T04:59:49.7965681Z Cloud: Azure
+2026-10-24T04:59:49.7966338Z ##[endgroup]
+2026-10-24T04:59:49.7967914Z ##[group]Operating System
+2026-10-24T04:59:49.7968556Z Ubuntu
+2026-10-24T04:59:49.7969151Z 24.04.5
+2026-10-24T04:59:49.7969661Z LTS
+2026-10-24T04:59:49.7970228Z ##[endgroup]
+2026-10-24T04:59:49.7970821Z ##[group]Runner Image
+2026-10-24T04:59:49.7971462Z Image: ubuntu-24.04
+2026-10-24T04:59:49.7972097Z Version: 20261012.334.1
+2026-10-24T04:59:49.7973353Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-24T04:59:49.7975387Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-24T04:59:49.7976344Z ##[endgroup]
+2026-10-24T04:59:49.7977512Z ##[group]GITHUB_TOKEN Permissions
+2026-10-24T04:59:49.7979899Z Contents: read
+2026-10-24T04:59:49.7980631Z Metadata: read
+2026-10-24T04:59:49.7981186Z ##[endgroup]
+2026-10-24T04:59:49.7983340Z Secret source: Actions
+2026-10-24T04:59:49.7984372Z Cache mode: write
+2026-10-24T04:59:49.7986067Z Prepare workflow directory
+2026-10-24T04:59:49.8412029Z Prepare all required actions
+2026-10-24T04:59:49.8461999Z Getting action download info
+2026-10-24T04:59:50.0156086Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-24T04:59:50.1268054Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-10-24T04:59:50.4231410Z Complete job name: Showcase checks and builds
+2026-10-24T04:59:50.5050929Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-24T04:59:50.5052042Z with:
+2026-10-24T04:59:50.5052484Z   persist-credentials: false
+2026-10-24T04:59:50.5053060Z   repository: 0xAlchemist-cs/personal-ui-system
+2026-10-24T04:59:50.5057350Z   token: ***
+2026-10-24T04:59:50.5057804Z   ssh-strict: true
+2026-10-24T04:59:50.5058250Z   ssh-user: git
+2026-10-24T04:59:50.5058678Z   clean: true
+2026-10-24T04:59:50.5059120Z   sparse-checkout-cone-mode: true
+2026-10-24T04:59:50.5059640Z   fetch-depth: 1
+2026-10-24T04:59:50.5060068Z   fetch-tags: false
+2026-10-24T04:59:50.5060508Z   show-progress: true
+2026-10-24T04:59:50.5060955Z   lfs: false
+2026-10-24T04:59:50.5061376Z   submodules: false
+2026-10-24T04:59:50.5061826Z   set-safe-directory: true
+2026-10-24T04:59:50.5062335Z   allow-unsafe-pr-checkout: false
+2026-10-24T04:59:50.5063146Z env:
+2026-10-24T04:59:50.5063545Z   CI: true
+2026-10-24T04:59:50.5063937Z   NODE_PATH: 
+2026-10-24T04:59:50.5064625Z   NODE_OPTIONS: 
+2026-10-24T04:59:50.5065101Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T04:59:50.5065598Z   DO_NOT_TRACK: 1
+2026-10-24T04:59:50.5066021Z ##[endgroup]
+2026-10-24T04:59:50.6101182Z Syncing repository: 0xAlchemist-cs/personal-ui-system
+2026-10-24T04:59:50.6104045Z ##[group]Getting Git version info
+2026-10-24T04:59:50.6105676Z Working directory is '/home/runner/work/personal-ui-system/personal-ui-system'
+2026-10-24T04:59:50.6107654Z [command]/usr/bin/git version
+2026-10-24T04:59:50.6166470Z git version 2.55.0
+2026-10-24T04:59:50.6212004Z ##[endgroup]
+2026-10-24T04:59:50.6226706Z Temporarily overriding HOME='/home/runner/work/_temp/b61e8a2d-8d43-43d7-b856-f88e7d0887e5' before making global git config changes
+2026-10-24T04:59:50.6230569Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-24T04:59:50.6233534Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/personal-ui-system/personal-ui-system
+2026-10-24T04:59:50.6288906Z Deleting the contents of '/home/runner/work/personal-ui-system/personal-ui-system'
+2026-10-24T04:59:50.6290911Z ##[group]Determining repository object format
+2026-10-24T04:59:50.6291796Z ##[endgroup]
+2026-10-24T04:59:50.6292505Z ##[group]Initializing the repository
+2026-10-24T04:59:50.6295403Z [command]/usr/bin/git init /home/runner/work/personal-ui-system/personal-ui-system
+2026-10-24T04:59:50.6414223Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-24T04:59:50.6416460Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-24T04:59:50.6418085Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-24T04:59:50.6419272Z hint: call:
+2026-10-24T04:59:50.6419998Z hint:
+2026-10-24T04:59:50.6420912Z hint: 	git config --global init.defaultBranch <name>
+2026-10-24T04:59:50.6421825Z hint:
+2026-10-24T04:59:50.6422780Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-24T04:59:50.6423811Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-24T04:59:50.6424966Z hint:
+2026-10-24T04:59:50.6425681Z hint: 	git branch -m <name>
+2026-10-24T04:59:50.6426451Z hint:
+2026-10-24T04:59:50.6427486Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-24T04:59:50.6429736Z Initialized empty Git repository in /home/runner/work/personal-ui-system/personal-ui-system/.git/
+2026-10-24T04:59:50.6435441Z [command]/usr/bin/git remote add origin https://github.com/0xAlchemist-cs/personal-ui-system
+2026-10-24T04:59:50.6540028Z ##[endgroup]
+2026-10-24T04:59:50.6541907Z ##[group]Disabling automatic garbage collection
+2026-10-24T04:59:50.6543480Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-24T04:59:50.6587768Z ##[endgroup]
+2026-10-24T04:59:50.6589525Z ##[group]Setting up auth
+2026-10-24T04:59:50.6590613Z Removing SSH command configuration
+2026-10-24T04:59:50.6596721Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T04:59:50.6645366Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T04:59:50.7052459Z Removing HTTP extra header
+2026-10-24T04:59:50.7059767Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T04:59:50.7111391Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T04:59:50.7364291Z Removing includeIf entries pointing to credentials config files
+2026-10-24T04:59:50.7370071Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T04:59:50.7416280Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T04:59:50.7709542Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-24T04:59:50.7766438Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path /home/runner/work/_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:50.7815683Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:50.7863591Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:50.7909825Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:50.7953644Z ##[endgroup]
+2026-10-24T04:59:50.7954900Z ##[group]Fetching the repository
+2026-10-24T04:59:50.7964793Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e41fa82a7416d57e7b4a1cac515d1d982e10ca59:refs/remotes/origin/codex/p04-a1
+2026-10-24T04:59:51.2178047Z From https://github.com/0xAlchemist-cs/personal-ui-system
+2026-10-24T04:59:51.2179587Z  * [new ref]         e41fa82a7416d57e7b4a1cac515d1d982e10ca59 -> origin/codex/p04-a1
+2026-10-24T04:59:51.2205956Z [command]/usr/bin/git branch --list --remote origin/codex/p04-a1
+2026-10-24T04:59:51.2224201Z   origin/codex/p04-a1
+2026-10-24T04:59:51.2235210Z [command]/usr/bin/git rev-parse refs/remotes/origin/codex/p04-a1
+2026-10-24T04:59:51.2265381Z e41fa82a7416d57e7b4a1cac515d1d982e10ca59
+2026-10-24T04:59:51.2277793Z ##[endgroup]
+2026-10-24T04:59:51.2279103Z ##[group]Determining the checkout info
+2026-10-24T04:59:51.2280617Z ##[endgroup]
+2026-10-24T04:59:51.2283050Z [command]/usr/bin/git sparse-checkout disable
+2026-10-24T04:59:51.2342792Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-24T04:59:51.2383026Z ##[group]Checking out the ref
+2026-10-24T04:59:51.2388004Z [command]/usr/bin/git checkout --progress --force -B codex/p04-a1 refs/remotes/origin/codex/p04-a1
+2026-10-24T04:59:51.2849170Z Switched to a new branch 'codex/p04-a1'
+2026-10-24T04:59:51.2852733Z branch 'codex/p04-a1' set up to track 'origin/codex/p04-a1'.
+2026-10-24T04:59:51.2862276Z ##[endgroup]
+2026-10-24T04:59:51.2910887Z [command]/usr/bin/git log -1 --format=%H
+2026-10-24T04:59:51.2941304Z e41fa82a7416d57e7b4a1cac515d1d982e10ca59
+2026-10-24T04:59:51.2954760Z ##[group]Removing auth
+2026-10-24T04:59:51.2955711Z Removing SSH command configuration
+2026-10-24T04:59:51.2956864Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T04:59:51.2995753Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T04:59:51.3230045Z Removing HTTP extra header
+2026-10-24T04:59:51.3233540Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T04:59:51.3273350Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T04:59:51.3507746Z Removing includeIf entries pointing to credentials config files
+2026-10-24T04:59:51.3511440Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T04:59:51.3546876Z includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path
+2026-10-24T04:59:51.3551550Z includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path
+2026-10-24T04:59:51.3555885Z includeif.gitdir:/github/workspace/.git.path
+2026-10-24T04:59:51.3558196Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-24T04:59:51.3562716Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path
+2026-10-24T04:59:51.3586985Z /home/runner/work/_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:51.3600193Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-2b7535e4\-6106\-4e6e\-91fc\-8e58d2f0c40e\.config
+2026-10-24T04:59:51.3642754Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path
+2026-10-24T04:59:51.3675611Z /home/runner/work/_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:51.3689106Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-2b7535e4\-6106\-4e6e\-91fc\-8e58d2f0c40e\.config
+2026-10-24T04:59:51.3729169Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-24T04:59:51.3759835Z /github/runner_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:51.3770094Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-2b7535e4\-6106\-4e6e\-91fc\-8e58d2f0c40e\.config
+2026-10-24T04:59:51.3806817Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-24T04:59:51.3832800Z /github/runner_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config
+2026-10-24T04:59:51.3842412Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-2b7535e4\-6106\-4e6e\-91fc\-8e58d2f0c40e\.config
+2026-10-24T04:59:51.3880461Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T04:59:51.4115593Z Removing credentials config '/home/runner/work/_temp/git-credentials-2b7535e4-6106-4e6e-91fc-8e58d2f0c40e.config'
+2026-10-24T04:59:51.4124347Z ##[endgroup]
+2026-10-24T04:59:51.4545757Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-10-24T04:59:51.4547372Z with:
+2026-10-24T04:59:51.4548135Z   node-version: 22.15.0
+2026-10-24T04:59:51.4549027Z   cache: npm
+2026-10-24T04:59:51.4550058Z   cache-dependency-path: showcase/app/package-lock.json
+2026-10-24T04:59:51.4551406Z   check-latest: false
+2026-10-24T04:59:51.4560607Z   token: ***
+2026-10-24T04:59:51.4561470Z   package-manager-cache: true
+2026-10-24T04:59:51.4562452Z env:
+2026-10-24T04:59:51.4563170Z   CI: true
+2026-10-24T04:59:51.4563918Z   NODE_PATH: 
+2026-10-24T04:59:51.4564865Z   NODE_OPTIONS: 
+2026-10-24T04:59:51.4565741Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T04:59:51.4566753Z   DO_NOT_TRACK: 1
+2026-10-24T04:59:51.4567569Z ##[endgroup]
+2026-10-24T04:59:51.5830328Z Attempting to download 22.15.0...
+2026-10-24T04:59:51.9487131Z Acquiring 22.15.0 - x64 from https://github.com/actions/node-versions/releases/download/22.15.0-14621731016/node-22.15.0-linux-x64.tar.gz
+2026-10-24T04:59:52.3806578Z Extracting ...
+2026-10-24T04:59:52.3940403Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/26f0a0da-2e62-4628-865a-446584c717a5 -f /home/runner/work/_temp/ab57f928-e981-4b8a-b14f-c874f3aa1e97
+2026-10-24T04:59:53.6042387Z Adding to the cache ...
+2026-10-24T04:59:55.6803698Z ##[group]Environment details
+2026-10-24T04:59:55.9058885Z node: v22.15.0
+2026-10-24T04:59:55.9059376Z npm: 10.9.2
+2026-10-24T04:59:55.9059752Z yarn: 1.22.22
+2026-10-24T04:59:55.9060407Z ##[endgroup]
+2026-10-24T04:59:55.9080665Z [command]/opt/hostedtoolcache/node/22.15.0/x64/bin/npm config get cache
+2026-10-24T04:59:56.0037852Z /home/runner/.npm
+2026-10-24T04:59:56.0792982Z npm cache is not found
+2026-10-24T04:59:56.0997548Z ##[group]Run npm install --global npm@11.16.0
+2026-10-24T04:59:56.0997993Z [36;1mnpm install --global npm@11.16.0[0m
+2026-10-24T04:59:56.0998327Z [36;1mnode --version[0m
+2026-10-24T04:59:56.0998591Z [36;1mnpm --version[0m
+2026-10-24T04:59:56.1242227Z shell: /usr/bin/bash -e {0}
+2026-10-24T04:59:56.1242623Z env:
+2026-10-24T04:59:56.1242885Z   CI: true
+2026-10-24T04:59:56.1243127Z   NODE_PATH: 
+2026-10-24T04:59:56.1243375Z   NODE_OPTIONS: 
+2026-10-24T04:59:56.1243651Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T04:59:56.1243962Z   DO_NOT_TRACK: 1
+2026-10-24T04:59:56.1244227Z ##[endgroup]
+2026-10-24T04:59:59.5862925Z 
+2026-10-24T04:59:59.5869733Z removed 84 packages, and changed 105 packages in 3s
+2026-10-24T04:59:59.5870091Z 
+2026-10-24T04:59:59.5870304Z 15 packages are looking for funding
+2026-10-24T04:59:59.5870985Z   run `npm fund` for details
+2026-10-24T04:59:59.6385855Z v22.15.0
+2026-10-24T04:59:59.7254001Z 11.16.0
+2026-10-24T04:59:59.7373596Z ##[group]Run npm ci --no-audit --no-fund
+2026-10-24T04:59:59.7373963Z [36;1mnpm ci --no-audit --no-fund[0m
+2026-10-24T04:59:59.7441215Z shell: /usr/bin/bash -e {0}
+2026-10-24T04:59:59.7441501Z env:
+2026-10-24T04:59:59.7441708Z   CI: true
+2026-10-24T04:59:59.7441923Z   NODE_PATH: 
+2026-10-24T04:59:59.7442142Z   NODE_OPTIONS: 
+2026-10-24T04:59:59.7442376Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T04:59:59.7442635Z   DO_NOT_TRACK: 1
+2026-10-24T04:59:59.7442865Z ##[endgroup]
+2026-10-24T05:00:08.0628055Z 
+2026-10-24T05:00:08.0628851Z added 246 packages in 8s
+2026-10-24T05:00:08.0644173Z npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:
+2026-10-24T05:00:08.0645668Z npm warn allow-scripts   esbuild@0.28.2 (postinstall: node install.js)
+2026-10-24T05:00:08.0646602Z npm warn allow-scripts
+2026-10-24T05:00:08.0648172Z npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+2026-10-24T05:00:08.1197850Z ##[group]Run npm run typecheck
+2026-10-24T05:00:08.1198179Z [36;1mnpm run typecheck[0m
+2026-10-24T05:00:08.1269744Z shell: /usr/bin/bash -e {0}
+2026-10-24T05:00:08.1270039Z env:
+2026-10-24T05:00:08.1270271Z   CI: true
+2026-10-24T05:00:08.1270489Z   NODE_PATH: 
+2026-10-24T05:00:08.1270715Z   NODE_OPTIONS: 
+2026-10-24T05:00:08.1270973Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T05:00:08.1271257Z   DO_NOT_TRACK: 1
+2026-10-24T05:00:08.1271497Z ##[endgroup]
+2026-10-24T05:00:08.2356444Z 
+2026-10-24T05:00:08.2356950Z > personal-ui-showcase@0.1.0 typecheck
+2026-10-24T05:00:08.2357604Z > tsc --noEmit -p tsconfig.json
+2026-10-24T05:00:08.2357921Z 
+2026-10-24T05:00:11.8844378Z ##[group]Run npm run lint
+2026-10-24T05:00:11.8845070Z [36;1mnpm run lint[0m
+2026-10-24T05:00:11.8909573Z shell: /usr/bin/bash -e {0}
+2026-10-24T05:00:11.8909833Z env:
+2026-10-24T05:00:11.8910034Z   CI: true
+2026-10-24T05:00:11.8910238Z   NODE_PATH: 
+2026-10-24T05:00:11.8910437Z   NODE_OPTIONS: 
+2026-10-24T05:00:11.8910656Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T05:00:11.8910909Z   DO_NOT_TRACK: 1
+2026-10-24T05:00:11.8911116Z ##[endgroup]
+2026-10-24T05:00:11.9954589Z 
+2026-10-24T05:00:11.9955104Z > personal-ui-showcase@0.1.0 lint
+2026-10-24T05:00:11.9956138Z > oxlint --deny-warnings src .storybook vite.config.ts vitest.config.ts
+2026-10-24T05:00:11.9956538Z 
+2026-10-24T05:00:12.0517037Z Found 0 warnings and 0 errors.
+2026-10-24T05:00:12.0517821Z Finished in 18ms on 32 files with 116 rules using 4 threads.
+2026-10-24T05:00:12.0691534Z ##[group]Run npm test
+2026-10-24T05:00:12.0691942Z [36;1mnpm test[0m
+2026-10-24T05:00:12.0785137Z shell: /usr/bin/bash -e {0}
+2026-10-24T05:00:12.0785433Z env:
+2026-10-24T05:00:12.0785734Z   CI: true
+2026-10-24T05:00:12.0785924Z   NODE_PATH: 
+2026-10-24T05:00:12.0786258Z   NODE_OPTIONS: 
+2026-10-24T05:00:12.0786567Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T05:00:12.0786818Z   DO_NOT_TRACK: 1
+2026-10-24T05:00:12.0787050Z ##[endgroup]
+2026-10-24T05:00:12.1857606Z 
+2026-10-24T05:00:12.1858437Z > personal-ui-showcase@0.1.0 test
+2026-10-24T05:00:12.1858907Z > vitest run
+2026-10-24T05:00:12.1859061Z 
+2026-10-24T05:00:12.5103096Z 
+2026-10-24T05:00:12.5108785Z [1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90m/home/runner/work/personal-ui-system/personal-ui-system/showcase/app[39m
+2026-10-24T05:00:12.5109870Z 
+2026-10-24T05:00:12.7960820Z  [32m✓[39m src/features/members/member-query.test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 16[2mms[22m[39m
+2026-10-24T05:00:12.8283316Z  [32m✓[39m src/theme/resolve-tokens.test.ts [2m([22m[2m24 tests[22m[2m)[22m[32m 18[2mms[22m[39m
+2026-10-24T05:00:12.8342165Z  [32m✓[39m src/theme/antd-theme.test.ts [2m([22m[2m39 tests[22m[2m)[22m[32m 22[2mms[22m[39m
+2026-10-24T05:00:12.8390958Z 
+2026-10-24T05:00:12.8395990Z [2m Test Files [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+2026-10-24T05:00:12.8397255Z [2m      Tests [22m [1m[32m78 passed[39m[22m[90m (78)[39m
+2026-10-24T05:00:12.8399909Z [2m   Start at [22m 05:00:12
+2026-10-24T05:00:12.8404845Z [2m   Duration [22m 321ms[2m (transform 61%, import 22%, tests 13%, worker 4%)[22m
+2026-10-24T05:00:12.8416638Z 
+2026-10-24T05:00:12.8687468Z ##[group]Run npm run build
+2026-10-24T05:00:12.8687757Z [36;1mnpm run build[0m
+2026-10-24T05:00:12.8753016Z shell: /usr/bin/bash -e {0}
+2026-10-24T05:00:12.8753295Z env:
+2026-10-24T05:00:12.8753487Z   CI: true
+2026-10-24T05:00:12.8753679Z   NODE_PATH: 
+2026-10-24T05:00:12.8753881Z   NODE_OPTIONS: 
+2026-10-24T05:00:12.8754102Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T05:00:12.8754369Z   DO_NOT_TRACK: 1
+2026-10-24T05:00:12.8754893Z ##[endgroup]
+2026-10-24T05:00:12.9790413Z 
+2026-10-24T05:00:12.9792421Z > personal-ui-showcase@0.1.0 build
+2026-10-24T05:00:12.9793217Z > npm run typecheck && vite build
+2026-10-24T05:00:12.9793555Z 
+2026-10-24T05:00:13.0782342Z 
+2026-10-24T05:00:13.0783176Z > personal-ui-showcase@0.1.0 typecheck
+2026-10-24T05:00:13.0783731Z > tsc --noEmit -p tsconfig.json
+2026-10-24T05:00:13.0783963Z 
+2026-10-24T05:00:16.7671205Z [36mvite v8.3.5 [32mbuilding client environment for production...[36m[39m
+2026-10-24T05:00:16.7788177Z transforming...
+2026-10-24T05:00:17.0219508Z ✓ 1507 modules transformed.
+2026-10-24T05:00:17.0992732Z rendering chunks...
+2026-10-24T05:00:17.2525901Z computing gzip size...
+2026-10-24T05:00:17.2671609Z dist/index.html                   0.45 kB │ gzip:   0.32 kB
+2026-10-24T05:00:17.2672345Z dist/assets/index-D4ydqoFF.css    7.04 kB │ gzip:   1.59 kB
+2026-10-24T05:00:17.2673026Z dist/assets/index-BIZdcE-7.js   964.59 kB │ gzip: 308.69 kB
+2026-10-24T05:00:17.2673353Z 
+2026-10-24T05:00:17.2741509Z [33m[plugin builtin:vite-reporter] 
+2026-10-24T05:00:17.2742046Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-24T05:00:17.2742564Z - Using dynamic import() to code-split the application
+2026-10-24T05:00:17.2744368Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+2026-10-24T05:00:17.2746554Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2026-10-24T05:00:17.2968579Z [32m✓ built in 528ms[39m
+2026-10-24T05:00:17.3240749Z ##[group]Run npm run build-storybook
+2026-10-24T05:00:17.3241107Z [36;1mnpm run build-storybook[0m
+2026-10-24T05:00:17.3304339Z shell: /usr/bin/bash -e {0}
+2026-10-24T05:00:17.3305000Z env:
+2026-10-24T05:00:17.3305199Z   CI: true
+2026-10-24T05:00:17.3305393Z   NODE_PATH: 
+2026-10-24T05:00:17.3305600Z   NODE_OPTIONS: 
+2026-10-24T05:00:17.3305822Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T05:00:17.3306076Z   DO_NOT_TRACK: 1
+2026-10-24T05:00:17.3306279Z ##[endgroup]
+2026-10-24T05:00:17.4369401Z 
+2026-10-24T05:00:17.4370297Z > personal-ui-showcase@0.1.0 build-storybook
+2026-10-24T05:00:17.4370787Z > storybook build
+2026-10-24T05:00:17.4370964Z 
+2026-10-24T05:00:17.9602795Z 
+2026-10-24T05:00:17.9626972Z [90m┌[39m  Building storybook v10.6.3
+2026-10-24T05:00:17.9642740Z [90m│[39m
+2026-10-24T05:00:17.9643578Z [32m◇[39m  Cleaning outputDir: [36mstorybook-static[39m
+2026-10-24T05:00:18.0654988Z [90m│[39m
+2026-10-24T05:00:18.0655413Z [32m◇[39m  Loading presets
+2026-10-24T05:00:18.6271635Z [90m│[39m
+2026-10-24T05:00:18.6272081Z [32m◇[39m  Building manager..
+2026-10-24T05:00:18.7401453Z [90m│[39m
+2026-10-24T05:00:18.7402096Z [34m●[39m  Building open services..
+2026-10-24T05:00:18.7408435Z [90m│[39m
+2026-10-24T05:00:18.7408977Z [34m●[39m  Building preview..
+2026-10-24T05:00:18.9687384Z [90m│[39m  [43mVite[49m [36mvite v8.3.5 [32mbuilding client environment for production...[36m[39m
+2026-10-24T05:00:19.0453199Z transforming...
+2026-10-24T05:00:20.2042691Z ✓ 1541 modules transformed.
+2026-10-24T05:00:20.3239493Z rendering chunks...
+2026-10-24T05:00:20.5485285Z computing gzip size...
+2026-10-24T05:00:20.6010755Z [90m│[39m  [43mVite[49m storybook-static/iframe.html
+2026-10-24T05:00:20.6011611Z [90m│[39m  19.25 kB │ gzip:   5.41 kB
+2026-10-24T05:00:20.6013556Z [90m│[39m  storybook-static/assets/iframe-BEwzDcjB.css                       7.91
+2026-10-24T05:00:20.6014298Z [90m│[39m  kB │ gzip:   1.75 kB
+2026-10-24T05:00:20.6015206Z [90m│[39m  storybook-static/assets/iframe-CdmbbTtc.js                        0.04
+2026-10-24T05:00:20.6015744Z [90m│[39m  kB │ gzip:   0.06 kB
+2026-10-24T05:00:20.6016331Z [90m│[39m  storybook-static/assets/button-Cj45t9Sz.js                        0.18
+2026-10-24T05:00:20.6016819Z [90m│[39m  kB │ gzip:   0.16 kB
+2026-10-24T05:00:20.6017346Z [90m│[39m  storybook-static/assets/dialog-focus-BUtdd-ap.js                  0.60
+2026-10-24T05:00:20.6017826Z [90m│[39m  kB │ gzip:   0.42 kB
+2026-10-24T05:00:20.6018337Z [90m│[39m  storybook-static/assets/react-18-B5kvrStd.js                      0.86
+2026-10-24T05:00:20.6018804Z [90m│[39m  kB │ gzip:   0.50 kB
+2026-10-24T05:00:20.6019315Z [90m│[39m  storybook-static/assets/ContentPanel-AHMBWksG.js                  0.94
+2026-10-24T05:00:20.6019791Z [90m│[39m  kB │ gzip:   0.45 kB
+2026-10-24T05:00:20.6020338Z [90m│[39m  storybook-static/assets/PurePanel-CRmYrT1U.js                     1.14
+2026-10-24T05:00:20.6020800Z [90m│[39m  kB │ gzip:   0.69 kB
+2026-10-24T05:00:20.6021326Z [90m│[39m  storybook-static/assets/rolldown-runtime-sJBDdmOt.js              1.20
+2026-10-24T05:00:20.6021794Z [90m│[39m  kB │ gzip:   0.67 kB
+2026-10-24T05:00:20.6022304Z [90m│[39m  storybook-static/assets/useClosable-DIgU-BRL.js                   1.30
+2026-10-24T05:00:20.6022766Z [90m│[39m  kB │ gzip:   0.69 kB
+2026-10-24T05:00:20.6023286Z [90m│[39m  storybook-static/assets/preload-helper-2GovK0wV.js                1.64
+2026-10-24T05:00:20.6023754Z [90m│[39m  kB │ gzip:   0.87 kB
+2026-10-24T05:00:20.6024265Z [90m│[39m  storybook-static/assets/StoryFrame-FnhqGcLF.js                    1.98
+2026-10-24T05:00:20.6024865Z [90m│[39m  kB │ gzip:   0.98 kB
+2026-10-24T05:00:20.6025382Z [90m│[39m  storybook-static/assets/ContentPanel.stories-DNCpPFNv.js          2.02
+2026-10-24T05:00:20.6025876Z [90m│[39m  kB │ gzip:   1.24 kB
+2026-10-24T05:00:20.6026408Z [90m│[39m  storybook-static/assets/MemberFilters-BtaCkoGv.js                 2.02
+2026-10-24T05:00:20.6027155Z [90m│[39m  kB │ gzip:   0.88 kB
+2026-10-24T05:00:20.6027703Z [90m│[39m  storybook-static/assets/AppShell.stories-BYDDfiEt.js              2.15
+2026-10-24T05:00:20.6028179Z [90m│[39m  kB │ gzip:   1.38 kB
+2026-10-24T05:00:20.6028688Z [90m│[39m  storybook-static/assets/motion-B2Gtmdz1.js                        2.16
+2026-10-24T05:00:20.6029163Z [90m│[39m  kB │ gzip:   1.07 kB
+2026-10-24T05:00:20.6029679Z [90m│[39m  storybook-static/assets/MemberTable.stories-6TSRCr74.js           2.83
+2026-10-24T05:00:20.6030155Z [90m│[39m  kB │ gzip:   1.65 kB
+2026-10-24T05:00:20.6030688Z [90m│[39m  storybook-static/assets/MemberFilters.stories-CMuTbqkt.js         2.91
+2026-10-24T05:00:20.6031177Z [90m│[39m  kB │ gzip:   1.43 kB
+2026-10-24T05:00:20.6031696Z [90m│[39m  storybook-static/assets/zoom-K2P64yTM.js                          2.97
+2026-10-24T05:00:20.6032173Z [90m│[39m  kB │ gzip:   0.80 kB
+2026-10-24T05:00:20.6032689Z [90m│[39m  storybook-static/assets/ThemePreview.stories-DEOj7EAM.js          3.10
+2026-10-24T05:00:20.6033171Z [90m│[39m  kB │ gzip:   1.44 kB
+2026-10-24T05:00:20.6033701Z [90m│[39m  storybook-static/assets/EditMemberDialog.stories-DzzRImnJ.js      3.92
+2026-10-24T05:00:20.6034188Z [90m│[39m  kB │ gzip:   1.75 kB
+2026-10-24T05:00:20.6034853Z [90m│[39m  storybook-static/assets/MembersPage.stories-BX9dTHg_.js           9.36
+2026-10-24T05:00:20.6035329Z [90m│[39m  kB │ gzip:   3.13 kB
+2026-10-24T05:00:20.6035836Z [90m│[39m  storybook-static/assets/context-D8uHnx_q.js                      11.32
+2026-10-24T05:00:20.6036290Z [90m│[39m  kB │ gzip:   4.04 kB
+2026-10-24T05:00:20.6036791Z [90m│[39m  storybook-static/assets/input-Bi2RU4Hi.js                        17.04
+2026-10-24T05:00:20.6037244Z [90m│[39m  kB │ gzip:   7.19 kB
+2026-10-24T05:00:20.6037787Z [90m│[39m  storybook-static/assets/AppShell-D_4SzC3h.js                     18.71
+2026-10-24T05:00:20.6038403Z [90m│[39m  kB │ gzip:   7.23 kB
+2026-10-24T05:00:20.6038920Z [90m│[39m  storybook-static/assets/mock-members-Dzjz0G9v.js                 27.14
+2026-10-24T05:00:20.6039388Z [90m│[39m  kB │ gzip:   9.41 kB
+2026-10-24T05:00:20.6039893Z [90m│[39m  storybook-static/vite-inject-mocker-entry.js                     27.75
+2026-10-24T05:00:20.6040367Z [90m│[39m  kB │ gzip:   9.66 kB
+2026-10-24T05:00:20.6040878Z [90m│[39m  storybook-static/assets/EditMemberDialog-gEj9HKIm.js             31.47
+2026-10-24T05:00:20.6041349Z [90m│[39m  kB │ gzip:  12.36 kB
+2026-10-24T05:00:20.6041870Z [90m│[39m  storybook-static/assets/useModal-CH0rDQRC.js                     32.54
+2026-10-24T05:00:20.6042331Z [90m│[39m  kB │ gzip:  11.20 kB
+2026-10-24T05:00:20.6042839Z [90m│[39m  storybook-static/assets/space-DWvNQj5h.js                        39.03
+2026-10-24T05:00:20.6043300Z [90m│[39m  kB │ gzip:  12.11 kB
+2026-10-24T05:00:20.6043842Z [90m│[39m  storybook-static/assets/member-query-CnD3-y1D.js                 88.30
+2026-10-24T05:00:20.6044313Z [90m│[39m  kB │ gzip:  30.19 kB
+2026-10-24T05:00:20.6045000Z [90m│[39m  storybook-static/assets/ContextIsolator-C8BJcWT7.js             217.35
+2026-10-24T05:00:20.6045491Z [90m│[39m  kB │ gzip:  77.40 kB
+2026-10-24T05:00:20.6045996Z [90m│[39m  storybook-static/assets/client-DNntq5Ov.js                      218.38
+2026-10-24T05:00:20.6046548Z [90m│[39m  kB │ gzip:  68.12 kB
+2026-10-24T05:00:20.6047098Z [90m│[39m  storybook-static/assets/MemberTable-Bvgj1__X.js                 278.08
+2026-10-24T05:00:20.6047562Z [90m│[39m  kB │ gzip:  86.93 kB
+2026-10-24T05:00:20.6048070Z [90m│[39m  storybook-static/assets/iframe-B4NviWbn.js                    1,163.33
+2026-10-24T05:00:20.6048529Z [90m│[39m  kB │ gzip: 333.59 kB
+2026-10-24T05:00:20.6048684Z 
+2026-10-24T05:00:20.6121699Z [90m│[39m
+2026-10-24T05:00:20.6122562Z [33m▲[39m  [43mVite[49m [33m[plugin builtin:vite-reporter]
+2026-10-24T05:00:20.6123494Z [90m│[39m  (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-10-24T05:00:20.6124810Z [90m│[39m  - Using dynamic import() to code-split the application
+2026-10-24T05:00:20.6126435Z [90m│[39m  - Use build.rolldownOptions.output.codeSplitting to improve chunking:
+2026-10-24T05:00:20.6128509Z [90m│[39m  ]8;;https://rolldown.rs/reference/OutputOptions.codeSplittinghttps://rolldown.rs/reference/OutputOptions.codeSplitting]8;;
+2026-10-24T05:00:20.6130167Z [90m│[39m  - Adjust chunk size limit for this warning via
+2026-10-24T05:00:20.6131140Z [90m│[39m  build.chunkSizeWarningLimit.[39m
+2026-10-24T05:00:20.6318650Z [90m│[39m  [43mVite[49m [32m✓ built in 1.66s[39m
+2026-10-24T05:00:20.6332663Z [90m│[39m
+2026-10-24T05:00:20.6333428Z [32m◇[39m  Output directory:
+2026-10-24T05:00:20.6335154Z [90m│[39m  /home/runner/work/personal-ui-system/personal-ui-system/showcase/app/storybook-static
+2026-10-24T05:00:20.6336553Z [90m│[39m
+2026-10-24T05:00:20.6337262Z [90m└[39m  Storybook build completed successfully
+2026-10-24T05:00:20.6337643Z 
+2026-10-24T05:00:20.7228891Z Post job cleanup.
+2026-10-24T05:00:20.8635191Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/personal-ui-system/personal-ui-system --files-from manifest.txt --use-compress-program zstdmt
+2026-10-24T05:00:22.0530046Z Sent 64778549 of 64778549 (100.0%), 65.0 MBs/sec
+2026-10-24T05:00:22.1244325Z Cache saved with the key: node-cache-Linux-x64-npm-00c049657f190993175f63a33b5ae21ef71e296220c43c18d55e43670b6e536f
+2026-10-24T05:00:22.1401331Z Post job cleanup.
+2026-10-24T05:00:22.2274369Z [command]/usr/bin/git version
+2026-10-24T05:00:22.2329551Z git version 2.55.0
+2026-10-24T05:00:22.2369142Z Temporarily overriding HOME='/home/runner/work/_temp/5df672a4-cab9-4655-9939-c485e6ea233d' before making global git config changes
+2026-10-24T05:00:22.2370832Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-24T05:00:22.2375014Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/personal-ui-system/personal-ui-system
+2026-10-24T05:00:22.2417360Z Removing SSH command configuration
+2026-10-24T05:00:22.2418698Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T05:00:22.2460682Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T05:00:22.2735752Z Removing HTTP extra header
+2026-10-24T05:00:22.2742288Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T05:00:22.2791724Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T05:00:22.3056392Z Removing includeIf entries pointing to credentials config files
+2026-10-24T05:00:22.3063090Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T05:00:22.3110810Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T05:00:22.3499056Z Cleaning up orphan processes

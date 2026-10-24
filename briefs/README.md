@@ -1,6 +1,6 @@
 # UI Brief 1.0
 
-这是 Personal UI System 自定义的 UI 需求约定，不是现有框架、Storybook 或组件库的标准。YAML 面向人和 AI 阅读；[JSON Schema](ui-brief.schema.json) 约束 YAML 解析后的 JSON 数据。本阶段没有安装解析器、验证 CLI 或代码生成器。
+这是 Personal UI System 自定义的 UI 需求约定，不是现有框架、Storybook 或组件库的标准。YAML 面向人和 AI 阅读；[JSON Schema](ui-brief.schema.json) 约束 YAML 解析后的 JSON 数据。已提供 [仓库内质量命令](../tools/quality/README.md) 解析 YAML 并使用完整 Draft 2020-12 引擎校验；没有页面代码生成器或通用安装器。
 
 ## 使用
 

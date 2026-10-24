@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-24",
+  "task": "P04-A1",
+  "status": "passed",
+  "knowledgeBaseline": "e8dbe3e8036b8806cdfcfbdf76d766b0bb252221",
+  "implementationCommit": "e41fa82a7416d57e7b4a1cac515d1d982e10ca59",
+  "ciRun": "https://github.com/0xAlchemist-cs/personal-ui-system/actions/runs/40064509154",
+  "ciJobsSucceeded": 2,
+  "localCleanCommandsPassed": 9,
+  "qualityTests": {
+    "Windows": {
+      "passed": 38,
+      "skipped": 1,
+      "skipReason": "Case-insensitive filesystem"
+    },
+    "Ubuntu": {
+      "passed": 39,
+      "skipped": 0
+    }
+  },
+  "showcaseTestsPassedPerEnvironment": 78,
+  "bothLocksUnchanged": true,
+  "qualityRunsBeforeShowcaseInstall": true,
+  "existingSchemaBriefDataTokenValuesApplicationAndHistoryUnchanged": true,
+  "implementationUnchangedSinceCI": true,
+  "rawLogs": [
+    {
+      "path": "tests/manual/quality-a1/build.txt",
+      "sha256": "d1639cc1792c79ee42b0c774c544728f02bdfab03c92c8598817f2096371dd26"
+    },
+    {
+      "path": "tests/manual/quality-a1/ci-knowledge.txt",
+      "sha256": "192c5269d2bf207cba90b7b5df44deb512ddd15e7c573ef43ece4e160aca71b7"
+    },
+    {
+      "path": "tests/manual/quality-a1/ci-showcase.txt",
+      "sha256": "70bdbe6519af40ad0879f04746c183aa1624c1286c9ea510a0a8e92159050409"
+    },
+    {
+      "path": "tests/manual/quality-a1/development-check.txt",
+      "sha256": "870ee478be792b481e9e2f09568d07f128767eac716d30f00d87a4b7574d7f17"
+    },
+    {
+      "path": "tests/manual/quality-a1/development-links-initial.txt",
+      "sha256": "46048f981c881d4e61a7a54740266635a21d8d32a9bcff54742f01b56aa86133"
+    },
+    {
+      "path": "tests/manual/quality-a1/development-test.txt",
+      "sha256": "817649c1452179f1c8c3264fe68c197f46bb737546b7dbf0ef489c15eb005f92"
+    },
+    {
+      "path": "tests/manual/quality-a1/final-knowledge.txt",
+      "sha256": "cc112da2c992bf93ea6164023813155717c951f80369312c007d8b0cbd146a05"
+    },
+    {
+      "path": "tests/manual/quality-a1/knowledge.txt",
+      "sha256": "7a5da8ea63e5b468e1b799f3f60be43abe9dc46ce912ff689d62013508b7234e"
+    },
+    {
+      "path": "tests/manual/quality-a1/lint.txt",
+      "sha256": "dab66be7a12119a7e95e33159914c405129ee7e973928ce8ffc4a7e3031f963c"
+    },
+    {
+      "path": "tests/manual/quality-a1/quality-install.txt",
+      "sha256": "b759d4acd825979875005444ba7b90c2a17aede84d3c978397793b1cbc0e3f9c"
+    },
+    {
+      "path": "tests/manual/quality-a1/quality-tests.txt",
+      "sha256": "6244f05a19b1d1bd821c24f083b4d2992563e3b5bd273d1702ac3e8f88e2811a"
+    },
+    {
+      "path": "tests/manual/quality-a1/showcase-install.txt",
+      "sha256": "8aafdd260b0b6886d3de6893255aed47515994fc7ef89d4e1ae77187464017cc"
+    },
+    {
+      "path": "tests/manual/quality-a1/storybook-build.txt",
+      "sha256": "5484797224da54146327eb24f647193e89c5a611deefd250a5fc1ed9eb38491c"
+    },
+    {
+      "path": "tests/manual/quality-a1/typecheck.txt",
+      "sha256": "f58685dd1e95245162ad1238a2049a5db1228773018b97855053022558d5cb20"
+    },
+    {
+      "path": "tests/manual/quality-a1/unit-tests.txt",
+      "sha256": "5bdbef61b73516e703dd594ce2474b3b9e4ef023a62480510f8c81a09faf7f33"
+    }
+  ],
+  "phase04A2A3Executed": false,
+  "distributionImplemented": false,
+  "gate04Complete": false,
+  "nextTask": "P04-A2",
+  "rawLogHashMethod": "SHA-256 of exact bytes; scoped .gitattributes -text preserves original line endings."
+}

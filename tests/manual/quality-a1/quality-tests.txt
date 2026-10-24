@@ -1,0 +1,250 @@
+
+> personal-ui-quality@0.1.0 test
+> node --experimental-strip-types --test test/*.test.mjs
+
+TAP version 13
+# (node:17864) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: existing Brief validates without mutation; schema is itself checked
+ok 1 - existing Brief validates without mutation; schema is itself checked
+  ---
+  duration_ms: 40.5868
+  type: 'test'
+  ...
+# Subtest: full Schema rejects numeric version
+ok 2 - full Schema rejects numeric version
+  ---
+  duration_ms: 1.0617
+  type: 'test'
+  ...
+# Subtest: full Schema rejects missing state detail
+ok 3 - full Schema rejects missing state detail
+  ---
+  duration_ms: 0.6129
+  type: 'test'
+  ...
+# Subtest: full Schema rejects unknown top-level field
+ok 4 - full Schema rejects unknown top-level field
+  ---
+  duration_ms: 1.5368
+  type: 'test'
+  ...
+# Subtest: full Schema rejects unknown nested field
+ok 5 - full Schema rejects unknown nested field
+  ---
+  duration_ms: 0.5503
+  type: 'test'
+  ...
+# Subtest: full Schema rejects preset conditional mismatch
+ok 6 - full Schema rejects preset conditional mismatch
+  ---
+  duration_ms: 0.4249
+  type: 'test'
+  ...
+# Subtest: full Schema rejects duplicate state
+ok 7 - full Schema rejects duplicate state
+  ---
+  duration_ms: 0.4871
+  type: 'test'
+  ...
+# Subtest: full Schema rejects missing fifth state
+ok 8 - full Schema rejects missing fifth state
+  ---
+  duration_ms: 0.2288
+  type: 'test'
+  ...
+# Subtest: full Schema rejects empty string list
+ok 9 - full Schema rejects empty string list
+  ---
+  duration_ms: 0.4666
+  type: 'test'
+  ...
+# Subtest: full Schema rejects duplicate string list
+ok 10 - full Schema rejects duplicate string list
+  ---
+  duration_ms: 0.5969
+  type: 'test'
+  ...
+# Subtest: full Schema rejects invalid nested interaction id
+ok 11 - full Schema rejects invalid nested interaction id
+  ---
+  duration_ms: 0.4525
+  type: 'test'
+  ...
+# Subtest: Draft 2020-12 tuple semantics are executed, not a field-name approximation
+ok 12 - Draft 2020-12 tuple semantics are executed, not a field-name approximation
+  ---
+  duration_ms: 16.6949
+  type: 'test'
+  ...
+# Subtest: YAML rejects duplicate mapping key
+ok 13 - YAML rejects duplicate mapping key
+  ---
+  duration_ms: 1.2171
+  type: 'test'
+  ...
+# Subtest: YAML rejects multiple documents
+ok 14 - YAML rejects multiple documents
+  ---
+  duration_ms: 0.8982
+  type: 'test'
+  ...
+# Subtest: YAML rejects malformed mapping
+ok 15 - YAML rejects malformed mapping
+  ---
+  duration_ms: 0.8343
+  type: 'test'
+  ...
+# Subtest: YAML rejects non-finite JSON number
+ok 16 - YAML rejects non-finite JSON number
+  ---
+  duration_ms: 0.6212
+  type: 'test'
+  ...
+# Subtest: YAML rejects cyclic aliases
+ok 17 - YAML rejects cyclic aliases
+  ---
+  duration_ms: 1.3786
+  type: 'test'
+  ...
+# Subtest: YAML preserves quoted version strings and ordinary shared aliases
+ok 18 - YAML preserves quoted version strings and ordinary shared aliases
+  ---
+  duration_ms: 0.726
+  type: 'test'
+  ...
+# Subtest: Token data must be a runtime string dictionary
+ok 19 - Token data must be a runtime string dictionary
+  ---
+  duration_ms: 0.2601
+  type: 'test'
+  ...
+# Subtest: repository fixture passes and CLI validates independent of the caller cwd
+ok 20 - repository fixture passes and CLI validates independent of the caller cwd
+  ---
+  duration_ms: 1275.6062
+  type: 'test'
+  ...
+# Subtest: repository rejects unknown primitive alias
+ok 21 - repository rejects unknown primitive alias
+  ---
+  duration_ms: 113.0047
+  type: 'test'
+  ...
+# Subtest: repository rejects semantic cycle
+ok 22 - repository rejects semantic cycle
+  ---
+  duration_ms: 79.2686
+  type: 'test'
+  ...
+# Subtest: repository rejects reverse primitive dependency
+ok 23 - repository rejects reverse primitive dependency
+  ---
+  duration_ms: 95.5053
+  type: 'test'
+  ...
+# Subtest: repository rejects key conflict
+ok 24 - repository rejects key conflict
+  ---
+  duration_ms: 88.8356
+  type: 'test'
+  ...
+# Subtest: repository rejects unknown override
+ok 25 - repository rejects unknown override
+  ---
+  duration_ms: 96.1282
+  type: 'test'
+  ...
+# Subtest: repository rejects primitive override
+ok 26 - repository rejects primitive override
+  ---
+  duration_ms: 92.4566
+  type: 'test'
+  ...
+# Subtest: repository rejects non-string value
+ok 27 - repository rejects non-string value
+  ---
+  duration_ms: 96.9446
+  type: 'test'
+  ...
+# Subtest: repository rejects partial interpolation
+ok 28 - repository rejects partial interpolation
+  ---
+  duration_ms: 98.345
+  type: 'test'
+  ...
+# Subtest: CLI exits nonzero for Brief Schema failure
+ok 29 - CLI exits nonzero for Brief Schema failure
+  ---
+  duration_ms: 1363.439
+  type: 'test'
+  ...
+# Subtest: CLI exits nonzero for YAML parse failure
+ok 30 - CLI exits nonzero for YAML parse failure
+  ---
+  duration_ms: 1243.1576
+  type: 'test'
+  ...
+# Subtest: CLI exits nonzero for Token failure
+ok 31 - CLI exits nonzero for Token failure
+  ---
+  duration_ms: 1331.8371
+  type: 'test'
+  ...
+# Subtest: CLI exits nonzero for local link failure
+ok 32 - CLI exits nonzero for local link failure
+  ---
+  duration_ms: 1236.6219
+  type: 'test'
+  ...
+# Subtest: resolves relative, root-relative, encoded and directory destinations
+ok 33 - resolves relative, root-relative, encoded and directory destinations
+  ---
+  duration_ms: 57.2879
+  type: 'test'
+  ...
+# Subtest: ignores external URLs, fragments, inline code, fences and unused definitions
+ok 34 - ignores external URLs, fragments, inline code, fences and unused definitions
+  ---
+  duration_ms: 16.7678
+  type: 'test'
+  ...
+# Subtest: checks full, collapsed, shortcut and image references using the first definition
+ok 35 - checks full, collapsed, shortcut and image references using the first definition
+  ---
+  duration_ms: 21.3259
+  type: 'test'
+  ...
+# Subtest: reports missing targets and malformed local percent escapes at their use sites
+ok 36 - reports missing targets and malformed local percent escapes at their use sites
+  ---
+  duration_ms: 13.9273
+  type: 'test'
+  ...
+# Subtest: rejects traversal, encoded traversal, drive paths, file URLs and backslash paths
+ok 37 - rejects traversal, encoded traversal, drive paths, file URLs and backslash paths
+  ---
+  duration_ms: 16.9708
+  type: 'test'
+  ...
+# Subtest: allows internal symlinks and rejects existing targets reached outside the repository
+ok 38 - allows internal symlinks and rejects existing targets reached outside the repository
+  ---
+  duration_ms: 25.1374
+  type: 'test'
+  ...
+# Subtest: detects a case-mismatched target on a case-sensitive filesystem
+ok 39 - detects a case-mismatched target on a case-sensitive filesystem # SKIP Windows lookup is case-insensitive; Linux CI must verify this case.
+  ---
+  duration_ms: 17.1813
+  type: 'test'
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 8681.0564

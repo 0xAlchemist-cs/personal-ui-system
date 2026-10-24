@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-24",
+  "task": "P04-A1",
+  "developmentFailures": [
+    {
+      "observed": "links.errors is not iterable; checkMarkdownLinks returns a Promise",
+      "exitCode": 1,
+      "fix": "Await link checking in async validateRepository and await the CLI result before setting exit status."
+    },
+    {
+      "observed": "Windows sandbox promises.realpath EPERM in workspace/tmp fixtures",
+      "fix": "Run the same file checks in an elevated task process; retain realpath safety checks. No system-wide environment or permissions changed.",
+      "rawLinkTestLog": "development-links-initial.txt"
+    }
+  ],
+  "verification": "development-check.txt and development-test.txt",
+  "negativeTests": "Actual subprocess nonzero exits are asserted separately for Schema/YAML/Token/local-link failures.",
+  "evidenceWriterCorrection": "Initial log metadata writer mixed relative and absolute Path objects; corrected to repository-relative paths before producing verification.json. No validator or CI result changed."
+}

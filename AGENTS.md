@@ -17,7 +17,8 @@
 - 设计知识库基础已建立，继续维护规范、参考来源、三套候选风格、Token、页面规格、UI Brief 和提示词。
 - 阶段 02 已完成 T0～T5，[正式验收](tests/manual/showcase-v1/review.md) 记录 Gate 02 证据；`showcase/app/` 有独立的 React/Vite/Ant Design 成员管理示范页和 17 个 Story。运行依赖仅在该应用内；顶层 `components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现，尚无自动视觉回归基线。
 - `minimal-saas` 仅在其说明列出的固定组合与页面验收范围为 `validated`；其余两套风格为 `draft`，未自动 `approved`。不将单页验收推广为跨框架、跨浏览器或公共组件保证。
-- 阶段 03 已完成 T1～T4，[收口报告](docs/records/2026-10-24-p03-t4-closeout.md) 核对 Gate 03 通过；一个独立消费者按固定快照完成安装/构建和页面验收，16 项来源资产自 T2 未改。继续使用固定快照，公共组件与风格成熟度未晋级；下一张任务卡为 P04-A1，质量轨道可进入但尚未实施，分发条件尚未触发。
+- 阶段 03 已完成 T1～T4，[收口报告](docs/records/2026-10-24-p03-t4-closeout.md) 核对 Gate 03 通过；一个独立消费者按固定快照完成安装/构建和页面验收，16 项来源资产自 T2 未改。继续固定快照，公共组件与风格成熟度未晋级，分发条件尚未触发。
+- 阶段 04 已完成 [A1 持续静态校验](docs/records/2026-10-24-p04-a1-quality-checks.md)：独立质量工具执行完整 Brief Schema、YAML、Token 和 Markdown 目标检查，两项真实 CI job 通过；Showcase 沿用自身检查与锁文件。下一张为 P04-A2，尚无自动浏览器/视觉回归基线或 Gate 04 完成结论。
 - 后续阶段见 [实施路线](docs/roadmap.md)。用户明确要求进入后续阶段时再落实相应能力。
 
 ## 任务决策

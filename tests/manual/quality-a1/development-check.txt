@@ -1,0 +1,19 @@
+
+> personal-ui-quality@0.1.0 check
+> node --experimental-strip-types check.mjs
+
+(node:41760) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "ok": true,
+  "counts": {
+    "markdown": 53,
+    "json": 66,
+    "yaml": 5,
+    "briefs": 3,
+    "presets": 3,
+    "localLinks": 438
+  },
+  "errors": [],
+  "scope": "Owned JSON/YAML, full Brief Draft 2020-12, all preset Token graphs and Markdown file targets. Preserved .agents and docs/imports bodies excluded; heading anchors and remote URLs not fetched."
+}
