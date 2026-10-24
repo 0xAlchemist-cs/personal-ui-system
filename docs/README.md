@@ -7,7 +7,7 @@
 1. 看 [路线与实际进度](roadmap.md)，确认哪些能力尚未实施。
 2. 看 [计划总纲](superpowers/MASTER-PLAN.md)，了解阶段之间的前置条件和验收门槛。
 3. 核对首个工作台交付时阅读 [T5 正式页面验收与 Gate 02](../tests/manual/showcase-v1/review.md)；规格冻结与实现历史分别查看 [T1 初稿](../tests/manual/showcase-v1/t1-spec-check.md)、[T2 主题](../tests/manual/showcase-v1/t2-theme-check.md)、[T3 交互](../tests/manual/showcase-v1/t3-interaction-check.md) 与 [T4 Stories](../tests/manual/showcase-v1/t4-stories-check.md)。
-4. 查看 [A2 浏览器冒烟](records/2026-10-24-p04-a2-browser-smoke.md) 与 [A1 质量校验](records/2026-10-24-p04-a1-quality-checks.md)：知识契约、既有工程检查与三视口 11 项浏览器检查均在真实 CI 通过；下一张为 [P04-A3](superpowers/plans/2026-10-23-phase04-quality-and-distribution.md#p04-a3质量收口)，未建立像素基线或完成 Gate 04。
+4. 查看 [A3 质量收口](records/2026-10-24-p04-a3-quality-closeout.md) 与 [唯一验收约定](../tests/README.md)：质量轨道 A1～A3 完成，真实 CI 通过，机器/人工职责和失败处理已有落点。实现历史见 [A1](records/2026-10-24-p04-a1-quality-checks.md)、[A2](records/2026-10-24-p04-a2-browser-smoke.md)；未建立像素基线或平台强制保护，B1 条件未触发，不宣称整个 Gate 04 通过。
 5. 查看 [T4 收口与 Gate 03](records/2026-10-24-p03-t4-closeout.md)：阶段 03 已完成、继续固定快照，分发条件未触发；构建/页面原始证据见 [T3](records/2026-10-24-p03-t3-independent-validation.md)，来源历史见 [T1](records/2026-10-23-p03-t1-consumer-selection.md)、[T2](records/2026-10-24-p03-t2-snapshot.md)。
 
 ## 分类目录
@@ -18,7 +18,7 @@
 | 执行总纲 | [MASTER-PLAN.md](superpowers/MASTER-PLAN.md) | 事实源、推进门槛、执行约定 |
 | 阶段计划 | [Phase 02 工作台](superpowers/plans/2026-10-23-showcase-v1.md) | 首版页面、主题、Stories 与人工验收；执行状态以路线图和任务证据为准 |
 | 阶段计划 | [Phase 03 消费者试点](superpowers/plans/2026-10-23-phase03-consumer-pilot.md) | T1～T4 完成，Gate 03 通过，状态以路线图为准 |
-| 阶段计划 | [Phase 04 质量与分发](superpowers/plans/2026-10-23-phase04-quality-and-distribution.md) | A1/A2 完成，A3 未执行，分发未触发；Gate 04 未收口 |
+| 阶段计划 | [Phase 04 质量与分发](superpowers/plans/2026-10-23-phase04-quality-and-distribution.md) | 质量轨道 A1～A3 完成；分发条件未触发，B1/B2 未执行，未据此完成整个 Gate 04 |
 | 验收记录 | [Phase 02 正式验收](../tests/manual/showcase-v1/review.md) | 页面、Stories、构建、浏览器证据、缺陷修复与 Gate 02；源码和环境以报告为准 |
 | 实施记录 | [P03-T1 消费者选型](records/2026-10-23-p03-t1-consumer-selection.md) | Gate 02 复核、消费者版本、目标技术栈、复用清单与引用风险 |
 | 实施记录 | [P03-T2 快照打包](records/2026-10-24-p03-t2-snapshot.md) | 固定来源、manifest、局部覆盖、本地闭合检查及消费者历史归档 |
@@ -26,6 +26,7 @@
 | 实施记录 | [P03-T4 收口](records/2026-10-24-p03-t4-closeout.md) | Gate 03 审计、来源/覆盖、视觉差异、复用收益、手动步骤与下一阶段准入 |
 | 实施记录 | [P04-A1 质量与 CI](records/2026-10-24-p04-a1-quality-checks.md) | 完整 Schema、YAML、Token、链接正负例及真实干净环境/CI 日志 |
 | 实施记录 | [P04-A2 浏览器冒烟](records/2026-10-24-p04-a2-browser-smoke.md) | 三视口 11 项浏览器检查、重复实验、焦点裁切修复、失败 trace 与真实 CI；未建像素基线 |
+| 实施记录 | [P04-A3 质量收口](records/2026-10-24-p04-a3-quality-closeout.md) | 前置证据审计、机器/人工验收职责、PR/候选交付入口、失败与未来基线审核路径及真实 CI |
 | 长期指南 | [资产生命周期](guides/asset-lifecycle.md) | 成熟度、收录、兼容性 |
 | 长期指南 | [项目复用](guides/project-reuse.md) | 闭合快照、来源、独立构建边界 |
 | 长期指南 | [UI 工具接入](guides/ui-tooling.md) | 官方 Skill、CLI、MCP 的实际接入范围 |

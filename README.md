@@ -17,7 +17,9 @@
 
 知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页和 17 个 Story，启动、目录及检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
-**下一张任务卡：P04-A3｜质量收口。** [A1](docs/records/2026-10-24-p04-a1-quality-checks.md) 已提供完整 Schema/YAML/Token/本地链接校验与真实 CI；[A2 报告](docs/records/2026-10-24-p04-a2-browser-smoke.md) 记录三视口 11 项浏览器检查、额外 22 项重复实验（11 项各执行 2 次）及焦点裁切修复。CI 的 39 项质量测试、78 项应用测试、类型/Lint、应用与 Storybook 构建和 11 项浏览器检查均通过。[质量工具](tools/quality/README.md) 与应用各自固定依赖，不增加消费者运行依赖。未建立像素基线，A3/分发未执行，Gate 04 未收口；Gate 03 与固定快照依据仍见 [T4](docs/records/2026-10-24-p03-t4-closeout.md)。
+**阶段 04 质量轨道 A1～A3 已完成。** [A3 收口报告](docs/records/2026-10-24-p04-a3-quality-closeout.md) 核对已有证据，并将机器/人工职责、失败处理和 PR/候选交付要求统一到 [验收约定](tests/README.md)。真实 CI 的 39 项质量测试、78 项应用测试、类型/Lint、应用与 Storybook 构建及三视口 11 项浏览器检查通过；没有像素基线或平台强制分支保护。[质量工具](tools/quality/README.md) 与应用各自固定依赖，不要求消费者安装全部工具。
+
+**下一候选：P04-B1｜分发必要性评估。** 仍需至少两个明确消费者或明确发布目标；当前条件未触发，没有可自动开始的下一张实施卡。A3 不代替分发判断或整个 Gate 04 结论；Gate 03 与既有固定快照依据见 [T4](docs/records/2026-10-24-p03-t4-closeout.md)。
 
 完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 
@@ -40,7 +42,7 @@
 | 交互模式 | [导航](patterns/navigation/README.md)、[表单](patterns/forms/README.md)、[数据展示](patterns/data-display/README.md) | 候选规则，供首个项目验证 |
 | 页面规格 | [Dashboard](templates/dashboard/README.md)、[Blog](templates/blog/README.md)、[SaaS](templates/saas/README.md)、[Landing Page](templates/landing-page/README.md) | 信息结构与状态要求，没有页面源码 |
 | AI Knowledge | [个人 Skill](skills/personal-ui/SKILL.md)、[Prompts](prompts/frontend-development.md)、[Brief](briefs/README.md)、[官方工具](docs/guides/ui-tooling.md) | 官方 Skill 全局安装及项目快照；个人 Skill 仍为仓库内入口，MCP 按需接入 |
-| Quality Control | [质量工具](tools/quality/README.md)、[A2 浏览器与 CI](docs/records/2026-10-24-p04-a2-browser-smoke.md)、[T5 人工验收](tests/manual/showcase-v1/review.md) | 完整 Schema/Token/链接检查、39 项质量测试、78 项应用测试和三视口 11 项浏览器检查；既有键盘/200% 证据按原范围保留，尚无像素回归基线 |
+| Quality Control | [验收约定](tests/README.md)、[A3 收口](docs/records/2026-10-24-p04-a3-quality-closeout.md)、[T5 人工验收](tests/manual/showcase-v1/review.md) | 完整 Schema/Token/链接检查、39 项质量测试、78 项应用测试、三视口 11 项浏览器检查和人工分工；既有证据保留原范围，无像素基线或强制分支保护 |
 
 ## 以后如何描述需求
 

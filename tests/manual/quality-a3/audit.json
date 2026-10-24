@@ -1,0 +1,381 @@
+{
+  "date": "2026-10-24",
+  "task": "P04-A3",
+  "baseline": "86ff31b42a40a017d8ca7551fd7c2c0793d336b8",
+  "workingTree": "isolated codex/p04-a3",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "win32",
+    "osRelease": "10.0.26100"
+  },
+  "frozenPathsUnchanged": [
+    "briefs",
+    "design-system",
+    "docs/superpowers",
+    "components",
+    "patterns",
+    "templates",
+    "prompts",
+    "skills",
+    "showcase/app/src",
+    "showcase/app/e2e",
+    "showcase/app/.storybook",
+    "showcase/app/package.json",
+    "showcase/app/package-lock.json",
+    "showcase/app/tsconfig.json",
+    "showcase/app/playwright.config.ts",
+    ".github/workflows",
+    "tools/quality/lib",
+    "tools/quality/bin",
+    "tools/quality/test",
+    "tools/quality/package.json",
+    "tools/quality/package-lock.json",
+    "tests/manual/quality-a1",
+    "tests/manual/browser-a2"
+  ],
+  "a1": {
+    "logsVerified": 15,
+    "sourceCI": "https://github.com/0xAlchemist-cs/personal-ui-system/actions/runs/40064509154"
+  },
+  "a2": {
+    "filesVerified": 45,
+    "implementation": "0f18bd3217aae1223688100e1c883deaa319f322",
+    "singleRun": {
+      "startTime": "2026-10-24T10:36:22.239Z",
+      "duration": 50659.566,
+      "expected": 11,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "repeatedRun": {
+      "startTime": "2026-10-24T10:38:05.536Z",
+      "duration": 62917.044,
+      "expected": 22,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "sourceCI": {
+      "runId": 40086757728,
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Knowledge contracts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Showcase checks and builds",
+          "conclusion": "success"
+        }
+      ],
+      "environments": 3,
+      "artifactId": 12557970229
+    }
+  },
+  "checkedEvidence": [
+    {
+      "path": "tests/manual/quality-a1/build.txt",
+      "sha256": "d1639cc1792c79ee42b0c774c544728f02bdfab03c92c8598817f2096371dd26",
+      "bytes": 880
+    },
+    {
+      "path": "tests/manual/quality-a1/ci-knowledge.txt",
+      "sha256": "192c5269d2bf207cba90b7b5df44deb512ddd15e7c573ef43ece4e160aca71b7",
+      "bytes": 35879
+    },
+    {
+      "path": "tests/manual/quality-a1/ci-showcase.txt",
+      "sha256": "70bdbe6519af40ad0879f04746c183aa1624c1286c9ea510a0a8e92159050409",
+      "bytes": 34462
+    },
+    {
+      "path": "tests/manual/quality-a1/development-check.txt",
+      "sha256": "870ee478be792b481e9e2f09568d07f128767eac716d30f00d87a4b7574d7f17",
+      "bytes": 641
+    },
+    {
+      "path": "tests/manual/quality-a1/development-links-initial.txt",
+      "sha256": "46048f981c881d4e61a7a54740266635a21d8d32a9bcff54742f01b56aa86133",
+      "bytes": 1433
+    },
+    {
+      "path": "tests/manual/quality-a1/development-test.txt",
+      "sha256": "817649c1452179f1c8c3264fe68c197f46bb737546b7dbf0ef489c15eb005f92",
+      "bytes": 7216
+    },
+    {
+      "path": "tests/manual/quality-a1/final-knowledge.txt",
+      "sha256": "cc112da2c992bf93ea6164023813155717c951f80369312c007d8b0cbd146a05",
+      "bytes": 641
+    },
+    {
+      "path": "tests/manual/quality-a1/knowledge.txt",
+      "sha256": "7a5da8ea63e5b468e1b799f3f60be43abe9dc46ce912ff689d62013508b7234e",
+      "bytes": 641
+    },
+    {
+      "path": "tests/manual/quality-a1/lint.txt",
+      "sha256": "dab66be7a12119a7e95e33159914c405129ee7e973928ce8ffc4a7e3031f963c",
+      "bytes": 112
+    },
+    {
+      "path": "tests/manual/quality-a1/quality-install.txt",
+      "sha256": "b759d4acd825979875005444ba7b90c2a17aede84d3c978397793b1cbc0e3f9c",
+      "bytes": 27
+    },
+    {
+      "path": "tests/manual/quality-a1/quality-tests.txt",
+      "sha256": "6244f05a19b1d1bd821c24f083b4d2992563e3b5bd273d1702ac3e8f88e2811a",
+      "bytes": 7218
+    },
+    {
+      "path": "tests/manual/quality-a1/showcase-install.txt",
+      "sha256": "8aafdd260b0b6886d3de6893255aed47515994fc7ef89d4e1ae77187464017cc",
+      "bytes": 337
+    },
+    {
+      "path": "tests/manual/quality-a1/storybook-build.txt",
+      "sha256": "5484797224da54146327eb24f647193e89c5a611deefd250a5fc1ed9eb38491c",
+      "bytes": 4844
+    },
+    {
+      "path": "tests/manual/quality-a1/typecheck.txt",
+      "sha256": "f58685dd1e95245162ad1238a2049a5db1228773018b97855053022558d5cb20",
+      "bytes": 77
+    },
+    {
+      "path": "tests/manual/quality-a1/unit-tests.txt",
+      "sha256": "5bdbef61b73516e703dd594ce2474b3b9e4ef023a62480510f8c81a09faf7f33",
+      "bytes": 335
+    },
+    {
+      "path": "tests/manual/browser-a2/antd-button-api.txt",
+      "sha256": "639dc02f207d4b0cedaa9ce86b9d6d4498c820291f99f2303be859da197175d2",
+      "bytes": 3820
+    },
+    {
+      "path": "tests/manual/browser-a2/antd-member-table-lint.txt",
+      "sha256": "13b727d0e8efdf2d43670ddd10f1daff8ac4193ba04cbb9e830ac41454dcbb92",
+      "bytes": 201
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop/error-context.txt",
+      "sha256": "c85234ea44bfeb1551573d9896960b0224cd01c0c06ae8263c921babcb8d1ccc",
+      "bytes": 12728
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop/test-failed-1.png",
+      "sha256": "6bc61038f444e7bbc422c6ac4cb25377693790959a1700cbd40512b85a873c94",
+      "bytes": 56593
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop/trace.zip",
+      "sha256": "9af254ea4391a010433afa97383bc89721bffcb3c537631fb7fb64c9f1dacb3e",
+      "bytes": 1513506
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop/error-context.txt",
+      "sha256": "33a11091822aa22bd5ff66897501d72a3817e88357aa3130cff4942a1a926236",
+      "bytes": 9937
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop/test-failed-1.png",
+      "sha256": "b5f9e68b655fd9fdb1030faf8b4fc2dfb4ae93856c08868693df754e873da9ec",
+      "bytes": 58732
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop/trace.zip",
+      "sha256": "4ac4cbf9364cb5d1f6e06ff72225cec0977522f45d0a614b1617d13244d4f9a1",
+      "bytes": 1678423
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-1/results.json",
+      "sha256": "6c17ca5d2434d911069523ef42fe789da30b924167de408dd57048b9a1bcb7f9",
+      "bytes": 357618
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-2/e2e.txt",
+      "sha256": "89e95e98aa683521900d70894e49d7417005d5cf237d5920dedf2d0210dfce06",
+      "bytes": 5501
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-2/error-context.txt",
+      "sha256": "8eb049a41cb8e58e6a23391b06a88a482cd77705c6aa2d9e94cdf040c33868a0",
+      "bytes": 3847
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-2/results.json",
+      "sha256": "c18d5c69f0c581bcb8879654af44fe501936fd395afbf96da28ed48e358bdd1a",
+      "bytes": 312755
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-2/test-failed-1.png",
+      "sha256": "ce16fb858e19710ddf74d90066d84850142b4b9f286b7bbda1cadda9953079c9",
+      "bytes": 53031
+    },
+    {
+      "path": "tests/manual/browser-a2/attempt-2/trace.zip",
+      "sha256": "91873561b2e4e5ba0ac64cc942ad033ac43da000a4c35bf19117c69bb72ac16e",
+      "bytes": 2132848
+    },
+    {
+      "path": "tests/manual/browser-a2/browser-install.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tests/manual/browser-a2/build.txt",
+      "sha256": "5eb16cdcbd90591a2d2d54d09a412b47cf306ddf38fd0a98e5ee30abd833f06e",
+      "bytes": 880
+    },
+    {
+      "path": "tests/manual/browser-a2/ci-knowledge.txt",
+      "sha256": "6134fe27940e93251eb3bf4c885ef6d2bbd2078ee19f97fbc1d90e11a9b9e1b8",
+      "bytes": 36267
+    },
+    {
+      "path": "tests/manual/browser-a2/ci-run.json",
+      "sha256": "d908bfd6a9f5d5830bcff07421490caa7ee5345ed0c5b7fa2fb77bf852964f1a",
+      "bytes": 6272
+    },
+    {
+      "path": "tests/manual/browser-a2/ci-showcase.txt",
+      "sha256": "099e9e2278b610765e726682a08ed90cc508cb47cd7a863cdf0cf0b55c12576d",
+      "bytes": 68201
+    },
+    {
+      "path": "tests/manual/browser-a2/default-desktop.png",
+      "sha256": "69fd261f5380ab56ecf70311ca195661223177848bab8dfec0ad1d60e4dd6e6a",
+      "bytes": 87594
+    },
+    {
+      "path": "tests/manual/browser-a2/default-mobile.png",
+      "sha256": "ad10939452b853319fe992e781235083ecc33282b40ac2c5c3f6b322e4f3ffa2",
+      "bytes": 53397
+    },
+    {
+      "path": "tests/manual/browser-a2/default-tablet.png",
+      "sha256": "2bd30720cee0254fd7af033417ac6a1db7900bcba2db8db7b5bb7c99e24d1202",
+      "bytes": 74398
+    },
+    {
+      "path": "tests/manual/browser-a2/development-build.txt",
+      "sha256": "1be5977c3efce4ca522e5e2c88a605cb00d91fa9a1b972ac19b5373aea23c3ae",
+      "bytes": 880
+    },
+    {
+      "path": "tests/manual/browser-a2/development-e2e.txt",
+      "sha256": "9017e8a741487c5dc28668cd51384ad3e646e0ffc7f488f03d4f5e6b2c297b7d",
+      "bytes": 35695
+    },
+    {
+      "path": "tests/manual/browser-a2/e2e.txt",
+      "sha256": "0cb689e998891289c4e87f4a406df0b49e71528348d56d153c6d81e2501c603e",
+      "bytes": 3808
+    },
+    {
+      "path": "tests/manual/browser-a2/environment.json",
+      "sha256": "a2469e50fdea14ba6af5c5f465a37d3c7d7918219b47e80f44788c04ba851c7f",
+      "bytes": 2129
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-diagnostic.json",
+      "sha256": "8600c855536fd3f88fba181a00ac18b6189947da071c5568f31545772c69adb7",
+      "bytes": 2457
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-fixed-375.png",
+      "sha256": "54d6567a86b34650b8aa27e1e8f3e94e50213b59dee1254cbd9f7d76880a6d76",
+      "bytes": 20428
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-fixed-768.png",
+      "sha256": "0efd6be791d5c12933e43b5f01e5765626a28488626633ee9f598f88d023a4c1",
+      "bytes": 54438
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-fixed.json",
+      "sha256": "1496f39d12e3552c38a504aef39a1db8dd772170ea4ed21d0e6dd1b2af473c5e",
+      "bytes": 1503
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-native-375.png",
+      "sha256": "54d6567a86b34650b8aa27e1e8f3e94e50213b59dee1254cbd9f7d76880a6d76",
+      "bytes": 20428
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-native-768.png",
+      "sha256": "944cbe2fdc3705aa5d4a531c9012159c25f6cc76e22210fe077eb87065407b70",
+      "bytes": 53048
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-nearest-375.png",
+      "sha256": "54d6567a86b34650b8aa27e1e8f3e94e50213b59dee1254cbd9f7d76880a6d76",
+      "bytes": 20428
+    },
+    {
+      "path": "tests/manual/browser-a2/focus-nearest-768.png",
+      "sha256": "67f7858d4800824b2557a39498cbf1db9fc7ba3c01eb13a88db7544c482dcd82",
+      "bytes": 54286
+    },
+    {
+      "path": "tests/manual/browser-a2/knowledge.txt",
+      "sha256": "8afbef0f1ac2dc71959a2a6a019c69587d34327b3304471f4cce7bfba68b5f2d",
+      "bytes": 641
+    },
+    {
+      "path": "tests/manual/browser-a2/lint.txt",
+      "sha256": "4149f7fa93b42eb7510cee6178991740c9027bd54e18ee88fc74c8c4f26fd87b",
+      "bytes": 137
+    },
+    {
+      "path": "tests/manual/browser-a2/npm-version.txt",
+      "sha256": "165cd838734f79eda32ac408b099381deb3fef2148d6ef6179c954604238cfc7",
+      "bytes": 9
+    },
+    {
+      "path": "tests/manual/browser-a2/preflight.json",
+      "sha256": "3b841f6fa1509d39f1f3b76026cadbe5f66d079484562074a3982fc698bbaa27",
+      "bytes": 966
+    },
+    {
+      "path": "tests/manual/browser-a2/quality-tests.txt",
+      "sha256": "210c95a58257fd9b4aef90d0f91e25e43f1c8ee7fd0a56de735f70b8670d8890",
+      "bytes": 7213
+    },
+    {
+      "path": "tests/manual/browser-a2/repeat-results.json",
+      "sha256": "3122b70c1180c6261fcded70bb4064239f37591fb3667ecabd8df26ee2760290",
+      "bytes": 612657
+    },
+    {
+      "path": "tests/manual/browser-a2/repeat.txt",
+      "sha256": "a0a2f63f1bfc27740b1c849e754b500ce3286cdbf7a321b1d5b6c00a1e12b55b",
+      "bytes": 7267
+    },
+    {
+      "path": "tests/manual/browser-a2/results.json",
+      "sha256": "6adbef01b8201045884ad3ad1a1a77b2a0c0daeac1e78f62b726675a587755ab",
+      "bytes": 308719
+    },
+    {
+      "path": "tests/manual/browser-a2/storybook-build.txt",
+      "sha256": "10819fd92d688f27eecd0a3944c5ea76bd8ce37bc20447e11ddce58d121a5ec1",
+      "bytes": 5472
+    },
+    {
+      "path": "tests/manual/browser-a2/typecheck.txt",
+      "sha256": "f58685dd1e95245162ad1238a2049a5db1228773018b97855053022558d5cb20",
+      "bytes": 77
+    },
+    {
+      "path": "tests/manual/browser-a2/unit-tests.txt",
+      "sha256": "246b520d1611c2d9ef2feccc74fca6c65a61e4bbab5811a94340898fd6a0b8a6",
+      "bytes": 330
+    }
+  ],
+  "uiOrConsumerRerun": false,
+  "pixelBaseline": false,
+  "distributionExecuted": false
+}
