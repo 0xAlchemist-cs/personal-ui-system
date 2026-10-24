@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-24",
+  "task": "P03-T4",
+  "scope": "Audit tooling, not a consumer failure",
+  "initialFailure": "KeyError: expectedExit when reading historical T2 negative-case rows",
+  "cause": "Historical positive row uses expectedExit/actualExit; seven negative rows use expectedNonzero/actualExit.",
+  "consumerModified": false,
+  "finalAudit": "t4-gate-audit.json",
+  "fix": "Assert exact zero for the positive row and expectedNonzero=true plus nonzero actualExit for each negative row.",
+  "resolved": true
+}

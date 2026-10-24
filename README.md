@@ -2,7 +2,7 @@
 
 你的个人 AI 前端设计系统。一套设计能力，服务博客、管理后台和 Web App 等独立项目。
 
-当前版本：**0.1.0 · 设计知识库与阶段 02 工作台**。首版规格、单一主题通路、成员管理示范页、17 个 Story 及正式页面验收已完成，Gate 02 通过；覆盖范围和限制见 [验收报告](tests/manual/showcase-v1/review.md)。
+当前版本：**0.1.0 · 设计知识库、工作台与独立复用试点**。首版规格、单一主题通路、成员管理示范页、17 个 Story 及正式页面验收已完成，Gate 02 通过；覆盖范围和限制见 [验收报告](tests/manual/showcase-v1/review.md)。
 
 已补充五套组件体系的开发知识接入；按目标项目选用，见 [组件选型](components/README.md) 和 [工具接入记录](docs/guides/ui-tooling.md)。
 
@@ -17,7 +17,7 @@
 
 知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页和 17 个 Story，启动、目录及检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
-**下一张任务卡：P03-T4｜收口。** [T3 独立验证](docs/records/2026-10-24-p03-t3-independent-validation.md) 已完成：消费者拥有最小主题检查页与独立锁文件，从 Git 归档全新检出后，在空 NODE_PATH 的任务进程中安装、类型/Lint、63 项测试和构建通过；三视口、真实 200% 缩放与路径独立性已有证据。按 [既有复用计划](docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md) 单独执行 T4，核对 Gate 03 并收口；Phase 04 未启动。来源与快照历史见 [T1](docs/records/2026-10-23-p03-t1-consumer-selection.md)、[T2](docs/records/2026-10-24-p03-t2-snapshot.md)。
+**下一张任务卡：P04-A1｜持续静态校验。** [T4 收口报告](docs/records/2026-10-24-p03-t4-closeout.md) 已核对 T1～T3，Gate 03 通过：固定快照在一个独立消费者中完成干净检出安装/构建、63 项主题测试、三视口和真实 200% 缩放验证。已记录局部覆盖、复用收益、剩余手动步骤和升级/回退流程；继续采用固定快照。允许按 [既有 Phase 04 计划](docs/superpowers/plans/2026-10-23-phase04-quality-and-distribution.md) 进入质量轨道，分发条件尚未触发，本轮没有实施 CI、包或 Registry。实际构建与页面证据见 [T3](docs/records/2026-10-24-p03-t3-independent-validation.md)。
 
 完整规划见 [计划总纲](docs/superpowers/MASTER-PLAN.md)。所有计划、长期指南、历史验证记录与附件原件已按 [文档分类索引](docs/README.md) 归类，Phase 03/04 计划保留启动条件。
 

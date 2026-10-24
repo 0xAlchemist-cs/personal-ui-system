@@ -1,0 +1,562 @@
+{
+  "date": "2026-10-24",
+  "task": "P03-T4",
+  "knowledgeBaseline": "bd7b6c83e1180b8daf21c9e7e5ee376a9d28d8b8",
+  "status": "passed",
+  "gate03": "passed",
+  "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+  "systemVersion": "0.1.0",
+  "consumerBaselineCommit": "cdf8c260c51ab67407bd01090a696fd1452f969f",
+  "consumerSnapshotCommit": "d16a8e8be90161dca1361b43703fafabba2ecd26",
+  "consumerFinalCommit": "a349428854e7cf203ee29d0211ef8a7572bdff10",
+  "consumerCurrentlyClean": true,
+  "consumerRemoteConfigured": false,
+  "sourceVerificationCommands": [
+    "git show <sourceCommit>:<sourcePath> (hash bytes)",
+    "git rev-parse <sourceCommit>:<sourcePath> (Git Blob)"
+  ],
+  "sourceChecks": [
+    {
+      "path": "LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceGitBlob": "878759e6a2fe63ee12473e72e0357d80a33acf04",
+      "sourceSha256": "eea7f3d20985480a48e47d99047de7932f4d661b5ff2174b5bd3536e95dd41d3",
+      "targetSha256": "eea7f3d20985480a48e47d99047de7932f4d661b5ff2174b5bd3536e95dd41d3",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "prompts/frontend-development.md",
+      "sourcePath": "prompts/frontend-development.md",
+      "sourceGitBlob": "096755d9774881549dd9d8d1d2860eec62c2ff98",
+      "sourceSha256": "e6c5f947d0678be7c5baf15d95436e3fa3379d0da456d7735ee47ecbf8b589dd",
+      "targetSha256": "e6c5f947d0678be7c5baf15d95436e3fa3379d0da456d7735ee47ecbf8b589dd",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "design-system/principles.md",
+      "sourcePath": "design-system/principles.md",
+      "sourceGitBlob": "68119c6782be25ec8f0d8d6ba99fcd0e558808e2",
+      "sourceSha256": "5035adff18558de7f3e05bfbb20446af54baba6d5da5f9ae4cad04fc9d1ebe51",
+      "targetSha256": "5035adff18558de7f3e05bfbb20446af54baba6d5da5f9ae4cad04fc9d1ebe51",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "sourcePath": "design-system/styles/minimal-saas.md",
+      "sourceGitBlob": "e0923d8b53fc3b25c7acb42e177ad823fd3ca72d",
+      "sourceSha256": "89500a382a650260f5cfa46f137250de8a7a8f3558b839765d725359e1805982",
+      "targetSha256": "cb9c04928a5cb1f834f310c7f4c15484d6c1ed62ebdf9eaab4fab1c730f58370",
+      "modifiedFromOriginal": true,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.json",
+      "sourcePath": "design-system/styles/minimal-saas.json",
+      "sourceGitBlob": "9de52cfc8a76cf407e6bd2e65c2ae5704b27d94f",
+      "sourceSha256": "035a89d0ead23070635f02a6aa29dd6c5ca8de8dfa98fed1c2f2af444a5d2ea3",
+      "targetSha256": "035a89d0ead23070635f02a6aa29dd6c5ca8de8dfa98fed1c2f2af444a5d2ea3",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "sourcePath": "design-system/tokens/README.md",
+      "sourceGitBlob": "118fdf563b7000920a9985fc16a28cf233714fb7",
+      "sourceSha256": "9c982ed9da31c0f11512eae937b5629742bf80627438941618a22f15cb99614a",
+      "targetSha256": "c5bfd0b5a51652caa16ea6a285b4d8604434dafd345c826ba8908fcd0d726f1e",
+      "modifiedFromOriginal": true,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "design-system/tokens/primitives.json",
+      "sourcePath": "design-system/tokens/primitives.json",
+      "sourceGitBlob": "c1cb76999c579bb76cf75b3445d6c98db51f7f0a",
+      "sourceSha256": "eca7941fe34421765ed522034f9a525d10858922f04708481f08e7e61fc5b174",
+      "targetSha256": "eca7941fe34421765ed522034f9a525d10858922f04708481f08e7e61fc5b174",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "design-system/tokens/semantic.json",
+      "sourcePath": "design-system/tokens/semantic.json",
+      "sourceGitBlob": "84d20061e50060b53b0cdd86a32fb275e512ef04",
+      "sourceSha256": "1632f5bbf10a41d52a744bcb769d0dc3316b75ffe0a60f481f6acdf686e89a24",
+      "targetSha256": "1632f5bbf10a41d52a744bcb769d0dc3316b75ffe0a60f481f6acdf686e89a24",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "prompts/design-review.md",
+      "sourcePath": "prompts/design-review.md",
+      "sourceGitBlob": "17c10dab7ba06459334abf9ded3f032a4eb561e2",
+      "sourceSha256": "8a90f32fdc518ba41f6cbb34c26aeff6908b9914b793dff2776384a547100211",
+      "targetSha256": "8a90f32fdc518ba41f6cbb34c26aeff6908b9914b793dff2776384a547100211",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "prompts/visual-qa.md",
+      "sourcePath": "prompts/visual-qa.md",
+      "sourceGitBlob": "5bc40e6c1c50f664d32d2cd4d9eb4a7389785204",
+      "sourceSha256": "fec84a97a1c98efb565be2eaa4284d54817c3d5288f7518e6a1f8fac153d0ee9",
+      "targetSha256": "fec84a97a1c98efb565be2eaa4284d54817c3d5288f7518e6a1f8fac153d0ee9",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "tests/visual-review-template.md",
+      "sourcePath": "tests/visual-review-template.md",
+      "sourceGitBlob": "e510a4fa92428ee86f6f75272e6ba9446c99e702",
+      "sourceSha256": "d7cebd4d1cc5da3eb7fa3a1772da7576d1f68cbd2281eb4dcb034468152403bd",
+      "targetSha256": "d7cebd4d1cc5da3eb7fa3a1772da7576d1f68cbd2281eb4dcb034468152403bd",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "sourcePath": "skills/personal-ui/SKILL.md",
+      "sourceGitBlob": "43b1fd92306b6dee4302754278fe33e4e1981bf3",
+      "sourceSha256": "f40d48dfda03d9d3551ab892454958150eabff08ea76475a1365b5d3c7acb0a9",
+      "targetSha256": "9ace4214e7ae084aba8f892d5992f48bd2cad1e4cf6888464b55053b4b121b30",
+      "modifiedFromOriginal": true,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "theme/resolve-tokens.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.ts",
+      "sourceGitBlob": "d7702503c919d7b60b915729c51d500c615e7dc0",
+      "sourceSha256": "2dbd388f679d362af01fddd95db799257190f44e2faae49820d6eb59885ece86",
+      "targetSha256": "2dbd388f679d362af01fddd95db799257190f44e2faae49820d6eb59885ece86",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.test.ts",
+      "sourceGitBlob": "f190fd32ccaf2ad84dbccc3079e0337be088b8a3",
+      "sourceSha256": "42dc2faa0a73479988c28b4e46e79bff1ae8644d5d526450641f1ac393948ffa",
+      "targetSha256": "94ec8968f72c200ea3af72b9c9f2c68b06b1e7c6f0fc22406ef1678862e028b0",
+      "modifiedFromOriginal": true,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "theme/antd-theme.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.ts",
+      "sourceGitBlob": "3416957ff24dfa03b996d98143a59ce7f231cc41",
+      "sourceSha256": "02123c657547496649393c3ba975f6913e650e61f9a946ffa9e84773f1c8e604",
+      "targetSha256": "02123c657547496649393c3ba975f6913e650e61f9a946ffa9e84773f1c8e604",
+      "modifiedFromOriginal": false,
+      "unchangedSinceT2": true
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.test.ts",
+      "sourceGitBlob": "719c2579bed29e1aeaa32248124734f47432a64d",
+      "sourceSha256": "4955216b049402db103b6e4346fd3ee2689290f08d6b34a941924feb866b667e",
+      "targetSha256": "704a4cd567430a5e41e0bbba74c3f94807b4549431f374649f0866ee33e4a4a8",
+      "modifiedFromOriginal": true,
+      "unchangedSinceT2": true
+    }
+  ],
+  "copiedFiles": 16,
+  "byteIdenticalToOriginal": 11,
+  "localOverrides": [
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Keep validation scope; replace source-only references and Showcase evidence with immutable source-commit links."
+      ]
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Point the local style entry to the selected preset; keep historical implementation reference at immutable source commit."
+      ]
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Narrow discovery to this selected consumer and preset.",
+        "Replace repository-wide entries with consumer-local rules, assets and root AGENTS/README.",
+        "Preserve authorization and validation boundaries; do not claim global Skill, CLI or MCP installation."
+      ]
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Relocate existing theme tests and rewrite the three JSON imports to snapshot-local relative paths; keep test logic."
+      ]
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "reason": "Keep the selected snapshot local and closed without copying the full knowledge repository.",
+      "changes": [
+        "Relocate existing theme tests and rewrite the three JSON imports to snapshot-local relative paths; keep test logic."
+      ]
+    }
+  ],
+  "integrationHashChanges": [
+    {
+      "path": "AGENTS.md",
+      "before": "8d7972cb2d14b72019e31390455d3dd72d362196fca1e0cf9e7d32b3b8db0698",
+      "after": "bf241b49848734d28bd70c787a96af0a3f3f09d7a304339327fad59a3bd595dd"
+    },
+    {
+      "path": "README.md",
+      "before": "107f8217addb172e457f9834024fed15482d6430823a524f9411339140399a6e",
+      "after": "8d7c8224ddb374d0bbedfdc596cbd8ed425c36561a7389a925b8c9b311e87054"
+    },
+    {
+      "path": ".gitattributes",
+      "before": "99b6e95284420d5a01659de50c1cd1e26959bbc32540e4c4e5ae0b853a822ba7",
+      "after": "834cf68e4002ddf15b5b10a9e2b3dae9d732b2a7de8e8642802db56fda6e6c87"
+    }
+  ],
+  "currentSnapshotCheck": {
+    "ok": true,
+    "status": "passed",
+    "scope": "P03-T2 static snapshot contract",
+    "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+    "filesVerified": 21,
+    "snapshotFiles": 18,
+    "includedFiles": 16,
+    "generatedFiles": 1,
+    "integrationFiles": 4,
+    "modifiedFiles": 5,
+    "markdownLinks": 53,
+    "relativeMarkdownLinks": 46,
+    "relativeImports": 9,
+    "externalDependencies": [
+      {
+        "specifier": "antd",
+        "scope": "type-only",
+        "sourceVersion": "6.6.7",
+        "importCount": 1
+      },
+      {
+        "specifier": "vitest",
+        "scope": "test-only",
+        "sourceVersion": "5.0.5",
+        "importCount": 2
+      }
+    ],
+    "tokenGraph": {
+      "primitives": 68,
+      "semantic": 47,
+      "presetOverrides": 8,
+      "adapterSemanticKeys": 24,
+      "allAliasesResolved": true
+    },
+    "notExecuted": [
+      "Network/source retrieval",
+      "Dependency installation",
+      "TypeScript/Vitest/build",
+      "Browser/UI/visual validation",
+      "P03-T3 independent checkout"
+    ]
+  },
+  "historicalT2PositiveNegativeCases": {
+    "total": 8,
+    "allExpectedExitConditionsMatch": true
+  },
+  "historicalT3FinalLogs": [
+    {
+      "command": "npm.cmd ci --no-audit --no-fund",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/install.txt",
+      "sha256": "c7ce633690118a84a576b83a59ca807c8127044c5a6c6055ba3581aa169a802d"
+    },
+    {
+      "command": "node.exe scripts/check-personal-ui.mjs",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/snapshot.txt",
+      "sha256": "dacab892a6dc0f21d3b7302d105a4a192338aa16db11fbce4e74654266661fd5"
+    },
+    {
+      "command": "npm.cmd run typecheck",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/typecheck.txt",
+      "sha256": "50e89360189fde705e056502cfd406f52d019b8ae7a16f3232d4ecebc0c18fa2"
+    },
+    {
+      "command": "npm.cmd run lint",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/lint.txt",
+      "sha256": "d90757c4d6376a1a24a2aef785cf5abb29699d735a346cf291817b73c5183f0d"
+    },
+    {
+      "command": "npm.cmd run test",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/test.txt",
+      "sha256": "614b6bdded6d2d21066021ad4f9ef8f65802c402327ccaa4624db0e9c3d1efa8"
+    },
+    {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/build.txt",
+      "sha256": "6c3a7cbfe6c2c60f2ad638eebb01da60238cc632718465f1225a27165558a1be"
+    },
+    {
+      "command": "npm.cmd ls --depth=0 --json",
+      "exitCode": 0,
+      "path": "tests/manual/consumer-pilot/t3-evidence/clean-final/dependencies.txt",
+      "sha256": "bd40aa93a7457d60d493cfcf36b291ea271d4f72f65f97fa1d94b94253baa769"
+    }
+  ],
+  "historicalEvidence": {
+    "sameConsumerCommit": true,
+    "lockSha256": "0d3330ee855b125d51233c2158cb8318ef8039c5ff116c2de4ac13ea8f04fa3f",
+    "nodePathEmpty": true,
+    "testFiles": 2,
+    "testsPassed": 63,
+    "viewports": [
+      375,
+      768,
+      1440
+    ],
+    "nativeZoom": [
+      1,
+      2,
+      1
+    ],
+    "independenceFindings": 0,
+    "bundleBytes": 61679,
+    "bundleSha256": "03914fa6d59f4972e3cc9fd77c761a4ae2fc95a6f2b6e26c34647030618c00f8",
+    "manifestSha256": "fa92d802019d3e3eb22b07d89daa4792fc014d14e11e2cf922ecb0cddad2f308"
+  },
+  "screenshotsVerified": [
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/default-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "d819b9615bb33128d58afae5ff5ace6629f5a1a09f37aa55cf90e9336384b5f0"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/default-375.png",
+      "width": 375,
+      "height": 1170,
+      "sha256": "c2df22ef9d622d807c736c4d395fc0773ad7d759ca228ef0a8cc2ca3160e4e77"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/default-768.png",
+      "width": 768,
+      "height": 1000,
+      "sha256": "08906490b9c8c1db61e379316a2206f7e407f064b2add33bf51d44bc0e761490"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/error-375.png",
+      "width": 375,
+      "height": 1170,
+      "sha256": "df68c48202f0c9145e53ddb5dd8c069edc9550fc9f682062aed4314ebd7563cf"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/focus-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "9c18ba80f1251f221428689631708254846ca10ed83644ca16e169d78c1ed426"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/focus-375.png",
+      "width": 375,
+      "height": 1000,
+      "sha256": "e3b9fa657eac0fdf2a4ea5e937a64f4d0105104b8c875a0a5047b22eb79824e3"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/focus-768.png",
+      "width": 768,
+      "height": 1000,
+      "sha256": "5bb0e09f2653abe21398886143cb8be7e295311092590bd2b90d61a0bc02374d"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/browser/success-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "f981cc08bc03f1df04170507d0a9294b5826b09213eb973804945b2f4038d06a"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/zoom/zoom-100.png",
+      "width": 1783,
+      "height": 1258,
+      "sha256": "b52f8bbf3dcb75411267fee0356790b6d14a9e1c8d9b61b8d0595ff53ca099dc"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/zoom/zoom-200-disabled.png",
+      "width": 1783,
+      "height": 1258,
+      "sha256": "a8bdff0d97987548eefda717f4f84d98ff3ae9306fd7ca8ddae581ecf4401e0a"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/zoom/zoom-200-error.png",
+      "width": 1783,
+      "height": 1258,
+      "sha256": "6f88ca2a411e543e6f976bcafcb2c65507b45c52a27c24a2630f9287fc0d1bb7"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/zoom/zoom-200-focus.png",
+      "width": 1783,
+      "height": 1258,
+      "sha256": "f0b66c679e7b2fac305db4bc72e64e6fadb34203e4e144da6cba812a22da9e65"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/zoom/zoom-200-success.png",
+      "width": 1783,
+      "height": 1258,
+      "sha256": "e11b753a5fa8946123b0e4df71f111941fbc156d9bec6a71cc4a07d0bd4455d6"
+    },
+    {
+      "path": "tests/manual/consumer-pilot/t3-evidence/zoom/zoom-200.png",
+      "width": 1783,
+      "height": 1258,
+      "sha256": "5c84763a82780d0866d9bed61458c88f171231d485ab68dec75447bab6f3e418"
+    }
+  ],
+  "visualReview": [
+    "tests/manual/showcase-v1/t5-evidence/default-1440.png",
+    "tests/manual/consumer-pilot/t3-evidence/browser/default-1440.png",
+    "tests/manual/consumer-pilot/t3-evidence/browser/default-375.png"
+  ],
+  "commandsExecutedThisTask": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5",
+      "exitCode": 0,
+      "stdout": "bd7b6c83e1180b8daf21c9e7e5ee376a9d28d8b8\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "a349428854e7cf203ee29d0211ef8a7572bdff10\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "main\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "remote"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "cdf8c260c51ab67407bd01090a696fd1452f969f",
+        "a349428854e7cf203ee29d0211ef8a7572bdff10"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "d16a8e8be90161dca1361b43703fafabba2ecd26",
+        "a349428854e7cf203ee29d0211ef8a7572bdff10"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "D:/Node.js/node.exe",
+        "scripts/check-personal-ui.mjs"
+      ],
+      "cwd": "D:\\personal-ui-consumer-pilot",
+      "exitCode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"scope\": \"P03-T2 static snapshot contract\",\n  \"sourceCommit\": \"16184844550f970570408a79e649a37dd7fe5c0d\",\n  \"filesVerified\": 21,\n  \"snapshotFiles\": 18,\n  \"includedFiles\": 16,\n  \"generatedFiles\": 1,\n  \"integrationFiles\": 4,\n  \"modifiedFiles\": 5,\n  \"markdownLinks\": 53,\n  \"relativeMarkdownLinks\": 46,\n  \"relativeImports\": 9,\n  \"externalDependencies\": [\n    {\n      \"specifier\": \"antd\",\n      \"scope\": \"type-only\",\n      \"sourceVersion\": \"6.6.7\",\n      \"importCount\": 1\n    },\n    {\n      \"specifier\": \"vitest\",\n      \"scope\": \"test-only\",\n      \"sourceVersion\": \"5.0.5\",\n      \"importCount\": 2\n    }\n  ],\n  \"tokenGraph\": {\n    \"primitives\": 68,\n    \"semantic\": 47,\n    \"presetOverrides\": 8,\n    \"adapterSemanticKeys\": 24,\n    \"allAliasesResolved\": true\n  },\n  \"notExecuted\": [\n    \"Network/source retrieval\",\n    \"Dependency installation\",\n    \"TypeScript/Vitest/build\",\n    \"Browser/UI/visual validation\",\n    \"P03-T3 independent checkout\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "bundle",
+        "verify",
+        "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t3-consumer-validated.bundle"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5",
+      "exitCode": 0,
+      "stdout": "The bundle contains these 5 refs:\nd16a8e8be90161dca1361b43703fafabba2ecd26 refs/heads/codex/p03-t2\na349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/codex/p03-t3\na349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/main\na349428854e7cf203ee29d0211ef8a7572bdff10 HEAD\na349428854e7cf203ee29d0211ef8a7572bdff10 worktrees/p03-t3-consumer/HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n",
+      "stderr": "C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/tests/manual/consumer-pilot/t3-consumer-validated.bundle is okay\n"
+    },
+    {
+      "command": [
+        "git",
+        "bundle",
+        "list-heads",
+        "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5\\tests\\manual\\consumer-pilot\\t3-consumer-validated.bundle"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\.codex\\visualizations\\2026\\10\\22\\01a16433-a0fc-7a63-8b66-f7d302ad1593\\p02-t5",
+      "exitCode": 0,
+      "stdout": "d16a8e8be90161dca1361b43703fafabba2ecd26 refs/heads/codex/p03-t2\na349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/codex/p03-t3\na349428854e7cf203ee29d0211ef8a7572bdff10 refs/heads/main\na349428854e7cf203ee29d0211ef8a7572bdff10 HEAD\na349428854e7cf203ee29d0211ef8a7572bdff10 worktrees/p03-t3-consumer/HEAD\n",
+      "stderr": ""
+    }
+  ],
+  "reviewMethod": "Primary agent checked evidence and images. Parallel agents stopped at usage limits; preliminary output is not claimed as completed independent review.",
+  "notReExecutedThisTask": [
+    "Dependency installation",
+    "TypeScript/Lint/Vitest/build",
+    "Browser interaction and native zoom execution"
+  ],
+  "scope": "T4 audits pinned T1-T3 evidence and current hashes/snapshot; passing UI/build records are historical T3 runs. No consumer or source asset implementation changes.",
+  "phase04Readiness": {
+    "qualityTrackA1Eligible": true,
+    "distributionTrackTriggerMet": false,
+    "confirmedIndependentConsumers": 1,
+    "formalPackageOrRegistryPublishTarget": false,
+    "phase04Implemented": false
+  },
+  "remainingLimits": [
+    "Single React/AntD Windows Chrome scenario only",
+    "603.87 kB chunk warning",
+    "No real screen reader/device/other browser checks",
+    "No CI or visual regression baseline",
+    "Source upgrade and rollback procedure not executed"
+  ]
+}
