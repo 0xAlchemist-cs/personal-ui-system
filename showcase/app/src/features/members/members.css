@@ -12,7 +12,7 @@
 .members-table-scroll { overflow-x: auto; border-radius: var(--pui-radius-control); }
 .members-table { min-width: 770px; }
 .members-table .ant-table-cell { overflow-wrap: anywhere; }
-.members-table .ant-btn { min-height: var(--pui-size-control-touch); }
+.members-table .ant-btn { min-height: var(--pui-size-control-touch); scroll-margin-inline: var(--pui-space-inline); }
 .members-table time { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .members-status.ant-tag { margin-inline-end: 0; border-color: transparent; }
 .members-status--active.ant-tag { color: var(--pui-color-success); background: var(--pui-color-success-background); }

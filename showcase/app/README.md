@@ -4,7 +4,7 @@
 
 ## 环境与版本
 
-核验日期：2026-10-23。T5 应用检查环境为 Node `22.15.0`、npm `11.16.0`；历史 T2～T4 使用 npm `10.9.2`。支持的 Node 范围见 `package.json`，依赖均固定版本，完整依赖树见 `package-lock.json`；本轮没有升级运行依赖。
+核验日期：2026-10-24。T5 / A2 应用检查环境为 Node `22.15.0`、npm `11.16.0`；历史 T2～T4 使用 npm `10.9.2`。支持的 Node 范围见 `package.json`，依赖均固定版本，完整依赖树见 `package-lock.json`；A2 只增加浏览器测试开发依赖，没有升级运行依赖。
 
 | 依赖 | 固定版本 |
 | --- | --- |
@@ -15,6 +15,7 @@
 | Storybook / React-Vite 集成 | 10.6.3 |
 | Vitest | 5.0.5 |
 | Oxlint | 1.88.0 |
+| Playwright Test | 1.62.1 |
 
 应用从官方 `create-vite@9.3.1` 的 `react-ts` 模板建立，沿用其 Oxlint 方案并补充 Storybook/Vitest。TypeScript 保留 6.0 系列，没有仅为追新升级到 7；Node 类型包使用 22 系列。Ant Design 组件版本与工具 CLI 的版本独立核验，即使本次恰好同为 6.6.7。
 
@@ -72,7 +73,20 @@ npm --prefix showcase/app run build
 npm --prefix showcase/app run build-storybook
 ```
 
-`test` 使用 `vitest run`，不进入监听模式。类型检查覆盖 `src/` 中的应用、测试、Stories，以及 `.storybook/`、Vite 和 Vitest 配置。应用输出到 `dist/`，Storybook 输出到 `storybook-static/`；生成物与 `node_modules/` 不纳入版本库。
+`test` 使用 `vitest run`，不进入监听模式。类型和 Lint 检查覆盖应用、测试、Stories、`.storybook/`、`e2e/` 及 Vite / Vitest / Playwright 配置。应用输出到 `dist/`，Storybook 输出到 `storybook-static/`；生成物与 `node_modules/` 不纳入版本库。
+
+浏览器检查使用当前构建产物；先安装锁文件依赖，在应用目录执行：
+
+```sh
+cd showcase/app
+npx --no-install playwright install chromium
+npm run build
+npm run test:e2e
+```
+
+Linux 首次安装需要系统依赖时使用 `npx --no-install playwright install --with-deps chromium`，CI 已执行该命令。Playwright 自行启动并关闭回环地址 `127.0.0.1:5187` 的 preview；端口被占用会失败，不复用可能陈旧的服务。测试使用包内固定 Chromium，在 1440×900、768×1024、375×812 执行 11 项行为与布局检查，单 worker、零重试。
+
+`playwright-report/` 保存 HTML，`test-results/results.json` 保存机器结果；失败保留截图和 trace。执行 `npx --no-install playwright show-report` 查看报告，或 `npx --no-install playwright show-trace <trace.zip>` 诊断失败。CI 在浏览器步骤实际执行后上传这些目录，保留 7 天。本轮没有像素基线；附件截图用于诊断，配置禁止创建/更新快照。自动化范围和首次失败证据将记录在 A2 实施报告中。
 
 ## 主题的唯一通路
 
@@ -97,6 +111,6 @@ T5 修复了手机空态文字随宽表格移出视口的问题，并补齐 Ant 
 
 `minimal-saas` 仅在本次成员管理页面与 Stories、固定 light / comfortable / blue / medium 组合及所列浏览器环境内标为 `validated`；其他两套风格仍为 `draft`，没有公共 `approved` 资产、公共组件包或视觉回归基线。公开组件分发与多技术栈兼容性尚未验证；应用和 Storybook 的大包体提示等非阻断限制保留在验收报告中。
 
-Phase 03 尚未启动。下一张候选任务卡为 [P03-T1｜消费者选型](../../docs/superpowers/plans/2026-10-23-phase03-consumer-pilot.md)：先明确独立场景及技术栈；没有现成消费者时先形成隔离候选方案，不自动初始化消费者应用。
+阶段 03 的独立消费者已经完成 [T4 与 Gate 03](../../docs/records/2026-10-24-p03-t4-closeout.md)。阶段 04 按 [现有任务卡](../../docs/superpowers/plans/2026-10-23-phase04-quality-and-distribution.md) 推进；当前状态查看 [路线图](../../docs/roadmap.md)，不以历史 T5 记录判断后续阶段进度。
 
 官方核验入口：[Vite](https://vite.dev/guide/)、[Storybook](https://storybook.js.org/docs/get-started/install)、[Ant Design 主题](https://ant.design/docs/react/customize-theme/)、[Vitest](https://vitest.dev/guide/)。真正升级时重新检查 Node 要求、peerDependencies、锁文件与测试结果。

@@ -70,3 +70,18 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: npm run build-storybook
+      - name: Install pinned Chromium and Linux dependencies
+        run: npx --no-install playwright install --with-deps chromium
+      - name: Browser smoke journeys
+        id: browser
+        run: npm run test:e2e
+      - name: Preserve browser report and failure traces
+        if: ${{ !cancelled() && (steps.browser.outcome == 'success' || steps.browser.outcome == 'failure') }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: browser-report-${{ github.run_attempt }}
+          path: |
+            showcase/app/playwright-report/
+            showcase/app/test-results/
+          retention-days: 7
+          if-no-files-found: error

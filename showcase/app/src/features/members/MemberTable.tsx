@@ -44,6 +44,10 @@ export function MemberTable({
         <Button
           type="link"
           aria-label={`编辑${member.name}`}
+          onFocus={(event) => {
+            // Native focus can leave a partially visible action clipped by the scroll region.
+            event.currentTarget.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+          }}
           onClick={(event) => onEdit(member, event.currentTarget)}
         >
           编辑

@@ -6,3 +6,4 @@
 *.css text eol=lf
 tools/quality/**/*.mjs text eol=lf
 tests/manual/quality-a1/*.txt -text
+tests/manual/browser-a2/**/*.txt -text
