@@ -26,6 +26,8 @@ Node 22.15 通过 [原生类型擦除](https://nodejs.org/download/release/v22.1
 
 ## CI 与验收边界
 
-[Quality workflow](../../.github/workflows/quality.yml) 在 main/codex 分支 push 和 PR 上运行：一个 job 独立安装本工具锁文件、检查并测试；另一个 job 安装 Showcase 自己的锁文件，复用其类型、Lint、Vitest、应用及 Storybook 构建命令。Action 固定完整提交，权限为 contents:read，任务进程无 NODE_PATH/Node 预加载。没有忽略失败的步骤，也没有浏览器、视觉基线、部署或分发。
+[Quality workflow](../../.github/workflows/quality.yml) 在 main/codex 分支 push 和 PR 上运行，也可手动触发：`Knowledge contracts` job 独立安装本工具锁文件、检查并测试；`Showcase checks and builds` job 安装 Showcase 自己的锁文件，复用其类型、Lint、Vitest、应用及 Storybook 构建命令，并安装固定 Chromium，执行三视口 11 项浏览器旅程。浏览器步骤实际执行后上传报告与可用的失败截图/trace，保留 7 天。Action 固定完整提交，权限为 contents:read，任务进程无 NODE_PATH/Node 预加载，没有忽略失败的步骤；没有像素基线、部署或分发。
+
+PR/候选发布的受检 SHA、两个 job 的结果、人工 UX 职责、失败留证/修复/升级和未来基线审核统一遵循 [验收约定](../../tests/README.md)。工作流和模板不代表平台已启用强制分支保护；消费者按自己的技术栈执行适用检查，不要求安装本工具或 Showcase 全部工具。
 
 测试在自建临时目录改变输入，不修改真实 Brief/Token。覆盖 Schema 嵌套/组合约束、YAML 错误、Token 图和链接边界，并真实启动 CLI 核对失败退出码。Windows 大小写用例明确跳过，Linux CI 执行；文件系统符号链接能力不足时单独报告跳过。测试与构建通过仍不能代替实际 UX、键盘、读屏和视觉验收。
