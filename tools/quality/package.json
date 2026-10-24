@@ -1,0 +1,16 @@
+{
+  "name": "personal-ui-quality",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": { "node": ">=22.15.0 <23", "npm": ">=10" },
+  "scripts": {
+    "check": "node --experimental-strip-types check.mjs",
+    "test": "node --experimental-strip-types --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "mdast-util-from-markdown": "2.0.2",
+    "yaml": "2.8.1"
+  }
+}

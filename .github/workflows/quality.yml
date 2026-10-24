@@ -1,0 +1,72 @@
+name: Quality
+
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CI: 'true'
+  NODE_PATH: ''
+  NODE_OPTIONS: ''
+  STORYBOOK_DISABLE_TELEMETRY: '1'
+  DO_NOT_TRACK: '1'
+
+jobs:
+  knowledge:
+    name: Knowledge contracts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '22.15.0'
+          cache: npm
+          cache-dependency-path: tools/quality/package-lock.json
+      - name: Pin npm and report environment
+        run: |
+          npm install --global npm@11.16.0
+          node --version
+          npm --version
+      - name: Install quality dependencies from lock
+        run: npm ci --prefix tools/quality --no-audit --no-fund
+      - name: Validate knowledge contracts
+        run: npm run check --prefix tools/quality
+      - name: Verify positive and negative cases
+        run: npm test --prefix tools/quality
+
+  showcase:
+    name: Showcase checks and builds
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: showcase/app
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '22.15.0'
+          cache: npm
+          cache-dependency-path: showcase/app/package-lock.json
+      - name: Pin npm and report environment
+        run: |
+          npm install --global npm@11.16.0
+          node --version
+          npm --version
+      - name: Install Showcase dependencies from its lock
+        run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: npm run build-storybook
