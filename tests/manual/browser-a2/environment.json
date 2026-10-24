@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "node": "v22.15.0",
+    "platform": "win32",
+    "osRelease": "10.0.26100",
+    "purpose": "Behavior and layout smoke tests; screenshots are diagnostic, without pixel baselines.",
+    "actualWorkers": 1
+  },
+  "playwright": "1.62.1",
+  "stats": {
+    "startTime": "2026-10-24T10:36:22.239Z",
+    "duration": 50659.566,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "environments": [
+    {
+      "project": "desktop",
+      "browserVersion": "151.0.7922.34",
+      "nodeVersion": "v22.15.0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "innerWidth": 1440,
+      "language": "zh-CN",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "timezone": "UTC",
+      "devicePixelRatio": 1,
+      "reducedMotion": true,
+      "headingFontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "project": "tablet",
+      "browserVersion": "151.0.7922.34",
+      "nodeVersion": "v22.15.0",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "innerWidth": 768,
+      "language": "zh-CN",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "timezone": "UTC",
+      "devicePixelRatio": 1,
+      "reducedMotion": true,
+      "headingFontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "project": "mobile",
+      "browserVersion": "151.0.7922.34",
+      "nodeVersion": "v22.15.0",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "innerWidth": 375,
+      "language": "zh-CN",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "timezone": "UTC",
+      "devicePixelRatio": 1,
+      "reducedMotion": true,
+      "headingFontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "name": "Button",
+  "nameZh": "按钮",
+  "description": "To trigger an operation.",
+  "props": [
+    {
+      "name": "autoInsertSpace",
+      "type": "boolean",
+      "default": "`true`",
+      "since": "5.17.0"
+    },
+    {
+      "name": "block",
+      "type": "boolean",
+      "default": "false",
+      "since": ""
+    },
+    {
+      "name": "classNames",
+      "type": "Record<[SemanticDOM](#semantic-dom), string> | (info: { props })=> Record<[SemanticDOM](#semantic-dom), string>",
+      "default": "-",
+      "since": "6.0.0"
+    },
+    {
+      "name": "color",
+      "type": "`default` | `primary` | `danger` | [PresetColors](#presetcolors)",
+      "default": "`primary` when `variant=\"solid\"`",
+      "since": "`default`, `primary` and `danger`: 5.21.0, `PresetColors`: 5.23.0, `solid` default color: 6.4.0"
+    },
+    {
+      "name": "danger",
+      "type": "boolean",
+      "default": "false",
+      "since": ""
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "default": "false",
+      "since": ""
+    },
+    {
+      "name": "ghost",
+      "type": "boolean",
+      "default": "false",
+      "since": ""
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "htmlType",
+      "type": "`submit` | `reset` | `button`",
+      "default": "`button`",
+      "since": ""
+    },
+    {
+      "name": "icon",
+      "type": "ReactNode",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "iconPlacement",
+      "type": "`start` | `end`",
+      "default": "`start`",
+      "since": ""
+    },
+    {
+      "name": "iconPosition",
+      "type": "`start` | `end`",
+      "default": "`start`",
+      "since": "5.17.0"
+    },
+    {
+      "name": "loading",
+      "type": "boolean | { delay: number, icon: ReactNode }",
+      "default": "false",
+      "since": "icon: 5.23.0"
+    },
+    {
+      "name": "loadingIcon",
+      "type": "ReactNode",
+      "default": "`<LoadingOutlined />`",
+      "since": ""
+    },
+    {
+      "name": "onClick",
+      "type": "(event: React.MouseEvent<HTMLElement, MouseEvent>) => void",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "shape",
+      "type": "`default` | `circle` | `round`",
+      "default": "`default`",
+      "since": ""
+    },
+    {
+      "name": "size",
+      "type": "`large` | `medium` | `small`",
+      "default": "`medium`",
+      "since": ""
+    },
+    {
+      "name": "styles",
+      "type": "Record<[SemanticDOM](#semantic-dom), CSSProperties> | (info: { props })=> Record<[SemanticDOM](#semantic-dom), CSSProperties>",
+      "default": "-",
+      "since": "6.0.0"
+    },
+    {
+      "name": "target",
+      "type": "string",
+      "default": "-",
+      "since": ""
+    },
+    {
+      "name": "type",
+      "type": "`primary` | `dashed` | `link` | `text` | `default`",
+      "default": "`default`",
+      "since": ""
+    },
+    {
+      "name": "variant",
+      "type": "`outlined` | `dashed` | `solid` | `filled` | `text` | `link`",
+      "default": "-",
+      "since": "5.21.0"
+    }
+  ],
+  "commonProps": [
+    {
+      "name": "className",
+      "type": "string",
+      "default": "-",
+      "description": "Additional CSS class",
+      "descriptionZh": "额外的 CSS 类名"
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "default": "-",
+      "description": "Additional style",
+      "descriptionZh": "额外的样式"
+    },
+    {
+      "name": "rootClassName",
+      "type": "string",
+      "default": "-",
+      "description": "ClassName on the root element",
+      "descriptionZh": "根元素的类名"
+    }
+  ],
+  "htmlElement": "button"
+}

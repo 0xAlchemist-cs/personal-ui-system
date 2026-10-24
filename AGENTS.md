@@ -18,7 +18,7 @@
 - 阶段 02 已完成 T0～T5，[正式验收](tests/manual/showcase-v1/review.md) 记录 Gate 02 证据；`showcase/app/` 有独立的 React/Vite/Ant Design 成员管理示范页和 17 个 Story。运行依赖仅在该应用内；顶层 `components/` 和 `templates/` 中的说明仍不是已发布组件或页面实现，尚无自动视觉回归基线。
 - `minimal-saas` 仅在其说明列出的固定组合与页面验收范围为 `validated`；其余两套风格为 `draft`，未自动 `approved`。不将单页验收推广为跨框架、跨浏览器或公共组件保证。
 - 阶段 03 已完成 T1～T4，[收口报告](docs/records/2026-10-24-p03-t4-closeout.md) 核对 Gate 03 通过；一个独立消费者按固定快照完成安装/构建和页面验收，16 项来源资产自 T2 未改。继续固定快照，公共组件与风格成熟度未晋级，分发条件尚未触发。
-- 阶段 04 已完成 [A1 持续静态校验](docs/records/2026-10-24-p04-a1-quality-checks.md)：独立质量工具执行完整 Brief Schema、YAML、Token 和 Markdown 目标检查，两项真实 CI job 通过；Showcase 沿用自身检查与锁文件。下一张为 P04-A2，尚无自动浏览器/视觉回归基线或 Gate 04 完成结论。
+- 阶段 04 已完成 [A1 持续静态校验](docs/records/2026-10-24-p04-a1-quality-checks.md) 与 [A2 浏览器冒烟](docs/records/2026-10-24-p04-a2-browser-smoke.md)：知识契约、既有工程检查及三视口 11 项浏览器检查在真实 CI 通过；修复了 768px 编辑按钮获焦后仍被裁切的问题。未建立像素回归基线，下一张为 P04-A3；Gate 04 尚未收口，分发未触发。
 - 后续阶段见 [实施路线](docs/roadmap.md)。用户明确要求进入后续阶段时再落实相应能力。
 
 ## 任务决策

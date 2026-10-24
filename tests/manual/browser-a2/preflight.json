@@ -1,0 +1,38 @@
+{
+  "task": "P04-A2",
+  "date": "2026-10-24",
+  "baseCommit": "bf69f5fb5c28f1bce5d550cd4e48ba1f02d7f230",
+  "branch": "codex/p04-a2",
+  "mainCommit": "bf69f5fb5c28f1bce5d550cd4e48ba1f02d7f230",
+  "mainStatus": "",
+  "priorEvidence": "docs/records/2026-10-24-p04-a1-quality-checks.md",
+  "constraints": [
+    "No A3 or distribution track",
+    "No Brief/Token contract changes",
+    "No consumer changes"
+  ],
+  "node": "v22.15.0",
+  "runtimeDependencies": {
+    "antd": "6.6.7",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "playwright": "1.62.1",
+  "chromium": [
+    {
+      "name": "chromium",
+      "revision": "1234",
+      "installByDefault": true,
+      "browserVersion": "151.0.7922.34",
+      "title": "Chrome for Testing"
+    },
+    {
+      "name": "chromium-headless-shell",
+      "revision": "1234",
+      "installByDefault": true,
+      "browserVersion": "151.0.7922.34",
+      "title": "Chrome Headless Shell"
+    }
+  ],
+  "npm": "11.16.0"
+}

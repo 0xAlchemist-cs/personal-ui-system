@@ -1,0 +1,238 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: members.spec.ts >> editing the sole match retains the filter, focuses the heading and exposes the updated record on clear
+- Location: e2e\members.spec.ts:110:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '邮箱', exact: true })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - link "跳到主要内容" [ref=e5] [cursor=pointer]:
+    - /url: "#main-content"
+  - complementary "Personal UI 工作台" [ref=e6]:
+    - paragraph [ref=e7]: Personal UI
+    - paragraph [ref=e8]: 组件工作台
+    - navigation "工作台导航" [ref=e9]:
+      - link "成员管理" [ref=e10] [cursor=pointer]:
+        - /url: "#members"
+  - generic [ref=e11]:
+    - banner [ref=e12]:
+      - generic [ref=e13]: 工作台
+      - generic [ref=e15]: 本地演示
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - heading "成员管理" [level=1] [ref=e18]
+        - paragraph [ref=e19]: 检索成员、查看状态，编辑基本信息。
+        - paragraph [ref=e20]: 演示数据 · 30 条固定合成记录。修改仅保存在当前页面，刷新后恢复。
+      - region [ref=e21]:
+        - generic [ref=e22]:
+          - heading "成员列表" [level=2] [ref=e23]
+          - paragraph [ref=e24]: 按姓名或邮箱搜索，并按成员状态筛选。
+        - search "筛选成员" [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: 姓名或邮箱
+            - generic [ref=e28]:
+              - textbox "姓名或邮箱" [ref=e29]:
+                - /placeholder: 搜索成员
+                - text: member30@
+              - button [ref=e31] [cursor=pointer]:
+                - img "close-circle" [ref=e32]
+          - generic [ref=e35]:
+            - generic [ref=e36]: 成员状态
+            - generic [ref=e37] [cursor=pointer]:
+              - generic "全部状态" [ref=e38]:
+                - text: 全部状态
+                - combobox "成员状态" [ref=e39]
+              - img "down" [ref=e41]
+          - button "清除筛选" [ref=e44] [cursor=pointer]
+        - paragraph [ref=e46]: 表格可横向滚动；可聚焦后使用左右方向键查看。
+        - region "成员列表，可横向滚动" [ref=e47]:
+          - table [ref=e54]:
+            - rowgroup [ref=e61]:
+              - row [ref=e62]:
+                - columnheader "姓名" [ref=e63]
+                - columnheader "邮箱" [ref=e64]
+                - columnheader "状态" [ref=e65]
+                - columnheader "创建时间" [ref=e66] [cursor=pointer]
+                - columnheader "操作" [ref=e77]
+            - rowgroup [ref=e78]:
+              - row [ref=e79]:
+                - cell "演示成员30" [ref=e80]
+                - cell "member30@example.test" [ref=e81]
+                - cell "已停用" [ref=e82]
+                - cell [ref=e84]:
+                  - time [ref=e85]: 2026-01-30
+                - cell [ref=e86]:
+                  - button "编辑演示成员30" [ref=e87] [cursor=pointer]:
+                    - generic [ref=e88]: 编辑
+        - generic [ref=e89]:
+          - status [ref=e90]: 共 1 位成员 · 第 1–1 位
+          - navigation "成员列表分页"
+      - generic [ref=e91]:
+        - dialog "编辑成员":
+          - generic [ref=e92]:
+            - button "关闭" [ref=e93] [cursor=pointer]:
+              - generic "关闭" [ref=e94]:
+                - img "close" [ref=e95]
+            - generic [ref=e98]: 编辑成员
+            - generic [ref=e101]:
+              - paragraph [ref=e102]: 仅修改姓名和邮箱。演示修改保存在当前页面，刷新后恢复。
+              - generic [ref=e104]:
+                - generic "姓名" [ref=e106]: "* 姓名"
+                - textbox "* 姓名" [active] [ref=e110]: 演示成员30
+              - generic [ref=e112]:
+                - generic "邮箱" [ref=e114]: "* 邮箱"
+                - textbox "* 邮箱" [ref=e118]: member30@example.test
+              - generic [ref=e119]:
+                - button "取 消" [ref=e120] [cursor=pointer]
+                - button "保 存" [ref=e122] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  16  |     body: await page.screenshot({ fullPage: true }),
+  17  |     contentType: 'image/png',
+  18  |   });
+  19  | 
+  20  |   await goToPage(page, 3);
+  21  |   await expectMemberNames(page, names([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]));
+  22  |   // All 30 emails still match, so this proves a keyword change resets page 3.
+  23  |   await keyword.fill('MEMBER');
+  24  |   await expect(resultStatus).toHaveText('共 30 位成员 · 第 1–10 位');
+  25  |   await expectMemberNames(page, names([30, 29, 28, 27, 26, 25, 24, 23, 22, 21]));
+  26  |   await goToPage(page, 2);
+  27  |   await selectStatus(page, 'active');
+  28  |   // Twenty matches retain two pages; status changes must return to page 1.
+  29  |   await expect(resultStatus).toHaveText('共 20 位成员 · 第 1–10 位');
+  30  |   await expect(memberRows(page).first().getByRole('cell').first()).toHaveText('演示成员29');
+  31  | 
+  32  |   await selectStatus(page, 'all');
+  33  |   await keyword.fill('MEMBER0');
+  34  |   await expectMemberNames(page, names([9, 8, 7, 6, 5, 4, 3, 2, 1]));
+  35  |   await selectStatus(page, 'disabled');
+  36  |   await expect(keyword).toHaveValue('MEMBER0');
+  37  |   await expect(resultStatus).toHaveText('共 3 位成员 · 第 1–3 位');
+  38  |   await expectMemberNames(page, names([9, 6, 3]));
+  39  |   await sort.press('Enter');
+  40  |   await expect(sort).toHaveAttribute('aria-sort', 'ascending');
+  41  |   await expectMemberNames(page, names([3, 6, 9]));
+  42  | 
+  43  |   await keyword.fill('no-such-member');
+  44  |   await expect(page.getByText('没有符合条件的成员', { exact: true })).toBeVisible();
+  45  |   await expect(memberRows(page)).toHaveCount(0);
+  46  |   await expect(resultStatus).toHaveText('共 0 位成员');
+  47  |   await expect(keyword).toHaveValue('no-such-member');
+  48  |   await expect(page.getByRole('search', { name: '筛选成员', exact: true })).toContainText('已停用');
+  49  |   await page.getByRole('search', { name: '筛选成员', exact: true })
+  50  |     .getByRole('button', { name: '清除筛选', exact: true }).click();
+  51  |   await expect(keyword).toHaveValue('');
+  52  |   await expect(page.getByRole('search', { name: '筛选成员', exact: true })).toContainText('全部状态');
+  53  |   await expect(resultStatus).toHaveText('共 30 位成员 · 第 1–10 位');
+  54  |   await expect(sort).toHaveAttribute('aria-sort', 'ascending');
+  55  |   await expectMemberNames(page, names([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+  56  | });
+  57  | 
+  58  | test('validate and cancel an edit, then save in memory and restore data on refresh', async ({ page }) => {
+  59  |   const trigger = page.getByRole('button', { name: '编辑演示成员30', exact: true });
+  60  |   await expect(memberRows(page).first()).toContainText('已停用');
+  61  |   await trigger.click();
+  62  |   const dialog = page.getByRole('dialog', { name: '编辑成员', exact: true });
+  63  |   const name = dialog.getByRole('textbox', { name: '姓名', exact: true });
+  64  |   const email = dialog.getByRole('textbox', { name: '邮箱', exact: true });
+  65  |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+  66  |   await expect(name).toBeFocused();
+  67  |   await expectHorizontallyContained(dialog);
+  68  |   await expect(save).toBeEnabled();
+  69  |   await name.fill(' ');
+  70  |   await expect(save).toBeDisabled();
+  71  |   await expect(dialog.getByText('请输入非空姓名。', { exact: true })).toBeHidden();
+  72  |   await email.fill('invalid');
+  73  |   await email.press('Tab');
+  74  |   await expect(name).toHaveAttribute('aria-invalid', 'true');
+  75  |   await expect(email).toHaveAttribute('aria-invalid', 'true');
+  76  |   await expect(name).toHaveAccessibleDescription('请输入非空姓名。');
+  77  |   await expect(email).toHaveAccessibleDescription('请输入有效的邮箱地址。');
+  78  |   await expect(save).toBeDisabled();
+  79  |   await expect(save).toHaveAccessibleDescription('请填写非空姓名和有效邮箱后保存。');
+  80  |   await expect(dialog.getByText('请填写非空姓名和有效邮箱后保存。', { exact: true })).toBeVisible();
+  81  |   await expect(name).toHaveValue(' ');
+  82  |   await expect(email).toHaveValue('invalid');
+  83  |   await expectFocusTrapped(page, dialog);
+  84  |   await page.keyboard.press('Escape');
+  85  |   await expect(dialog).toBeHidden();
+  86  |   await expect(trigger).toBeFocused();
+  87  |   await expect(memberRows(page).first()).toContainText('member30@example.test');
+  88  | 
+  89  |   await trigger.press('Enter');
+  90  |   await expect(name).toBeFocused();
+  91  |   await expect(name).toHaveValue('演示成员30');
+  92  |   await expect(email).toHaveValue('member30@example.test');
+  93  |   await name.fill(' 演示成员30 已编辑 ');
+  94  |   await email.fill(' edited30@example.test ');
+  95  |   await expect(save).toBeEnabled();
+  96  |   await save.click();
+  97  |   // Assert the short-lived message immediately, before waiting for focus restoration.
+  98  |   await expect(page.getByText('演示修改已保存，刷新后恢复初始数据。', { exact: true })).toBeVisible();
+  99  |   await expect(dialog).toBeHidden();
+  100 |   await expect(page.getByRole('button', { name: '编辑演示成员30 已编辑', exact: true })).toBeFocused();
+  101 |   await expect(memberRows(page).first().getByRole('cell').first()).toHaveText('演示成员30 已编辑');
+  102 |   await expect(memberRows(page).first()).toContainText('edited30@example.test');
+  103 |   await page.reload();
+  104 |   await expect(memberRows(page)).toHaveCount(10);
+  105 |   await expect(memberRows(page).first().getByRole('cell').first()).toHaveText('演示成员30');
+  106 |   await expect(memberRows(page).first()).toContainText('member30@example.test');
+  107 |   await expect(page.getByText('edited30@example.test', { exact: true })).toHaveCount(0);
+  108 | });
+  109 | 
+  110 | test('editing the sole match retains the filter, focuses the heading and exposes the updated record on clear', async ({ page }) => {
+  111 |   const keyword = page.getByRole('textbox', { name: '姓名或邮箱', exact: true });
+  112 |   await keyword.fill('member30@');
+  113 |   await expectMemberNames(page, names([30]));
+  114 |   await page.getByRole('button', { name: '编辑演示成员30', exact: true }).click();
+  115 |   const dialog = page.getByRole('dialog', { name: '编辑成员', exact: true });
+> 116 |   await dialog.getByRole('textbox', { name: '邮箱', exact: true }).fill('changed@example.test');
+      |                                                                  ^ Error: locator.fill: Test timeout of 30000ms exceeded.
+  117 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+  118 |   await expect(save).toBeEnabled();
+  119 |   await save.click();
+  120 |   await expect(dialog).toBeHidden();
+  121 |   await expect(page.getByRole('heading', { name: '成员列表', level: 2, exact: true })).toBeFocused();
+  122 |   await expect(page.getByText('没有符合条件的成员', { exact: true })).toBeVisible();
+  123 |   await expect(memberRows(page)).toHaveCount(0);
+  124 |   await expect(page.getByRole('status')).toHaveText('共 0 位成员');
+  125 |   await expect(keyword).toHaveValue('member30@');
+  126 |   await expectNoDocumentOverflow(page);
+  127 |   await expectHorizontallyContained(keyword);
+  128 |   await expectHorizontallyContained(page.getByRole('combobox', { name: '成员状态', exact: true }));
+  129 |   const emptyRegion = page.getByRole('region', { name: '成员列表，可横向滚动', exact: true });
+  130 |   const clear = emptyRegion.getByRole('button', { name: '清除筛选', exact: true });
+  131 |   await expectHorizontallyContained(clear);
+  132 |   await clear.click();
+  133 |   await expect(keyword).toHaveValue('');
+  134 |   await expect(memberRows(page)).toHaveCount(10);
+  135 |   await expect(memberRows(page).first().getByRole('cell').first()).toHaveText('演示成员30');
+  136 |   await expect(memberRows(page).first()).toContainText('changed@example.test');
+  137 |   await expect(page.getByText('member30@example.test', { exact: true })).toHaveCount(0);
+  138 | });
+  139 | 
+```

@@ -1,0 +1,32 @@
+
+> personal-ui-showcase@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:31432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   ➜  Local:   http://127.0.0.1:5187/
+
+Running 11 tests using 1 worker
+
+(node:50392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Browser environment (desktop): {"browserVersion":"151.0.7922.34","nodeVersion":"v22.15.0","viewport":{"width":1440,"height":900},"innerWidth":1440,"language":"zh-CN","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36","timezone":"UTC","devicePixelRatio":1,"reducedMotion":true,"headingFontFamily":"\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"}
+  ok  1 [desktop] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (6.6s)
+  ok  2 [desktop] › e2e\members.spec.ts:77:1 › validate and cancel an edit, then save in memory and restore data on refresh (9.9s)
+  ok  3 [desktop] › e2e\members.spec.ts:129:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (5.8s)
+(node:16516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Browser environment (tablet): {"browserVersion":"151.0.7922.34","nodeVersion":"v22.15.0","viewport":{"width":768,"height":1024},"innerWidth":768,"language":"zh-CN","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36","timezone":"UTC","devicePixelRatio":1,"reducedMotion":true,"headingFontFamily":"\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"}
+  ok  4 [tablet] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (2.3s)
+  ok  5 [tablet] › e2e\members.spec.ts:77:1 › validate and cancel an edit, then save in memory and restore data on refresh (2.5s)
+  ok  6 [tablet] › e2e\members.spec.ts:129:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (1.2s)
+  ok  7 [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling (3.6s)
+(node:51360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Browser environment (mobile): {"browserVersion":"151.0.7922.34","nodeVersion":"v22.15.0","viewport":{"width":375,"height":812},"innerWidth":375,"language":"zh-CN","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36","timezone":"UTC","devicePixelRatio":1,"reducedMotion":true,"headingFontFamily":"\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"}
+  ok  8 [mobile] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (2.6s)
+  ok  9 [mobile] › e2e\members.spec.ts:77:1 › validate and cancel an edit, then save in memory and restore data on refresh (2.5s)
+  ok 10 [mobile] › e2e\members.spec.ts:129:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (1.4s)
+  ok 11 [mobile] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling (3.5s)
+
+  11 passed (50.7s)

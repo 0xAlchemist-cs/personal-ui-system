@@ -1,0 +1,4 @@
+
+> personal-ui-showcase@0.1.0 lint
+> oxlint --deny-warnings src .storybook e2e vite.config.ts vitest.config.ts playwright.config.ts
+

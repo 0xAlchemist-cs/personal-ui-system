@@ -1,0 +1,225 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: members.spec.ts >> filter, paginate and sort the fixed member set; clearing preserves sort
+- Location: e2e\members.spec.ts:8:1
+
+# Error details
+
+```
+Error: expect(locator).toHaveCount(expected) failed
+
+Locator:  getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+Expected: 9
+Received: 6
+Timeout:  10000ms
+
+Call log:
+  - Expect "toHaveCount" with timeout 10000ms
+  - waiting for getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+    24 × locator resolved to 6 elements
+       - unexpected value "6"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - link "跳到主要内容" [ref=e5] [cursor=pointer]:
+    - /url: "#main-content"
+  - complementary "Personal UI 工作台" [ref=e6]:
+    - paragraph [ref=e7]: Personal UI
+    - paragraph [ref=e8]: 组件工作台
+    - navigation "工作台导航" [ref=e9]:
+      - link "成员管理" [ref=e10] [cursor=pointer]:
+        - /url: "#members"
+  - generic [ref=e11]:
+    - banner [ref=e12]:
+      - generic [ref=e13]: 工作台
+      - generic [ref=e15]: 本地演示
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - heading "成员管理" [level=1] [ref=e18]
+        - paragraph [ref=e19]: 检索成员、查看状态，编辑基本信息。
+        - paragraph [ref=e20]: 演示数据 · 30 条固定合成记录。修改仅保存在当前页面，刷新后恢复。
+      - region [ref=e21]:
+        - generic [ref=e22]:
+          - heading "成员列表" [level=2] [ref=e23]
+          - paragraph [ref=e24]: 按姓名或邮箱搜索，并按成员状态筛选。
+        - search "筛选成员" [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]: 姓名或邮箱
+            - generic [ref=e28]:
+              - textbox "姓名或邮箱" [active] [ref=e29]:
+                - /placeholder: 搜索成员
+                - text: MEMBER0
+              - button [ref=e31] [cursor=pointer]:
+                - img "close-circle" [ref=e32]
+          - generic [ref=e35]:
+            - generic [ref=e36]: 成员状态
+            - generic [ref=e37] [cursor=pointer]:
+              - generic "启用" [ref=e38]:
+                - text: 启用
+                - combobox "成员状态" [ref=e39]
+              - img "down" [ref=e41]
+          - button "清除筛选" [ref=e44] [cursor=pointer]
+        - paragraph [ref=e46]: 表格可横向滚动；可聚焦后使用左右方向键查看。
+        - region "成员列表，可横向滚动" [ref=e47]:
+          - table [ref=e54]:
+            - rowgroup [ref=e61]:
+              - row [ref=e62]:
+                - columnheader "姓名" [ref=e63]
+                - columnheader "邮箱" [ref=e64]
+                - columnheader "状态" [ref=e65]
+                - columnheader "创建时间" [ref=e66] [cursor=pointer]
+                - columnheader "操作" [ref=e77]
+            - rowgroup [ref=e78]:
+              - row [ref=e79]:
+                - cell "演示成员08" [ref=e80]
+                - cell "member08@example.test" [ref=e81]
+                - cell "启用" [ref=e82]
+                - cell [ref=e84]:
+                  - time [ref=e85]: 2026-01-08
+                - cell [ref=e86]:
+                  - button "编辑演示成员08" [ref=e87] [cursor=pointer]:
+                    - generic [ref=e88]: 编辑
+              - row [ref=e89]:
+                - cell "演示成员07" [ref=e90]
+                - cell "member07@example.test" [ref=e91]
+                - cell "启用" [ref=e92]
+                - cell [ref=e94]:
+                  - time [ref=e95]: 2026-01-07
+                - cell [ref=e96]:
+                  - button "编辑演示成员07" [ref=e97] [cursor=pointer]:
+                    - generic [ref=e98]: 编辑
+              - row [ref=e99]:
+                - cell "演示成员05" [ref=e100]
+                - cell "member05@example.test" [ref=e101]
+                - cell "启用" [ref=e102]
+                - cell [ref=e104]:
+                  - time [ref=e105]: 2026-01-05
+                - cell [ref=e106]:
+                  - button "编辑演示成员05" [ref=e107] [cursor=pointer]:
+                    - generic [ref=e108]: 编辑
+              - row [ref=e109]:
+                - cell "演示成员04" [ref=e110]
+                - cell "member04@example.test" [ref=e111]
+                - cell "启用" [ref=e112]
+                - cell [ref=e114]:
+                  - time [ref=e115]: 2026-01-04
+                - cell [ref=e116]:
+                  - button "编辑演示成员04" [ref=e117] [cursor=pointer]:
+                    - generic [ref=e118]: 编辑
+              - row [ref=e119]:
+                - cell "演示成员02" [ref=e120]
+                - cell "member02@example.test" [ref=e121]
+                - cell "启用" [ref=e122]
+                - cell [ref=e124]:
+                  - time [ref=e125]: 2026-01-02
+                - cell [ref=e126]:
+                  - button "编辑演示成员02" [ref=e127] [cursor=pointer]:
+                    - generic [ref=e128]: 编辑
+              - row [ref=e129]:
+                - cell "演示成员01" [ref=e130]
+                - cell "member01@example.test" [ref=e131]
+                - cell "启用" [ref=e132]
+                - cell [ref=e134]:
+                  - time [ref=e135]: 2026-01-01
+                - cell [ref=e136]:
+                  - button "编辑演示成员01" [ref=e137] [cursor=pointer]:
+                    - generic [ref=e138]: 编辑
+        - generic [ref=e139]:
+          - status [ref=e140]: 共 6 位成员 · 第 1–6 位
+          - navigation "成员列表分页"
+```
+
+# Test source
+
+```ts
+  1  | import { expect, test as base, type Locator, type Page } from '@playwright/test';
+  2  | 
+  3  | export async function expectNoDocumentOverflow(page: Page) {
+  4  |   await expect.poll(() => page.evaluate(() => (
+  5  |     document.documentElement.scrollWidth - window.innerWidth
+  6  |   )), { message: 'The document must not overflow horizontally; the table scrolls locally.' }).toBeLessThanOrEqual(0);
+  7  | }
+  8  | 
+  9  | export async function expectHorizontallyContained(control: Locator) {
+  10 |   await expect(control).toBeVisible();
+  11 |   await expect.poll(() => control.evaluate((element) => {
+  12 |     const bounds = element.getBoundingClientRect();
+  13 |     return bounds.left >= 0 && bounds.right <= window.innerWidth;
+  14 |   }), { message: 'The complete control must fit within the viewport width.' }).toBe(true);
+  15 | }
+  16 | 
+  17 | export function memberRows(page: Page) {
+  18 |   return page.getByRole('region', { name: '成员列表，可横向滚动', exact: true })
+  19 |     .getByRole('row').filter({ has: page.getByRole('button', { name: /^编辑/ }) });
+  20 | }
+  21 | 
+  22 | export async function expectMemberNames(page: Page, names: string[]) {
+  23 |   const rows = memberRows(page);
+> 24 |   await expect(rows).toHaveCount(names.length);
+     |                      ^ Error: expect(locator).toHaveCount(expected) failed
+  25 |   for (const [index, name] of names.entries()) {
+  26 |     await expect(rows.nth(index).getByRole('cell').first()).toHaveText(name);
+  27 |   }
+  28 | }
+  29 | 
+  30 | export async function selectStatus(page: Page, value: 'all' | 'active' | 'disabled') {
+  31 |   await page.getByRole('combobox', { name: '成员状态', exact: true }).focus();
+  32 |   await page.keyboard.press('Home');
+  33 |   const steps = { all: 0, active: 1, disabled: 2 }[value];
+  34 |   for (let index = 0; index < steps; index += 1) await page.keyboard.press('ArrowDown');
+  35 |   await page.keyboard.press('Enter');
+  36 | }
+  37 | 
+  38 | export async function goToPage(page: Page, number: number) {
+  39 |   // Ant Design's page links currently have no accessible page-number name.
+  40 |   const pagination = page.getByRole('navigation', { name: '成员列表分页', exact: true });
+  41 |   await pagination.locator(`.ant-pagination-item[title="${number}"]`).press('Enter');
+  42 |   await expect(pagination.locator('.ant-pagination-item-active')).toHaveAttribute('title', String(number));
+  43 | }
+  44 | 
+  45 | export async function expectFocusTrapped(page: Page, dialog: Locator) {
+  46 |   for (const key of ['Tab', 'Shift+Tab']) {
+  47 |     for (let index = 0; index < 8; index += 1) {
+  48 |       await page.keyboard.press(key);
+  49 |       await expect.poll(() => dialog.evaluate((element) => (
+  50 |         element.contains(document.activeElement)
+  51 |       )), { message: `${key} must keep focus inside the open dialog.` }).toBe(true);
+  52 |     }
+  53 |   }
+  54 | }
+  55 | 
+  56 | export const test = base.extend<{ browserHealth: void }>({
+  57 |   browserHealth: [async ({ page }, use, testInfo) => {
+  58 |     const issues: string[] = [];
+  59 |     page.on('pageerror', (error) => issues.push(`pageerror: ${error.message}`));
+  60 |     page.on('console', (message) => {
+  61 |       if (message.type() === 'error') issues.push(`console error: ${message.text()}`);
+  62 |     });
+  63 |     await page.goto('/');
+  64 |     await expect(memberRows(page)).toHaveCount(10);
+  65 |     await expectNoDocumentOverflow(page);
+  66 |     await use();
+  67 |     if (issues.length > 0) {
+  68 |       await testInfo.attach('browser-errors', {
+  69 |         body: JSON.stringify(issues, null, 2),
+  70 |         contentType: 'application/json',
+  71 |       });
+  72 |     }
+  73 |     expect(issues, 'No unhandled browser errors or console errors.').toEqual([]);
+  74 |     await expectNoDocumentOverflow(page);
+  75 |   }, { auto: true }],
+  76 | });
+  77 | 
+  78 | export { expect };
+  79 | 
+```

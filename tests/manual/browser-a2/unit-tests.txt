@@ -1,0 +1,13 @@
+
+> personal-ui-showcase@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/showcase/app
+
+
+ Test Files  3 passed (3)
+      Tests  78 passed (78)
+   Start at  18:39:30
+   Duration  846ms (transform 43%, import 31%, worker 18%, tests 7%)
+

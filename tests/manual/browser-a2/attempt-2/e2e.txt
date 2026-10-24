@@ -1,0 +1,71 @@
+
+> personal-ui-showcase@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:42108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   ➜  Local:   http://127.0.0.1:5187/
+
+Running 11 tests using 1 worker
+
+(node:25072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [desktop] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (2.3s)
+  ok  2 [desktop] › e2e\members.spec.ts:76:1 › validate and cancel an edit, then save in memory and restore data on refresh (2.4s)
+  ok  3 [desktop] › e2e\members.spec.ts:128:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (1.1s)
+(node:38080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [tablet] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (2.2s)
+  ok  5 [tablet] › e2e\members.spec.ts:76:1 › validate and cancel an edit, then save in memory and restore data on refresh (2.3s)
+  ok  6 [tablet] › e2e\members.spec.ts:128:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (1.1s)
+  x   7 [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling (13.3s)
+(node:39228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [mobile] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (2.1s)
+  ok  9 [mobile] › e2e\members.spec.ts:76:1 › validate and cancel an edit, then save in memory and restore data on refresh (2.2s)
+  ok 10 [mobile] › e2e\members.spec.ts:128:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (1.1s)
+  ok 11 [mobile] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling (3.4s)
+
+
+  1) [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling 
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator:  getByRole('button', { name: '编辑演示成员30', exact: true })
+    Expected: in viewport
+    Received: viewport ratio 0.13333334028720856
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeInViewport" with timeout 10000ms
+      - waiting for getByRole('button', { name: '编辑演示成员30', exact: true })
+        23 × locator resolved to <button type="button" aria-label="编辑演示成员30" class="ant-btn css-eofgey css-var-_r_0_ ant-btn-link ant-btn-color-link ant-btn-variant-link">…</button>
+           - unexpected value "viewport ratio 0.13333334028720856"
+
+
+      31 |   await edit.focus();
+      32 |   await expect(edit).toBeFocused();
+    > 33 |   await expect(edit).toBeInViewport({ ratio: 1 });
+         |                      ^
+      34 |   await expectHorizontallyContained(edit);
+      35 |   await page.keyboard.press('Enter');
+      36 |   const modal = page.getByRole('dialog', { name: '编辑成员', exact: true });
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\navigation.spec.ts:33:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling 
+  10 passed (41.1s)

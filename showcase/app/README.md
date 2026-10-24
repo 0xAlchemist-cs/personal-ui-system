@@ -2,6 +2,8 @@
 
 当前交付到 [Phase 02 任务 5](../../docs/superpowers/plans/2026-10-23-showcase-v1.md)。应用首页为成员管理示范页，支持本地组合筛选、创建时间排序、分页与姓名/邮箱编辑；React 应用与 17 个 Story 共用 `ShowcaseThemeProvider`。真实页面、状态、键盘、响应式与缩放验收见 [T5 正式验收](../../tests/manual/showcase-v1/review.md)。
 
+后续 [A2 浏览器冒烟](../../docs/records/2026-10-24-p04-a2-browser-smoke.md) 已补充三视口 11 项可重复检查和 CI，实际修复 768px 编辑按钮聚焦后仍被裁切的问题；本轮没有扩大风格成熟度或重做 T5 全部人工验收。
+
 ## 环境与版本
 
 核验日期：2026-10-24。T5 / A2 应用检查环境为 Node `22.15.0`、npm `11.16.0`；历史 T2～T4 使用 npm `10.9.2`。支持的 Node 范围见 `package.json`，依赖均固定版本，完整依赖树见 `package-lock.json`；A2 只增加浏览器测试开发依赖，没有升级运行依赖。
@@ -86,7 +88,7 @@ npm run test:e2e
 
 Linux 首次安装需要系统依赖时使用 `npx --no-install playwright install --with-deps chromium`，CI 已执行该命令。Playwright 自行启动并关闭回环地址 `127.0.0.1:5187` 的 preview；端口被占用会失败，不复用可能陈旧的服务。测试使用包内固定 Chromium，在 1440×900、768×1024、375×812 执行 11 项行为与布局检查，单 worker、零重试。
 
-`playwright-report/` 保存 HTML，`test-results/results.json` 保存机器结果；失败保留截图和 trace。执行 `npx --no-install playwright show-report` 查看报告，或 `npx --no-install playwright show-trace <trace.zip>` 诊断失败。CI 在浏览器步骤实际执行后上传这些目录，保留 7 天。本轮没有像素基线；附件截图用于诊断，配置禁止创建/更新快照。自动化范围和首次失败证据将记录在 A2 实施报告中。
+`playwright-report/` 保存 HTML，`test-results/results.json` 保存机器结果；失败保留截图和 trace。执行 `npx --no-install playwright show-report` 查看报告，或 `npx --no-install playwright show-trace <trace.zip>` 诊断失败。CI 在浏览器步骤实际执行后上传这些目录，保留 7 天。本轮没有像素基线；附件截图用于诊断，配置禁止创建/更新快照。自动化范围和首次失败证据见 [A2 实施报告](../../docs/records/2026-10-24-p04-a2-browser-smoke.md)。
 
 ## 主题的唯一通路
 

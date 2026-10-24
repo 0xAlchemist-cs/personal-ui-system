@@ -1,0 +1,207 @@
+{
+  "repository": "0xAlchemist-cs/personal-ui-system",
+  "implementationSha": "0f18bd3217aae1223688100e1c883deaa319f322",
+  "run": {
+    "id": 40086757728,
+    "url": "https://github.com/0xAlchemist-cs/personal-ui-system/actions/runs/40086757728",
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "runAttempt": 1,
+    "startedAt": "2026-10-24T10:39:12Z",
+    "updatedAt": "2026-10-24T10:40:49Z"
+  },
+  "jobs": [
+    {
+      "id": 120851173637,
+      "name": "Knowledge contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Pin npm and report environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install quality dependencies from lock",
+          "conclusion": "success"
+        },
+        {
+          "name": "Validate knowledge contracts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify positive and negative cases",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 120851173765,
+      "name": "Showcase checks and builds",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Pin npm and report environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install Showcase dependencies from its lock",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run typecheck",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run lint",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm test",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run build",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run npm run build-storybook",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned Chromium and Linux dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Browser smoke journeys",
+          "conclusion": "success"
+        },
+        {
+          "name": "Preserve browser report and failure traces",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12557970229,
+      "name": "browser-report-1",
+      "size_in_bytes": 938183,
+      "url": "https://api.github.com/repos/0xAlchemist-cs/personal-ui-system/actions/artifacts/12557970229",
+      "archive_download_url": "https://api.github.com/repos/0xAlchemist-cs/personal-ui-system/actions/artifacts/12557970229/zip",
+      "expired": false,
+      "created_at": "2026-10-24T10:40:43Z",
+      "expires_at": "2026-10-31T10:40:42Z",
+      "updated_at": "2026-10-24T10:40:43Z",
+      "digest": "sha256:430513ecf6aa3cb44341264079e61be1c969fa143638d8362650363dcaa5392b",
+      "workflow_run": {
+        "id": 40086757728,
+        "repository_id": 1429953312,
+        "head_repository_id": 1429953312,
+        "head_branch": "codex/p04-a2",
+        "head_sha": "0f18bd3217aae1223688100e1c883deaa319f322"
+      }
+    }
+  ],
+  "environments": [
+    {
+      "project": "desktop",
+      "browserVersion": "151.0.7922.34",
+      "nodeVersion": "v22.15.0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "innerWidth": 1440,
+      "language": "zh-CN",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "timezone": "UTC",
+      "devicePixelRatio": 1,
+      "reducedMotion": true,
+      "headingFontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "project": "tablet",
+      "browserVersion": "151.0.7922.34",
+      "nodeVersion": "v22.15.0",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "innerWidth": 768,
+      "language": "zh-CN",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "timezone": "UTC",
+      "devicePixelRatio": 1,
+      "reducedMotion": true,
+      "headingFontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    },
+    {
+      "project": "mobile",
+      "browserVersion": "151.0.7922.34",
+      "nodeVersion": "v22.15.0",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "innerWidth": 375,
+      "language": "zh-CN",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+      "timezone": "UTC",
+      "devicePixelRatio": 1,
+      "reducedMotion": true,
+      "headingFontFamily": "\"Segoe UI\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
+    }
+  ]
+}

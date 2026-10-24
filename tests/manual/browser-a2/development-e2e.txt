@@ -1,0 +1,464 @@
+
+> personal-ui-showcase@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:44304) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer]   ➜  Local:   http://127.0.0.1:5187/
+
+Running 11 tests using 1 worker
+
+(node:45820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 [desktop] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (11.8s)
+(node:6364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   2 [desktop] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh (11.0s)
+(node:43576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [desktop] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (30.6s)
+(node:43132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 [tablet] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (11.9s)
+(node:42264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   5 [tablet] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh (11.0s)
+(node:16580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   6 [tablet] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (30.4s)
+(node:44224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   7 [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling (13.7s)
+(node:38708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   8 [mobile] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort (11.8s)
+(node:25072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   9 [mobile] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh (11.0s)
+(node:11956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  10 [mobile] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear (30.3s)
+(node:18992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  11 [mobile] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling (13.8s)
+
+
+  1) [desktop] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+    Expected: 9
+    Received: 6
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 10000ms
+      - waiting for getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+        24 × locator resolved to 6 elements
+           - unexpected value "6"
+
+
+       at fixtures.ts:24
+
+      22 | export async function expectMemberNames(page: Page, names: string[]) {
+      23 |   const rows = memberRows(page);
+    > 24 |   await expect(rows).toHaveCount(names.length);
+         |                      ^
+      25 |   for (const [index, name] of names.entries()) {
+      26 |     await expect(rows.nth(index).getByRole('cell').first()).toHaveText(name);
+      27 |   }
+        at expectMemberNames (C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\fixtures.ts:24:22)
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:34:9
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+    Expected: focused
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeFocused" with timeout 10000ms
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+
+
+      64 |   const email = dialog.getByRole('textbox', { name: '邮箱', exact: true });
+      65 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+    > 66 |   await expect(name).toBeFocused();
+         |                      ^
+      67 |   await expectHorizontallyContained(dialog);
+      68 |   await expect(save).toBeEnabled();
+      69 |   await name.fill(' ');
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:66:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '邮箱', exact: true })
+
+
+      114 |   await page.getByRole('button', { name: '编辑演示成员30', exact: true }).click();
+      115 |   const dialog = page.getByRole('dialog', { name: '编辑成员', exact: true });
+    > 116 |   await dialog.getByRole('textbox', { name: '邮箱', exact: true }).fill('changed@example.test');
+          |                                                                  ^
+      117 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+      118 |   await expect(save).toBeEnabled();
+      119 |   await save.click();
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:116:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [tablet] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+    Expected: 9
+    Received: 6
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 10000ms
+      - waiting for getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+        23 × locator resolved to 6 elements
+           - unexpected value "6"
+
+
+       at fixtures.ts:24
+
+      22 | export async function expectMemberNames(page: Page, names: string[]) {
+      23 |   const rows = memberRows(page);
+    > 24 |   await expect(rows).toHaveCount(names.length);
+         |                      ^
+      25 |   for (const [index, name] of names.entries()) {
+      26 |     await expect(rows.nth(index).getByRole('cell').first()).toHaveText(name);
+      27 |   }
+        at expectMemberNames (C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\fixtures.ts:24:22)
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:34:9
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-tablet\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-tablet\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-tablet\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-tablet\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [tablet] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+    Expected: focused
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeFocused" with timeout 10000ms
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+
+
+      64 |   const email = dialog.getByRole('textbox', { name: '邮箱', exact: true });
+      65 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+    > 66 |   await expect(name).toBeFocused();
+         |                      ^
+      67 |   await expectHorizontallyContained(dialog);
+      68 |   await expect(save).toBeEnabled();
+      69 |   await name.fill(' ');
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:66:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-tablet\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-tablet\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-tablet\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-tablet\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [tablet] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '邮箱', exact: true })
+
+
+      114 |   await page.getByRole('button', { name: '编辑演示成员30', exact: true }).click();
+      115 |   const dialog = page.getByRole('dialog', { name: '编辑成员', exact: true });
+    > 116 |   await dialog.getByRole('textbox', { name: '邮箱', exact: true }).fill('changed@example.test');
+          |                                                                  ^
+      117 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+      118 |   await expect(save).toBeEnabled();
+      119 |   await save.click();
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:116:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-tablet\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-tablet\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-tablet\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-tablet\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+    Expected: focused
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeFocused" with timeout 10000ms
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+
+
+      35 |   await page.keyboard.press('Enter');
+      36 |   const modal = page.getByRole('dialog', { name: '编辑成员', exact: true });
+    > 37 |   await expect(modal.getByRole('textbox', { name: '姓名', exact: true })).toBeFocused();
+         |                                                                         ^
+      38 |   await expectHorizontallyContained(modal);
+      39 |   await page.keyboard.press('Escape');
+      40 |   await expect(modal).toBeHidden();
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\navigation.spec.ts:37:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-tablet\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [mobile] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+    Expected: 9
+    Received: 6
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" with timeout 10000ms
+      - waiting for getByRole('region', { name: '成员列表，可横向滚动', exact: true }).getByRole('row').filter({ has: getByRole('button', { name: /^编辑/ }) })
+        23 × locator resolved to 6 elements
+           - unexpected value "6"
+
+
+       at fixtures.ts:24
+
+      22 | export async function expectMemberNames(page: Page, names: string[]) {
+      23 |   const rows = memberRows(page);
+    > 24 |   await expect(rows).toHaveCount(names.length);
+         |                      ^
+      25 |   for (const [index, name] of names.entries()) {
+      26 |     await expect(rows.nth(index).getByRole('cell').first()).toHaveText(name);
+      27 |   }
+        at expectMemberNames (C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\fixtures.ts:24:22)
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:34:9
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-mobile\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-filter-paginate-an-3f096-set-clearing-preserves-sort-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [mobile] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+    Expected: focused
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeFocused" with timeout 10000ms
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+
+
+      64 |   const email = dialog.getByRole('textbox', { name: '邮箱', exact: true });
+      65 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+    > 66 |   await expect(name).toBeFocused();
+         |                      ^
+      67 |   await expectHorizontallyContained(dialog);
+      68 |   await expect(save).toBeEnabled();
+      69 |   await name.fill(' ');
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:66:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-validate-and-cance-08c20-and-restore-data-on-refresh-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [mobile] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '邮箱', exact: true })
+
+
+      114 |   await page.getByRole('button', { name: '编辑演示成员30', exact: true }).click();
+      115 |   const dialog = page.getByRole('dialog', { name: '编辑成员', exact: true });
+    > 116 |   await dialog.getByRole('textbox', { name: '邮箱', exact: true }).fill('changed@example.test');
+          |                                                                  ^
+      117 |   const save = dialog.getByRole('button', { name: /^保\s*存$/ });
+      118 |   await expect(save).toBeEnabled();
+      119 |   await save.click();
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\members.spec.ts:116:66
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\members-editing-the-sole-m-48137-the-updated-record-on-clear-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [mobile] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator: getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+    Expected: focused
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeFocused" with timeout 10000ms
+      - waiting for getByRole('dialog', { name: '编辑成员', exact: true }).getByRole('textbox', { name: '姓名', exact: true })
+
+
+      35 |   await page.keyboard.press('Enter');
+      36 |   const modal = page.getByRole('dialog', { name: '编辑成员', exact: true });
+    > 37 |   await expect(modal.getByRole('textbox', { name: '姓名', exact: true })).toBeFocused();
+         |                                                                         ^
+      38 |   await expectHorizontallyContained(modal);
+      39 |   await page.keyboard.press('Escape');
+      40 |   await expect(modal).toBeHidden();
+        at C:\Users\Lenovo\.codex\visualizations\2026\10\22\01a16433-a0fc-7a63-8b66-f7d302ad1593\p02-t5\showcase\app\e2e\navigation.spec.ts:37:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-mobile\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\artifacts\navigation-narrow-navigati-bcc94-ts-local-keyboard-scrolling-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11 failed
+    [desktop] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort 
+    [desktop] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh 
+    [desktop] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear 
+    [tablet] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort 
+    [tablet] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh 
+    [tablet] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear 
+    [tablet] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling 
+    [mobile] › e2e\members.spec.ts:8:1 › filter, paginate and sort the fixed member set; clearing preserves sort 
+    [mobile] › e2e\members.spec.ts:58:1 › validate and cancel an edit, then save in memory and restore data on refresh 
+    [mobile] › e2e\members.spec.ts:110:1 › editing the sole match retains the filter, focuses the heading and exposes the updated record on clear 
+    [mobile] › e2e\navigation.spec.ts:3:1 › narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling 

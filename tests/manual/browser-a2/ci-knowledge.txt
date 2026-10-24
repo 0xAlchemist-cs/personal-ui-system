@@ -1,0 +1,525 @@
+﻿2026-10-24T10:39:15.4010434Z Current runner version: '2.338.0'
+2026-10-24T10:39:15.4032595Z ##[group]Runner Image Provisioner
+2026-10-24T10:39:15.4033364Z Hosted Compute Agent
+2026-10-24T10:39:15.4033883Z Version: 20261012.601
+2026-10-24T10:39:15.4034382Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-24T10:39:15.4035032Z Build Date: 2026-10-12T17:48:21Z
+2026-10-24T10:39:15.4035588Z Worker ID: {be70338a-7347-48e0-9a76-9f512bc0fb2a}
+2026-10-24T10:39:15.4036186Z Region: centralus
+2026-10-24T10:39:15.4036719Z Cloud: Azure
+2026-10-24T10:39:15.4037154Z ##[endgroup]
+2026-10-24T10:39:15.4038258Z ##[group]Operating System
+2026-10-24T10:39:15.4038765Z Ubuntu
+2026-10-24T10:39:15.4039232Z 24.04.5
+2026-10-24T10:39:15.4039698Z LTS
+2026-10-24T10:39:15.4040127Z ##[endgroup]
+2026-10-24T10:39:15.4040615Z ##[group]Runner Image
+2026-10-24T10:39:15.4041249Z Image: ubuntu-24.04
+2026-10-24T10:39:15.4041718Z Version: 20261012.334.1
+2026-10-24T10:39:15.4042842Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-24T10:39:15.4044457Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-24T10:39:15.4045250Z ##[endgroup]
+2026-10-24T10:39:15.4046261Z ##[group]GITHUB_TOKEN Permissions
+2026-10-24T10:39:15.4047860Z Contents: read
+2026-10-24T10:39:15.4048411Z Metadata: read
+2026-10-24T10:39:15.4048887Z ##[endgroup]
+2026-10-24T10:39:15.4051063Z Secret source: Actions
+2026-10-24T10:39:15.4051938Z Cache mode: write
+2026-10-24T10:39:15.4052701Z Prepare workflow directory
+2026-10-24T10:39:15.4413434Z Prepare all required actions
+2026-10-24T10:39:15.4453491Z Getting action download info
+2026-10-24T10:39:15.6683004Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-24T10:39:15.7724330Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-10-24T10:39:16.5178345Z Complete job name: Knowledge contracts
+2026-10-24T10:39:16.5792353Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-24T10:39:16.5793231Z with:
+2026-10-24T10:39:16.5793618Z   persist-credentials: false
+2026-10-24T10:39:16.5794109Z   repository: 0xAlchemist-cs/personal-ui-system
+2026-10-24T10:39:16.5797446Z   token: ***
+2026-10-24T10:39:16.5797819Z   ssh-strict: true
+2026-10-24T10:39:16.5798202Z   ssh-user: git
+2026-10-24T10:39:16.5798567Z   clean: true
+2026-10-24T10:39:16.5798954Z   sparse-checkout-cone-mode: true
+2026-10-24T10:39:16.5799412Z   fetch-depth: 1
+2026-10-24T10:39:16.5799792Z   fetch-tags: false
+2026-10-24T10:39:16.5800176Z   show-progress: true
+2026-10-24T10:39:16.5800558Z   lfs: false
+2026-10-24T10:39:16.5801083Z   submodules: false
+2026-10-24T10:39:16.5801485Z   set-safe-directory: true
+2026-10-24T10:39:16.5801924Z   allow-unsafe-pr-checkout: false
+2026-10-24T10:39:16.5802539Z env:
+2026-10-24T10:39:16.5802889Z   CI: true
+2026-10-24T10:39:16.5803241Z   NODE_PATH: 
+2026-10-24T10:39:16.5803664Z   NODE_OPTIONS: 
+2026-10-24T10:39:16.5804052Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T10:39:16.5804481Z   DO_NOT_TRACK: 1
+2026-10-24T10:39:16.5804845Z ##[endgroup]
+2026-10-24T10:39:16.6590366Z Syncing repository: 0xAlchemist-cs/personal-ui-system
+2026-10-24T10:39:16.6592885Z ##[group]Getting Git version info
+2026-10-24T10:39:16.6593772Z Working directory is '/home/runner/work/personal-ui-system/personal-ui-system'
+2026-10-24T10:39:16.6595358Z [command]/usr/bin/git version
+2026-10-24T10:39:16.6647692Z git version 2.55.0
+2026-10-24T10:39:16.6664474Z ##[endgroup]
+2026-10-24T10:39:16.6674559Z Temporarily overriding HOME='/home/runner/work/_temp/3050a7d0-1604-4a23-9e14-4a39938e3cc1' before making global git config changes
+2026-10-24T10:39:16.6679231Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-24T10:39:16.6681133Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/personal-ui-system/personal-ui-system
+2026-10-24T10:39:16.6722448Z Deleting the contents of '/home/runner/work/personal-ui-system/personal-ui-system'
+2026-10-24T10:39:16.6726848Z ##[group]Determining repository object format
+2026-10-24T10:39:16.6728419Z ##[endgroup]
+2026-10-24T10:39:16.6729904Z ##[group]Initializing the repository
+2026-10-24T10:39:16.6733059Z [command]/usr/bin/git init /home/runner/work/personal-ui-system/personal-ui-system
+2026-10-24T10:39:16.6806233Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-24T10:39:16.6808339Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-24T10:39:16.6809641Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-24T10:39:16.6810693Z hint: call:
+2026-10-24T10:39:16.6812923Z hint:
+2026-10-24T10:39:16.6813682Z hint: 	git config --global init.defaultBranch <name>
+2026-10-24T10:39:16.6814555Z hint:
+2026-10-24T10:39:16.6815341Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-24T10:39:16.6816958Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-24T10:39:16.6818013Z hint:
+2026-10-24T10:39:16.6818635Z hint: 	git branch -m <name>
+2026-10-24T10:39:16.6819282Z hint:
+2026-10-24T10:39:16.6820135Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-24T10:39:16.6822118Z Initialized empty Git repository in /home/runner/work/personal-ui-system/personal-ui-system/.git/
+2026-10-24T10:39:16.6824682Z [command]/usr/bin/git remote add origin https://github.com/0xAlchemist-cs/personal-ui-system
+2026-10-24T10:39:16.6856381Z ##[endgroup]
+2026-10-24T10:39:16.6860611Z ##[group]Disabling automatic garbage collection
+2026-10-24T10:39:16.6861472Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-24T10:39:16.6889513Z ##[endgroup]
+2026-10-24T10:39:16.6890381Z ##[group]Setting up auth
+2026-10-24T10:39:16.6891073Z Removing SSH command configuration
+2026-10-24T10:39:16.6894075Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T10:39:16.6922273Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T10:39:16.7314026Z Removing HTTP extra header
+2026-10-24T10:39:16.7319375Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T10:39:16.7350471Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T10:39:16.7536424Z Removing includeIf entries pointing to credentials config files
+2026-10-24T10:39:16.7540714Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T10:39:16.7572304Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T10:39:16.7764196Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-24T10:39:16.7798963Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path /home/runner/work/_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:16.7830299Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:16.7864645Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:16.7895965Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:16.7924882Z ##[endgroup]
+2026-10-24T10:39:16.7925921Z ##[group]Fetching the repository
+2026-10-24T10:39:16.7932227Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0f18bd3217aae1223688100e1c883deaa319f322:refs/remotes/origin/codex/p04-a2
+2026-10-24T10:39:17.7051151Z From https://github.com/0xAlchemist-cs/personal-ui-system
+2026-10-24T10:39:17.7053179Z  * [new ref]         0f18bd3217aae1223688100e1c883deaa319f322 -> origin/codex/p04-a2
+2026-10-24T10:39:17.7060041Z [command]/usr/bin/git branch --list --remote origin/codex/p04-a2
+2026-10-24T10:39:17.7085072Z   origin/codex/p04-a2
+2026-10-24T10:39:17.7091133Z [command]/usr/bin/git rev-parse refs/remotes/origin/codex/p04-a2
+2026-10-24T10:39:17.7113335Z 0f18bd3217aae1223688100e1c883deaa319f322
+2026-10-24T10:39:17.7116991Z ##[endgroup]
+2026-10-24T10:39:17.7118142Z ##[group]Determining the checkout info
+2026-10-24T10:39:17.7119739Z ##[endgroup]
+2026-10-24T10:39:17.7121125Z [command]/usr/bin/git sparse-checkout disable
+2026-10-24T10:39:17.7168747Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-24T10:39:17.7198571Z ##[group]Checking out the ref
+2026-10-24T10:39:17.7201523Z [command]/usr/bin/git checkout --progress --force -B codex/p04-a2 refs/remotes/origin/codex/p04-a2
+2026-10-24T10:39:17.7577468Z Switched to a new branch 'codex/p04-a2'
+2026-10-24T10:39:17.7581765Z branch 'codex/p04-a2' set up to track 'origin/codex/p04-a2'.
+2026-10-24T10:39:17.7589611Z ##[endgroup]
+2026-10-24T10:39:17.7627587Z [command]/usr/bin/git log -1 --format=%H
+2026-10-24T10:39:17.7651792Z 0f18bd3217aae1223688100e1c883deaa319f322
+2026-10-24T10:39:17.7660372Z ##[group]Removing auth
+2026-10-24T10:39:17.7662131Z Removing SSH command configuration
+2026-10-24T10:39:17.7664495Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T10:39:17.7696551Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T10:39:17.7886093Z Removing HTTP extra header
+2026-10-24T10:39:17.7888840Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T10:39:17.7920439Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T10:39:17.8110664Z Removing includeIf entries pointing to credentials config files
+2026-10-24T10:39:17.8113546Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T10:39:17.8142033Z includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path
+2026-10-24T10:39:17.8144736Z includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path
+2026-10-24T10:39:17.8146629Z includeif.gitdir:/github/workspace/.git.path
+2026-10-24T10:39:17.8148058Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-24T10:39:17.8151748Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path
+2026-10-24T10:39:17.8172368Z /home/runner/work/_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:17.8181804Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-0d976240\-82da\-4f6f\-b176\-788a60fc0551\.config
+2026-10-24T10:39:17.8215498Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path
+2026-10-24T10:39:17.8238728Z /home/runner/work/_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:17.8247571Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/personal-ui-system/personal-ui-system/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-0d976240\-82da\-4f6f\-b176\-788a60fc0551\.config
+2026-10-24T10:39:17.8278072Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-24T10:39:17.8301296Z /github/runner_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:17.8308319Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-0d976240\-82da\-4f6f\-b176\-788a60fc0551\.config
+2026-10-24T10:39:17.8337762Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-24T10:39:17.8359146Z /github/runner_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config
+2026-10-24T10:39:17.8366333Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-0d976240\-82da\-4f6f\-b176\-788a60fc0551\.config
+2026-10-24T10:39:17.8396534Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T10:39:17.8586041Z Removing credentials config '/home/runner/work/_temp/git-credentials-0d976240-82da-4f6f-b176-788a60fc0551.config'
+2026-10-24T10:39:17.8593501Z ##[endgroup]
+2026-10-24T10:39:17.8876356Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-10-24T10:39:17.8877575Z with:
+2026-10-24T10:39:17.8878238Z   node-version: 22.15.0
+2026-10-24T10:39:17.8878983Z   cache: npm
+2026-10-24T10:39:17.8879839Z   cache-dependency-path: tools/quality/package-lock.json
+2026-10-24T10:39:17.8881037Z   check-latest: false
+2026-10-24T10:39:17.8887819Z   token: ***
+2026-10-24T10:39:17.8888559Z   package-manager-cache: true
+2026-10-24T10:39:17.8889365Z env:
+2026-10-24T10:39:17.8889986Z   CI: true
+2026-10-24T10:39:17.8890627Z   NODE_PATH: 
+2026-10-24T10:39:17.8891408Z   NODE_OPTIONS: 
+2026-10-24T10:39:17.8892144Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T10:39:17.8892974Z   DO_NOT_TRACK: 1
+2026-10-24T10:39:17.8893659Z ##[endgroup]
+2026-10-24T10:39:17.9975833Z Attempting to download 22.15.0...
+2026-10-24T10:39:19.0113324Z Acquiring 22.15.0 - x64 from https://github.com/actions/node-versions/releases/download/22.15.0-14621731016/node-22.15.0-linux-x64.tar.gz
+2026-10-24T10:39:19.4867129Z Extracting ...
+2026-10-24T10:39:19.4985675Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/68ec03f7-c2be-44cb-be1e-fff43182d4ab -f /home/runner/work/_temp/1028c64f-a965-45c5-a9d4-614ff1cc13b4
+2026-10-24T10:39:20.4829058Z Adding to the cache ...
+2026-10-24T10:39:22.3699919Z ##[group]Environment details
+2026-10-24T10:39:22.5372512Z node: v22.15.0
+2026-10-24T10:39:22.5372787Z npm: 10.9.2
+2026-10-24T10:39:22.5372957Z yarn: 1.22.22
+2026-10-24T10:39:22.5373391Z ##[endgroup]
+2026-10-24T10:39:22.5385748Z [command]/opt/hostedtoolcache/node/22.15.0/x64/bin/npm config get cache
+2026-10-24T10:39:22.6125728Z /home/runner/.npm
+2026-10-24T10:39:22.7819311Z Cache hit for: node-cache-Linux-x64-npm-dc0ea97daf351b3c64d55d8081a0fdc2eaf4d798b4f1f39a53b3e8c9be33739b
+2026-10-24T10:39:23.4745249Z Received 4375628 of 4375628 (100.0%), 8.0 MBs/sec
+2026-10-24T10:39:23.4745700Z Cache Size: ~4 MB (4375628 B)
+2026-10-24T10:39:23.4816455Z [command]/usr/bin/tar -xf /home/runner/work/_temp/683cd857-4fa5-4ae5-a7e8-e7b70575a572/cache.tzst -P -C /home/runner/work/personal-ui-system/personal-ui-system --use-compress-program unzstd
+2026-10-24T10:39:23.5216559Z Cache restored successfully
+2026-10-24T10:39:23.5223183Z Cache restored from key: node-cache-Linux-x64-npm-dc0ea97daf351b3c64d55d8081a0fdc2eaf4d798b4f1f39a53b3e8c9be33739b
+2026-10-24T10:39:23.5371704Z ##[group]Run npm install --global npm@11.16.0
+2026-10-24T10:39:23.5372053Z [36;1mnpm install --global npm@11.16.0[0m
+2026-10-24T10:39:23.5372310Z [36;1mnode --version[0m
+2026-10-24T10:39:23.5372681Z [36;1mnpm --version[0m
+2026-10-24T10:39:23.6289259Z shell: /usr/bin/bash -e {0}
+2026-10-24T10:39:23.6289512Z env:
+2026-10-24T10:39:23.6289686Z   CI: true
+2026-10-24T10:39:23.6289851Z   NODE_PATH: 
+2026-10-24T10:39:23.6290038Z   NODE_OPTIONS: 
+2026-10-24T10:39:23.6290239Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T10:39:23.6290442Z   DO_NOT_TRACK: 1
+2026-10-24T10:39:23.6290618Z ##[endgroup]
+2026-10-24T10:39:25.0710013Z 
+2026-10-24T10:39:25.0716833Z removed 84 packages, and changed 105 packages in 1s
+2026-10-24T10:39:25.0717174Z 
+2026-10-24T10:39:25.0717334Z 15 packages are looking for funding
+2026-10-24T10:39:25.0717606Z   run `npm fund` for details
+2026-10-24T10:39:25.1091603Z v22.15.0
+2026-10-24T10:39:25.1747518Z 11.16.0
+2026-10-24T10:39:25.1840634Z ##[group]Run npm ci --prefix tools/quality --no-audit --no-fund
+2026-10-24T10:39:25.1841342Z [36;1mnpm ci --prefix tools/quality --no-audit --no-fund[0m
+2026-10-24T10:39:25.1898564Z shell: /usr/bin/bash -e {0}
+2026-10-24T10:39:25.1898781Z env:
+2026-10-24T10:39:25.1898959Z   CI: true
+2026-10-24T10:39:25.1899129Z   NODE_PATH: 
+2026-10-24T10:39:25.1899297Z   NODE_OPTIONS: 
+2026-10-24T10:39:25.1899479Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T10:39:25.1899680Z   DO_NOT_TRACK: 1
+2026-10-24T10:39:25.1899852Z ##[endgroup]
+2026-10-24T10:39:25.7798847Z 
+2026-10-24T10:39:25.7799666Z added 41 packages in 544ms
+2026-10-24T10:39:25.8056630Z ##[group]Run npm run check --prefix tools/quality
+2026-10-24T10:39:25.8056956Z [36;1mnpm run check --prefix tools/quality[0m
+2026-10-24T10:39:25.8112733Z shell: /usr/bin/bash -e {0}
+2026-10-24T10:39:25.8112955Z env:
+2026-10-24T10:39:25.8113138Z   CI: true
+2026-10-24T10:39:25.8113307Z   NODE_PATH: 
+2026-10-24T10:39:25.8113479Z   NODE_OPTIONS: 
+2026-10-24T10:39:25.8113668Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T10:39:25.8113875Z   DO_NOT_TRACK: 1
+2026-10-24T10:39:25.8114043Z ##[endgroup]
+2026-10-24T10:39:25.8891860Z 
+2026-10-24T10:39:25.8892550Z > personal-ui-quality@0.1.0 check
+2026-10-24T10:39:25.8892939Z > node --experimental-strip-types check.mjs
+2026-10-24T10:39:25.8893189Z 
+2026-10-24T10:39:25.9579661Z (node:2322) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+2026-10-24T10:39:25.9581156Z (Use `node --trace-warnings ...` to show where the warning was created)
+2026-10-24T10:39:26.3281620Z {
+2026-10-24T10:39:26.3282067Z   "ok": true,
+2026-10-24T10:39:26.3282376Z   "counts": {
+2026-10-24T10:39:26.3282660Z     "markdown": 54,
+2026-10-24T10:39:26.3282966Z     "json": 71,
+2026-10-24T10:39:26.3283241Z     "yaml": 5,
+2026-10-24T10:39:26.3283505Z     "briefs": 3,
+2026-10-24T10:39:26.3283775Z     "presets": 3,
+2026-10-24T10:39:26.3284063Z     "localLinks": 469
+2026-10-24T10:39:26.3284350Z   },
+2026-10-24T10:39:26.3284589Z   "errors": [],
+2026-10-24T10:39:26.3285753Z   "scope": "Owned JSON/YAML, full Brief Draft 2020-12, all preset Token graphs and Markdown file targets. Preserved .agents and docs/imports bodies excluded; heading anchors and remote URLs not fetched."
+2026-10-24T10:39:26.3286830Z }
+2026-10-24T10:39:26.3572495Z ##[group]Run npm test --prefix tools/quality
+2026-10-24T10:39:26.3572798Z [36;1mnpm test --prefix tools/quality[0m
+2026-10-24T10:39:26.3627896Z shell: /usr/bin/bash -e {0}
+2026-10-24T10:39:26.3628109Z env:
+2026-10-24T10:39:26.3628275Z   CI: true
+2026-10-24T10:39:26.3628432Z   NODE_PATH: 
+2026-10-24T10:39:26.3628599Z   NODE_OPTIONS: 
+2026-10-24T10:39:26.3628786Z   STORYBOOK_DISABLE_TELEMETRY: 1
+2026-10-24T10:39:26.3628987Z   DO_NOT_TRACK: 1
+2026-10-24T10:39:26.3629158Z ##[endgroup]
+2026-10-24T10:39:26.4490162Z 
+2026-10-24T10:39:26.4490909Z > personal-ui-quality@0.1.0 test
+2026-10-24T10:39:26.4491549Z > node --experimental-strip-types --test test/*.test.mjs
+2026-10-24T10:39:26.4491892Z 
+2026-10-24T10:39:26.4861826Z TAP version 13
+2026-10-24T10:39:26.5524906Z # (node:2352) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+2026-10-24T10:39:26.5525537Z # (Use `node --trace-warnings ...` to show where the warning was created)
+2026-10-24T10:39:27.0255287Z # Subtest: existing Brief validates without mutation; schema is itself checked
+2026-10-24T10:39:27.0260082Z ok 1 - existing Brief validates without mutation; schema is itself checked
+2026-10-24T10:39:27.0260610Z   ---
+2026-10-24T10:39:27.0261110Z   duration_ms: 25.711915
+2026-10-24T10:39:27.0261423Z   type: 'test'
+2026-10-24T10:39:27.0261685Z   ...
+2026-10-24T10:39:27.0262115Z # Subtest: full Schema rejects numeric version
+2026-10-24T10:39:27.0275224Z ok 2 - full Schema rejects numeric version
+2026-10-24T10:39:27.0276082Z   ---
+2026-10-24T10:39:27.0276585Z   duration_ms: 0.683362
+2026-10-24T10:39:27.0277093Z   type: 'test'
+2026-10-24T10:39:27.0277577Z   ...
+2026-10-24T10:39:27.0278184Z # Subtest: full Schema rejects missing state detail
+2026-10-24T10:39:27.0278930Z ok 3 - full Schema rejects missing state detail
+2026-10-24T10:39:27.0279509Z   ---
+2026-10-24T10:39:27.0279968Z   duration_ms: 0.330219
+2026-10-24T10:39:27.0280453Z   type: 'test'
+2026-10-24T10:39:27.0281059Z   ...
+2026-10-24T10:39:27.0281709Z # Subtest: full Schema rejects unknown top-level field
+2026-10-24T10:39:27.0282466Z ok 4 - full Schema rejects unknown top-level field
+2026-10-24T10:39:27.0283063Z   ---
+2026-10-24T10:39:27.0283496Z   duration_ms: 0.968155
+2026-10-24T10:39:27.0283981Z   type: 'test'
+2026-10-24T10:39:27.0284435Z   ...
+2026-10-24T10:39:27.0285028Z # Subtest: full Schema rejects unknown nested field
+2026-10-24T10:39:27.0285749Z ok 5 - full Schema rejects unknown nested field
+2026-10-24T10:39:27.0286344Z   ---
+2026-10-24T10:39:27.0286815Z   duration_ms: 0.358481
+2026-10-24T10:39:27.0287312Z   type: 'test'
+2026-10-24T10:39:27.0288043Z   ...
+2026-10-24T10:39:27.0304050Z # Subtest: full Schema rejects preset conditional mismatch
+2026-10-24T10:39:27.0304731Z ok 6 - full Schema rejects preset conditional mismatch
+2026-10-24T10:39:27.0305155Z   ---
+2026-10-24T10:39:27.0305418Z   duration_ms: 0.289298
+2026-10-24T10:39:27.0305720Z   type: 'test'
+2026-10-24T10:39:27.0305981Z   ...
+2026-10-24T10:39:27.0306503Z # Subtest: full Schema rejects duplicate state
+2026-10-24T10:39:27.0307015Z ok 7 - full Schema rejects duplicate state
+2026-10-24T10:39:27.0307382Z   ---
+2026-10-24T10:39:27.0307643Z   duration_ms: 0.331051
+2026-10-24T10:39:27.0307934Z   type: 'test'
+2026-10-24T10:39:27.0308188Z   ...
+2026-10-24T10:39:27.0308572Z # Subtest: full Schema rejects missing fifth state
+2026-10-24T10:39:27.0309075Z ok 8 - full Schema rejects missing fifth state
+2026-10-24T10:39:27.0309446Z   ---
+2026-10-24T10:39:27.0309696Z   duration_ms: 0.255558
+2026-10-24T10:39:27.0309993Z   type: 'test'
+2026-10-24T10:39:27.0310245Z   ...
+2026-10-24T10:39:27.0310601Z # Subtest: full Schema rejects empty string list
+2026-10-24T10:39:27.0311269Z ok 9 - full Schema rejects empty string list
+2026-10-24T10:39:27.0311628Z   ---
+2026-10-24T10:39:27.0311871Z   duration_ms: 0.474413
+2026-10-24T10:39:27.0312162Z   type: 'test'
+2026-10-24T10:39:27.0312406Z   ...
+2026-10-24T10:39:27.0312786Z # Subtest: full Schema rejects duplicate string list
+2026-10-24T10:39:27.0313731Z ok 10 - full Schema rejects duplicate string list
+2026-10-24T10:39:27.0314154Z   ---
+2026-10-24T10:39:27.0314411Z   duration_ms: 0.464048
+2026-10-24T10:39:27.0314699Z   type: 'test'
+2026-10-24T10:39:27.0314961Z   ...
+2026-10-24T10:39:27.0315390Z # Subtest: full Schema rejects invalid nested interaction id
+2026-10-24T10:39:27.0315988Z ok 11 - full Schema rejects invalid nested interaction id
+2026-10-24T10:39:27.0316403Z   ---
+2026-10-24T10:39:27.0316652Z   duration_ms: 0.244893
+2026-10-24T10:39:27.0316938Z   type: 'test'
+2026-10-24T10:39:27.0317282Z   ...
+2026-10-24T10:39:27.0317839Z # Subtest: Draft 2020-12 tuple semantics are executed, not a field-name approximation
+2026-10-24T10:39:27.0318488Z ok 12 - Draft 2020-12 tuple semantics are executed, not a field-name approximation
+2026-10-24T10:39:27.0318799Z   ---
+2026-10-24T10:39:27.0318963Z   duration_ms: 12.859112
+2026-10-24T10:39:27.0319154Z   type: 'test'
+2026-10-24T10:39:27.0319330Z   ...
+2026-10-24T10:39:27.0319558Z # Subtest: YAML rejects duplicate mapping key
+2026-10-24T10:39:27.0320043Z ok 13 - YAML rejects duplicate mapping key
+2026-10-24T10:39:27.0320261Z   ---
+2026-10-24T10:39:27.0320427Z   duration_ms: 0.83693
+2026-10-24T10:39:27.0320609Z   type: 'test'
+2026-10-24T10:39:27.0321012Z   ...
+2026-10-24T10:39:27.0321251Z # Subtest: YAML rejects multiple documents
+2026-10-24T10:39:27.0321525Z ok 14 - YAML rejects multiple documents
+2026-10-24T10:39:27.0321808Z   ---
+2026-10-24T10:39:27.0321970Z   duration_ms: 0.409607
+2026-10-24T10:39:27.0322161Z   type: 'test'
+2026-10-24T10:39:27.0322317Z   ...
+2026-10-24T10:39:27.0322519Z # Subtest: YAML rejects malformed mapping
+2026-10-24T10:39:27.0322792Z ok 15 - YAML rejects malformed mapping
+2026-10-24T10:39:27.0323002Z   ---
+2026-10-24T10:39:27.0323155Z   duration_ms: 1.143264
+2026-10-24T10:39:27.0323339Z   type: 'test'
+2026-10-24T10:39:27.0323492Z   ...
+2026-10-24T10:39:27.0323709Z # Subtest: YAML rejects non-finite JSON number
+2026-10-24T10:39:27.0323999Z ok 16 - YAML rejects non-finite JSON number
+2026-10-24T10:39:27.0324246Z   ---
+2026-10-24T10:39:27.0324405Z   duration_ms: 0.302038
+2026-10-24T10:39:27.0324583Z   type: 'test'
+2026-10-24T10:39:27.0324748Z   ...
+2026-10-24T10:39:27.0324941Z # Subtest: YAML rejects cyclic aliases
+2026-10-24T10:39:27.0325189Z ok 17 - YAML rejects cyclic aliases
+2026-10-24T10:39:27.0325392Z   ---
+2026-10-24T10:39:27.0325549Z   duration_ms: 0.956317
+2026-10-24T10:39:27.0325724Z   type: 'test'
+2026-10-24T10:39:27.0325885Z   ...
+2026-10-24T10:39:27.0326193Z # Subtest: YAML preserves quoted version strings and ordinary shared aliases
+2026-10-24T10:39:27.0326637Z ok 18 - YAML preserves quoted version strings and ordinary shared aliases
+2026-10-24T10:39:27.0326921Z   ---
+2026-10-24T10:39:27.0327086Z   duration_ms: 0.572849
+2026-10-24T10:39:27.0327265Z   type: 'test'
+2026-10-24T10:39:27.0327422Z   ...
+2026-10-24T10:39:27.0327679Z # Subtest: Token data must be a runtime string dictionary
+2026-10-24T10:39:27.0328012Z ok 19 - Token data must be a runtime string dictionary
+2026-10-24T10:39:27.0328256Z   ---
+2026-10-24T10:39:27.0328417Z   duration_ms: 0.191213
+2026-10-24T10:39:27.0328592Z   type: 'test'
+2026-10-24T10:39:27.0328754Z   ...
+2026-10-24T10:39:27.0329084Z # Subtest: repository fixture passes and CLI validates independent of the caller cwd
+2026-10-24T10:39:27.0329578Z ok 20 - repository fixture passes and CLI validates independent of the caller cwd
+2026-10-24T10:39:27.0329882Z   ---
+2026-10-24T10:39:27.0330042Z   duration_ms: 225.910112
+2026-10-24T10:39:27.0330477Z   type: 'test'
+2026-10-24T10:39:27.0346716Z   ...
+2026-10-24T10:39:27.0619097Z # Subtest: repository rejects unknown primitive alias
+2026-10-24T10:39:27.0631037Z ok 21 - repository rejects unknown primitive alias
+2026-10-24T10:39:27.0631374Z   ---
+2026-10-24T10:39:27.0631648Z   duration_ms: 45.982318
+2026-10-24T10:39:27.0631976Z   type: 'test'
+2026-10-24T10:39:27.0632232Z   ...
+2026-10-24T10:39:27.0866498Z # Subtest: repository rejects semantic cycle
+2026-10-24T10:39:27.0867325Z ok 22 - repository rejects semantic cycle
+2026-10-24T10:39:27.0868056Z   ---
+2026-10-24T10:39:27.0868318Z   duration_ms: 25.854972
+2026-10-24T10:39:27.0868580Z   type: 'test'
+2026-10-24T10:39:27.0868746Z   ...
+2026-10-24T10:39:27.1076637Z # Subtest: repository rejects reverse primitive dependency
+2026-10-24T10:39:27.1077465Z ok 23 - repository rejects reverse primitive dependency
+2026-10-24T10:39:27.1077974Z   ---
+2026-10-24T10:39:27.1079079Z   duration_ms: 25.244223
+2026-10-24T10:39:27.1079421Z   type: 'test'
+2026-10-24T10:39:27.1079708Z   ...
+2026-10-24T10:39:27.1297033Z # Subtest: repository rejects key conflict
+2026-10-24T10:39:27.1298231Z ok 24 - repository rejects key conflict
+2026-10-24T10:39:27.1298616Z   ---
+2026-10-24T10:39:27.1298892Z   duration_ms: 21.365951
+2026-10-24T10:39:27.1299174Z   type: 'test'
+2026-10-24T10:39:27.1299393Z   ...
+2026-10-24T10:39:27.1549358Z # Subtest: repository rejects unknown override
+2026-10-24T10:39:27.1561510Z ok 25 - repository rejects unknown override
+2026-10-24T10:39:27.1568524Z   ---
+2026-10-24T10:39:27.1569008Z   duration_ms: 21.776134
+2026-10-24T10:39:27.1569673Z   type: 'test'
+2026-10-24T10:39:27.1569941Z   ...
+2026-10-24T10:39:27.1762771Z # Subtest: repository rejects primitive override
+2026-10-24T10:39:27.1764767Z ok 26 - repository rejects primitive override
+2026-10-24T10:39:27.1765037Z   ---
+2026-10-24T10:39:27.1765256Z   duration_ms: 25.184674
+2026-10-24T10:39:27.1765574Z   type: 'test'
+2026-10-24T10:39:27.1765746Z   ...
+2026-10-24T10:39:27.1949517Z # Subtest: repository rejects non-string value
+2026-10-24T10:39:27.1950129Z ok 27 - repository rejects non-string value
+2026-10-24T10:39:27.1950497Z   ---
+2026-10-24T10:39:27.1950856Z   duration_ms: 20.975748
+2026-10-24T10:39:27.1951140Z   type: 'test'
+2026-10-24T10:39:27.1951381Z   ...
+2026-10-24T10:39:28.1668045Z # Subtest: repository rejects partial interpolation
+2026-10-24T10:39:28.1669049Z ok 28 - repository rejects partial interpolation
+2026-10-24T10:39:28.1669715Z   ---
+2026-10-24T10:39:28.1670178Z   duration_ms: 32.394738
+2026-10-24T10:39:28.1670705Z   type: 'test'
+2026-10-24T10:39:28.1671404Z   ...
+2026-10-24T10:39:28.1672352Z # Subtest: CLI exits nonzero for Brief Schema failure
+2026-10-24T10:39:28.1673321Z ok 29 - CLI exits nonzero for Brief Schema failure
+2026-10-24T10:39:28.1673726Z   ---
+2026-10-24T10:39:28.1678156Z   duration_ms: 225.32878
+2026-10-24T10:39:28.1678635Z   type: 'test'
+2026-10-24T10:39:28.1679117Z   ...
+2026-10-24T10:39:28.1679686Z # Subtest: CLI exits nonzero for YAML parse failure
+2026-10-24T10:39:28.1680385Z ok 30 - CLI exits nonzero for YAML parse failure
+2026-10-24T10:39:28.1681306Z   ---
+2026-10-24T10:39:28.1681552Z   duration_ms: 263.229376
+2026-10-24T10:39:28.1681748Z   type: 'test'
+2026-10-24T10:39:28.1681924Z   ...
+2026-10-24T10:39:28.1682150Z # Subtest: CLI exits nonzero for Token failure
+2026-10-24T10:39:28.1682445Z ok 31 - CLI exits nonzero for Token failure
+2026-10-24T10:39:28.1682677Z   ---
+2026-10-24T10:39:28.1682843Z   duration_ms: 238.412576
+2026-10-24T10:39:28.1683029Z   type: 'test'
+2026-10-24T10:39:28.1683196Z   ...
+2026-10-24T10:39:28.1683439Z # Subtest: CLI exits nonzero for local link failure
+2026-10-24T10:39:28.1683943Z ok 32 - CLI exits nonzero for local link failure
+2026-10-24T10:39:28.1684331Z   ---
+2026-10-24T10:39:28.1684576Z   duration_ms: 226.729557
+2026-10-24T10:39:28.1685311Z   type: 'test'
+2026-10-24T10:39:28.1685617Z   ...
+2026-10-24T10:39:28.1865657Z # Subtest: resolves relative, root-relative, encoded and directory destinations
+2026-10-24T10:39:28.1866578Z ok 33 - resolves relative, root-relative, encoded and directory destinations
+2026-10-24T10:39:28.1867159Z   ---
+2026-10-24T10:39:28.1867350Z   duration_ms: 21.815202
+2026-10-24T10:39:28.1867615Z   type: 'test'
+2026-10-24T10:39:28.1867792Z   ...
+2026-10-24T10:39:28.1868169Z # Subtest: ignores external URLs, fragments, inline code, fences and unused definitions
+2026-10-24T10:39:28.1868751Z ok 34 - ignores external URLs, fragments, inline code, fences and unused definitions
+2026-10-24T10:39:28.1869117Z   ---
+2026-10-24T10:39:28.1869298Z   duration_ms: 8.18678
+2026-10-24T10:39:28.1869799Z   type: 'test'
+2026-10-24T10:39:28.1870019Z   ...
+2026-10-24T10:39:28.1870393Z # Subtest: checks full, collapsed, shortcut and image references using the first definition
+2026-10-24T10:39:28.1871288Z ok 35 - checks full, collapsed, shortcut and image references using the first definition
+2026-10-24T10:39:28.1871802Z   ---
+2026-10-24T10:39:28.1872049Z   duration_ms: 6.935135
+2026-10-24T10:39:28.1872313Z   type: 'test'
+2026-10-24T10:39:28.1872570Z   ...
+2026-10-24T10:39:28.1873137Z # Subtest: reports missing targets and malformed local percent escapes at their use sites
+2026-10-24T10:39:28.1873994Z ok 36 - reports missing targets and malformed local percent escapes at their use sites
+2026-10-24T10:39:28.1874504Z   ---
+2026-10-24T10:39:28.1874742Z   duration_ms: 4.902173
+2026-10-24T10:39:28.1875022Z   type: 'test'
+2026-10-24T10:39:28.1875262Z   ...
+2026-10-24T10:39:28.1875840Z # Subtest: rejects traversal, encoded traversal, drive paths, file URLs and backslash paths
+2026-10-24T10:39:28.1876920Z ok 37 - rejects traversal, encoded traversal, drive paths, file URLs and backslash paths
+2026-10-24T10:39:28.1877434Z   ---
+2026-10-24T10:39:28.1877668Z   duration_ms: 9.946212
+2026-10-24T10:39:28.1877942Z   type: 'test'
+2026-10-24T10:39:28.1878185Z   ...
+2026-10-24T10:39:28.1878786Z # Subtest: allows internal symlinks and rejects existing targets reached outside the repository
+2026-10-24T10:39:28.1879703Z ok 38 - allows internal symlinks and rejects existing targets reached outside the repository
+2026-10-24T10:39:28.1880237Z   ---
+2026-10-24T10:39:28.1880472Z   duration_ms: 8.037669
+2026-10-24T10:39:28.1880658Z   type: 'test'
+2026-10-24T10:39:28.1881076Z   ...
+2026-10-24T10:39:28.1881485Z # Subtest: detects a case-mismatched target on a case-sensitive filesystem
+2026-10-24T10:39:28.1881924Z ok 39 - detects a case-mismatched target on a case-sensitive filesystem
+2026-10-24T10:39:28.1882214Z   ---
+2026-10-24T10:39:28.1882374Z   duration_ms: 8.779622
+2026-10-24T10:39:28.1882554Z   type: 'test'
+2026-10-24T10:39:28.1882730Z   ...
+2026-10-24T10:39:28.1882879Z 1..39
+2026-10-24T10:39:28.1883038Z # tests 39
+2026-10-24T10:39:28.1883197Z # suites 0
+2026-10-24T10:39:28.1883363Z # pass 39
+2026-10-24T10:39:28.1883518Z # fail 0
+2026-10-24T10:39:28.1883677Z # cancelled 0
+2026-10-24T10:39:28.1883845Z # skipped 0
+2026-10-24T10:39:28.1884004Z # todo 0
+2026-10-24T10:39:28.1884180Z # duration_ms 1713.781619
+2026-10-24T10:39:28.2036171Z Post job cleanup.
+2026-10-24T10:39:28.2937464Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-dc0ea97daf351b3c64d55d8081a0fdc2eaf4d798b4f1f39a53b3e8c9be33739b, not saving cache.
+2026-10-24T10:39:28.3057686Z Post job cleanup.
+2026-10-24T10:39:28.3722951Z [command]/usr/bin/git version
+2026-10-24T10:39:28.3769112Z git version 2.55.0
+2026-10-24T10:39:28.3800851Z Temporarily overriding HOME='/home/runner/work/_temp/fd27a181-96ae-403e-a388-20bbe04a01ed' before making global git config changes
+2026-10-24T10:39:28.3801958Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-24T10:39:28.3805441Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/personal-ui-system/personal-ui-system
+2026-10-24T10:39:28.3832622Z Removing SSH command configuration
+2026-10-24T10:39:28.3837958Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-24T10:39:28.3866921Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-24T10:39:28.4082158Z Removing HTTP extra header
+2026-10-24T10:39:28.4087381Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-24T10:39:28.4117556Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-24T10:39:28.4319719Z Removing includeIf entries pointing to credentials config files
+2026-10-24T10:39:28.4325489Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-24T10:39:28.4358466Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-24T10:39:28.4695090Z Cleaning up orphan processes
+

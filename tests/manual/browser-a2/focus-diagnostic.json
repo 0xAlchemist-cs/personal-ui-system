@@ -1,0 +1,108 @@
+{
+  "browser": "151.0.7922.34",
+  "experiment": "Native focus compared with nearest scrollIntoView on the original build",
+  "viewports": [
+    {
+      "width": 768,
+      "nativeFocus": {
+        "button": {
+          "left": 703,
+          "right": 763,
+          "top": 269.53125,
+          "bottom": 313.53125,
+          "width": 60,
+          "height": 44
+        },
+        "region": {
+          "left": 57,
+          "right": 711,
+          "clientWidth": 654,
+          "scrollWidth": 770,
+          "scrollLeft": 40
+        },
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentScrollWidth": 768,
+        "horizontalVisibleRatio": 0.13333333333333333,
+        "focused": true
+      },
+      "nearestScroll": {
+        "button": {
+          "left": 651,
+          "right": 711,
+          "top": 269.53125,
+          "bottom": 313.53125,
+          "width": 60,
+          "height": 44
+        },
+        "region": {
+          "left": 57,
+          "right": 711,
+          "clientWidth": 654,
+          "scrollWidth": 770,
+          "scrollLeft": 92
+        },
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentScrollWidth": 768,
+        "horizontalVisibleRatio": 1,
+        "focused": true
+      }
+    },
+    {
+      "width": 375,
+      "nativeFocus": {
+        "button": {
+          "left": 250,
+          "right": 310,
+          "top": 71.3125,
+          "bottom": 115.3125,
+          "width": 60,
+          "height": 44
+        },
+        "region": {
+          "left": 41,
+          "right": 334,
+          "clientWidth": 293,
+          "scrollWidth": 770,
+          "scrollLeft": 477
+        },
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "documentScrollWidth": 375,
+        "horizontalVisibleRatio": 1,
+        "focused": true
+      },
+      "nearestScroll": {
+        "button": {
+          "left": 250,
+          "right": 310,
+          "top": 71.3125,
+          "bottom": 115.3125,
+          "width": 60,
+          "height": 44
+        },
+        "region": {
+          "left": 41,
+          "right": 334,
+          "clientWidth": 293,
+          "scrollWidth": 770,
+          "scrollLeft": 477
+        },
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "documentScrollWidth": 375,
+        "horizontalVisibleRatio": 1,
+        "focused": true
+      }
+    }
+  ]
+}

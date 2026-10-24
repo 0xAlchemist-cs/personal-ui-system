@@ -1,0 +1,81 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: navigation.spec.ts >> narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling
+- Location: e2e\navigation.spec.ts:3:1
+
+# Error details
+
+```
+Error: expect(locator).toBeInViewport() failed
+
+Locator:  getByRole('button', { name: '编辑演示成员30', exact: true })
+Expected: in viewport
+Received: viewport ratio 0.13333334028720856
+Timeout:  10000ms
+
+Call log:
+  - Expect "toBeInViewport" with timeout 10000ms
+  - waiting for getByRole('button', { name: '编辑演示成员30', exact: true })
+    23 × locator resolved to <button type="button" aria-label="编辑演示成员30" class="ant-btn css-eofgey css-var-_r_0_ ant-btn-link ant-btn-color-link ant-btn-variant-link">…</button>
+       - unexpected value "viewport ratio 0.13333334028720856"
+
+```
+
+```yaml
+- button "编辑演示成员30": 编辑
+```
+
+# Test source
+
+```ts
+  1  | import { expect, expectFocusTrapped, expectHorizontallyContained, test } from './fixtures';
+  2  | 
+  3  | test('narrow navigation traps focus and restores its trigger; the table supports local keyboard scrolling', async ({ page }) => {
+  4  |   const trigger = page.getByRole('button', { name: '打开工作台导航', exact: true });
+  5  |   await expectHorizontallyContained(trigger);
+  6  |   await trigger.focus();
+  7  |   await page.keyboard.press('Enter');
+  8  |   const drawer = page.getByRole('dialog', { name: '工作台导航', exact: true });
+  9  |   await expect(drawer).toBeVisible();
+  10 |   await expect.poll(() => drawer.evaluate((element) => element.contains(document.activeElement))).toBe(true);
+  11 |   await expectFocusTrapped(page, drawer);
+  12 |   await page.keyboard.press('Escape');
+  13 |   await expect(drawer).toBeHidden();
+  14 |   await expect(trigger).toBeFocused();
+  15 |   await trigger.press('Enter');
+  16 |   await expect(drawer).toBeVisible();
+  17 |   await drawer.getByRole('button', { name: '关闭工作台导航', exact: true }).press('Enter');
+  18 |   await expect(drawer).toBeHidden();
+  19 |   await expect(trigger).toBeFocused();
+  20 | 
+  21 |   const table = page.getByRole('region', { name: '成员列表，可横向滚动', exact: true });
+  22 |   await expect(table).toHaveAttribute('tabindex', '0');
+  23 |   await expect(table).toHaveAccessibleDescription('表格可横向滚动；可聚焦后使用左右方向键查看。');
+  24 |   await expect.poll(() => table.evaluate((element) => element.scrollWidth - element.clientWidth)).toBeGreaterThan(0);
+  25 |   await table.focus();
+  26 |   const initialScroll = await table.evaluate((element) => element.scrollLeft);
+  27 |   await page.keyboard.press('ArrowRight');
+  28 |   await expect.poll(() => table.evaluate((element) => element.scrollLeft)).toBeGreaterThan(initialScroll);
+  29 |   // Focus the target directly after checking arrow scrolling; this is not a complete Tab-order audit.
+  30 |   const edit = page.getByRole('button', { name: '编辑演示成员30', exact: true });
+  31 |   await edit.focus();
+  32 |   await expect(edit).toBeFocused();
+> 33 |   await expect(edit).toBeInViewport({ ratio: 1 });
+     |                      ^ Error: expect(locator).toBeInViewport() failed
+  34 |   await expectHorizontallyContained(edit);
+  35 |   await page.keyboard.press('Enter');
+  36 |   const modal = page.getByRole('dialog', { name: '编辑成员', exact: true });
+  37 |   await expect(modal.getByLabel('姓名', { exact: true })).toBeFocused();
+  38 |   await expectHorizontallyContained(modal);
+  39 |   await page.keyboard.press('Escape');
+  40 |   await expect(modal).toBeHidden();
+  41 |   await expect(edit).toBeFocused();
+  42 | });
+  43 | 
+```

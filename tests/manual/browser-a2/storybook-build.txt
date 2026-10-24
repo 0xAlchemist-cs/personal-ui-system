@@ -1,0 +1,123 @@
+
+> personal-ui-showcase@0.1.0 build-storybook
+> storybook build
+
+
+T  Building storybook v10.6.3
+|
+o  Cleaning outputDir: storybook-static
+|
+o  Loading presets
+|
+o  Building manager..
+|
+•  Building open services..
+|
+•  Building preview..
+|  Vite vite v8.3.5 building client environment for production...
+transforming...
+✓ 1541 modules transformed.
+rendering chunks...
+computing gzip size...
+|  Vite storybook-static/iframe.html
+|  19.28 kB │ gzip:   5.41 kB
+|  storybook-static/assets/iframe--nO1z6Lh.css                       7.96
+|  kB │ gzip:   1.76 kB
+|  storybook-static/assets/iframe-Cm-LieV9.js                        0.04
+|  kB │ gzip:   0.06 kB
+|  storybook-static/assets/button-Cj45t9Sz.js                        0.18
+|  kB │ gzip:   0.16 kB
+|  storybook-static/assets/dialog-focus-BUtdd-ap.js                  0.60
+|  kB │ gzip:   0.42 kB
+|  storybook-static/assets/react-18-B5kvrStd.js                      0.86
+|  kB │ gzip:   0.50 kB
+|  storybook-static/assets/ContentPanel-Cl1BFnpC.js                  0.94
+|  kB │ gzip:   0.45 kB
+|  storybook-static/assets/PurePanel-CRmYrT1U.js                     1.14
+|  kB │ gzip:   0.69 kB
+|  storybook-static/assets/rolldown-runtime-sJBDdmOt.js              1.20
+|  kB │ gzip:   0.67 kB
+|  storybook-static/assets/useClosable-DIgU-BRL.js                   1.30
+|  kB │ gzip:   0.69 kB
+|  storybook-static/assets/preload-helper-2GovK0wV.js                1.64
+|  kB │ gzip:   0.87 kB
+|  storybook-static/assets/StoryFrame-DIKOLY-S.js                    1.98
+|  kB │ gzip:   0.98 kB
+|  storybook-static/assets/ContentPanel.stories-C5k6Q5PO.js          2.02
+|  kB │ gzip:   1.23 kB
+|  storybook-static/assets/MemberFilters-DyNLj8sG.js                 2.02
+|  kB │ gzip:   0.88 kB
+|  storybook-static/assets/AppShell.stories-DUSVAGXQ.js              2.15
+|  kB │ gzip:   1.37 kB
+|  storybook-static/assets/motion-B2Gtmdz1.js                        2.16
+|  kB │ gzip:   1.07 kB
+|  storybook-static/assets/MemberTable.stories-CVLZd0EF.js           2.83
+|  kB │ gzip:   1.65 kB
+|  storybook-static/assets/MemberFilters.stories-ue0MRDD2.js         2.91
+|  kB │ gzip:   1.43 kB
+|  storybook-static/assets/zoom-K2P64yTM.js                          2.97
+|  kB │ gzip:   0.80 kB
+|  storybook-static/assets/ThemePreview.stories-BHMW4fnB.js          3.10
+|  kB │ gzip:   1.44 kB
+|  storybook-static/assets/EditMemberDialog.stories-CLsrSoJ1.js      3.92
+|  kB │ gzip:   1.75 kB
+|  storybook-static/assets/MembersPage.stories-p9lfnIP3.js           9.36
+|  kB │ gzip:   3.13 kB
+|  storybook-static/assets/context-D8uHnx_q.js                      11.32
+|  kB │ gzip:   4.04 kB
+|  storybook-static/assets/input-Bi2RU4Hi.js                        17.04
+|  kB │ gzip:   7.19 kB
+|  storybook-static/assets/AppShell-BDzXi-wC.js                     18.71
+|  kB │ gzip:   7.23 kB
+|  storybook-static/assets/mock-members-Dzjz0G9v.js                 27.14
+|  kB │ gzip:   9.41 kB
+|  storybook-static/vite-inject-mocker-entry.js                     27.75
+|  kB │ gzip:   9.66 kB
+|  storybook-static/assets/EditMemberDialog-B_x3U52w.js             31.47
+|  kB │ gzip:  12.36 kB
+|  storybook-static/assets/useModal-CH0rDQRC.js                     32.54
+|  kB │ gzip:  11.20 kB
+|  storybook-static/assets/space-DWvNQj5h.js                        39.03
+|  kB │ gzip:  12.11 kB
+|  storybook-static/assets/member-query-CnD3-y1D.js                 88.30
+|  kB │ gzip:  30.19 kB
+|  storybook-static/assets/ContextIsolator-C8BJcWT7.js             217.35
+|  kB │ gzip:  77.40 kB
+|  storybook-static/assets/client-DNntq5Ov.js                      218.38
+|  kB │ gzip:  68.12 kB
+|  storybook-static/assets/MemberTable-Cfoa7fC4.js                 278.16
+|  kB │ gzip:  86.97 kB
+|  storybook-static/assets/iframe-Cs2pVNlT.js                    1,163.33
+|  kB │ gzip: 333.59 kB
+
+|
+!  Vite [plugin builtin:vite-reporter]
+|  (!) Some chunks are larger than 500 kB after minification. Consider:
+|  - Using dynamic import() to code-split the application
+|  - Use build.rolldownOptions.output.codeSplitting to improve chunking:
+|  ]8;;https://rolldown.rs/reference/OutputOptions.codeSplittinghttps://rolldown.rs/reference/OutputOptions.codeSplitting]8;;
+|  - Adjust chunk size limit for this warning via
+|  build.chunkSizeWarningLimit.
+|  Vite ✓ built in 4.78s
+|
+!  Vite [33m[PLUGIN_TIMINGS] [0mJavaScript callbacks ran for 4.0s of this 4.7s
+|  build (85%).
+|  The slowest callbacks, timed inside each callback (the wait before a
+|  callback starts is excluded, the time it awaits is included):
+|  - plugin storybook:react-docgen-plugin transform (42%, 2.0s, 1541
+|  calls)
+|  Additional callback time came from the callbacks below and from
+|  callbacks under 1s.
+|  1 callback is listed without a time. Its calls overlapped, so the time
+|  inside one call includes work from other calls. To find its cost,
+|  profile the build with `node --cpu-prof`:
+|  - plugin vite:css transform (5 calls)
+|  See ]8;;https://rolldown.rs/reference/InputOptions.checks#bundlertimingshttps://rolldown.rs/reference/InputOptions.checks#bundlertimings]8;;
+|  for more details.
+
+|
+o  Output directory:
+|  C:/Users/Lenovo/.codex/visualizations/2026/10/22/01a16433-a0fc-7a63-8b66-f7d302ad1593/p02-t5/showcase/app/storybook-static
+|
+—  Storybook build completed successfully
+
