@@ -1,0 +1,197 @@
+{
+  "task": "P04-B1",
+  "date": "2026-10-24",
+  "baseline": "52f693e3d0c5277fc4097da9d379da233e4c3166",
+  "baselineMainCI": {"id":40090310314,"url":"https://github.com/0xAlchemist-cs/personal-ui-system/actions/runs/40090310314","sha":"52f693e3d0c5277fc4097da9d379da233e4c3166","status":"completed","conclusion":"success"},
+  "branch": "codex/p04-b1",
+  "scope": "Read-only consumer audit; no install, build, UI, upgrade, rollback or publishing performed",
+  "consumer": {
+    "id": "personal-ui-consumer-pilot",
+    "head": "a349428854e7cf203ee29d0211ef8a7572bdff10",
+    "statusPorcelain": "",
+    "clean": true,
+    "remoteNames": [],
+    "private": true,
+    "dependencies": {
+      "antd": "6.6.7",
+      "react": "19.3.1",
+      "react-dom": "19.3.1"
+    },
+    "sourceCommit": "16184844550f970570408a79e649a37dd7fe5c0d",
+    "systemVersion": "0.1.0",
+    "preset": "minimal-saas",
+    "manifestSha256": "fa92d802019d3e3eb22b07d89daa4792fc014d14e11e2cf922ecb0cddad2f308",
+    "historicalManifestMatches": true,
+    "filesVerified": 16
+  },
+  "sourceShowcase": {
+    "id": "showcase/app",
+    "private": true,
+    "role": "Source validation application, not a second independent consumer"
+  },
+  "knownDemand": {
+    "independentConsumers": 1,
+    "secondConsumerEvidence": false,
+    "explicitPackageOrRegistryPublishTarget": false,
+    "publicGithubMITGoal": "Source backup and sharing; does not specify an npm or Registry deliverable",
+    "validatedSnapshotSourceUpgrades": 0
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "sourcePath": "LICENSE",
+      "sha256": "eea7f3d20985480a48e47d99047de7932f4d661b5ff2174b5bd3536e95dd41d3",
+      "pinnedSourceBlob": "878759e6a2fe63ee12473e72e0357d80a33acf04",
+      "baselineSourceBlob": "878759e6a2fe63ee12473e72e0357d80a33acf04",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "prompts/frontend-development.md",
+      "sourcePath": "prompts/frontend-development.md",
+      "sha256": "e6c5f947d0678be7c5baf15d95436e3fa3379d0da456d7735ee47ecbf8b589dd",
+      "pinnedSourceBlob": "096755d9774881549dd9d8d1d2860eec62c2ff98",
+      "baselineSourceBlob": "096755d9774881549dd9d8d1d2860eec62c2ff98",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "design-system/principles.md",
+      "sourcePath": "design-system/principles.md",
+      "sha256": "5035adff18558de7f3e05bfbb20446af54baba6d5da5f9ae4cad04fc9d1ebe51",
+      "pinnedSourceBlob": "68119c6782be25ec8f0d8d6ba99fcd0e558808e2",
+      "baselineSourceBlob": "68119c6782be25ec8f0d8d6ba99fcd0e558808e2",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "design-system/styles/minimal-saas.md",
+      "sourcePath": "design-system/styles/minimal-saas.md",
+      "sha256": "cb9c04928a5cb1f834f310c7f4c15484d6c1ed62ebdf9eaab4fab1c730f58370",
+      "pinnedSourceBlob": "e0923d8b53fc3b25c7acb42e177ad823fd3ca72d",
+      "baselineSourceBlob": "e0923d8b53fc3b25c7acb42e177ad823fd3ca72d",
+      "baselineSourceChanged": false,
+      "localOverride": true
+    },
+    {
+      "path": "design-system/styles/minimal-saas.json",
+      "sourcePath": "design-system/styles/minimal-saas.json",
+      "sha256": "035a89d0ead23070635f02a6aa29dd6c5ca8de8dfa98fed1c2f2af444a5d2ea3",
+      "pinnedSourceBlob": "9de52cfc8a76cf407e6bd2e65c2ae5704b27d94f",
+      "baselineSourceBlob": "9de52cfc8a76cf407e6bd2e65c2ae5704b27d94f",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "design-system/tokens/README.md",
+      "sourcePath": "design-system/tokens/README.md",
+      "sha256": "c5bfd0b5a51652caa16ea6a285b4d8604434dafd345c826ba8908fcd0d726f1e",
+      "pinnedSourceBlob": "118fdf563b7000920a9985fc16a28cf233714fb7",
+      "baselineSourceBlob": "d87444d5a32605b787f5f561323c566965f2eaea",
+      "baselineSourceChanged": true,
+      "localOverride": true
+    },
+    {
+      "path": "design-system/tokens/primitives.json",
+      "sourcePath": "design-system/tokens/primitives.json",
+      "sha256": "eca7941fe34421765ed522034f9a525d10858922f04708481f08e7e61fc5b174",
+      "pinnedSourceBlob": "c1cb76999c579bb76cf75b3445d6c98db51f7f0a",
+      "baselineSourceBlob": "c1cb76999c579bb76cf75b3445d6c98db51f7f0a",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "design-system/tokens/semantic.json",
+      "sourcePath": "design-system/tokens/semantic.json",
+      "sha256": "1632f5bbf10a41d52a744bcb769d0dc3316b75ffe0a60f481f6acdf686e89a24",
+      "pinnedSourceBlob": "84d20061e50060b53b0cdd86a32fb275e512ef04",
+      "baselineSourceBlob": "84d20061e50060b53b0cdd86a32fb275e512ef04",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "prompts/design-review.md",
+      "sourcePath": "prompts/design-review.md",
+      "sha256": "8a90f32fdc518ba41f6cbb34c26aeff6908b9914b793dff2776384a547100211",
+      "pinnedSourceBlob": "17c10dab7ba06459334abf9ded3f032a4eb561e2",
+      "baselineSourceBlob": "17c10dab7ba06459334abf9ded3f032a4eb561e2",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "prompts/visual-qa.md",
+      "sourcePath": "prompts/visual-qa.md",
+      "sha256": "fec84a97a1c98efb565be2eaa4284d54817c3d5288f7518e6a1f8fac153d0ee9",
+      "pinnedSourceBlob": "5bc40e6c1c50f664d32d2cd4d9eb4a7389785204",
+      "baselineSourceBlob": "5bc40e6c1c50f664d32d2cd4d9eb4a7389785204",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "tests/visual-review-template.md",
+      "sourcePath": "tests/visual-review-template.md",
+      "sha256": "d7cebd4d1cc5da3eb7fa3a1772da7576d1f68cbd2281eb4dcb034468152403bd",
+      "pinnedSourceBlob": "e510a4fa92428ee86f6f75272e6ba9446c99e702",
+      "baselineSourceBlob": "e510a4fa92428ee86f6f75272e6ba9446c99e702",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "skills/personal-ui/SKILL.md",
+      "sourcePath": "skills/personal-ui/SKILL.md",
+      "sha256": "9ace4214e7ae084aba8f892d5992f48bd2cad1e4cf6888464b55053b4b121b30",
+      "pinnedSourceBlob": "43b1fd92306b6dee4302754278fe33e4e1981bf3",
+      "baselineSourceBlob": "43b1fd92306b6dee4302754278fe33e4e1981bf3",
+      "baselineSourceChanged": false,
+      "localOverride": true
+    },
+    {
+      "path": "theme/resolve-tokens.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.ts",
+      "sha256": "2dbd388f679d362af01fddd95db799257190f44e2faae49820d6eb59885ece86",
+      "pinnedSourceBlob": "d7702503c919d7b60b915729c51d500c615e7dc0",
+      "baselineSourceBlob": "d7702503c919d7b60b915729c51d500c615e7dc0",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "theme/resolve-tokens.test.ts",
+      "sourcePath": "showcase/app/src/theme/resolve-tokens.test.ts",
+      "sha256": "94ec8968f72c200ea3af72b9c9f2c68b06b1e7c6f0fc22406ef1678862e028b0",
+      "pinnedSourceBlob": "f190fd32ccaf2ad84dbccc3079e0337be088b8a3",
+      "baselineSourceBlob": "f190fd32ccaf2ad84dbccc3079e0337be088b8a3",
+      "baselineSourceChanged": false,
+      "localOverride": true
+    },
+    {
+      "path": "theme/antd-theme.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.ts",
+      "sha256": "02123c657547496649393c3ba975f6913e650e61f9a946ffa9e84773f1c8e604",
+      "pinnedSourceBlob": "3416957ff24dfa03b996d98143a59ce7f231cc41",
+      "baselineSourceBlob": "3416957ff24dfa03b996d98143a59ce7f231cc41",
+      "baselineSourceChanged": false,
+      "localOverride": false
+    },
+    {
+      "path": "theme/antd-theme.test.ts",
+      "sourcePath": "showcase/app/src/theme/antd-theme.test.ts",
+      "sha256": "704a4cd567430a5e41e0bbba74c3f94807b4549431f374649f0866ee33e4a4a8",
+      "pinnedSourceBlob": "719c2579bed29e1aeaa32248124734f47432a64d",
+      "baselineSourceBlob": "719c2579bed29e1aeaa32248124734f47432a64d",
+      "baselineSourceChanged": false,
+      "localOverride": true
+    }
+  ],
+  "baselineSourceDrift": [
+    {
+      "path": "design-system/tokens/README.md",
+      "sourcePath": "design-system/tokens/README.md",
+      "sha256": "c5bfd0b5a51652caa16ea6a285b4d8604434dafd345c826ba8908fcd0d726f1e",
+      "pinnedSourceBlob": "118fdf563b7000920a9985fc16a28cf233714fb7",
+      "baselineSourceBlob": "d87444d5a32605b787f5f561323c566965f2eaea",
+      "baselineSourceChanged": true,
+      "localOverride": true
+    }
+  ],
+  "observationBoundary": "Known supplied project evidence only; not a scan of all user projects"
+}

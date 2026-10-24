@@ -1,0 +1,37 @@
+{
+  "task": "P04-B1",
+  "date": "2026-10-24",
+  "baseline": "52f693e3d0c5277fc4097da9d379da233e4c3166",
+  "decision": {
+    "b1": "Complete",
+    "newDistributionEngineering": "Not needed",
+    "chosenApproach": "Pinned closed snapshots",
+    "b2": "Not applicable; not implemented",
+    "gate04": "Passed within documented current scope"
+  },
+  "localCheck": {"command":"npm.cmd run check --prefix tools/quality","exitCode":0,"output":"\n> personal-ui-quality@0.1.0 check\n> node --experimental-strip-types check.mjs\n\n(node:3080) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\n  \"ok\": true,\n  \"counts\": {\n    \"markdown\": 58,\n    \"json\": 87,\n    \"yaml\": 5,\n    \"briefs\": 3,\n    \"presets\": 3,\n    \"localLinks\": 553\n  },\n  \"errors\": [],\n  \"scope\": \"Owned JSON/YAML, full Brief Draft 2020-12, all preset Token graphs and Markdown file targets. Preserved .agents and docs/imports bodies excluded; heading anchors and remote URLs not fetched.\"\n}\n"},
+  "review": "Independent whole-branch review passed; no blocking or non-blocking findings",
+  "protectedRuntimeAndHistoricalPathsUnchanged": true,
+  "baselineCI": {
+    "id": 40090310314,
+    "sha": "52f693e3d0c5277fc4097da9d379da233e4c3166",
+    "conclusion": "success",
+    "url": "https://github.com/0xAlchemist-cs/personal-ui-system/actions/runs/40090310314"
+  },
+  "scope": {
+    "applicationRerun": false,
+    "consumerRerun": false,
+    "consumerChanged": false,
+    "dependenciesChanged": false,
+    "workflowChanged": false,
+    "planChanged": false,
+    "published": false,
+    "assetMaturityChanged": false
+  },
+  "consumerStatusProbe": {
+    "sandbox": "Failed due worktree/cwd permissions",
+    "elevatedReadOnly": "Succeeded; HEAD a349428 and clean",
+    "optionalGitLocks": "Disabled during read-only consumer audit"
+  },
+  "deliveryCI": "This pre-commit record does not claim a new delivery CI result. The exact committed SHA must pass Quality before main sync; canonical run is attached to that commit."
+}
