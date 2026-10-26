@@ -6,6 +6,8 @@
 
 复制 [管理页示例](examples/user-management.yaml) 或 [博客示例](examples/blog.yaml)，替换真实目标、技术栈、数据和行为。示例中的组件名是界面职责名，不代表仓库已经存在同名组件；实现前先检查目标项目再映射到实际组件。
 
+不确定控件或布局的名称时，可先查 [术语与需求表达参考](../design-system/references.md#ai-术语与需求表达)，再在 `interaction`、`states` 和 `acceptance` 中写清实际行为与验收条件。
+
 | 字段 | 内容 |
 | --- | --- |
 | `schema_version` | 固定为字符串 `"1.0"`，避免 YAML 把版本解析为数字 |
