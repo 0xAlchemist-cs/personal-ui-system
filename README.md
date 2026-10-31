@@ -17,6 +17,8 @@
 
 知识库本身无需根目录运行依赖。独立的 [showcase/app](showcase/app/README.md) 已提供成员管理示范页和 17 个 Story，启动、目录及检查命令见应用说明。顶层页面模板仍是设计规格，尚无公共组件包。
 
+Windows 本机可双击桌面的 **UI system** 打开工作台；换电脑或移动仓库后，按 [启动说明](showcase/app/README.md) 重新生成快捷方式。
+
 **阶段 04 质量轨道 A1～A3 已完成。** [A3 收口报告](docs/records/2026-10-24-p04-a3-quality-closeout.md) 核对已有证据，并将机器/人工职责、失败处理和 PR/候选交付要求统一到 [验收约定](tests/README.md)。真实 CI 的 39 项质量测试、78 项应用测试、类型/Lint、应用与 Storybook 构建及三视口 11 项浏览器检查通过；没有像素基线或平台强制分支保护。[质量工具](tools/quality/README.md) 与应用各自固定依赖，不要求消费者安装全部工具。
 
 **P04-B1 已完成，Gate 04 在当前记录范围通过。** [分发决策](docs/records/2026-10-24-p04-b1-distribution-decision.md) 确认仍只有一个明确消费者，没有包/Registry 发布目标；继续固定提交的闭合快照，新增分发工程为 **Not needed**，B2 不适用且未实施。消费者的 16 项快照文件未变；知识库 HEAD 有一份来源说明文档变化，不触发自动升级。Gate 03 与既有快照依据见 [T4](docs/records/2026-10-24-p03-t4-closeout.md)。

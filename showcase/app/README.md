@@ -23,6 +23,10 @@
 
 ## 安装与启动
 
+Windows 可双击桌面的 **UI system** 快捷方式启动工作台。它会打开浏览器，重复点击复用已启动的页面；首次缺少依赖时自动执行安装。启动窗口最小化运行，关闭该 PowerShell 窗口可停止服务；关闭浏览器标签不会停止服务。
+
+换电脑或移动仓库后，在仓库根目录运行 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File tools/create-ui-system-shortcut.ps1` 重新创建快捷方式。快捷方式仅保存在本机桌面，项目中的启动脚本使用相对位置定位应用。入口固定为 `http://127.0.0.1:5173/`，端口冲突会提示，不自动切换地址。此快捷方式启动成员管理页；Storybook 按下文命令单独启动。
+
 在仓库根目录运行：
 
 ```sh
