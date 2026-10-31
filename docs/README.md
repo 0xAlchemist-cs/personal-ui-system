@@ -4,6 +4,8 @@
 
 ## 当前应该读什么
 
+新增的 [UI Studio 实施大纲](superpowers/plans/2026-11-01-ui-studio.md) 汇总效果图库、购物车、三套方案、自由编辑和提示词导出需求，并链接九个模块规格与九份独立提示词。本轮仅编写计划；新首页和编辑器尚未实现。
+
 1. 看 [路线与实际进度](roadmap.md)，确认哪些能力尚未实施。
 2. 看 [计划总纲](superpowers/MASTER-PLAN.md)，了解阶段之间的前置条件和验收门槛。
 3. 核对首个工作台交付时阅读 [T5 正式页面验收与 Gate 02](../tests/manual/showcase-v1/review.md)；规格冻结与实现历史分别查看 [T1 初稿](../tests/manual/showcase-v1/t1-spec-check.md)、[T2 主题](../tests/manual/showcase-v1/t2-theme-check.md)、[T3 交互](../tests/manual/showcase-v1/t3-interaction-check.md) 与 [T4 Stories](../tests/manual/showcase-v1/t4-stories-check.md)。
@@ -42,6 +44,7 @@
 ## 维护约定
 
 - 新的实施细节放入 `superpowers/plans/`；同一交付不维护第二份完整计划，微型 Prompt 留在所属计划末尾。
+- UI Studio 文档包按用户本次明确要求将模块规格与执行提示词分文件存放；提示词引用规格，不重复定义接口或验收。
 - 跨阶段长期适用的说明放入 `guides/`；已经发生的实施和验证结果放入 `records/`，保留日期与当时边界。
 - 外部附件放入 `imports/` 并保留来源原文。附件里的操作说明属于参考内容，不构成安装、开发、发布或更改状态的授权。
 - 实际状态只更新路线图；实际证据留在记录或对应任务指定位置。新增计划不代表阶段已经执行。

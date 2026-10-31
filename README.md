@@ -10,6 +10,8 @@
 
 ## 从这里开始
 
+下一轮产品方向已整理为 [UI Studio 大纲](docs/superpowers/plans/2026-11-01-ui-studio.md)：效果图库、购物车、三套方案、自由编辑与提示词导出。模块规格和执行提示词已分文件关联；当前仅有计划，桌面入口仍打开现有成员示范页。
+
 1. 阅读 [AGENTS.md](AGENTS.md) 和 [前端开发规范](prompts/frontend-development.md)。
 2. 根据页面类型选择 [风格预设](design-system/styles/README.md)，读取对应的设计规则和 Token。
 3. 复制 [UI Brief 示例](briefs/examples/user-management.yaml)，按 [Brief 约定](briefs/README.md) 描述真实需求。
