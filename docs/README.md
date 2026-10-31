@@ -12,6 +12,8 @@
 
 ## 分类目录
 
+可选工具新增：[Impeccable 候选指南](guides/impeccable.md) 与 [2026-10-31 首次限定试点](records/2026-10-31-impeccable-pilot.md)，包含固定来源和实际验证边界。
+
 | 类别 | 文件 | 用途 |
 | --- | --- | --- |
 | 当前进度 | [roadmap.md](roadmap.md) | 阶段状态的唯一维护位置 |
